@@ -1,0 +1,59 @@
+## Limits
+
+### Continuity at one point
+
+$\lim \limits_{x \to b^{+}} f(x) = \lim \limits_{x \to b^{-}} = f(b)$
+
+### Squeeze theorem
+
+$g(x) \geq f(x) \leq h(x)$ $\lim \limits_{x \to a} g(x) = \lim \limits_{x \to a} h(x) = \lim \limits_{x \to a} f(x) = L$
+
+### Limit at extremes
+
+$\lim \limits_{x \to \infty} (2x^{3} + 4x^{2} - 5x + 9) = \lim \limits_{x \to \infty} 2x^{3} \left(1 + \cfrac{2}{x} - \cfrac{5}{2x^{2}} + \cfrac{9}{2x^{3}}) \right) = \lim \limits_{x \to \infty} 2x^{3}$
+
+### Operative properties
+
+As propriedades operatórias permitem achar os limites de somas, diferenças, produtos, quocientes e outros mais de funções elementares.
+
+Para funções $f$ e $g$ com limites para $x \to a$, $\lim \limits_{x \to a} f(x) = L$ e $\lim \limits_{x \to a} g(x) = M$, desde que $(L, M \neq \infty )$, temos:
+
+1. $\lim \limits_{x \to a} [f(x) \pm g(x)] = \lim \limits_{x \to a} f(x) \pm \lim \limits_{x \to a} g(x)$
+
+    Exemplo: $\lim \limits_{x \to 1} [x^{2} + 3x^{3}] = \lim \limits_{x \to 1} x^{2} + \lim \limits_{x \to 1} 3x^{3} = 1 + 3 = 4$
+
+2. $\lim \limits_{x \to a} [f(x) \times g(x)] = \lim \limits_{x \to a} f(x) \times \lim \limits_{x \to a} g(x)$
+
+3. $\lim \limits_{x \to a} \cfrac{f(x)}{g(x)} = \cfrac{\lim \limits_{x \to a} f(x)}{\lim \limits_{x \to a} g(x)}$, desde que $\lim \limits_{x \to a} g(x) \neq 0$
+
+4. $\lim \limits_{x \to \pi} [3x^{3} \times \cos x] = \lim \limits_{x \to \pi} 3x^{3} \times \lim \limits_{x \to \pi} \cos x = 3\pi ^{3} \times cos \pi = 3 \pi ^{3} \times (-1) = - 3 \pi ^{3}$
+
+5. $\lim \limits_{x \to \pi} [3x^{3} \times \cos x] = \lim \limits_{x \to \pi} 3x^{3} \times \lim \limits_{x \to \pi} \cos x = 3\pi ^{3} \times cos \pi = 3 \pi ^{3} \times (-1) = - 3 \pi ^{3}$
+
+    Exemplo: $\lim \limits_{x \to 0} \cfrac{\cos x}{x^{2} + 1} = \cfrac{\lim \limits_{x \to 0} \cos x}{\lim \limits_{x \to 0} x^{2} + 1} = \cfrac{\cos 0}{0^{2} + 1} = \cfrac{1}{1} = 1$
+
+6. $\lim \limits_{x \to a} f(x)^{n} = \left( \lim \limits_{x \to a} f(x) \right) ^{n}$, desde que $n \in \mathbb{N}^{*}$
+
+    Exemplo: $\lim \limits_{x \to 1} (x^{2} + 3)^{2} = \left[ \lim \limits_{x \to 1} (x^{2} + 3)^{2} \right] = (1 + 3)^{2} = 16$
+
+7. $\lim \limits_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{\lim \limits_{x \to a} f(x)}$, desde que $n \in \mathbb{N}^{*}$ e $f(x) > 0$ (se $f(x) \leq 0$ $n$ é ímpar)
+
+8. $\lim \limits_{x \to 2} \sqrt{x^{3} + x^{2} - 1} = \sqrt{\lim \limits_{x \to 2} x^{3} + x^{2} - 1} = \sqrt{2^{3} + 2^{2} - 1} = \sqrt{11}$
+
+9. $\lim \limits_{x \to a} (\ln f(x)) = \ln \left[ \lim \limits_{x \to a} f(x) \right]$, desde que $\lim \limits_{x \to a} f(x) > 0$
+
+    Exemplo: $\lim \limits_{x \to e} (\ln x^{2}) = \ln \left[ \lim \limits_{x \to e} x^{2} \right] = \ln e^{2} = 2 \ln e = 2 \times 1 = 2$
+
+10. $\lim \limits_{x \to a} \sin (f(x)) = \sin \left( \lim \limits_{x \to a} f(x) \right)$
+
+    Exemplo: $\lim \limits_{x \to 1} \sin (x^{2} + 3x) = \sin \left[ \lim \limits_{x \to 1} (x^{2} +3x) \right] = \sin 4$
+
+11. $\lim \limits_{x \to a} e^{f(x)} = e^{\lim \limits_{x \to a} f(x)}$
+
+    Exemplo: $\lim \limits_{x \to 1} e^{x^{2} + 3x} = e^{\lim \limits_{x \to 1} x^{2} +3x} = e^{4}$
+
+## Referências {.unnumbered}
+
+* @morettin2003
+* @somatematica
+* @ventura

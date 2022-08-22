@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Calculus: Formulas and Theorems - 8&nbsp; Derivatives</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./applications-of-derivatives.html" rel="next">
+<link href="./limits.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Derivatives</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Calculus: Formulas and Theorems</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/danielvartan/calculus/" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://twitter.com/intent/tweet?url=|url|" title="Twitter" class="sidebar-tool px-1"><i class="bi bi-twitter"></i></a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./pre-calculus.html" class="sidebar-item-text sidebar-link">Pre-calculus</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./numbers.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Irrational numbers and natural constants</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./notable-products.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Notable products</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./progressions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Progressions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./logarithms.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Logarithms</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./trigonometry.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Trigonometry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Functions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./univariate-calculus.html" class="sidebar-item-text sidebar-link">Univariate calculus</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./limits.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Limits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./derivatives.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./applications-of-derivatives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Applications of derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Integrals</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./multivariate-calculus.html" class="sidebar-item-text sidebar-link">Multivariate calculus</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./n-dimensional-space.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">The n-dimensional space (<span class="math inline">\(\mathbb{R}^{n}\)</span>)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./two-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Two-variable functions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./three-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Functions of three or more variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#derivative-by-definition" id="toc-derivative-by-definition" class="nav-link active" data-scroll-target="#derivative-by-definition"> <span class="header-section-number">8.1</span> Derivative by definition</a></li>
+  <li><a href="#shortened-line-equation" id="toc-shortened-line-equation" class="nav-link" data-scroll-target="#shortened-line-equation"> <span class="header-section-number">8.2</span> Shortened line equation</a></li>
+  <li><a href="#elementary-functions" id="toc-elementary-functions" class="nav-link" data-scroll-target="#elementary-functions"> <span class="header-section-number">8.3</span> Elementary functions</a></li>
+  <li><a href="#operating-properties" id="toc-operating-properties" class="nav-link" data-scroll-target="#operating-properties"> <span class="header-section-number">8.4</span> Operating properties</a></li>
+  <li><a href="#special-functions-composta---regra-da-cadeia-exponencial-exponencial-geral" id="toc-special-functions-composta---regra-da-cadeia-exponencial-exponencial-geral" class="nav-link" data-scroll-target="#special-functions-composta---regra-da-cadeia-exponencial-exponencial-geral"> <span class="header-section-number">8.5</span> Special functions (Composta - Regra da Cadeia, Exponencial, Exponencial Geral)</a></li>
+  <li><a href="#differential-of-a-function" id="toc-differential-of-a-function" class="nav-link" data-scroll-target="#differential-of-a-function"> <span class="header-section-number">8.6</span> Differential of a function</a></li>
+  <li><a href="#nd-3rd-order-derivatives" id="toc-nd-3rd-order-derivatives" class="nav-link" data-scroll-target="#nd-3rd-order-derivatives"> <span class="header-section-number">8.7</span> 2nd, 3rd, … order derivatives</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Derivatives</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="derivative-by-definition" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="derivative-by-definition"><span class="header-section-number">8.1</span> Derivative by definition</h2>
+<p><span class="math inline">\(\lim \limits_{\Delta x \to 0} \cfrac{\Delta f}{\Delta x} = \lim \limits_{\Delta x \to 0} \cfrac{f(x_{0} + \Delta x) - f(x_{0})}{\Delta x}\)</span></p>
+</section>
+<section id="shortened-line-equation" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="shortened-line-equation"><span class="header-section-number">8.2</span> Shortened line equation</h2>
+<p><span class="math inline">\(y = mx + n\)</span></p>
+<p><span class="math inline">\(m = \cfrac{\Delta f}{\Delta x} \approx f'(x)\)</span></p>
+<p><span class="math inline">\(y - y_{0} = m(x - x_{0})\)</span></p>
+</section>
+<section id="elementary-functions" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="elementary-functions"><span class="header-section-number">8.3</span> Elementary functions</h2>
+<ol type="1">
+<li><span class="math inline">\(f(x) = c\)</span>, <span class="math inline">\(f'(x) = 0\)</span>.</li>
+<li><span class="math inline">\(f(x) = x^{n}\)</span>, <span class="math inline">\(f'(x) = n \times x^{n-1} \ , (x &gt;0)\)</span>.</li>
+<li><span class="math inline">\(f(x) = \ln x\)</span>, <span class="math inline">\(f'(x) = \cfrac{1}{x}\)</span> &nbsp;, <span class="math inline">\((x &gt; 0)\)</span>.</li>
+<li><span class="math inline">\(f(x) = \sin x\)</span>, <span class="math inline">\(f'(x) = \cos x\)</span> &nbsp;, <span class="math inline">\((x \in \mathbb{R})\)</span></li>
+<li><span class="math inline">\(f(x) = \cos x\)</span>, <span class="math inline">\(f'(x) = \sin x\)</span> &nbsp;, <span class="math inline">\((x \in \mathbb{R})\)</span></li>
+</ol>
+</section>
+<section id="operating-properties" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="operating-properties"><span class="header-section-number">8.4</span> Operating properties</h2>
+<ol type="1">
+<li><span class="math inline">\(f(x) = k \times g(x)\)</span>, <span class="math inline">\(f'(x) = k \times g'(x)\)</span> &nbsp;, <span class="math inline">\(k = \text{constante}\)</span></li>
+<li><span class="math inline">\(f(x) = u(x) \pm v(x)\)</span>, <span class="math inline">\(f'(x) = u'(x) \pm v'(x)\)</span></li>
+<li><span class="math inline">\(f(x) = u(x) \times v(x)\)</span>, <span class="math inline">\(f'(x) = u'(x) \times v(x) + u(x) \times v'(x)\)</span></li>
+<li><span class="math inline">\(f(x) = \cfrac{u(x)}{v(x)}\)</span>, <span class="math inline">\(f'(x) = \cfrac{u'(x) \times v(x) - u(x) \times v'(x)}{[v(x)]^{2}}\)</span></li>
+<li><span class="math inline">\(f(x) = \cfrac{1}{v}\)</span>, <span class="math inline">\(f'(x) = \cfrac{v'}{v^{2}}\)</span></li>
+</ol>
+</section>
+<section id="special-functions-composta---regra-da-cadeia-exponencial-exponencial-geral" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="special-functions-composta---regra-da-cadeia-exponencial-exponencial-geral"><span class="header-section-number">8.5</span> Special functions (Composta - Regra da Cadeia, Exponencial, Exponencial Geral)</h2>
+<ol type="1">
+<li><span class="math inline">\(\cfrac{d}{dx} f(g(x)) = f'(g(x)) \times g'(x)\)</span></li>
+<li><span class="math inline">\(f(x) = a^{x}\)</span>, <span class="math inline">\(f'(x) = a^{x} \times \ln a\)</span>, <span class="math inline">\(\forall x \in \mathbb{R} \mid a &gt; 0\)</span> e <span class="math inline">\(a \neq 1\)</span></li>
+<li><span class="math inline">\(f(x) = u(x)^{v(x)} \implies f(x) = x^{x}\)</span> <span class="math inline">\(\ln f(x) = x \times \ln x\)</span>, <span class="math inline">\(\log_{a} M^{\alpha} = \alpha \times \log_{a} M\)</span> <span class="math inline">\(\cfrac{1}{f(x)} \times f'(x) = 1 \times \ln x + x \times \cfrac{1}{x}\)</span> <span class="math inline">\(f'(x) = f(x) \times [\ln x +1] \implies f'(x) = x^{x} \times [\ln x + 1]\)</span></li>
+</ol>
+</section>
+<section id="differential-of-a-function" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="differential-of-a-function"><span class="header-section-number">8.6</span> Differential of a function</h2>
+<p><span class="math inline">\(df = f'(x_{0}) \times \Delta x\)</span>, <span class="math inline">\(df \approx \Delta f\)</span> para pequenos valores de <span class="math inline">\(\Delta x\)</span>.</p>
+</section>
+<section id="nd-3rd-order-derivatives" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="nd-3rd-order-derivatives"><span class="header-section-number">8.7</span> 2nd, 3rd, … order derivatives</h2>
+<p><span class="math inline">\(f'(x) \ f''(x) \ f'''(x) \ f^{(4)}(x)\)</span></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./limits.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Limits</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./applications-of-derivatives.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Applications of derivatives</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

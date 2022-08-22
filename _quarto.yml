@@ -1,0 +1,42 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Calculus: Formulas and Theorems"
+  author: "Daniel Vartanian"
+  site-url: https://danielvartan.github.io/calculus/
+  repo-url: https://github.com/danielvartan/calculus/
+  repo-branch: main
+  sharing: [twitter]
+  chapters:
+    - index.qmd
+    - part: pre-calculus.qmd
+      chapters: 
+        - numbers.qmd
+        - notable-products.qmd
+        - progressions.qmd
+        - logarithms.qmd
+        - trigonometry.qmd
+        - functions.qmd
+    - part: univariate-calculus.qmd
+      chapters: 
+        - limits.qmd
+        - derivatives.qmd
+        - applications-of-derivatives.qmd
+        - integrals.qmd
+    - part: multivariate-calculus.qmd
+      chapters: 
+        - n-dimensional-space.qmd
+        - two-variable-functions.qmd
+        - three-variable-functions.qmd
+        - matrices.qmd
+        - systems-of-equations.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    code-link: true

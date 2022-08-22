@@ -1,0 +1,57 @@
+# Functions
+
+## Polynomial function
+
+Uma função polinomial $f : \mathbb{R} \rightarrow \mathbb{R}$ de grau $n$ é uma função da forma
+
+$y = f'(x) = a_{n} x^{n} + a_{n-1} x^{n-1} + \dots + a_{3} x^{3} + a_{2} x^{2} + a_{1} x + a_{0}$.
+
+onde,
+
+* $n$ é o grau do polinômio.
+* $a_{n}, a_{n-1}, \dots , a_{3}, a_{2}, a_{1}, a_{0}$ são constantes reais $a_{n} \neq 0$.
+* $x$ é a variável independente.
+* $y = f(x)$ é a variável dependente.
+
+## 1st Degree Function
+
+$y = ax + b$
+
+onde, $a = m$ é o coeficiente angular e $b$ o coeficiente linear.
+
+$m = \cfrac{\Delta y}{\Delta x} = \cfrac{y_2 - y_1}{x_2 - x_1}$
+
+## Quadratic equation (Bhaskara)
+
+$ax^{2} + bx + c = 0$
+
+onde,
+
+$x = \cfrac {-b \pm \sqrt {b^2 - 4ac}} {2a}$
+
+### Discriminator of the quadratic equation
+
+$\Delta = b^{2} - 4ac$
+
+onde,
+
+* Se $\Delta > 0$, a equação tem duas raízes reais e distintas.
+* Se $\Delta = 0$, a equação tem duas raízes reais e iguais (tecnicamente chamada de raiz dupla), ou popularmente "uma única raiz".
+* Se $\Delta < 0$, a equação não possui qualquer raiz real.
+
+### Parabola position
+
+* Se $a > 0$, a parábola terá o aspecto de côncava para baixo (ou somente côncava).
+* Se $a < 0$ a parábola terá aspecto de côncava para cima (ou convexa).
+
+## Modular function of a real number
+
+$|x| = x$, se $x >= 0$, ou
+
+$|x| = -x$, se $x < 0$
+
+Exemplos:
+
+$2 \cdot |3| = 2 \cdot (3) = 6$
+
+$|-4| + |-2| = -(-4) + [- (-2)] = 4 + 2 = 6$

@@ -1,0 +1,46 @@
+# Derivatives
+
+## Derivative by definition
+
+$\lim \limits_{\Delta x \to 0} \cfrac{\Delta f}{\Delta x} = \lim \limits_{\Delta x \to 0} \cfrac{f(x_{0} + \Delta x) - f(x_{0})}{\Delta x}$
+
+## Shortened line equation
+
+$y = mx + n$
+
+$m = \cfrac{\Delta f}{\Delta x} \approx f'(x)$
+
+$y - y_{0} = m(x - x_{0})$
+
+## Elementary functions
+
+1. $f(x) = c$, $f'(x) = 0$.
+2. $f(x) = x^{n}$, $f'(x) = n \times x^{n-1} \ , (x >0)$.
+3. $f(x) = \ln x$, $f'(x) = \cfrac{1}{x}$ \ , $(x > 0)$.
+4. $f(x) = \sin x$, $f'(x) = \cos x$ \ , $(x \in \mathbb{R})$
+5. $f(x) = \cos x$, $f'(x) = \sin x$ \ , $(x \in \mathbb{R})$
+
+## Operating properties
+
+1. $f(x) = k \times g(x)$, $f'(x) = k \times g'(x)$ \ , $k = \text{constante}$
+2. $f(x) = u(x) \pm v(x)$, $f'(x) = u'(x) \pm v'(x)$
+3. $f(x) = u(x) \times v(x)$, $f'(x) = u'(x) \times v(x) + u(x) \times v'(x)$
+4. $f(x) = \cfrac{u(x)}{v(x)}$, $f'(x) = \cfrac{u'(x) \times v(x) - u(x) \times v'(x)}{[v(x)]^{2}}$
+5. $f(x) = \cfrac{1}{v}$, $f'(x) = \cfrac{v'}{v^{2}}$
+
+## Special functions (Composta - Regra da Cadeia, Exponencial, Exponencial Geral)
+
+1. $\cfrac{d}{dx} f(g(x)) = f'(g(x)) \times g'(x)$
+2. $f(x) = a^{x}$, $f'(x) = a^{x} \times \ln a$, $\forall x \in \mathbb{R} \mid a > 0$ e $a \neq 1$
+3. $f(x) = u(x)^{v(x)} \implies f(x) = x^{x}$
+    $\ln f(x) = x \times \ln x$, $\log_{a} M^{\alpha} = \alpha \times \log_{a} M$
+    $\cfrac{1}{f(x)} \times f'(x) = 1 \times \ln x + x \times \cfrac{1}{x}$
+    $f'(x) = f(x) \times [\ln x +1] \implies f'(x) = x^{x} \times [\ln x + 1]$
+
+## Differential of a function
+
+$df = f'(x_{0}) \times \Delta x$, $df \approx \Delta f$ para pequenos valores de $\Delta x$.
+
+## 2nd, 3rd, ... order derivatives
+
+$f'(x) \ f''(x) \ f'''(x) \ f^{(4)}(x)$

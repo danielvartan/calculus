@@ -1,0 +1,352 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Calculus: Formulas and Theorems",
+    "section": "",
+    "text": "Under development.\nTo learn more about Quarto books visit https://quarto.org/docs/books."
+  },
+  {
+    "objectID": "pre-calculus.html",
+    "href": "pre-calculus.html",
+    "title": "Pre-calculus",
+    "section": "",
+    "text": "Nothing here yet!"
+  },
+  {
+    "objectID": "univariate-calculus.html#função-modular-de-um-número-real",
+    "href": "univariate-calculus.html#função-modular-de-um-número-real",
+    "title": "Univariate calculus",
+    "section": "Função Modular de um Número Real",
+    "text": "Função Modular de um Número Real"
+  },
+  {
+    "objectID": "univariate-calculus.html#limits",
+    "href": "univariate-calculus.html#limits",
+    "title": "5  Univariate calculus",
+    "section": "5.3 Limits",
+    "text": "5.3 Limits\n\n5.3.1 Continuidade em um ponto\n\\(\\lim \\limits_{x \\to b^{+}} f(x) = \\lim \\limits_{x \\to b^{-}} = f(b)\\)\n\n\n5.3.2 Teorema do confronto\n\\(g(x) \\geq f(x) \\leq h(x)\\) \\(\\lim \\limits_{x \\to a} g(x) = \\lim \\limits_{x \\to a} h(x) = \\lim \\limits_{x \\to a} f(x) = L\\)\n\n\n5.3.3 Limite nos extremos\n\\(\\lim \\limits_{x \\to \\infty} (2x^{3} + 4x^{2} - 5x + 9) = \\lim \\limits_{x \\to \\infty} 2x^{3} \\left(1 + \\cfrac{2}{x} - \\cfrac{5}{2x^{2}} + \\cfrac{9}{2x^{3}}) \\right) = \\lim \\limits_{x \\to \\infty} 2x^{3}\\)\n\n\n5.3.4 Propriedades operatórias\nAs propriedades operatórias permitem achar os limites de somas, diferenças, produtos, quocientes e outros mais de funções elementares.\nPara funções \\(f\\) e \\(g\\) com limites para \\(x \\to a\\), \\(\\lim \\limits_{x \\to a} f(x) = L\\) e \\(\\lim \\limits_{x \\to a} g(x) = M\\), desde que \\((L, M \\neq \\infty )\\), temos:\n\n\\(\\lim \\limits_{x \\to a} [f(x) \\pm g(x)] = \\lim \\limits_{x \\to a} f(x) \\pm \\lim \\limits_{x \\to a} g(x)\\)\n\nExemplo: \\(\\lim \\limits_{x \\to 1} [x^{2} + 3x^{3}] = \\lim \\limits_{x \\to 1} x^{2} + \\lim \\limits_{x \\to 1} 3x^{3} = 1 + 3 = 4\\)\n\n\\(\\lim \\limits_{x \\to a} [f(x) \\times g(x)] = \\lim \\limits_{x \\to a} f(x) \\times \\lim \\limits_{x \\to a} g(x)\\)\n\\(\\lim \\limits_{x \\to \\pi} [3x^{3} \\times \\cos x] = \\lim \\limits_{x \\to \\pi} 3x^{3} \\times \\lim \\limits_{x \\to \\pi} \\cos x = 3\\pi ^{3} \\times cos \\pi = 3 \\pi ^{3} \\times (-1) = - 3 \\pi ^{3}\\)\n\\(\\lim \\limits_{x \\to \\pi} [3x^{3} \\times \\cos x] = \\lim \\limits_{x \\to \\pi} 3x^{3} \\times \\lim \\limits_{x \\to \\pi} \\cos x = 3\\pi ^{3} \\times cos \\pi = 3 \\pi ^{3} \\times (-1) = - 3 \\pi ^{3}\\)\n\nExemplo: \\(\\lim \\limits_{x \\to 0} \\cfrac{\\cos x}{x^{2} + 1} = \\cfrac{\\lim \\limits_{x \\to 0} \\cos x}{\\lim \\limits_{x \\to 0} x^{2} + 1} = \\cfrac{\\cos 0}{0^{2} + 1} = \\cfrac{1}{1} = 1\\)\n\n\\(\\lim \\limits_{x \\to a} f(x)^{n} = \\left( \\lim \\limits_{x \\to a} f(x) \\right) ^{n}\\), desde que \\(n \\in \\mathbb{N}^{*}\\)\n\nExemplo: \\(\\lim \\limits_{x \\to 1} (x^{2} + 3)^{2} = \\left[ \\lim \\limits_{x \\to 1} (x^{2} + 3)^{2} \\right] = (1 + 3)^{2} = 16\\)\n\n\\(\\lim \\limits_{x \\to a} \\sqrt[n]{f(x)} = \\sqrt[n]{\\lim \\limits_{x \\to a} f(x)}\\), desde que \\(n \\in \\mathbb{N}^{*}\\) e \\(f(x) > 0\\) (se \\(f(x) \\leq 0\\) \\(n\\) é ímpar)\n\\(\\lim \\limits_{x \\to 2} \\sqrt{x^{3} + x^{2} - 1} = \\sqrt{\\lim \\limits_{x \\to 2} x^{3} + x^{2} - 1} = \\sqrt{2^{3} + 2^{2} - 1} = \\sqrt{11}\\)\n\\(\\lim \\limits_{x \\to a} (\\ln f(x)) = \\ln \\left[ \\lim \\limits_{x \\to a} f(x) \\right]\\), desde que \\(\\lim \\limits_{x \\to a} f(x) > 0\\)\n\nExemplo: \\(\\lim \\limits_{x \\to e} (\\ln x^{2}) = \\ln \\left[ \\lim \\limits_{x \\to e} x^{2} \\right] = \\ln e^{2} = 2 \\ln e = 2 \\times 1 = 2\\)\n\n\\(\\lim \\limits_{x \\to a} \\sin (f(x)) = \\sin \\left( \\lim \\limits_{x \\to a} f(x) \\right)\\)\n\nExemplo: \\(\\lim \\limits_{x \\to 1} \\sin (x^{2} + 3x) = \\sin \\left[ \\lim \\limits_{x \\to 1} (x^{2} +3x) \\right] = \\sin 4\\)\n\n\\(\\lim \\limits_{x \\to a} e^{f(x)} = e^{\\lim \\limits_{x \\to a} f(x)}\\)\n\nExemplo: \\(\\lim \\limits_{x \\to 1} e^{x^{2} + 3x} = e^{\\lim \\limits_{x \\to 1} x^{2} +3x} = e^{4}\\)\nReferências: Morettin, Hazzan, and Oliveira Bussab (2003)"
+  },
+  {
+    "objectID": "univariate-calculus.html#derivadas",
+    "href": "univariate-calculus.html#derivadas",
+    "title": "5  Univariate calculus",
+    "section": "5.4 Derivadas",
+    "text": "5.4 Derivadas"
+  },
+  {
+    "objectID": "univariate-calculus.html#funções-financeirasadministrativas",
+    "href": "univariate-calculus.html#funções-financeirasadministrativas",
+    "title": "Univariate calculus",
+    "section": "Funções Financeiras/Administrativas",
+    "text": "Funções Financeiras/Administrativas"
+  },
+  {
+    "objectID": "univariate-calculus.html#elasticidade---função-oferta-e-demanda",
+    "href": "univariate-calculus.html#elasticidade---função-oferta-e-demanda",
+    "title": "Univariate calculus",
+    "section": "Elasticidade - Função Oferta e Demanda",
+    "text": "Elasticidade - Função Oferta e Demanda"
+  },
+  {
+    "objectID": "univariate-calculus.html#estudo-de-funções-univariadas",
+    "href": "univariate-calculus.html#estudo-de-funções-univariadas",
+    "title": "Univariate calculus",
+    "section": "Estudo de Funções Univariadas",
+    "text": "Estudo de Funções Univariadas"
+  },
+  {
+    "objectID": "univariate-calculus.html#integrais",
+    "href": "univariate-calculus.html#integrais",
+    "title": "5  Univariate calculus",
+    "section": "5.8 Integrais",
+    "text": "5.8 Integrais\n\n5.8.1 Integral definida\n\n5.8.1.1 Definição\nChamamos de integral indefinida de \\(g(x)\\) e indicamos pelo símbolo \\(\\int g(x) \\ dx\\) a uma primitiva qualquer de \\(g(x)\\) adicionada a uma constante arbitrária \\(c\\). Assim:\n\\(\\int g(x)dx = f(x) + c\\)\nem que \\(f(x)\\) é uma primitiva de \\(g(x)\\) , ou seja, \\(f'(x) = g(x)\\).\nReferências: Morettin, Hazzan, and Oliveira Bussab (2003) Lucchesi (n.d.)\n\n\n5.8.1.2 Funções elementares\nPodemos obter as integrais indefinidas das principais funções, que decorrem imediatamente das respectivas regras de derivação:\n\nSe \\(n\\) é inteiro e diferente de \\(-1\\) , então \\(\\int x^{n} dx = \\cfrac {x^{n + 1}} {n+1} + c\\) , pois a derivada de \\(\\cfrac {x^{n + 1}} {n+1}\\) é \\(x^{n}\\).\n\\(\\int \\cfrac {1} {x} \\ dx = \\ln x + c\\), para \\(x > 0\\), pois a derivada de \\(\\ln x\\) é \\(\\cfrac {1} {x}\\). Observe que se \\(x < 0\\) , \\(\\int \\cfrac {1} {x} \\ dx = \\ln (-x) + c\\) . Assim, de modo geral, podemos escrever: \\(\\int \\frac {1} {x} \\ dx = \\ln |x| + c\\).\nPara qualquer real \\(\\alpha \\neq -1\\), \\(\\int x^{a} \\ dx = \\cfrac {x^{\\alpha + 1}} {\\alpha + 1} + c\\). \\((x > 0)\\)\n\\(\\int \\cos xdx = \\sin x + c\\), pois a derivada de \\(\\sin x\\) é \\(\\cos x\\).\n\\(\\int \\sin xdx = - \\cos x + c\\), pois a derivada de \\(- \\cos x\\) é \\(\\sin x\\).\n\\(\\int e^{x} \\ dx = e^{x} + c\\), pois a derivada de \\(e^{x}\\) é \\(e^{x}\\).\n\\(\\int \\cfrac {1}{1+x^{2}} \\ dx = \\arctan x + c\\), pois a derivada de \\(\\arctan x\\) é \\(\\cfrac {1}{1+x^{2}}\\).\n\\(\\int \\cfrac {1}{\\sqrt{1 - x^{2}}} \\ dx = \\arcsin x + c\\), pois a derivada de \\(\\arcsin x\\) é \\(\\cfrac {1}{\\sqrt{1 - x^{2}}}\\), para \\(-1 < x < 1\\).\n\nReferências: Morettin, Hazzan, and Oliveira Bussab (2003)\n\n\n5.8.1.3 Propriedades operatórias\n\n\\(\\int [ f_{1} (x) + f_{2} (x) ] \\ dx = \\int f_{1} (x) \\ dx + \\int f_{2} (x) \\ dx\\)\n\\(\\int [ f_{1} (x) - f_{2} (x) ] \\ dx = \\int f_{1} (x) \\ dx - \\int f_{2} (x) \\ dx\\)}.\n\\(\\int c \\cdot f(x) \\ dx = c \\cdot \\int f(x) \\ dx\\).\n\n\n\n\n5.8.2 Integral definida\n\n5.8.2.1 Definição\nSeja \\(f(x)\\) uma função e \\(g(x)\\) uma de suas primitivas. Portanto, \\(\\int f(x) \\ dx = g(x) + c\\) .\nDefinimos a integral definida de \\(f(x)\\) entre os limites \\(a\\) e \\(b\\) como a diferença \\(g(b) - g(a)\\), e indicamos simbólicamente \\(\\int_{a}^{b} f(x) \\ dx = g(b) - g(a) = \\lim \\limits_{x \\to b-} [g(x)] - \\lim \\limits_{x \\to a+} [g(x)]\\).\nA diferença \\(g(b) - g(a)\\) também costuma ser indicada pelo símbolo \\([g(x)]_{a}^{b}\\).\n\n\n5.8.2.2 Teorema fundamental do cálculo\nO significado geométrico da integral definida é dado a seguir.\nSeja \\(f(x)\\) uma função contínua e não negativa definida num intervalo \\([a, b]\\). A integral definida \\(\\int_{a}^{b} f(x) \\ dx\\) representa a área da região compreendida entre o gráfico de \\(f(x)\\), o eixo \\(x\\) e as verticais que passam por \\(a\\) e \\(b\\).\n\n\n\nMorettin - Figura 7.1\n\n\nAssim, indicado por \\(A\\) a área destacada da Figura 7.1, teremos: \\(A = \\int_{a}^{b} f(x) \\ dx\\)\n(…) Caso \\(f(x)\\) seja negativa no intervalo \\([a, b]\\) , a área \\(A\\) da região delimitada pelo gráfico de \\(f(x)\\), eixo \\(x\\), e pelas verticais que passam por \\(a\\) e por \\(b\\) é dada por: \\(A = - \\int_{a}^{b} f(x) \\ dx\\).\n\n\n5.8.2.3 Propriedades operatórias\n\n\\(\\int_{a}^{a} f(x) \\ dx = F(a) - F(a) = 0\\)\n\\(\\int_{a}^{b} f(x) \\ dx = - \\int_{b}^{a} f(x) \\ dx\\)\n${a}^{b} f(x)  dx = {a}^{c} f(x)  dx + _{c}^{b} f(x)  dx $} , sendo $ a < c < b$.\n\n\n\n\n5.8.3 Integral imprópria\n\n5.8.3.1 Definição\nQuando as hipóteses do teorema fundamental do cálculo falharem, aplicamos a integral imprópria.\nCaso 1: Intervalo de integração aberto (e.g., \\(]a, b]\\)).\nCaso 2: Descontinuidade da função (e.g., \\(D = \\mathbb{R} - (0)\\)).\nUsa-se a propriedade da integral definida: ${a}^{b} f(x)  dx = {a}^{c} f(x)  dx + _{c}^{b} f(x)  dx $ , sendo $ a < c < b $\nExemplo:\n\\(\\int_{-1}^{1} \\frac {1}{x^2} \\ dx \\ \\longrightarrow \\ D = \\mathbb{R} - (0)\\)\n\\(\\int_{-1}^{1} \\frac {1}{x^2} \\ dx = \\lim \\limits_{z \\to 0^{-}} \\int_{-1}^{z} \\frac {1}{x^2} \\ dx + \\lim \\limits_{z \\to 0^{+}} \\int_{z}^{1} \\frac {1}{x^2} \\ dx\\)\n\n\n\n\nLucchesi, Andrea. n.d.“”\n\n\nMorettin, Pedro Alberto, Samuel Hazzan, and Wilton de Oliveira Bussab. 2003. Cálculo: Funções de Uma e Várias Variáveis. Saraiva."
+  },
+  {
+    "objectID": "multivariate-calculus.html#derivadas",
+    "href": "multivariate-calculus.html#derivadas",
+    "title": "3  Multivariate calculus",
+    "section": "3.2 Derivadas",
+    "text": "3.2 Derivadas"
+  },
+  {
+    "objectID": "multivariate-calculus.html#funções-financeirasadministrativas",
+    "href": "multivariate-calculus.html#funções-financeirasadministrativas",
+    "title": "3  Multivariate calculus",
+    "section": "3.3 Funções Financeiras/Administrativas",
+    "text": "3.3 Funções Financeiras/Administrativas"
+  },
+  {
+    "objectID": "multivariate-calculus.html#integrais-int",
+    "href": "multivariate-calculus.html#integrais-int",
+    "title": "3  Multivariate calculus",
+    "section": "3.4 Integrais \\((\\int)\\)",
+    "text": "3.4 Integrais \\((\\int)\\)"
+  },
+  {
+    "objectID": "multivariate-calculus.html#estudo-de-funções-de-2-variáveis",
+    "href": "multivariate-calculus.html#estudo-de-funções-de-2-variáveis",
+    "title": "3  Multivariate calculus",
+    "section": "3.5 Estudo de Funções de 2 Variáveis",
+    "text": "3.5 Estudo de Funções de 2 Variáveis"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Lucchesi, Andrea. n.d.“”\n\n\nMorettin, Pedro Alberto, Samuel Hazzan, and Wilton de Oliveira Bussab.\n2003. Cálculo: Funções de Uma e Várias Variáveis. Saraiva.\n\n\nSó Matemática. n.d. http://www.somatematica.com.br/.\n\n\nVentura, Marcelo. n.d.“”"
+  },
+  {
+    "objectID": "univariate-calculus.html",
+    "href": "univariate-calculus.html",
+    "title": "Univariate calculus",
+    "section": "",
+    "text": "Nothing here yet!"
+  },
+  {
+    "objectID": "univariate-calculus.html#função-polinomial",
+    "href": "univariate-calculus.html#função-polinomial",
+    "title": "Univariate calculus",
+    "section": "Função Polinomial",
+    "text": "Função Polinomial"
+  },
+  {
+    "objectID": "numbers.html",
+    "href": "numbers.html",
+    "title": "1  Irrational numbers and natural constants",
+    "section": "",
+    "text": "Nothing here yet!"
+  },
+  {
+    "objectID": "n-dimensional-space.html",
+    "href": "n-dimensional-space.html",
+    "title": "11  The n-dimensional space (\\(\\mathbb{R}^{n}\\))",
+    "section": "",
+    "text": "Nothing here yet!"
+  },
+  {
+    "objectID": "two-variable-functions.html",
+    "href": "two-variable-functions.html",
+    "title": "11  Two-variable functions",
+    "section": "",
+    "text": "Nothing here yet!"
+  },
+  {
+    "objectID": "two-variable-functions.html#derivadas-para-funções-de-duas-variáveis",
+    "href": "two-variable-functions.html#derivadas-para-funções-de-duas-variáveis",
+    "title": "11  Funções de duas variáveis",
+    "section": "11.1 Derivadas para funções de duas variáveis",
+    "text": "11.1 Derivadas para funções de duas variáveis"
+  },
+  {
+    "objectID": "two-variable-functions.html#máximos-e-mínimos-para-funções-de-duas-variáveis",
+    "href": "two-variable-functions.html#máximos-e-mínimos-para-funções-de-duas-variáveis",
+    "title": "11  Funções de duas variáveis",
+    "section": "11.2 Máximos e mínimos para funções de duas variáveis",
+    "text": "11.2 Máximos e mínimos para funções de duas variáveis"
+  },
+  {
+    "objectID": "three-variable-functions.html",
+    "href": "three-variable-functions.html",
+    "title": "12  Functions of three or more variables",
+    "section": "",
+    "text": "Nothing here yet!"
+  },
+  {
+    "objectID": "systems-of-equations.html",
+    "href": "systems-of-equations.html",
+    "title": "14  Systems of equations",
+    "section": "",
+    "text": "Nothing here yet!"
+  },
+  {
+    "objectID": "matrices.html",
+    "href": "matrices.html",
+    "title": "13  Matrices",
+    "section": "",
+    "text": "Nothing here yet!"
+  },
+  {
+    "objectID": "two-variable-functions.html#derivatives-for-functions-of-two-variables",
+    "href": "two-variable-functions.html#derivatives-for-functions-of-two-variables",
+    "title": "11  Two-variable functions",
+    "section": "11.1 Derivatives for functions of two variables",
+    "text": "11.1 Derivatives for functions of two variables"
+  },
+  {
+    "objectID": "two-variable-functions.html#maximums-and-minimums-for-two-variable-functions",
+    "href": "two-variable-functions.html#maximums-and-minimums-for-two-variable-functions",
+    "title": "11  Two-variable functions",
+    "section": "11.2 Maximums and minimums for two-variable functions",
+    "text": "11.2 Maximums and minimums for two-variable functions"
+  },
+  {
+    "objectID": "multivariate-calculus.html",
+    "href": "multivariate-calculus.html",
+    "title": "Multivariate calculus",
+    "section": "",
+    "text": "Nothing here yet!"
+  },
+  {
+    "objectID": "integrals.html",
+    "href": "integrals.html",
+    "title": "10  Integrals",
+    "section": "",
+    "text": "Chamamos de integral indefinida de \\(g(x)\\) e indicamos pelo símbolo \\(\\int g(x) \\ dx\\) a uma primitiva qualquer de \\(g(x)\\) adicionada a uma constante arbitrária \\(c\\). Assim:\n\\(\\int g(x)dx = f(x) + c\\)\nem que \\(f(x)\\) é uma primitiva de \\(g(x)\\) , ou seja, \\(f'(x) = g(x)\\).\n\n\nPodemos obter as integrais indefinidas das principais funções, que decorrem imediatamente das respectivas regras de derivação:\n\n\\(\\int x^{n} dx = \\cfrac {x^{n + 1}}{n+1} + c\\), \\(\\forall n \\in \\mathbb{Z} \\mid n \\neq -1\\), pois a derivada de \\(\\cfrac {x^{n + 1}} {n+1}\\) é \\(x^{n}\\)\n\\(\\int \\cfrac {1} {x} \\ dx = \\ln x + c\\), para \\(x > 0\\), pois a derivada de \\(\\ln x\\) é \\(\\cfrac {1} {x}\\)\nObserve que se \\(x < 0\\) , \\(\\int \\cfrac {1} {x} \\ dx = \\ln (-x) + c\\)\nAssim, de modo geral, podemos escrever: \\(\\int \\frac {1} {x} \\ dx = \\ln |x| + c\\)\nPara qualquer real \\(\\alpha \\neq -1\\), \\(\\int x^{a} \\ dx = \\cfrac {x^{\\alpha + 1}} {\\alpha + 1} + c\\), \\((x > 0)\\)\n\\(\\int \\cos xdx = \\sin x + c\\), pois a derivada de \\(\\sin x\\) é \\(\\cos x\\)\n\\(\\int \\sin xdx = - \\cos x + c\\), pois a derivada de \\(- \\cos x\\) é \\(\\sin x\\)\n\\(\\int e^{x} \\ dx = e^{x} + c\\), pois a derivada de \\(e^{x}\\) é \\(e^{x}\\)\n\\(\\int \\cfrac {1}{1+x^{2}} \\ dx = \\arctan x + c\\), pois a derivada de \\(\\arctan x\\) é \\(\\cfrac {1}{1+x^{2}}\\)\n\\(\\int \\cfrac {1}{\\sqrt{1 - x^{2}}} \\ dx = \\arcsin x + c\\), pois a derivada de \\(\\arcsin x\\) é \\(\\cfrac {1}{\\sqrt{1 - x^{2}}}\\), para \\(-1 < x < 1\\)\n\nReferências: Morettin, Hazzan, and Oliveira Bussab (2003)\n\n\n\n\n\\(\\int [ f_{1} (x) + f_{2} (x) ] \\ dx = \\int f_{1} (x) \\ dx + \\int f_{2} (x) \\ dx\\)\n\\(\\int [ f_{1} (x) - f_{2} (x) ] \\ dx = \\int f_{1} (x) \\ dx - \\int f_{2} (x) \\ dx\\)}\n\\(\\int c \\cdot f(x) \\ dx = c \\cdot \\int f(x) \\ dx\\)"
+  },
+  {
+    "objectID": "integrals.html#integral-definida",
+    "href": "integrals.html#integral-definida",
+    "title": "10  Integrals",
+    "section": "10.2 Integral definida",
+    "text": "10.2 Integral definida\nSeja \\(f(x)\\) uma função e \\(g(x)\\) uma de suas primitivas. Portanto, \\(\\int f(x) \\ dx = g(x) + c\\) .\nDefinimos a integral definida de \\(f(x)\\) entre os limites \\(a\\) e \\(b\\) como a diferença \\(g(b) - g(a)\\), e indicamos simbólicamente \\(\\int_{a}^{b} f(x) \\ dx = g(b) - g(a) = \\lim \\limits_{x \\to b-} [g(x)] - \\lim \\limits_{x \\to a+} [g(x)]\\).\nA diferença \\(g(b) - g(a)\\) também costuma ser indicada pelo símbolo \\([g(x)]_{a}^{b}\\).\n\n10.2.1 Fundamental theorem of calculus\nO significado geométrico da integral definida é dado a seguir.\nSeja \\(f(x)\\) uma função contínua e não negativa definida num intervalo \\([a, b]\\). A integral definida \\(\\int_{a}^{b} f(x) \\ dx\\) representa a área da região compreendida entre o gráfico de \\(f(x)\\), o eixo \\(x\\) e as verticais que passam por \\(a\\) e \\(b\\).\n\nAssim, indicado por \\(A\\) a área destacada da Figura 7.1, teremos: \\(A = \\int_{a}^{b} f(x) \\ dx\\).\n(…) Caso \\(f(x)\\) seja negativa no intervalo \\([a, b]\\) , a área \\(A\\) da região delimitada pelo gráfico de \\(f(x)\\), eixo \\(x\\), e pelas verticais que passam por \\(a\\) e por \\(b\\) é dada por: \\(A = - \\int_{a}^{b} f(x) \\ dx\\).\n\n\n10.2.2 Propriedades operatórias\n\n\\(\\int_{a}^{a} f(x) \\ dx = F(a) - F(a) = 0\\)\n\\(\\int_{a}^{b} f(x) \\ dx = - \\int_{b}^{a} f(x) \\ dx\\)\n\\(\\int_{a}^{b} f(x) \\ dx = \\int_{a}^{c} f(x) \\ dx + \\int_{c}^{b} f(x) \\ dx\\), sendo \\(a < c < b\\)."
+  },
+  {
+    "objectID": "integrals.html#improper-integral",
+    "href": "integrals.html#improper-integral",
+    "title": "10  Integrals",
+    "section": "10.3 Improper integral",
+    "text": "10.3 Improper integral\nQuando as hipóteses do teorema fundamental do cálculo falharem, aplicamos a integral imprópria.\nCaso 1: Intervalo de integração aberto (e.g., \\(]a, b]\\)).\nCaso 2: Descontinuidade da função (e.g., \\(D = \\mathbb{R} - (0)\\)).\nUsa-se a propriedade da integral definida: \\(\\int_{a}^{b} f(x) \\ dx = \\int_{a}^{c} f(x) \\ dx + \\int_{c}^{b} f(x) \\ dx\\) , sendo \\(a < c < b\\).\nExemplo:\n\\(\\int_{-1}^{1} \\frac {1}{x^2} \\ dx \\ \\longrightarrow \\ D = \\mathbb{R} - (0)\\)\n\\(\\int_{-1}^{1} \\frac {1}{x^2} \\ dx = \\lim \\limits_{z \\to 0^{-}} \\int_{-1}^{z} \\frac {1}{x^2} \\ dx + \\lim \\limits_{z \\to 0^{+}} \\int_{z}^{1} \\frac {1}{x^2} \\ dx\\)"
+  },
+  {
+    "objectID": "integrals.html#referências",
+    "href": "integrals.html#referências",
+    "title": "10  Integrals",
+    "section": "Referências",
+    "text": "Referências\n\nMorettin, Hazzan, and Oliveira Bussab (2003)\nLucchesi (n.d.)\n\n\n\n\n\nLucchesi, Andrea. n.d.“”\n\n\nMorettin, Pedro Alberto, Samuel Hazzan, and Wilton de Oliveira Bussab. 2003. Cálculo: Funções de Uma e Várias Variáveis. Saraiva."
+  },
+  {
+    "objectID": "limits.html",
+    "href": "limits.html",
+    "title": "7  Limits",
+    "section": "",
+    "text": "\\(\\lim \\limits_{x \\to b^{+}} f(x) = \\lim \\limits_{x \\to b^{-}} = f(b)\\)"
+  },
+  {
+    "objectID": "limits.html#referências",
+    "href": "limits.html#referências",
+    "title": "7  Limits",
+    "section": "Referências",
+    "text": "Referências\n\nMorettin, Hazzan, and Oliveira Bussab (2003)\nSó Matemática (n.d.)\nVentura (n.d.)\n\n\n\n\n\nMorettin, Pedro Alberto, Samuel Hazzan, and Wilton de Oliveira Bussab. 2003. Cálculo: Funções de Uma e Várias Variáveis. Saraiva.\n\n\nSó Matemática. n.d. http://www.somatematica.com.br/.\n\n\nVentura, Marcelo. n.d.“”"
+  },
+  {
+    "objectID": "functions.html",
+    "href": "functions.html",
+    "title": "6  Functions",
+    "section": "",
+    "text": "Uma função polinomial \\(f : \\mathbb{R} \\rightarrow \\mathbb{R}\\) de grau \\(n\\) é uma função da forma\n\\(y = f'(x) = a_{n} x^{n} + a_{n-1} x^{n-1} + \\dots + a_{3} x^{3} + a_{2} x^{2} + a_{1} x + a_{0}\\).\nonde,\n\n\\(n\\) é o grau do polinômio.\n\\(a_{n}, a_{n-1}, \\dots , a_{3}, a_{2}, a_{1}, a_{0}\\) são constantes reais \\(a_{n} \\neq 0\\).\n\\(x\\) é a variável independente.\n\\(y = f(x)\\) é a variável dependente."
+  },
+  {
+    "objectID": "functions.html#st-degree-function",
+    "href": "functions.html#st-degree-function",
+    "title": "6  Functions",
+    "section": "6.2 1st Degree Function",
+    "text": "6.2 1st Degree Function\n\\(y = ax + b\\)\nonde, \\(a = m\\) é o coeficiente angular e \\(b\\) o coeficiente linear.\n\\(m = \\cfrac{\\Delta y}{\\Delta x} = \\cfrac{y_2 - y_1}{x_2 - x_1}\\)"
+  },
+  {
+    "objectID": "functions.html#quadratic-equation-bhaskara",
+    "href": "functions.html#quadratic-equation-bhaskara",
+    "title": "6  Functions",
+    "section": "6.3 Quadratic equation (Bhaskara)",
+    "text": "6.3 Quadratic equation (Bhaskara)\n\\(ax^{2} + bx + c = 0\\)\nonde,\n\\(x = \\cfrac {-b \\pm \\sqrt {b^2 - 4ac}} {2a}\\)\n\n6.3.1 Discriminator of the quadratic equation\n\\(\\Delta = b^{2} - 4ac\\)\nonde,\n\nSe \\(\\Delta > 0\\), a equação tem duas raízes reais e distintas.\nSe \\(\\Delta = 0\\), a equação tem duas raízes reais e iguais (tecnicamente chamada de raiz dupla), ou popularmente “uma única raiz”.\nSe \\(\\Delta < 0\\), a equação não possui qualquer raiz real.\n\n\n\n6.3.2 Parabola position\n\nSe \\(a > 0\\), a parábola terá o aspecto de côncava para baixo (ou somente côncava).\nSe \\(a < 0\\) a parábola terá aspecto de côncava para cima (ou convexa)."
+  },
+  {
+    "objectID": "functions.html#modular-function-of-a-real-number",
+    "href": "functions.html#modular-function-of-a-real-number",
+    "title": "6  Functions",
+    "section": "6.4 Modular function of a real number",
+    "text": "6.4 Modular function of a real number\n\\(|x| = x\\), se \\(x >= 0\\), ou\n\\(|x| = -x\\), se \\(x < 0\\)\nExemplos:\n\\(2 \\cdot |3| = 2 \\cdot (3) = 6\\)\n\\(|-4| + |-2| = -(-4) + [- (-2)] = 4 + 2 = 6\\)"
+  },
+  {
+    "objectID": "applications-of-derivatives.html",
+    "href": "applications-of-derivatives.html",
+    "title": "9  Applications of derivatives",
+    "section": "",
+    "text": "f’(x) = 0$ ou \\(f'(x) = \\nexists\\) ou indefinido"
+  },
+  {
+    "objectID": "applications-of-derivatives.html#maximum-minimum-and-inflection-points",
+    "href": "applications-of-derivatives.html#maximum-minimum-and-inflection-points",
+    "title": "9  Applications of derivatives",
+    "section": "9.2 Maximum, minimum, and inflection points",
+    "text": "9.2 Maximum, minimum, and inflection points\nPonto de mínimo (convexidade \\(\\bigcup\\) ) \\(\\rightarrow f''(x) > 0 \\ \\forall x \\in \\ ]a, b[\\)\nPonto de máximo (concavidade \\(\\bigcap\\) ) \\(\\rightarrow f''(x) < 0 \\ \\forall x \\in \\ ]a, b[\\)\nPonto de inflexão \\(\\rightarrow f''(x) = 0 \\ \\forall x \\in \\ ]a, b[\\)"
+  },
+  {
+    "objectID": "applications-of-derivatives.html#full-study-of-a-function",
+    "href": "applications-of-derivatives.html#full-study-of-a-function",
+    "title": "9  Applications of derivatives",
+    "section": "9.3 Full study of a function",
+    "text": "9.3 Full study of a function\n\nDeterminação do domínio.\nDeterminação das intersecções com os eixos, quando possível/\nDeterminação dos intervalos de crescimento e decrescimento e de possíveis pontos de máximo e mínimo.\nDeterminação dos intervalos em que a função é côncava para cima ou para baixo e de possíveis pontos de inﬂexão.\nDeterminação dos limites nos extremos do domínio e de possíveis assíntotas.\nDeterminação dos limites laterais nos pontos de descontinuidades (quando houver e possíveis assíntotas)."
+  },
+  {
+    "objectID": "applications-of-derivatives.html#financialadministrative-functions",
+    "href": "applications-of-derivatives.html#financialadministrative-functions",
+    "title": "9  Applications of derivatives",
+    "section": "9.4 Financial/administrative functions",
+    "text": "9.4 Financial/administrative functions\n\n\\(R(P \\ ou \\ Q) = P \\times Q\\)\n\\(L(P \\ ou \\ Q) = R(P \\ ou \\ Q) - C (P \\ ou \\ Q)\\)\n\\(C_{mg}(x) = C'(x)\\), normalmente \\(\\Delta x = 1\\)\n\\(R_{mg}(x) = R'(x)\\), normalmente \\(\\Delta x = 1\\)\nProp. marginal a consumir (C) \\(\\rightarrow p^{c}_{mg} = C'(y)\\), \\(y =\\) renda disponível\nProp. marginal a poupar (S) \\(\\rightarrow p^{c}_{mg} = S'(y)\\), \\(y =\\) renda disponível\nProdutividade marginal \\(\\rightarrow P_{mg}(x) = P'(x)\\)"
+  },
+  {
+    "objectID": "applications-of-derivatives.html#elasticity---supply-and-demand-function",
+    "href": "applications-of-derivatives.html#elasticity---supply-and-demand-function",
+    "title": "9  Applications of derivatives",
+    "section": "9.5 Elasticity - Supply and Demand Function",
+    "text": "9.5 Elasticity - Supply and Demand Function\n\nFunção Demanda \\(\\rightarrow \\cfrac{dx}{dp} < 0\\)\nFunção Oferta \\(\\rightarrow \\cfrac{dx}{dp} > 0\\)\nPonto de Equilíbrio \\(\\rightarrow p_{d} = p_{o}\\)\nvariação percentual no preço \\(= \\cfrac{\\Delta p}{p_{0}}\\)\nVariação percentual na quantidade \\(= \\cfrac{\\Delta x}{x_{0}}\\)\n\\(e = \\begin{vmatrix} \\lim \\limits_{\\Delta p \\to 0} \\cfrac{\\cfrac{\\Delta x}{x_{0}}}{\\cfrac{\\Delta p}{p_{0}}} \\end{vmatrix} = \\cfrac{p_{0}}{x_{0}} \\times \\begin{vmatrix} \\lim \\limits_{\\Delta p \\to 0} \\cfrac{\\Delta x}{\\Delta p}\\end{vmatrix} = \\cfrac{p_{0}}{x_{0}} \\times \\begin{vmatrix} \\cfrac{dx}{dp}\\end{vmatrix}\\)\n\\(e > 1 \\rightarrow\\) elástica, \\(0 < e > 1 \\rightarrow\\) inelástica, \\(e = 1 \\rightarrow\\) elasticidade unitária\n* Não se aplica em caso de elasticidade cruzada."
+  },
+  {
+    "objectID": "derivatives.html",
+    "href": "derivatives.html",
+    "title": "8  Derivatives",
+    "section": "",
+    "text": "\\(\\lim \\limits_{\\Delta x \\to 0} \\cfrac{\\Delta f}{\\Delta x} = \\lim \\limits_{\\Delta x \\to 0} \\cfrac{f(x_{0} + \\Delta x) - f(x_{0})}{\\Delta x}\\)"
+  },
+  {
+    "objectID": "derivatives.html#shortened-line-equation",
+    "href": "derivatives.html#shortened-line-equation",
+    "title": "8  Derivatives",
+    "section": "8.2 Shortened line equation",
+    "text": "8.2 Shortened line equation\n\\(y = mx + n\\)\n\\(m = \\cfrac{\\Delta f}{\\Delta x} \\approx f'(x)\\)\n\\(y - y_{0} = m(x - x_{0})\\)"
+  },
+  {
+    "objectID": "derivatives.html#elementary-functions",
+    "href": "derivatives.html#elementary-functions",
+    "title": "8  Derivatives",
+    "section": "8.3 Elementary functions",
+    "text": "8.3 Elementary functions\n\n\\(f(x) = c\\), \\(f'(x) = 0\\).\n\\(f(x) = x^{n}\\), \\(f'(x) = n \\times x^{n-1} \\ , (x >0)\\).\n\\(f(x) = \\ln x\\), \\(f'(x) = \\cfrac{1}{x}\\)  , \\((x > 0)\\).\n\\(f(x) = \\sin x\\), \\(f'(x) = \\cos x\\)  , \\((x \\in \\mathbb{R})\\)\n\\(f(x) = \\cos x\\), \\(f'(x) = \\sin x\\)  , \\((x \\in \\mathbb{R})\\)"
+  },
+  {
+    "objectID": "derivatives.html#operating-properties",
+    "href": "derivatives.html#operating-properties",
+    "title": "8  Derivatives",
+    "section": "8.4 Operating properties",
+    "text": "8.4 Operating properties\n\n\\(f(x) = k \\times g(x)\\), \\(f'(x) = k \\times g'(x)\\)  , \\(k = \\text{constante}\\)\n\\(f(x) = u(x) \\pm v(x)\\), \\(f'(x) = u'(x) \\pm v'(x)\\)\n\\(f(x) = u(x) \\times v(x)\\), \\(f'(x) = u'(x) \\times v(x) + u(x) \\times v'(x)\\)\n\\(f(x) = \\cfrac{u(x)}{v(x)}\\), \\(f'(x) = \\cfrac{u'(x) \\times v(x) - u(x) \\times v'(x)}{[v(x)]^{2}}\\)\n\\(f(x) = \\cfrac{1}{v}\\), \\(f'(x) = \\cfrac{v'}{v^{2}}\\)"
+  },
+  {
+    "objectID": "derivatives.html#special-functions-composta---regra-da-cadeia-exponencial-exponencial-geral",
+    "href": "derivatives.html#special-functions-composta---regra-da-cadeia-exponencial-exponencial-geral",
+    "title": "8  Derivatives",
+    "section": "8.5 Special functions (Composta - Regra da Cadeia, Exponencial, Exponencial Geral)",
+    "text": "8.5 Special functions (Composta - Regra da Cadeia, Exponencial, Exponencial Geral)\n\n\\(\\cfrac{d}{dx} f(g(x)) = f'(g(x)) \\times g'(x)\\)\n\\(f(x) = a^{x}\\), \\(f'(x) = a^{x} \\times \\ln a\\), \\(\\forall x \\in \\mathbb{R} \\mid a > 0\\) e \\(a \\neq 1\\)\n\\(f(x) = u(x)^{v(x)} \\implies f(x) = x^{x}\\) \\(\\ln f(x) = x \\times \\ln x\\), \\(\\log_{a} M^{\\alpha} = \\alpha \\times \\log_{a} M\\) \\(\\cfrac{1}{f(x)} \\times f'(x) = 1 \\times \\ln x + x \\times \\cfrac{1}{x}\\) \\(f'(x) = f(x) \\times [\\ln x +1] \\implies f'(x) = x^{x} \\times [\\ln x + 1]\\)"
+  },
+  {
+    "objectID": "derivatives.html#differential-of-a-function",
+    "href": "derivatives.html#differential-of-a-function",
+    "title": "8  Derivatives",
+    "section": "8.6 Differential of a function",
+    "text": "8.6 Differential of a function\n\\(df = f'(x_{0}) \\times \\Delta x\\), \\(df \\approx \\Delta f\\) para pequenos valores de \\(\\Delta x\\)."
+  },
+  {
+    "objectID": "derivatives.html#nd-3rd-order-derivatives",
+    "href": "derivatives.html#nd-3rd-order-derivatives",
+    "title": "8  Derivatives",
+    "section": "8.7 2nd, 3rd, … order derivatives",
+    "text": "8.7 2nd, 3rd, … order derivatives\n\\(f'(x) \\ f''(x) \\ f'''(x) \\ f^{(4)}(x)\\)"
+  },
+  {
+    "objectID": "notable-products.html",
+    "href": "notable-products.html",
+    "title": "2  Notable products",
+    "section": "",
+    "text": "Nothing here yet!"
+  }
+]
