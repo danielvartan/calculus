@@ -1,0 +1,73 @@
+# Trigonometry
+
+## Definitions and fundamental identities
+
+> Reference: @hass2018
+
+![](../images/hass_2018_other_1.png)
+
+* Sine: $\sin \theta = \cfrac{\text{opposite}}{\text{hypotenuse}} = \cfrac{y}{r} = \cfrac{1}{\csc \theta}$
+* Cosine: $\cos \theta = \cfrac{\text{adjacent}}{\text{hypotenuse}} = \cfrac{x}{r} = \cfrac{1}{\sec \theta}$
+* Tangent: $\tan \theta = \cfrac{\text{opposite}}{\text{adjacent}} = \cfrac{y}{x} = \cfrac{1}{\cot \theta}$
+* Cotangent: $\cot \theta = \cfrac{\text{adjacent}}{\text{opposite}} = \cfrac{x}{y} = \cfrac{1}{\tan \theta}$
+* Secant: $\sec \theta = \cfrac{\text{hypotenuse}}{\text{adjacent}} = \cfrac{r}{x} = \cfrac{1}{\cos \theta}$
+* Cosecant: $\csc \theta = \cfrac{\text{hypotenuse}}{\text{opposite}} = \cfrac{r}{y} = \cfrac{1}{\sin \theta}$
+
+## Identities
+
+> Reference: @hass2018
+
+* $\sin (- \theta) = - \sin \theta$
+* $\cos (- \theta) = \cos \theta$
+* $\tan (- \theta) = - \tan \theta$
+* $\cot (- \theta) = - \cot \theta$
+* $\csc (- \theta) = - \csc \theta$
+* $\sec (- \theta) = \sec \theta$
+* $\sin^{2} \theta + \cos^{2} \theta = 1$
+* $\sec^{2} \theta = 1 + \tan^{2} \theta$
+* $\csc^{2} \theta = 1 + \cot^{2} \theta$
+* $\sin 2 \theta = 2 \sin \theta \cos \theta$
+* $\cos 2 \theta = \cos^{2} \theta - \sin^{2} \theta$
+* $\cos^{2} \theta = \cfrac{1 + \cos 2 \theta}{2}$
+* $\sin^{2} \theta = \cfrac{1 - \cos 2 \theta}{2}$
+* $\sin(A + B) = \sin A \cos B + \cos A \sin B$
+* $\sin(A - B) = \sin A \cos B - \cos A \sin B$
+* $\cos(A + B) = \cos A \cos B + \sin A \sin B$
+* $\cos(A - B) = \cos A \cos B - \sin A \sin B$
+* $\tan (A + B) = \cfrac{\tan A + \tan B}{1 - \tan A \tan B}$
+* $\tan (A - B) = \cfrac{\tan A - \tan B}{1 + \tan A \tan B}$
+* $\sin (A - \cfrac{\pi}{2}) = - \cos A$
+* $\sin (A + \cfrac{\pi}{2}) = \cos A$
+* $\cos (A - \cfrac{\pi}{2}) = \sin A$
+* $\cos (A + \cfrac{\pi}{2}) = - \sin A$
+* $\sin A \sin B = \cfrac{1}{2} \cos (A - B) - \cfrac{1}{2} \cos (A + B)$
+* $\cos A \cos B = \cfrac{1}{2} \cos (A - B) + \cfrac{1}{2} \cos (A + B)$
+* $\sin A \cos B = \cfrac{1}{2} \sin (A - B) + \cfrac{1}{2} \sin (A + B)$
+* $\sin A + \sin B = 2 \sin \cfrac{1}{2} (A + B) \cos \cfrac{1}{2} (A - B)$
+* $\sin A - \sin B = 2 \cos \cfrac{1}{2} (A + B) \sin \cfrac{1}{2} (A - B)$
+* $\cos A + \cos B = 2 \cos \cfrac{1}{2} (A + B) \cos \cfrac{1}{2} (A - B)$
+* $\cos A - \cos B = - 2 \sin \cfrac{1}{2} (A + B) \sin \cfrac{1}{2} (A - B)$
+
+## Radian measure
+
+> Reference: @hass2018
+
+![](../images/hase_2018_trigonometric-functions_1.png)
+
+$\cfrac{s}{r} = \cfrac{\theta}{1} = 1 \ \ \ \text{or} \ \ \ \theta = \cfrac{s}{r} \ , \ \text{180}^{o} = \pi \ \text{radians}$
+
+The angles of two common triangles, in degrees and radians.
+
+![](../images/hase_2018_trigonometric-functions_2.png)
+
+![](../images/hase_2018_trigonometric-functions_3.png)
+
+![](../images/hase_2018_trigonometric-functions_4.png)
+
+![](../images/hase_2018_trigonometric-functions_5.png)
+
+![](../images/hase_2018_trigonometric-functions_6.png)
+
+![](../images/hase_2018_trigonometric-functions_7.png)
+
+![](../images/hase_2018_trigonometric-functions_8.png)

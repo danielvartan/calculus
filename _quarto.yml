@@ -11,28 +11,31 @@ book:
   sharing: [twitter]
   chapters:
     - index.qmd
-    - part: pre-calculus.qmd
+    - part: qmd/pre-calculus.qmd
       chapters: 
-        - numbers.qmd
-        - notable-products.qmd
-        - progressions.qmd
-        - logarithms.qmd
-        - trigonometry.qmd
-        - functions.qmd
-    - part: univariate-calculus.qmd
+        - qmd/zf-axioms.qmd
+        - qmd/numbers.qmd
+        - qmd/algebra.qmd
+        - qmd/progressions.qmd
+        - qmd/logarithms.qmd
+        - qmd/geometry.qmd
+        - qmd/trigonometry.qmd
+        - qmd/functions.qmd
+    - part: qmd/univariate-calculus.qmd
       chapters: 
-        - limits.qmd
-        - derivatives.qmd
-        - applications-of-derivatives.qmd
-        - integrals.qmd
-    - part: multivariate-calculus.qmd
+        - qmd/limits.qmd
+        - qmd/derivatives.qmd
+        - qmd/applications-of-derivatives.qmd
+        - qmd/integrals.qmd
+    - part: qmd/multivariate-calculus.qmd
       chapters: 
-        - n-dimensional-space.qmd
-        - two-variable-functions.qmd
-        - three-variable-functions.qmd
-        - matrices.qmd
-        - systems-of-equations.qmd
-    - references.qmd
+        - qmd/n-dimensional-space.qmd
+        - qmd/two-variable-functions.qmd
+        - qmd/three-variable-functions.qmd
+        - qmd/matrices.qmd
+        - qmd/systems-of-equations.qmd
+    - qmd/useful-resources.qmd
+    - qmd/references.qmd
 
 bibliography: references.bib
 

@@ -1,0 +1,70 @@
+# Algebra
+
+## Arithmetic operations
+
+> Reference: @hass2018
+
+* $a(b + c) = ab + ac$
+* $\cfrac{a}{b} + \cfrac{c}{d} = \cfrac{ad + bc}{bd}$
+* $\cfrac{a}{b} \times \cfrac{c}{d} = \cfrac{ac}{bd}$
+* $\cfrac{a / b}{c / d} = \cfrac{a}{b} \times \cfrac{d}{c}$
+
+## Laws of signs
+
+> Reference: @hass2018
+
+* $-(- a) = a$
+* $\cfrac{-a}{b} = - \cfrac{a}{b} = \cfrac{a}{-b}$
+
+## Zero
+
+> Reference: @hass2018
+
+Division by $0$ is not defined.
+
+* $\text{If} \ \ \ a \ne 0: \cfrac{0}{a}$
+* $a^{0} = 1$
+* $0^{a} = 0$
+* For any number $a$: $a \times 0 = 0 \times a = 0$
+
+## Laws of expoents
+
+> Reference: @hass2018
+
+`Incomplete`
+
+## The binominal theorem
+
+> Reference: @hass2018
+
+`Incomplete`
+
+## Factoring the difference of like integer powers, $n > 1$
+
+> Reference: @hass2018
+
+`Incomplete`
+
+### Special products
+
+* Square of a sum: $(a + b)^{2} = a^{2} + 2ab + b^{2}$
+* Square of a difference: $(a-b)^{2} = a^{2} - 2ab + b^{2}$
+* Square of 3 terms sum: $(a + b + c)^{2} = a^{2} + b^{2} + c^{2} + 2ab + 2ac + 2bc$
+* Cube of a sum: $(a+b)^3 = a^{3} + 3a^{2}b + 3ab^{2} + b^{3}$
+* Cube of a difference: $(a - b)^{3} = a^{3} - 3a^{2}b + 3ab^{2} - b^{3}$
+* Sum of cube: $a^{3} + b^{3} = (a + b)(a^{2} - ab + b^{2})$
+* Difference of cube: $a^{3} - b^{3} = (a - b)(a^{2} + ab + b^{2})$
+* Product of a sum: $(x + a)(x + b) = x^{2} + (a + b)x + ab$
+* Product of a sum and a difference: $(a + b)(a - b) = a^{2} - b^{2}$
+
+## Completing the square
+
+> Reference: @hass2018
+
+`Incomplete`
+
+## The quadratic formula
+
+> Reference: @hass2018
+
+`Incomplete`

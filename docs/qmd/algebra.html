@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Calculus: Formulas and Theorems - 3&nbsp; Algebra</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../qmd/progressions.html" rel="next">
+<link href="../qmd/numbers.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Algebra</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Calculus: Formulas and Theorems</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/danielvartan/calculus/" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://twitter.com/intent/tweet?url=|url|" title="Twitter" class="sidebar-tool px-1"><i class="bi bi-twitter"></i></a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../qmd/pre-calculus.html" class="sidebar-item-text sidebar-link">Pre-calculus</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/zf-axioms.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Zermelo–Fraenkel axioms</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/numbers.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Irrational numbers and natural constants</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/algebra.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Algebra</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/progressions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Progressions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/logarithms.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Logarithms</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/geometry.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Geometry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/trigonometry.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Trigonometry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Functions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../qmd/univariate-calculus.html" class="sidebar-item-text sidebar-link">Univariate calculus</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/limits.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Limits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/derivatives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/applications-of-derivatives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Applications of derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Integrals</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../qmd/multivariate-calculus.html" class="sidebar-item-text sidebar-link">Multivariate calculus</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/n-dimensional-space.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The n-dimensional space (<span class="math inline">\(\mathbb{R}^{n}\)</span>)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/two-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Two-variable functions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/three-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Functions of three or more variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/useful-resources.html" class="sidebar-item-text sidebar-link">Useful resources</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#arithmetic-operations" id="toc-arithmetic-operations" class="nav-link active" data-scroll-target="#arithmetic-operations"> <span class="header-section-number">3.1</span> Arithmetic operations</a></li>
+  <li><a href="#laws-of-signs" id="toc-laws-of-signs" class="nav-link" data-scroll-target="#laws-of-signs"> <span class="header-section-number">3.2</span> Laws of signs</a></li>
+  <li><a href="#zero" id="toc-zero" class="nav-link" data-scroll-target="#zero"> <span class="header-section-number">3.3</span> Zero</a></li>
+  <li><a href="#laws-of-expoents" id="toc-laws-of-expoents" class="nav-link" data-scroll-target="#laws-of-expoents"> <span class="header-section-number">3.4</span> Laws of expoents</a></li>
+  <li><a href="#the-binominal-theorem" id="toc-the-binominal-theorem" class="nav-link" data-scroll-target="#the-binominal-theorem"> <span class="header-section-number">3.5</span> The binominal theorem</a></li>
+  <li><a href="#factoring-the-difference-of-like-integer-powers-n-1" id="toc-factoring-the-difference-of-like-integer-powers-n-1" class="nav-link" data-scroll-target="#factoring-the-difference-of-like-integer-powers-n-1"> <span class="header-section-number">3.6</span> Factoring the difference of like integer powers, <span class="math inline">\(n &gt; 1\)</span></a>
+  <ul class="collapse">
+  <li><a href="#special-products" id="toc-special-products" class="nav-link" data-scroll-target="#special-products"> <span class="header-section-number">3.6.1</span> Special products</a></li>
+  </ul></li>
+  <li><a href="#completing-the-square" id="toc-completing-the-square" class="nav-link" data-scroll-target="#completing-the-square"> <span class="header-section-number">3.7</span> Completing the square</a></li>
+  <li><a href="#the-quadratic-formula" id="toc-the-quadratic-formula" class="nav-link" data-scroll-target="#the-quadratic-formula"> <span class="header-section-number">3.8</span> The quadratic formula</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Algebra</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="arithmetic-operations" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="arithmetic-operations"><span class="header-section-number">3.1</span> Arithmetic operations</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+<ul>
+<li><span class="math inline">\(a(b + c) = ab + ac\)</span></li>
+<li><span class="math inline">\(\cfrac{a}{b} + \cfrac{c}{d} = \cfrac{ad + bc}{bd}\)</span></li>
+<li><span class="math inline">\(\cfrac{a}{b} \times \cfrac{c}{d} = \cfrac{ac}{bd}\)</span></li>
+<li><span class="math inline">\(\cfrac{a / b}{c / d} = \cfrac{a}{b} \times \cfrac{d}{c}\)</span></li>
+</ul>
+</section>
+<section id="laws-of-signs" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="laws-of-signs"><span class="header-section-number">3.2</span> Laws of signs</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+<ul>
+<li><span class="math inline">\(-(- a) = a\)</span></li>
+<li><span class="math inline">\(\cfrac{-a}{b} = - \cfrac{a}{b} = \cfrac{a}{-b}\)</span></li>
+</ul>
+</section>
+<section id="zero" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="zero"><span class="header-section-number">3.3</span> Zero</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+<p>Division by <span class="math inline">\(0\)</span> is not defined.</p>
+<ul>
+<li><span class="math inline">\(\text{If} \ \ \ a \ne 0: \cfrac{0}{a}\)</span></li>
+<li><span class="math inline">\(a^{0} = 1\)</span></li>
+<li><span class="math inline">\(0^{a} = 0\)</span></li>
+<li>For any number <span class="math inline">\(a\)</span>: <span class="math inline">\(a \times 0 = 0 \times a = 0\)</span></li>
+</ul>
+</section>
+<section id="laws-of-expoents" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="laws-of-expoents"><span class="header-section-number">3.4</span> Laws of expoents</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+<p><code>Incomplete</code></p>
+</section>
+<section id="the-binominal-theorem" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="the-binominal-theorem"><span class="header-section-number">3.5</span> The binominal theorem</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+<p><code>Incomplete</code></p>
+</section>
+<section id="factoring-the-difference-of-like-integer-powers-n-1" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="factoring-the-difference-of-like-integer-powers-n-1"><span class="header-section-number">3.6</span> Factoring the difference of like integer powers, <span class="math inline">\(n &gt; 1\)</span></h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+<p><code>Incomplete</code></p>
+<section id="special-products" class="level3" data-number="3.6.1">
+<h3 data-number="3.6.1" class="anchored" data-anchor-id="special-products"><span class="header-section-number">3.6.1</span> Special products</h3>
+<ul>
+<li>Square of a sum: <span class="math inline">\((a + b)^{2} = a^{2} + 2ab + b^{2}\)</span></li>
+<li>Square of a difference: <span class="math inline">\((a-b)^{2} = a^{2} - 2ab + b^{2}\)</span></li>
+<li>Square of 3 terms sum: <span class="math inline">\((a + b + c)^{2} = a^{2} + b^{2} + c^{2} + 2ab + 2ac + 2bc\)</span></li>
+<li>Cube of a sum: <span class="math inline">\((a+b)^3 = a^{3} + 3a^{2}b + 3ab^{2} + b^{3}\)</span></li>
+<li>Cube of a difference: <span class="math inline">\((a - b)^{3} = a^{3} - 3a^{2}b + 3ab^{2} - b^{3}\)</span></li>
+<li>Sum of cube: <span class="math inline">\(a^{3} + b^{3} = (a + b)(a^{2} - ab + b^{2})\)</span></li>
+<li>Difference of cube: <span class="math inline">\(a^{3} - b^{3} = (a - b)(a^{2} + ab + b^{2})\)</span></li>
+<li>Product of a sum: <span class="math inline">\((x + a)(x + b) = x^{2} + (a + b)x + ab\)</span></li>
+<li>Product of a sum and a difference: <span class="math inline">\((a + b)(a - b) = a^{2} - b^{2}\)</span></li>
+</ul>
+</section>
+</section>
+<section id="completing-the-square" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="completing-the-square"><span class="header-section-number">3.7</span> Completing the square</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+<p><code>Incomplete</code></p>
+</section>
+<section id="the-quadratic-formula" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="the-quadratic-formula"><span class="header-section-number">3.8</span> The quadratic formula</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+<p><code>Incomplete</code></p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-hass2018" class="csl-entry" role="doc-biblioentry">
+Hass, Joel, Christopher Heil, and Maurice D. Weir. 2018. <em>Thomas’ Calculus</em>. 14th ed. Pearson.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../qmd/numbers.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Irrational numbers and natural constants</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../qmd/progressions.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Progressions</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Calculus: Formulas and Theorems - 9&nbsp; Limits</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../qmd/derivatives.html" rel="next">
+<link href="../qmd/univariate-calculus.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Limits</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Calculus: Formulas and Theorems</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/danielvartan/calculus/" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
+    <a href="https://twitter.com/intent/tweet?url=|url|" title="Twitter" class="sidebar-tool px-1"><i class="bi bi-twitter"></i></a>
+</div>
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../qmd/pre-calculus.html" class="sidebar-item-text sidebar-link">Pre-calculus</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/zf-axioms.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Zermelo–Fraenkel axioms</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/numbers.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Irrational numbers and natural constants</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/algebra.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Algebra</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/progressions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Progressions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/logarithms.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Logarithms</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/geometry.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Geometry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/trigonometry.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Trigonometry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Functions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../qmd/univariate-calculus.html" class="sidebar-item-text sidebar-link">Univariate calculus</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/limits.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Limits</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/derivatives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/applications-of-derivatives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Applications of derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Integrals</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../qmd/multivariate-calculus.html" class="sidebar-item-text sidebar-link">Multivariate calculus</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/n-dimensional-space.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The n-dimensional space (<span class="math inline">\(\mathbb{R}^{n}\)</span>)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/two-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Two-variable functions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/three-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Functions of three or more variables</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/useful-resources.html" class="sidebar-item-text sidebar-link">Useful resources</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/references.html" class="sidebar-item-text sidebar-link">References</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#continuity-at-one-point" id="toc-continuity-at-one-point" class="nav-link active" data-scroll-target="#continuity-at-one-point"> <span class="header-section-number">9.1</span> Continuity at one point</a></li>
+  <li><a href="#general-laws" id="toc-general-laws" class="nav-link" data-scroll-target="#general-laws"> <span class="header-section-number">9.2</span> General laws</a></li>
+  <li><a href="#infinite-limit-of-rational-functions" id="toc-infinite-limit-of-rational-functions" class="nav-link" data-scroll-target="#infinite-limit-of-rational-functions"> <span class="header-section-number">9.3</span> Infinite limit of rational functions</a></li>
+  <li><a href="#squeeze-theorem-or-sandwich-theorem" id="toc-squeeze-theorem-or-sandwich-theorem" class="nav-link" data-scroll-target="#squeeze-theorem-or-sandwich-theorem"> <span class="header-section-number">9.4</span> Squeeze theorem (or sandwich theorem)</a></li>
+  <li><a href="#the-fundamental-limit" id="toc-the-fundamental-limit" class="nav-link" data-scroll-target="#the-fundamental-limit"> <span class="header-section-number">9.5</span> The fundamental limit</a></li>
+  <li><a href="#other-properties" id="toc-other-properties" class="nav-link" data-scroll-target="#other-properties"> <span class="header-section-number">9.6</span> Other properties</a></li>
+  <li><a href="#the-lhôpitals-rule" id="toc-the-lhôpitals-rule" class="nav-link" data-scroll-target="#the-lhôpitals-rule"> <span class="header-section-number">9.7</span> The l’Hôpital’s rule</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Limits</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="continuity-at-one-point" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="continuity-at-one-point"><span class="header-section-number">9.1</span> Continuity at one point</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+<p>If <span class="math inline">\(P(x)\)</span> is continuous at <span class="math inline">\(x = c\)</span>, i.e., <span class="math inline">\(\lim \limits_{x \to c^{-}} f(x) = \lim \limits_{x \to c^{+}} f(x)\)</span>, then <span class="math inline">\(\lim \limits_{x \to c} f(x) = f(c)\)</span>.</p>
+</section>
+<section id="general-laws" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="general-laws"><span class="header-section-number">9.2</span> General laws</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+<p>If <span class="math inline">\(L\)</span>, <span class="math inline">\(M\)</span>, <span class="math inline">\(c\)</span>, and <span class="math inline">\(k\)</span> are real numbers and</p>
+<p><span class="math inline">\(\lim \limits_{x \to c} f(x) = L\)</span> and <span class="math inline">\(\lim \limits_{x \to c} g(x) = M\)</span>, then</p>
+<ul>
+<li><p>Sum rule: <span class="math inline">\(\lim \limits_{x \to c} [f(x) + g(x)] = L + M = \lim \limits_{x \to c} f(x) + \lim \limits_{x \to c} g(x)\)</span></p>
+<p>Example: <span class="math inline">\(\lim \limits_{x \to 1} [x^{2} + 3x^{3}] = \lim \limits_{x \to 1} x^{2} + \lim \limits_{x \to 1} 3x^{3} = 1 + 3 = 4\)</span></p></li>
+<li><p>Difference rule: <span class="math inline">\(\lim \limits_{x \to c} [f(x) - g(x)] = L - M = \lim \limits_{x \to c} f(x) - \lim \limits_{x \to c} g(x)\)</span></p></li>
+<li><p>Product rule: <span class="math inline">\(\lim \limits_{x \to c} [f(x) \times g(x)] = L \times M = \lim \limits_{x \to c} f(x) \times \lim \limits_{x \to c} g(x)\)</span></p></li>
+<li><p>Constant multiple rule: <span class="math inline">\(\lim \limits_{x \to c} (k \times f(x)) = k \times L = k \times \lim \limits_{x \to c} f(x)\)</span></p></li>
+<li><p>Quotient rule: <span class="math inline">\(\lim \limits_{x \to c} \cfrac{f(x)}{g(x)} = \cfrac{L}{M} = \cfrac{\lim \limits_{x \to c} f(x)}{\lim \limits_{x \to c} g(x)}\)</span>, <span class="math inline">\(M \neq 0\)</span>, <span class="math inline">\(\lim \limits_{x \to c} g(x) \neq 0\)</span></p></li>
+</ul>
+</section>
+<section id="infinite-limit-of-rational-functions" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="infinite-limit-of-rational-functions"><span class="header-section-number">9.3</span> Infinite limit of rational functions</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+</blockquote>
+<p><span class="math display">\[\lim \limits_{x \pm \infty} \cfrac{P_{n}(x)}{Q_{m}(x)} = \lim \limits_{x \pm \infty} \cfrac{a_{n}x^{n} + a_{n - 1}x^{n - 1} \cdots + a_{1}x + a_{0}}{b_{m}x^{m} + b_{m - 1}x^{m - 1} \cdots + b_{1}x + b_{0}} = \lim \limits_{x \pm \infty} \cfrac{x^{n} (a_{n} + \frac{a_{n - 1}}{x} \cdots + \frac{a_{1}}{x^{n - 1}} + \frac{a_{0}}{x^{n}})}{x^{m} (b_{m} + \frac{b_{m - 1}}{x} \cdots + \frac{b_{1}}{x^{m - 1}} + \frac{b_{0}}{x^{m}})}\]</span></p>
+<ul>
+<li><p><span class="math inline">\(n = m\)</span>: in this case, the largest term of the numerator (<span class="math inline">\(a_{n}x^{n}\)</span>) is of the same order of magnitude with the largest term of the denominator (<span class="math inline">\(b_{m}x^{m} = b_{n}x^{n}\)</span>), and the limit converges to <span class="math inline">\(\cfrac{a_{n}}{b_n}\)</span>.</p></li>
+<li><p><span class="math inline">\(n &lt; m\)</span>: n this case, the denominator is much larger than the numerator, and the limit converges to zero.</p></li>
+<li><p><span class="math inline">\(n &gt; m\)</span>: in this case, one should analyze the sign of the dominant term of the limit, which is <span class="math inline">\(\cfrac{a_{n}}{b_m} x^{n - m}\)</span>. If <span class="math inline">\(\cfrac{a_{n}}{b_m} x^{n - m} &gt; 0\)</span> when <span class="math inline">\(x \to \pm \infty\)</span>, then <span class="math inline">\(\lim \limits_{x \pm \infty} \cfrac{P_{n}(x)}{Q_{m}(x)} \to \infty\)</span>. On the other hand, if <span class="math inline">\(\cfrac{a_{n}}{b_m} x^{n - m} &lt; 0\)</span>, when <span class="math inline">\(x \to \pm \infty\)</span>, then <span class="math inline">\(\lim \limits_{x \pm \infty} \cfrac{P_{n}(x)}{Q_{m}(x)} \to - \infty\)</span></p></li>
+</ul>
+</section>
+<section id="squeeze-theorem-or-sandwich-theorem" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="squeeze-theorem-or-sandwich-theorem"><span class="header-section-number">9.4</span> Squeeze theorem (or sandwich theorem)</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+</blockquote>
+<p>For an interval <span class="math inline">\(I \subset \mathbb{R}\)</span>, assume that <span class="math inline">\(g(x) \leq f(x) \leq h(x)\)</span> with <span class="math inline">\(x \in I\)</span>. Given <span class="math inline">\(x_{0} \in I\)</span>, if</p>
+<p><span class="math display">\[\lim \limits_{x \to x_{0}} g(x) = \lim \limits_{x \to x_{0}} h(x) = L \ \text{, then} \ \lim \limits_{x \to x_{0}} f(x) = L\]</span>.</p>
+<p><img src="../images/hase_lecture_1_figure_3.png" class="img-fluid"></p>
+</section>
+<section id="the-fundamental-limit" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="the-fundamental-limit"><span class="header-section-number">9.5</span> The fundamental limit</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+</blockquote>
+<p><img src="../images/hase_lecture_1_figure_4.png" class="img-fluid"></p>
+<p>Denote by <span class="math inline">\(S_{\triangle OPQ}\)</span>, <span class="math inline">\(S_{\triangle OPR}\)</span>, and <span class="math inline">\(S_{\sector OPQ}\)</span>, respectively, the areas of the triangles <span class="math inline">\(OPQ\)</span>, <span class="math inline">\(OPR\)</span> and the circular section <span class="math inline">\(OPQ\)</span>, as in figure 4. Let <span class="math inline">\(r\)</span> be the radius of the disk. It is straightforward that</p>
+<p><span class="math display">\[S_{\triangle OPQ} \leq S_{\sector OPQ} \leq S_{\triangle OPR}\]</span></p>
+<p>Since <span class="math inline">\(S_{\triangle OPQ} = \cfrac{r^{2} \sin x}{2}\)</span>, <span class="math inline">\(S_{\sector OPQ} = \cfrac{r^{2} x}{2}\)</span>, and <span class="math inline">\(S_{\triangle OPR} = \cfrac{r^{2} \tan x}{2}\)</span>, the above inequality implies</p>
+<p><span class="math display">\[\sin x \leq x \leq \tan x \ \ \ \ \ \text{or} \ \ \ \ \ \cos x \leq \cfrac{\sin x}{x} \leq 1\]</span></p>
+<p>Therefore, since <span class="math inline">\(\lim \limits_{x \to 0} \cos x = 1\)</span> from the squeeze theorem, it follows that</p>
+<p><span class="math display">\[\lim \limits_{x \to 0} \cfrac{\sin x}{x} = 1\]</span></p>
+<p>One should be aware that <strong>this fundamental limit is valid when the angle <span class="math inline">\(x\)</span> is measured in radians</strong>. If <span class="math inline">\(x\)</span> is measured in degree, one would have <span class="math inline">\(S_{\sector OPQ} = \cfrac{r^{2} x}{2} \cfrac{\pi}{180}\)</span>, which would have lead to <span class="math inline">\(\lim \limits_{x \to 0} \cfrac{\sin x}{x} = \cfrac{\pi}{180}\)</span>.</p>
+</section>
+<section id="other-properties" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="other-properties"><span class="header-section-number">9.6</span> Other properties</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="morettin2003">Morettin, Hazzan, and Oliveira Bussab (<a href="references.html#ref-morettin2003" role="doc-biblioref">2003</a>)</span> | <span class="citation" data-cites="somatematica">Só Matemática (<a href="references.html#ref-somatematica" role="doc-biblioref">n.d.</a>)</span> | <span class="citation" data-cites="ventura">Ventura (<a href="references.html#ref-ventura" role="doc-biblioref">n.d.</a>)</span></p>
+</blockquote>
+<ul>
+<li><p><span class="math inline">\(\lim \limits_{x \to \pi} [3x^{3} \times \cos x] = \lim \limits_{x \to \pi} 3x^{3} \times \lim \limits_{x \to \pi} \cos x = 3\pi ^{3} \times cos \pi = 3 \pi ^{3} \times (-1) = - 3 \pi ^{3}\)</span></p></li>
+<li><p><span class="math inline">\(\lim \limits_{x \to \pi} [3x^{3} \times \cos x] = \lim \limits_{x \to \pi} 3x^{3} \times \lim \limits_{x \to \pi} \cos x = 3\pi ^{3} \times cos \pi = 3 \pi ^{3} \times (-1) = - 3 \pi ^{3}\)</span></p>
+<p>Example: <span class="math inline">\(\lim \limits_{x \to 0} \cfrac{\cos x}{x^{2} + 1} = \cfrac{\lim \limits_{x \to 0} \cos x}{\lim \limits_{x \to 0} x^{2} + 1} = \cfrac{\cos 0}{0^{2} + 1} = \cfrac{1}{1} = 1\)</span></p></li>
+<li><p><span class="math inline">\(\lim \limits_{x \to a} f(x)^{n} = \left( \lim \limits_{x \to a} f(x) \right) ^{n}\)</span>, desde que <span class="math inline">\(n \in \mathbb{N}^{*}\)</span></p>
+<p>Example: <span class="math inline">\(\lim \limits_{x \to 1} (x^{2} + 3)^{2} = \left[ \lim \limits_{x \to 1} (x^{2} + 3)^{2} \right] = (1 + 3)^{2} = 16\)</span></p></li>
+<li><p><span class="math inline">\(\lim \limits_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{\lim \limits_{x \to a} f(x)}\)</span>, desde que <span class="math inline">\(n \in \mathbb{N}^{*}\)</span> e <span class="math inline">\(f(x) &gt; 0\)</span> (se <span class="math inline">\(f(x) \leq 0\)</span> <span class="math inline">\(n\)</span> é ímpar)</p></li>
+<li><p><span class="math inline">\(\lim \limits_{x \to 2} \sqrt{x^{3} + x^{2} - 1} = \sqrt{\lim \limits_{x \to 2} x^{3} + x^{2} - 1} = \sqrt{2^{3} + 2^{2} - 1} = \sqrt{11}\)</span></p></li>
+<li><p><span class="math inline">\(\lim \limits_{x \to a} (\ln f(x)) = \ln \left[ \lim \limits_{x \to a} f(x) \right]\)</span>, desde que <span class="math inline">\(\lim \limits_{x \to a} f(x) &gt; 0\)</span></p>
+<p>Example: <span class="math inline">\(\lim \limits_{x \to e} (\ln x^{2}) = \ln \left[ \lim \limits_{x \to e} x^{2} \right] = \ln e^{2} = 2 \ln e = 2 \times 1 = 2\)</span></p></li>
+<li><p><span class="math inline">\(\lim \limits_{x \to a} \sin (f(x)) = \sin \left( \lim \limits_{x \to a} f(x) \right)\)</span></p>
+<p>Example: <span class="math inline">\(\lim \limits_{x \to 1} \sin (x^{2} + 3x) = \sin \left[ \lim \limits_{x \to 1} (x^{2} +3x) \right] = \sin 4\)</span></p></li>
+<li><p><span class="math inline">\(\lim \limits_{x \to a} e^{f(x)} = e^{\lim \limits_{x \to a} f(x)}\)</span></p>
+<p>Example: <span class="math inline">\(\lim \limits_{x \to 1} e^{x^{2} + 3x} = e^{\lim \limits_{x \to 1} x^{2} +3x} = e^{4}\)</span></p></li>
+</ul>
+</section>
+<section id="the-lhôpitals-rule" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="the-lhôpitals-rule"><span class="header-section-number">9.7</span> The l’Hôpital’s rule</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+</blockquote>
+<p>Theorem: Let <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> be two differentiable functions on an open interval <span class="math inline">\(I\)</span> and let <span class="math inline">\(\lim \limits_{x \to a} f(x) = \lim \limits_{x \to a} g(x) = \pm \infty\)</span> or <span class="math inline">\(0\)</span> (here, <span class="math inline">\(a \in \mathbb{R} \cup \{+ \infty, -\infty\}\)</span>, and <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> need not be defined on <span class="math inline">\(a\)</span>). Furthermore, if <span class="math inline">\(g′(x) \ne 0\)</span> at <span class="math inline">\(I ∖ \{a\}\)</span> and <span class="math inline">\(\lim \limits_{x \to a} \cfrac{f′(x)}{g′(x)}\)</span> exists, then</p>
+<p><span class="math display">\[\lim \limits_{x \to a} \cfrac{f(x)}{g(x)} = \lim \limits_{x \to a} \cfrac{f′(x)}{g′(x)}\]</span></p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-hase2022" class="csl-entry" role="doc-biblioentry">
+Hase, Masayuki Oka. 2022. <span>“Métodos Matemáticos e de Computação 1.”</span>
+</div>
+<div id="ref-hass2018" class="csl-entry" role="doc-biblioentry">
+Hass, Joel, Christopher Heil, and Maurice D. Weir. 2018. <em>Thomas’ Calculus</em>. 14th ed. Pearson.
+</div>
+<div id="ref-morettin2003" class="csl-entry" role="doc-biblioentry">
+Morettin, Pedro Alberto, Samuel Hazzan, and Wilton de Oliveira Bussab. 2003. <em>Cálculo: Funções de Uma e Várias Variáveis</em>. Saraiva.
+</div>
+<div id="ref-somatematica" class="csl-entry" role="doc-biblioentry">
+Só Matemática. n.d. <a href="http://www.somatematica.com.br/" class="uri">http://www.somatematica.com.br/</a>.
+</div>
+<div id="ref-ventura" class="csl-entry" role="doc-biblioentry">
+Ventura, Marcelo. n.d.<span>“”</span>
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../qmd/univariate-calculus.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Univariate calculus</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../qmd/derivatives.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Derivatives</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
