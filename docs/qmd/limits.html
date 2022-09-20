@@ -251,13 +251,15 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#continuity-at-one-point" id="toc-continuity-at-one-point" class="nav-link active" data-scroll-target="#continuity-at-one-point"> <span class="header-section-number">9.1</span> Continuity at one point</a></li>
-  <li><a href="#general-laws" id="toc-general-laws" class="nav-link" data-scroll-target="#general-laws"> <span class="header-section-number">9.2</span> General laws</a></li>
-  <li><a href="#infinite-limit-of-rational-functions" id="toc-infinite-limit-of-rational-functions" class="nav-link" data-scroll-target="#infinite-limit-of-rational-functions"> <span class="header-section-number">9.3</span> Infinite limit of rational functions</a></li>
-  <li><a href="#squeeze-theorem-or-sandwich-theorem" id="toc-squeeze-theorem-or-sandwich-theorem" class="nav-link" data-scroll-target="#squeeze-theorem-or-sandwich-theorem"> <span class="header-section-number">9.4</span> Squeeze theorem (or sandwich theorem)</a></li>
-  <li><a href="#the-fundamental-limit" id="toc-the-fundamental-limit" class="nav-link" data-scroll-target="#the-fundamental-limit"> <span class="header-section-number">9.5</span> The fundamental limit</a></li>
-  <li><a href="#other-properties" id="toc-other-properties" class="nav-link" data-scroll-target="#other-properties"> <span class="header-section-number">9.6</span> Other properties</a></li>
-  <li><a href="#the-lhôpitals-rule" id="toc-the-lhôpitals-rule" class="nav-link" data-scroll-target="#the-lhôpitals-rule"> <span class="header-section-number">9.7</span> The l’Hôpital’s rule</a></li>
+  <li><a href="#continuity" id="toc-continuity" class="nav-link active" data-scroll-target="#continuity"> <span class="header-section-number">9.1</span> Continuity</a></li>
+  <li><a href="#inequalities" id="toc-inequalities" class="nav-link" data-scroll-target="#inequalities"> <span class="header-section-number">9.2</span> Inequalities</a></li>
+  <li><a href="#general-laws" id="toc-general-laws" class="nav-link" data-scroll-target="#general-laws"> <span class="header-section-number">9.3</span> General laws</a></li>
+  <li><a href="#infinite-limit-of-rational-functions" id="toc-infinite-limit-of-rational-functions" class="nav-link" data-scroll-target="#infinite-limit-of-rational-functions"> <span class="header-section-number">9.4</span> Infinite limit of rational functions</a></li>
+  <li><a href="#squeeze-theorem-or-sandwich-theorem" id="toc-squeeze-theorem-or-sandwich-theorem" class="nav-link" data-scroll-target="#squeeze-theorem-or-sandwich-theorem"> <span class="header-section-number">9.5</span> Squeeze theorem (or sandwich theorem)</a></li>
+  <li><a href="#the-fundamental-limit" id="toc-the-fundamental-limit" class="nav-link" data-scroll-target="#the-fundamental-limit"> <span class="header-section-number">9.6</span> The fundamental limit</a></li>
+  <li><a href="#special-formulas" id="toc-special-formulas" class="nav-link" data-scroll-target="#special-formulas"> <span class="header-section-number">9.7</span> Special formulas</a></li>
+  <li><a href="#other-properties" id="toc-other-properties" class="nav-link" data-scroll-target="#other-properties"> <span class="header-section-number">9.8</span> Other properties</a></li>
+  <li><a href="#the-lhôpitals-rule" id="toc-the-lhôpitals-rule" class="nav-link" data-scroll-target="#the-lhôpitals-rule"> <span class="header-section-number">9.9</span> The l’Hôpital’s rule</a></li>
   </ul>
 </nav>
     </div>
@@ -280,15 +282,24 @@ div.csl-indent {
 
 </header>
 
-<section id="continuity-at-one-point" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="continuity-at-one-point"><span class="header-section-number">9.1</span> Continuity at one point</h2>
+<section id="continuity" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="continuity"><span class="header-section-number">9.1</span> Continuity</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+</blockquote>
+<p>If <span class="math inline">\(P(x)\)</span> is continuous at <span class="math inline">\(x = c\)</span>, i.e., <span class="math inline">\(\lim \limits_{x \to c^{-}} f(x) = \lim \limits_{x \to c^{+}} f(x)\)</span>, then</p>
+<p><span class="math display">\[\lim \limits_{x \to c} f(x) = f(c)\]</span></p>
+</section>
+<section id="inequalities" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="inequalities"><span class="header-section-number">9.2</span> Inequalities</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
 </blockquote>
-<p>If <span class="math inline">\(P(x)\)</span> is continuous at <span class="math inline">\(x = c\)</span>, i.e., <span class="math inline">\(\lim \limits_{x \to c^{-}} f(x) = \lim \limits_{x \to c^{+}} f(x)\)</span>, then <span class="math inline">\(\lim \limits_{x \to c} f(x) = f(c)\)</span>.</p>
+<p>If <span class="math inline">\(f(x) \leq g(x)\)</span> in an open interval containing <span class="math inline">\(c\)</span>, except possibly at <span class="math inline">\(x = c\)</span>, and both limits exists, then:</p>
+<p><span class="math display">\[\lim \limits_{x \to c} f(x) \leq \lim \limits_{x \to c} g(x)\]</span></p>
 </section>
-<section id="general-laws" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="general-laws"><span class="header-section-number">9.2</span> General laws</h2>
+<section id="general-laws" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="general-laws"><span class="header-section-number">9.3</span> General laws</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
 </blockquote>
@@ -303,8 +314,8 @@ div.csl-indent {
 <li><p>Quotient rule: <span class="math inline">\(\lim \limits_{x \to c} \cfrac{f(x)}{g(x)} = \cfrac{L}{M} = \cfrac{\lim \limits_{x \to c} f(x)}{\lim \limits_{x \to c} g(x)}\)</span>, <span class="math inline">\(M \neq 0\)</span>, <span class="math inline">\(\lim \limits_{x \to c} g(x) \neq 0\)</span></p></li>
 </ul>
 </section>
-<section id="infinite-limit-of-rational-functions" class="level2" data-number="9.3">
-<h2 data-number="9.3" class="anchored" data-anchor-id="infinite-limit-of-rational-functions"><span class="header-section-number">9.3</span> Infinite limit of rational functions</h2>
+<section id="infinite-limit-of-rational-functions" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="infinite-limit-of-rational-functions"><span class="header-section-number">9.4</span> Infinite limit of rational functions</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
 </blockquote>
@@ -315,8 +326,8 @@ div.csl-indent {
 <li><p><span class="math inline">\(n &gt; m\)</span>: in this case, one should analyze the sign of the dominant term of the limit, which is <span class="math inline">\(\cfrac{a_{n}}{b_m} x^{n - m}\)</span>. If <span class="math inline">\(\cfrac{a_{n}}{b_m} x^{n - m} &gt; 0\)</span> when <span class="math inline">\(x \to \pm \infty\)</span>, then <span class="math inline">\(\lim \limits_{x \pm \infty} \cfrac{P_{n}(x)}{Q_{m}(x)} \to \infty\)</span>. On the other hand, if <span class="math inline">\(\cfrac{a_{n}}{b_m} x^{n - m} &lt; 0\)</span>, when <span class="math inline">\(x \to \pm \infty\)</span>, then <span class="math inline">\(\lim \limits_{x \pm \infty} \cfrac{P_{n}(x)}{Q_{m}(x)} \to - \infty\)</span></p></li>
 </ul>
 </section>
-<section id="squeeze-theorem-or-sandwich-theorem" class="level2" data-number="9.4">
-<h2 data-number="9.4" class="anchored" data-anchor-id="squeeze-theorem-or-sandwich-theorem"><span class="header-section-number">9.4</span> Squeeze theorem (or sandwich theorem)</h2>
+<section id="squeeze-theorem-or-sandwich-theorem" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="squeeze-theorem-or-sandwich-theorem"><span class="header-section-number">9.5</span> Squeeze theorem (or sandwich theorem)</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
 </blockquote>
@@ -324,8 +335,8 @@ div.csl-indent {
 <p><span class="math display">\[\lim \limits_{x \to x_{0}} g(x) = \lim \limits_{x \to x_{0}} h(x) = L \ \text{, then} \ \lim \limits_{x \to x_{0}} f(x) = L\]</span>.</p>
 <p><img src="../images/hase_lecture_1_figure_3.png" class="img-fluid"></p>
 </section>
-<section id="the-fundamental-limit" class="level2" data-number="9.5">
-<h2 data-number="9.5" class="anchored" data-anchor-id="the-fundamental-limit"><span class="header-section-number">9.5</span> The fundamental limit</h2>
+<section id="the-fundamental-limit" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="the-fundamental-limit"><span class="header-section-number">9.6</span> The fundamental limit</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
 </blockquote>
@@ -338,8 +349,19 @@ div.csl-indent {
 <p><span class="math display">\[\lim \limits_{x \to 0} \cfrac{\sin x}{x} = 1\]</span></p>
 <p>One should be aware that <strong>this fundamental limit is valid when the angle <span class="math inline">\(x\)</span> is measured in radians</strong>. If <span class="math inline">\(x\)</span> is measured in degree, one would have <span class="math inline">\(S_{\sector OPQ} = \cfrac{r^{2} x}{2} \cfrac{\pi}{180}\)</span>, which would have lead to <span class="math inline">\(\lim \limits_{x \to 0} \cfrac{\sin x}{x} = \cfrac{\pi}{180}\)</span>.</p>
 </section>
-<section id="other-properties" class="level2" data-number="9.6">
-<h2 data-number="9.6" class="anchored" data-anchor-id="other-properties"><span class="header-section-number">9.6</span> Other properties</h2>
+<section id="special-formulas" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="special-formulas"><span class="header-section-number">9.7</span> Special formulas</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+</blockquote>
+<ul>
+<li><p>If <span class="math inline">\(P(x) = a_{n}x^{n} + a_{n - 1}x^{n - 1} + \cdots + a_{0}\)</span>, then <span class="math inline">\(\lim \limits_{x \to c} P(x) = P(c) = a_{n}c^{n} + a_{n - 1}c^{n - 1} + \cdots + a_{0}\)</span></p></li>
+<li><p>If <span class="math inline">\(P(x)\)</span> and <span class="math inline">\(Q(x)\)</span> are polynomials and <span class="math inline">\(Q(c) \neq 0\)</span>, then <span class="math inline">\(\lim \limits_{x \to c} \cfrac{P(x)}{Q(x)} = \cfrac{P(c)}{Q(c)}\)</span></p></li>
+<li><p>If <span class="math inline">\(f(x)\)</span> is continuous at <span class="math inline">\(x = c\)</span>, then <span class="math inline">\(\lim \limits_{x \to c} f(x) = f(c)\)</span> , <span class="math inline">\(\lim \limits_{x \to c} \cfrac{\sin x}{x} = 1\)</span> , and <span class="math inline">\(\lim \limits_{x \to c} \cfrac{1 - \cos x}{x} = 0\)</span></p></li>
+</ul>
+</section>
+<section id="other-properties" class="level2" data-number="9.8">
+<h2 data-number="9.8" class="anchored" data-anchor-id="other-properties"><span class="header-section-number">9.8</span> Other properties</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="morettin2003">Morettin, Hazzan, and Oliveira Bussab (<a href="references.html#ref-morettin2003" role="doc-biblioref">2003</a>)</span> | <span class="citation" data-cites="somatematica">Só Matemática (<a href="references.html#ref-somatematica" role="doc-biblioref">n.d.</a>)</span> | <span class="citation" data-cites="ventura">Ventura (<a href="references.html#ref-ventura" role="doc-biblioref">n.d.</a>)</span></p>
 </blockquote>
@@ -359,8 +381,8 @@ div.csl-indent {
 <p>Example: <span class="math inline">\(\lim \limits_{x \to 1} e^{x^{2} + 3x} = e^{\lim \limits_{x \to 1} x^{2} +3x} = e^{4}\)</span></p></li>
 </ul>
 </section>
-<section id="the-lhôpitals-rule" class="level2" data-number="9.7">
-<h2 data-number="9.7" class="anchored" data-anchor-id="the-lhôpitals-rule"><span class="header-section-number">9.7</span> The l’Hôpital’s rule</h2>
+<section id="the-lhôpitals-rule" class="level2" data-number="9.9">
+<h2 data-number="9.9" class="anchored" data-anchor-id="the-lhôpitals-rule"><span class="header-section-number">9.9</span> The l’Hôpital’s rule</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
 </blockquote>

@@ -53,35 +53,35 @@
     "href": "qmd/algebra.html#laws-of-expoents",
     "title": "3  Algebra",
     "section": "3.4 Laws of expoents",
-    "text": "3.4 Laws of expoents\n\nReference: Hass, Heil, and Weir (2018)\n\nIncomplete"
+    "text": "3.4 Laws of expoents\n\nReference: Hass, Heil, and Weir (2018)\n\n\n\\(a^{m} a^{n} = a^{m + n}\\)\n\\((ab)^{m} = a^{m} b^{m}\\)\n\\((a^{m})^{n} = a^{mn}\\)\n\\(a^{m / n} = \\sqrt[n]{a^{m}} = (\\sqrt[n]{a})^{m}\\)"
   },
   {
     "objectID": "qmd/algebra.html#the-binominal-theorem",
     "href": "qmd/algebra.html#the-binominal-theorem",
     "title": "3  Algebra",
     "section": "3.5 The binominal theorem",
-    "text": "3.5 The binominal theorem\n\nReference: Hass, Heil, and Weir (2018)\n\nIncomplete"
+    "text": "3.5 The binominal theorem\n\nReference: Hass, Heil, and Weir (2018) and Khan Academy (n.d.) and Matika (n.d.)\n\nFor any positive integer \\(n\\),\n\\[\n(a + b)^{n} = a^{n} + na^{n - 1}b + \\cfrac{n (n - 1)}{1 \\cdot 2} a^{n - 2}b^{2} + \\cfrac{n (n - 1) (n - 2)}{1 \\cdot 2 \\cdot 3}a^{n - 3}b^{3} + \\cdots + nab^{n - 1} + b^{n}\n\\]\nThe same formula above can be written as (Newton’s binomial)\n\\[\n(a + b)^{n} = \\sum_{k = 0}^{n} \\binom{n}{k} \\cdot a^{n - k} \\cdot b^{k} \\quad , \\quad \\binom{n}{k} = \\cfrac{n!}{k! (n - k)!}\n\\]\nIn the case of \\((a - b)\\):\n\\[\n(a - b)^{n} = \\sum_{k = 0}^{n} \\binom{n}{k} \\cdot a^{n - k} \\cdot (- b)^{k}\n\\]\nNote that when the power of \\(− b\\) is even, the product is positive and if the power is odd, the product is negative. Example:\n\\[\n(a - b)^4 = a^{4} - 4a^{3}b + 6a^{2}b^{2} - 4ab^{3} + b^{4}\n\\]\nSee the “special products” section for more examples."
   },
   {
     "objectID": "qmd/algebra.html#factoring-the-difference-of-like-integer-powers-n-1",
     "href": "qmd/algebra.html#factoring-the-difference-of-like-integer-powers-n-1",
     "title": "3  Algebra",
-    "section": "3.6 Factoring the difference of like integer powers, \\(n > 1\\)",
-    "text": "3.6 Factoring the difference of like integer powers, \\(n > 1\\)\n\nReference: Hass, Heil, and Weir (2018)\n\nIncomplete\n\n3.6.1 Special products\n\nSquare of a sum: \\((a + b)^{2} = a^{2} + 2ab + b^{2}\\)\nSquare of a difference: \\((a-b)^{2} = a^{2} - 2ab + b^{2}\\)\nSquare of 3 terms sum: \\((a + b + c)^{2} = a^{2} + b^{2} + c^{2} + 2ab + 2ac + 2bc\\)\nCube of a sum: \\((a+b)^3 = a^{3} + 3a^{2}b + 3ab^{2} + b^{3}\\)\nCube of a difference: \\((a - b)^{3} = a^{3} - 3a^{2}b + 3ab^{2} - b^{3}\\)\nSum of cube: \\(a^{3} + b^{3} = (a + b)(a^{2} - ab + b^{2})\\)\nDifference of cube: \\(a^{3} - b^{3} = (a - b)(a^{2} + ab + b^{2})\\)\nProduct of a sum: \\((x + a)(x + b) = x^{2} + (a + b)x + ab\\)\nProduct of a sum and a difference: \\((a + b)(a - b) = a^{2} - b^{2}\\)"
+    "section": "3.7 Factoring the difference of like integer powers, \\(n > 1\\)",
+    "text": "3.7 Factoring the difference of like integer powers, \\(n > 1\\)\n\nReference: Hass, Heil, and Weir (2018)\n\n\\[\na^{n} - b^{n} = (a - b)(a^{n - 1} + a^{n - 2}b + a^{n -3}b^{2} + \\cdots + ab^{n - 2} + b^{n - 1})\n\\]\nSee the “special products” section for examples.\n\n3.7.1 Special products\n\nReference: Hass, Heil, and Weir (2018)\n\n\nSquare of a sum: \\((a + b)^{2} = a^{2} + 2ab + b^{2}\\)\nSquare of a difference: \\((a - b)^{2} = a^{2} - 2ab + b^{2}\\)\nSquare of 3 terms sum: \\((a + b + c)^{2} = a^{2} + b^{2} + c^{2} + 2ab + 2ac + 2bc\\)\nCube of a sum: \\((a + b)^3 = a^{3} + 3a^{2}b + 3ab^{2} + b^{3}\\)\nCube of a difference: \\((a - b)^{3} = a^{3} - 3a^{2}b + 3ab^{2} - b^{3}\\)\nSum of cube: \\(a^{3} + b^{3} = (a + b)(a^{2} - ab + b^{2})\\)\nDifference of cube: \\(a^{3} - b^{3} = (a - b)(a^{2} + ab + b^{2})\\)\nQuad of a sum: \\((a + b)^4 = a^{4} + 4a^{3}b + 6a^{2}b^{2} + 4ab^{3} + b^{4}\\)\nQuad of a difference: \\((a - b)^4 = a^{4} - 4a^{3}b + 6a^{2}b^{2} - 4ab^{3} + b^{4}\\)\nProduct of a sum: \\((x + a)(x + b) = x^{2} + (a + b)x + ab\\)\nProduct of a sum and a difference: \\((a + b)(a - b) = a^{2} - b^{2}\\)"
   },
   {
     "objectID": "qmd/algebra.html#completing-the-square",
     "href": "qmd/algebra.html#completing-the-square",
     "title": "3  Algebra",
-    "section": "3.7 Completing the square",
-    "text": "3.7 Completing the square\n\nReference: Hass, Heil, and Weir (2018)\n\nIncomplete"
+    "section": "3.8 Completing the square",
+    "text": "3.8 Completing the square\n\nReference: Hass, Heil, and Weir (2018)\n\nIf \\(a \\neq 0\\), then\n\\[\nax^{2} + bx + c = au^{2} + C \\quad \\left (u = x + \\cfrac{b}{2a} \\ , \\ C = c - \\cfrac{b^2}{4a} \\right )\n\\]"
   },
   {
     "objectID": "qmd/algebra.html#the-quadratic-formula",
     "href": "qmd/algebra.html#the-quadratic-formula",
     "title": "3  Algebra",
-    "section": "3.8 The quadratic formula",
-    "text": "3.8 The quadratic formula\n\nReference: Hass, Heil, and Weir (2018)\n\nIncomplete\n\n\n\n\nHass, Joel, Christopher Heil, and Maurice D. Weir. 2018. Thomas’ Calculus. 14th ed. Pearson."
+    "section": "3.9 The quadratic formula",
+    "text": "3.9 The quadratic formula\n\nReference: Hass, Heil, and Weir (2018)\n\nIf \\(a \\neq 0\\) and \\(ax^{2} + bx + c = 0\\), then\n\\[\nx = \\cfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\quad \\left (\\Delta = b^2 - 4ac  \\right )\n\\]\n\n\n\n\nHass, Joel, Christopher Heil, and Maurice D. Weir. 2018. Thomas’ Calculus. 14th ed. Pearson.\n\n\nKhan Academy. n.d. https://www.khanacademy.org/.\n\n\nMatika. n.d. https://matika.com.br/.\n\n\nWikiversity. n.d. https://en.wikiversity.org/."
   },
   {
     "objectID": "qmd/progressions.html",
@@ -165,56 +165,56 @@
     "href": "qmd/limits.html",
     "title": "9  Limits",
     "section": "",
-    "text": "Reference: Hass, Heil, and Weir (2018)\n\nIf \\(P(x)\\) is continuous at \\(x = c\\), i.e., \\(\\lim \\limits_{x \\to c^{-}} f(x) = \\lim \\limits_{x \\to c^{+}} f(x)\\), then \\(\\lim \\limits_{x \\to c} f(x) = f(c)\\)."
+    "text": "Reference: Hase (2022)\n\nIf \\(P(x)\\) is continuous at \\(x = c\\), i.e., \\(\\lim \\limits_{x \\to c^{-}} f(x) = \\lim \\limits_{x \\to c^{+}} f(x)\\), then\n\\[\\lim \\limits_{x \\to c} f(x) = f(c)\\]"
   },
   {
     "objectID": "qmd/limits.html#general-laws",
     "href": "qmd/limits.html#general-laws",
     "title": "9  Limits",
-    "section": "9.2 General laws",
-    "text": "9.2 General laws\n\nReference: Hass, Heil, and Weir (2018)\n\nIf \\(L\\), \\(M\\), \\(c\\), and \\(k\\) are real numbers and\n\\(\\lim \\limits_{x \\to c} f(x) = L\\) and \\(\\lim \\limits_{x \\to c} g(x) = M\\), then\n\nSum rule: \\(\\lim \\limits_{x \\to c} [f(x) + g(x)] = L + M = \\lim \\limits_{x \\to c} f(x) + \\lim \\limits_{x \\to c} g(x)\\)\nExample: \\(\\lim \\limits_{x \\to 1} [x^{2} + 3x^{3}] = \\lim \\limits_{x \\to 1} x^{2} + \\lim \\limits_{x \\to 1} 3x^{3} = 1 + 3 = 4\\)\nDifference rule: \\(\\lim \\limits_{x \\to c} [f(x) - g(x)] = L - M = \\lim \\limits_{x \\to c} f(x) - \\lim \\limits_{x \\to c} g(x)\\)\nProduct rule: \\(\\lim \\limits_{x \\to c} [f(x) \\times g(x)] = L \\times M = \\lim \\limits_{x \\to c} f(x) \\times \\lim \\limits_{x \\to c} g(x)\\)\nConstant multiple rule: \\(\\lim \\limits_{x \\to c} (k \\times f(x)) = k \\times L = k \\times \\lim \\limits_{x \\to c} f(x)\\)\nQuotient rule: \\(\\lim \\limits_{x \\to c} \\cfrac{f(x)}{g(x)} = \\cfrac{L}{M} = \\cfrac{\\lim \\limits_{x \\to c} f(x)}{\\lim \\limits_{x \\to c} g(x)}\\), \\(M \\neq 0\\), \\(\\lim \\limits_{x \\to c} g(x) \\neq 0\\)"
+    "section": "9.3 General laws",
+    "text": "9.3 General laws\n\nReference: Hass, Heil, and Weir (2018)\n\nIf \\(L\\), \\(M\\), \\(c\\), and \\(k\\) are real numbers and\n\\(\\lim \\limits_{x \\to c} f(x) = L\\) and \\(\\lim \\limits_{x \\to c} g(x) = M\\), then\n\nSum rule: \\(\\lim \\limits_{x \\to c} [f(x) + g(x)] = L + M = \\lim \\limits_{x \\to c} f(x) + \\lim \\limits_{x \\to c} g(x)\\)\nExample: \\(\\lim \\limits_{x \\to 1} [x^{2} + 3x^{3}] = \\lim \\limits_{x \\to 1} x^{2} + \\lim \\limits_{x \\to 1} 3x^{3} = 1 + 3 = 4\\)\nDifference rule: \\(\\lim \\limits_{x \\to c} [f(x) - g(x)] = L - M = \\lim \\limits_{x \\to c} f(x) - \\lim \\limits_{x \\to c} g(x)\\)\nProduct rule: \\(\\lim \\limits_{x \\to c} [f(x) \\times g(x)] = L \\times M = \\lim \\limits_{x \\to c} f(x) \\times \\lim \\limits_{x \\to c} g(x)\\)\nConstant multiple rule: \\(\\lim \\limits_{x \\to c} (k \\times f(x)) = k \\times L = k \\times \\lim \\limits_{x \\to c} f(x)\\)\nQuotient rule: \\(\\lim \\limits_{x \\to c} \\cfrac{f(x)}{g(x)} = \\cfrac{L}{M} = \\cfrac{\\lim \\limits_{x \\to c} f(x)}{\\lim \\limits_{x \\to c} g(x)}\\), \\(M \\neq 0\\), \\(\\lim \\limits_{x \\to c} g(x) \\neq 0\\)"
   },
   {
     "objectID": "qmd/limits.html#infinite-limit-of-rational-functions",
     "href": "qmd/limits.html#infinite-limit-of-rational-functions",
     "title": "9  Limits",
-    "section": "9.3 Infinite limit of rational functions",
-    "text": "9.3 Infinite limit of rational functions\n\nReference: Hase (2022)\n\n\\[\\lim \\limits_{x \\pm \\infty} \\cfrac{P_{n}(x)}{Q_{m}(x)} = \\lim \\limits_{x \\pm \\infty} \\cfrac{a_{n}x^{n} + a_{n - 1}x^{n - 1} \\cdots + a_{1}x + a_{0}}{b_{m}x^{m} + b_{m - 1}x^{m - 1} \\cdots + b_{1}x + b_{0}} = \\lim \\limits_{x \\pm \\infty} \\cfrac{x^{n} (a_{n} + \\frac{a_{n - 1}}{x} \\cdots + \\frac{a_{1}}{x^{n - 1}} + \\frac{a_{0}}{x^{n}})}{x^{m} (b_{m} + \\frac{b_{m - 1}}{x} \\cdots + \\frac{b_{1}}{x^{m - 1}} + \\frac{b_{0}}{x^{m}})}\\]\n\n\\(n = m\\): in this case, the largest term of the numerator (\\(a_{n}x^{n}\\)) is of the same order of magnitude with the largest term of the denominator (\\(b_{m}x^{m} = b_{n}x^{n}\\)), and the limit converges to \\(\\cfrac{a_{n}}{b_n}\\).\n\\(n < m\\): n this case, the denominator is much larger than the numerator, and the limit converges to zero.\n\\(n > m\\): in this case, one should analyze the sign of the dominant term of the limit, which is \\(\\cfrac{a_{n}}{b_m} x^{n - m}\\). If \\(\\cfrac{a_{n}}{b_m} x^{n - m} > 0\\) when \\(x \\to \\pm \\infty\\), then \\(\\lim \\limits_{x \\pm \\infty} \\cfrac{P_{n}(x)}{Q_{m}(x)} \\to \\infty\\). On the other hand, if \\(\\cfrac{a_{n}}{b_m} x^{n - m} < 0\\), when \\(x \\to \\pm \\infty\\), then \\(\\lim \\limits_{x \\pm \\infty} \\cfrac{P_{n}(x)}{Q_{m}(x)} \\to - \\infty\\)"
+    "section": "9.4 Infinite limit of rational functions",
+    "text": "9.4 Infinite limit of rational functions\n\nReference: Hase (2022)\n\n\\[\\lim \\limits_{x \\pm \\infty} \\cfrac{P_{n}(x)}{Q_{m}(x)} = \\lim \\limits_{x \\pm \\infty} \\cfrac{a_{n}x^{n} + a_{n - 1}x^{n - 1} \\cdots + a_{1}x + a_{0}}{b_{m}x^{m} + b_{m - 1}x^{m - 1} \\cdots + b_{1}x + b_{0}} = \\lim \\limits_{x \\pm \\infty} \\cfrac{x^{n} (a_{n} + \\frac{a_{n - 1}}{x} \\cdots + \\frac{a_{1}}{x^{n - 1}} + \\frac{a_{0}}{x^{n}})}{x^{m} (b_{m} + \\frac{b_{m - 1}}{x} \\cdots + \\frac{b_{1}}{x^{m - 1}} + \\frac{b_{0}}{x^{m}})}\\]\n\n\\(n = m\\): in this case, the largest term of the numerator (\\(a_{n}x^{n}\\)) is of the same order of magnitude with the largest term of the denominator (\\(b_{m}x^{m} = b_{n}x^{n}\\)), and the limit converges to \\(\\cfrac{a_{n}}{b_n}\\).\n\\(n < m\\): n this case, the denominator is much larger than the numerator, and the limit converges to zero.\n\\(n > m\\): in this case, one should analyze the sign of the dominant term of the limit, which is \\(\\cfrac{a_{n}}{b_m} x^{n - m}\\). If \\(\\cfrac{a_{n}}{b_m} x^{n - m} > 0\\) when \\(x \\to \\pm \\infty\\), then \\(\\lim \\limits_{x \\pm \\infty} \\cfrac{P_{n}(x)}{Q_{m}(x)} \\to \\infty\\). On the other hand, if \\(\\cfrac{a_{n}}{b_m} x^{n - m} < 0\\), when \\(x \\to \\pm \\infty\\), then \\(\\lim \\limits_{x \\pm \\infty} \\cfrac{P_{n}(x)}{Q_{m}(x)} \\to - \\infty\\)"
   },
   {
     "objectID": "qmd/limits.html#squeeze-theorem-or-sandwich-theorem",
     "href": "qmd/limits.html#squeeze-theorem-or-sandwich-theorem",
     "title": "9  Limits",
-    "section": "9.4 Squeeze theorem (or sandwich theorem)",
-    "text": "9.4 Squeeze theorem (or sandwich theorem)\n\nReference: Hase (2022)\n\nFor an interval \\(I \\subset \\mathbb{R}\\), assume that \\(g(x) \\leq f(x) \\leq h(x)\\) with \\(x \\in I\\). Given \\(x_{0} \\in I\\), if\n\\[\\lim \\limits_{x \\to x_{0}} g(x) = \\lim \\limits_{x \\to x_{0}} h(x) = L \\ \\text{, then} \\ \\lim \\limits_{x \\to x_{0}} f(x) = L\\]."
+    "section": "9.5 Squeeze theorem (or sandwich theorem)",
+    "text": "9.5 Squeeze theorem (or sandwich theorem)\n\nReference: Hase (2022)\n\nFor an interval \\(I \\subset \\mathbb{R}\\), assume that \\(g(x) \\leq f(x) \\leq h(x)\\) with \\(x \\in I\\). Given \\(x_{0} \\in I\\), if\n\\[\\lim \\limits_{x \\to x_{0}} g(x) = \\lim \\limits_{x \\to x_{0}} h(x) = L \\ \\text{, then} \\ \\lim \\limits_{x \\to x_{0}} f(x) = L\\]."
   },
   {
     "objectID": "qmd/limits.html#the-fundamental-limit",
     "href": "qmd/limits.html#the-fundamental-limit",
     "title": "9  Limits",
-    "section": "9.5 The fundamental limit",
-    "text": "9.5 The fundamental limit\n\nReference: Hase (2022)\n\n\nDenote by \\(S_{\\triangle OPQ}\\), \\(S_{\\triangle OPR}\\), and \\(S_{\\sector OPQ}\\), respectively, the areas of the triangles \\(OPQ\\), \\(OPR\\) and the circular section \\(OPQ\\), as in figure 4. Let \\(r\\) be the radius of the disk. It is straightforward that\n\\[S_{\\triangle OPQ} \\leq S_{\\sector OPQ} \\leq S_{\\triangle OPR}\\]\nSince \\(S_{\\triangle OPQ} = \\cfrac{r^{2} \\sin x}{2}\\), \\(S_{\\sector OPQ} = \\cfrac{r^{2} x}{2}\\), and \\(S_{\\triangle OPR} = \\cfrac{r^{2} \\tan x}{2}\\), the above inequality implies\n\\[\\sin x \\leq x \\leq \\tan x \\ \\ \\ \\ \\ \\text{or} \\ \\ \\ \\ \\ \\cos x \\leq \\cfrac{\\sin x}{x} \\leq 1\\]\nTherefore, since \\(\\lim \\limits_{x \\to 0} \\cos x = 1\\) from the squeeze theorem, it follows that\n\\[\\lim \\limits_{x \\to 0} \\cfrac{\\sin x}{x} = 1\\]\nOne should be aware that this fundamental limit is valid when the angle \\(x\\) is measured in radians. If \\(x\\) is measured in degree, one would have \\(S_{\\sector OPQ} = \\cfrac{r^{2} x}{2} \\cfrac{\\pi}{180}\\), which would have lead to \\(\\lim \\limits_{x \\to 0} \\cfrac{\\sin x}{x} = \\cfrac{\\pi}{180}\\)."
+    "section": "9.6 The fundamental limit",
+    "text": "9.6 The fundamental limit\n\nReference: Hase (2022)\n\n\nDenote by \\(S_{\\triangle OPQ}\\), \\(S_{\\triangle OPR}\\), and \\(S_{\\sector OPQ}\\), respectively, the areas of the triangles \\(OPQ\\), \\(OPR\\) and the circular section \\(OPQ\\), as in figure 4. Let \\(r\\) be the radius of the disk. It is straightforward that\n\\[S_{\\triangle OPQ} \\leq S_{\\sector OPQ} \\leq S_{\\triangle OPR}\\]\nSince \\(S_{\\triangle OPQ} = \\cfrac{r^{2} \\sin x}{2}\\), \\(S_{\\sector OPQ} = \\cfrac{r^{2} x}{2}\\), and \\(S_{\\triangle OPR} = \\cfrac{r^{2} \\tan x}{2}\\), the above inequality implies\n\\[\\sin x \\leq x \\leq \\tan x \\ \\ \\ \\ \\ \\text{or} \\ \\ \\ \\ \\ \\cos x \\leq \\cfrac{\\sin x}{x} \\leq 1\\]\nTherefore, since \\(\\lim \\limits_{x \\to 0} \\cos x = 1\\) from the squeeze theorem, it follows that\n\\[\\lim \\limits_{x \\to 0} \\cfrac{\\sin x}{x} = 1\\]\nOne should be aware that this fundamental limit is valid when the angle \\(x\\) is measured in radians. If \\(x\\) is measured in degree, one would have \\(S_{\\sector OPQ} = \\cfrac{r^{2} x}{2} \\cfrac{\\pi}{180}\\), which would have lead to \\(\\lim \\limits_{x \\to 0} \\cfrac{\\sin x}{x} = \\cfrac{\\pi}{180}\\)."
   },
   {
     "objectID": "qmd/limits.html#other-properties",
     "href": "qmd/limits.html#other-properties",
     "title": "9  Limits",
-    "section": "9.6 Other properties",
-    "text": "9.6 Other properties\n\nReference: Morettin, Hazzan, and Oliveira Bussab (2003) | Só Matemática (n.d.) | Ventura (n.d.)\n\n\n\\(\\lim \\limits_{x \\to \\pi} [3x^{3} \\times \\cos x] = \\lim \\limits_{x \\to \\pi} 3x^{3} \\times \\lim \\limits_{x \\to \\pi} \\cos x = 3\\pi ^{3} \\times cos \\pi = 3 \\pi ^{3} \\times (-1) = - 3 \\pi ^{3}\\)\n\\(\\lim \\limits_{x \\to \\pi} [3x^{3} \\times \\cos x] = \\lim \\limits_{x \\to \\pi} 3x^{3} \\times \\lim \\limits_{x \\to \\pi} \\cos x = 3\\pi ^{3} \\times cos \\pi = 3 \\pi ^{3} \\times (-1) = - 3 \\pi ^{3}\\)\nExample: \\(\\lim \\limits_{x \\to 0} \\cfrac{\\cos x}{x^{2} + 1} = \\cfrac{\\lim \\limits_{x \\to 0} \\cos x}{\\lim \\limits_{x \\to 0} x^{2} + 1} = \\cfrac{\\cos 0}{0^{2} + 1} = \\cfrac{1}{1} = 1\\)\n\\(\\lim \\limits_{x \\to a} f(x)^{n} = \\left( \\lim \\limits_{x \\to a} f(x) \\right) ^{n}\\), desde que \\(n \\in \\mathbb{N}^{*}\\)\nExample: \\(\\lim \\limits_{x \\to 1} (x^{2} + 3)^{2} = \\left[ \\lim \\limits_{x \\to 1} (x^{2} + 3)^{2} \\right] = (1 + 3)^{2} = 16\\)\n\\(\\lim \\limits_{x \\to a} \\sqrt[n]{f(x)} = \\sqrt[n]{\\lim \\limits_{x \\to a} f(x)}\\), desde que \\(n \\in \\mathbb{N}^{*}\\) e \\(f(x) > 0\\) (se \\(f(x) \\leq 0\\) \\(n\\) é ímpar)\n\\(\\lim \\limits_{x \\to 2} \\sqrt{x^{3} + x^{2} - 1} = \\sqrt{\\lim \\limits_{x \\to 2} x^{3} + x^{2} - 1} = \\sqrt{2^{3} + 2^{2} - 1} = \\sqrt{11}\\)\n\\(\\lim \\limits_{x \\to a} (\\ln f(x)) = \\ln \\left[ \\lim \\limits_{x \\to a} f(x) \\right]\\), desde que \\(\\lim \\limits_{x \\to a} f(x) > 0\\)\nExample: \\(\\lim \\limits_{x \\to e} (\\ln x^{2}) = \\ln \\left[ \\lim \\limits_{x \\to e} x^{2} \\right] = \\ln e^{2} = 2 \\ln e = 2 \\times 1 = 2\\)\n\\(\\lim \\limits_{x \\to a} \\sin (f(x)) = \\sin \\left( \\lim \\limits_{x \\to a} f(x) \\right)\\)\nExample: \\(\\lim \\limits_{x \\to 1} \\sin (x^{2} + 3x) = \\sin \\left[ \\lim \\limits_{x \\to 1} (x^{2} +3x) \\right] = \\sin 4\\)\n\\(\\lim \\limits_{x \\to a} e^{f(x)} = e^{\\lim \\limits_{x \\to a} f(x)}\\)\nExample: \\(\\lim \\limits_{x \\to 1} e^{x^{2} + 3x} = e^{\\lim \\limits_{x \\to 1} x^{2} +3x} = e^{4}\\)"
+    "section": "9.8 Other properties",
+    "text": "9.8 Other properties\n\nReference: Morettin, Hazzan, and Oliveira Bussab (2003) | Só Matemática (n.d.) | Ventura (n.d.)\n\n\n\\(\\lim \\limits_{x \\to \\pi} [3x^{3} \\times \\cos x] = \\lim \\limits_{x \\to \\pi} 3x^{3} \\times \\lim \\limits_{x \\to \\pi} \\cos x = 3\\pi ^{3} \\times cos \\pi = 3 \\pi ^{3} \\times (-1) = - 3 \\pi ^{3}\\)\n\\(\\lim \\limits_{x \\to \\pi} [3x^{3} \\times \\cos x] = \\lim \\limits_{x \\to \\pi} 3x^{3} \\times \\lim \\limits_{x \\to \\pi} \\cos x = 3\\pi ^{3} \\times cos \\pi = 3 \\pi ^{3} \\times (-1) = - 3 \\pi ^{3}\\)\nExample: \\(\\lim \\limits_{x \\to 0} \\cfrac{\\cos x}{x^{2} + 1} = \\cfrac{\\lim \\limits_{x \\to 0} \\cos x}{\\lim \\limits_{x \\to 0} x^{2} + 1} = \\cfrac{\\cos 0}{0^{2} + 1} = \\cfrac{1}{1} = 1\\)\n\\(\\lim \\limits_{x \\to a} f(x)^{n} = \\left( \\lim \\limits_{x \\to a} f(x) \\right) ^{n}\\), desde que \\(n \\in \\mathbb{N}^{*}\\)\nExample: \\(\\lim \\limits_{x \\to 1} (x^{2} + 3)^{2} = \\left[ \\lim \\limits_{x \\to 1} (x^{2} + 3)^{2} \\right] = (1 + 3)^{2} = 16\\)\n\\(\\lim \\limits_{x \\to a} \\sqrt[n]{f(x)} = \\sqrt[n]{\\lim \\limits_{x \\to a} f(x)}\\), desde que \\(n \\in \\mathbb{N}^{*}\\) e \\(f(x) > 0\\) (se \\(f(x) \\leq 0\\) \\(n\\) é ímpar)\n\\(\\lim \\limits_{x \\to 2} \\sqrt{x^{3} + x^{2} - 1} = \\sqrt{\\lim \\limits_{x \\to 2} x^{3} + x^{2} - 1} = \\sqrt{2^{3} + 2^{2} - 1} = \\sqrt{11}\\)\n\\(\\lim \\limits_{x \\to a} (\\ln f(x)) = \\ln \\left[ \\lim \\limits_{x \\to a} f(x) \\right]\\), desde que \\(\\lim \\limits_{x \\to a} f(x) > 0\\)\nExample: \\(\\lim \\limits_{x \\to e} (\\ln x^{2}) = \\ln \\left[ \\lim \\limits_{x \\to e} x^{2} \\right] = \\ln e^{2} = 2 \\ln e = 2 \\times 1 = 2\\)\n\\(\\lim \\limits_{x \\to a} \\sin (f(x)) = \\sin \\left( \\lim \\limits_{x \\to a} f(x) \\right)\\)\nExample: \\(\\lim \\limits_{x \\to 1} \\sin (x^{2} + 3x) = \\sin \\left[ \\lim \\limits_{x \\to 1} (x^{2} +3x) \\right] = \\sin 4\\)\n\\(\\lim \\limits_{x \\to a} e^{f(x)} = e^{\\lim \\limits_{x \\to a} f(x)}\\)\nExample: \\(\\lim \\limits_{x \\to 1} e^{x^{2} + 3x} = e^{\\lim \\limits_{x \\to 1} x^{2} +3x} = e^{4}\\)"
   },
   {
     "objectID": "qmd/limits.html#the-lhôpitals-rule",
     "href": "qmd/limits.html#the-lhôpitals-rule",
     "title": "9  Limits",
-    "section": "9.7 The l’Hôpital’s rule",
-    "text": "9.7 The l’Hôpital’s rule\n\nReference: Hase (2022)\n\nTheorem: Let \\(f\\) and \\(g\\) be two differentiable functions on an open interval \\(I\\) and let \\(\\lim \\limits_{x \\to a} f(x) = \\lim \\limits_{x \\to a} g(x) = \\pm \\infty\\) or \\(0\\) (here, \\(a \\in \\mathbb{R} \\cup \\{+ \\infty, -\\infty\\}\\), and \\(f\\) and \\(g\\) need not be defined on \\(a\\)). Furthermore, if \\(g′(x) \\ne 0\\) at \\(I ∖ \\{a\\}\\) and \\(\\lim \\limits_{x \\to a} \\cfrac{f′(x)}{g′(x)}\\) exists, then\n\\[\\lim \\limits_{x \\to a} \\cfrac{f(x)}{g(x)} = \\lim \\limits_{x \\to a} \\cfrac{f′(x)}{g′(x)}\\]\n\n\n\n\nHase, Masayuki Oka. 2022. “Métodos Matemáticos e de Computação 1.”\n\n\nHass, Joel, Christopher Heil, and Maurice D. Weir. 2018. Thomas’ Calculus. 14th ed. Pearson.\n\n\nMorettin, Pedro Alberto, Samuel Hazzan, and Wilton de Oliveira Bussab. 2003. Cálculo: Funções de Uma e Várias Variáveis. Saraiva.\n\n\nSó Matemática. n.d. http://www.somatematica.com.br/.\n\n\nVentura, Marcelo. n.d.“”"
+    "section": "9.9 The l’Hôpital’s rule",
+    "text": "9.9 The l’Hôpital’s rule\n\nReference: Hase (2022)\n\nTheorem: Let \\(f\\) and \\(g\\) be two differentiable functions on an open interval \\(I\\) and let \\(\\lim \\limits_{x \\to a} f(x) = \\lim \\limits_{x \\to a} g(x) = \\pm \\infty\\) or \\(0\\) (here, \\(a \\in \\mathbb{R} \\cup \\{+ \\infty, -\\infty\\}\\), and \\(f\\) and \\(g\\) need not be defined on \\(a\\)). Furthermore, if \\(g′(x) \\ne 0\\) at \\(I ∖ \\{a\\}\\) and \\(\\lim \\limits_{x \\to a} \\cfrac{f′(x)}{g′(x)}\\) exists, then\n\\[\\lim \\limits_{x \\to a} \\cfrac{f(x)}{g(x)} = \\lim \\limits_{x \\to a} \\cfrac{f′(x)}{g′(x)}\\]\n\n\n\n\nHase, Masayuki Oka. 2022. “Métodos Matemáticos e de Computação 1.”\n\n\nHass, Joel, Christopher Heil, and Maurice D. Weir. 2018. Thomas’ Calculus. 14th ed. Pearson.\n\n\nMorettin, Pedro Alberto, Samuel Hazzan, and Wilton de Oliveira Bussab. 2003. Cálculo: Funções de Uma e Várias Variáveis. Saraiva.\n\n\nSó Matemática. n.d. http://www.somatematica.com.br/.\n\n\nVentura, Marcelo. n.d.“”"
   },
   {
     "objectID": "qmd/derivatives.html",
     "href": "qmd/derivatives.html",
     "title": "10  Derivatives",
     "section": "",
-    "text": "Reference: Hase (2022)\nThe derivative of function \\(f\\) at a point \\(x\\) is defined as\n\\[\\cfrac{\\text{d}}{\\text{d}x} f(x) := \\lim \\limits_{\\Delta x \\to 0} \\cfrac{\\Delta y}{\\Delta x} = \\lim \\limits_{\\Delta x \\to 0} \\cfrac{f(x + \\Delta x) - f(x)}{\\Delta x}\\]\nA function is said to be differentiable if the derivative exists at every point of its domain. Here, the notation \\(f'(x)\\) is also used to indicate de derivative of \\(f\\) (at point \\(x\\)).\nNote that, from a geometrical standpoint, the derivative at \\(x\\) corresponds to the tangent of the curve \\(f\\) at the same point. Therefore,\n\\[\n\\cfrac{\\text{d}}{\\text{d}x} f(x) =\n\\begin{cases}\n> 0 \\ \\ \\ , \\ \\ \\ \\text{function } f \\text{ increasing with } x \\text{ (at } x \\text{)}\n\\\\\n< 0 \\ \\ \\ , \\ \\ \\ \\text{function } f \\text{ decreasing with } x \\text{ (at } x \\text{)}\n\\end{cases}\n.\n\\]\nThe case \\(\\cfrac{\\text{d}}{\\text{d}x} f(x) = 0\\) is especially important since it’s a necessary (although not sufficient) condition to determine the extremal points (local maxima and minima) of differentiable functions."
+    "text": "Reference: Hase (2022)\nThe derivative of function \\(f\\) at a point \\(x\\) is defined as\n\\[\\cfrac{\\text{d}}{\\text{d}x} f(x) := \\lim \\limits_{\\Delta x \\to 0} \\cfrac{\\Delta y}{\\Delta x} = \\lim \\limits_{\\Delta x \\to 0} \\cfrac{f(x + \\Delta x) - f(x)}{\\Delta x}\\]\nA function is said to be differentiable if the derivative exists at every point of its domain. Here, the notation \\(f'(x)\\) is also used to indicate de derivative of \\(f\\) (at point \\(x\\)).\nNote that, from a geometrical standpoint, the derivative at \\(x\\) corresponds to the tangent of the curve \\(f\\) at the same point. Therefore,\n\\[\n\\cfrac{\\text{d}}{\\text{d}x} f(x) =\n\\begin{cases}\n    > 0 \\ \\ \\ , \\ \\ \\ \\text{function } f \\text{ increasing with } x \\text{ (at } x \\text{)}\n\\\\\n    < 0 \\ \\ \\ , \\ \\ \\ \\text{function } f \\text{ decreasing with } x \\text{ (at } x \\text{)}\n\\end{cases}\n.\n\\]\nThe case \\(\\cfrac{\\text{d}}{\\text{d}x} f(x) = 0\\) is especially important since it’s a necessary (although not sufficient) condition to determine the extremal points (local maxima and minima) of differentiable functions."
   },
   {
     "objectID": "qmd/derivatives.html#shortened-line-equation",
@@ -227,85 +227,85 @@
     "objectID": "qmd/derivatives.html#general-formulas",
     "href": "qmd/derivatives.html#general-formulas",
     "title": "10  Derivatives",
-    "section": "10.2 General formulas",
-    "text": "10.2 General formulas\n\nReference: Hass, Heil, and Weir (2018) and Morettin, Hazzan, and Oliveira Bussab (2003)\n\nAssume \\(f\\) and \\(g\\) are differentiable functions of \\(x\\).\n\nConstant: \\(c' = 0 \\ \\ \\ , \\ \\ \\ c \\in \\mathbb{R}\\)\nSum: \\((f + g)' = f' + g'\\)\nDifference: \\((f - g)' = f' - g'\\)\nConstant multiple: \\((c f)' = c f' \\ \\ \\ , \\ \\ \\ c \\in \\mathbb{R}\\)\nProduct: \\((fg)' = f' g + f g'\\)\nQuotient: \\((\\cfrac{f}{g})' = \\cfrac{f' g - f g'}{g^{2}} \\ \\ \\ , \\ \\ \\ g \\ne 0\\)\nPower: \\((x^{n})' = nx^{n - 1} \\ \\ \\ , \\ \\ \\ n \\in \\mathbb{R}\\)\nChain rule = \\([f(g)]' = f'(g) \\times g'\\)\nOther (1) = \\((\\cfrac{1}{f})' = \\cfrac{f'}{f^{2}}\\)"
+    "section": "10.3 General formulas",
+    "text": "10.3 General formulas\n\nReference: Hass, Heil, and Weir (2018) and Morettin, Hazzan, and Oliveira Bussab (2003)\n\nAssume \\(f\\) and \\(g\\) are differentiable functions of \\(x\\).\n\nConstant: \\(c' = 0 \\ \\ \\ , \\ \\ \\ c \\in \\mathbb{R}\\)\nSum: \\((f + g)' = f' + g'\\)\nDifference: \\((f - g)' = f' - g'\\)\nConstant multiple: \\((c f)' = c f' \\ \\ \\ , \\ \\ \\ c \\in \\mathbb{R}\\)\nProduct: \\((fg)' = f' g + f g'\\)\nQuotient: \\((\\cfrac{f}{g})' = \\cfrac{f' g - f g'}{g^{2}} \\ \\ \\ , \\ \\ \\ g \\ne 0\\)\nPower: \\((x^{n})' = nx^{n - 1} \\ \\ \\ , \\ \\ \\ n \\in \\mathbb{R}\\)\nChain rule = \\([f(g)]' = f'(g) \\times g'\\)\nOther (1) = \\((\\cfrac{1}{f})' = \\cfrac{f'}{f^{2}}\\)"
   },
   {
     "objectID": "qmd/derivatives.html#exponential-and-logarithmic-functions",
     "href": "qmd/derivatives.html#exponential-and-logarithmic-functions",
     "title": "10  Derivatives",
-    "section": "10.3 Exponential and logarithmic functions",
-    "text": "10.3 Exponential and logarithmic functions\n\nReference: Hass, Heil, and Weir (2018)\n\n\n\\((e^{x})' = e^{x}\\)\n\\((\\ln x)' = \\cfrac{1}{x}\\)\n\\((a^{x})' = a^{x} \\ln a \\ \\ \\ , \\ \\ \\ \\forall x \\in \\mathbb{R} \\mid a > 0 \\mid a \\neq 1\\)\n\\((\\log_{a} x)' = \\cfrac{1}{x \\ln a}\\)"
+    "section": "10.4 Exponential and logarithmic functions",
+    "text": "10.4 Exponential and logarithmic functions\n\nReference: Hass, Heil, and Weir (2018)\n\n\n\\((e^{x})' = e^{x}\\)\n\\((\\ln x)' = \\cfrac{1}{x}\\)\n\\((a^{x})' = a^{x} \\ln a \\ \\ \\ , \\ \\ \\ \\forall x \\in \\mathbb{R} \\mid a > 0 \\mid a \\neq 1\\)\n\\((\\log_{a} x)' = \\cfrac{1}{x \\ln a}\\)"
   },
   {
     "objectID": "qmd/derivatives.html#chain-rule-examples",
     "href": "qmd/derivatives.html#chain-rule-examples",
     "title": "10  Derivatives",
-    "section": "10.4 Chain rule examples",
-    "text": "10.4 Chain rule examples\n\nReference: Hase (2022) and Derivativeit (n.d.)\n\n\n\\([\\sin(2x)]'\\)\n\n\\((\\sin(2x))' = [f(g)]' = f'(g) \\times g'\\)\n\\([f(g)]' = \\begin{cases} f = \\sin x \\Rightarrow f' = \\cos x \\\\ g = 2x \\Rightarrow g' = 2 \\end{cases}\\)\n\\((\\sin(2x))' = f'(g) \\times g' = \\cos (2x) \\times 2 = 2 \\cos(2x)\\)\n\n\\([e^{(x^{2})}]'\\)\n\n\\([e^{(x^{2})}]' = [f^{(g)}]' = f'^{(g)} \\times g'\\)\n\\([f^{(g)}]' = \\begin{cases} f = e^{x} \\Rightarrow f' = e^{x} \\\\ g = x^{2} \\Rightarrow g' = 2x \\end{cases}\\)\n\\([e^{(x^{2})}]' = f'^{(g)} \\times g' = e^{(x^{2})} \\times 2x\\)"
+    "section": "10.5 Chain rule examples",
+    "text": "10.5 Chain rule examples\n\nReference: Hase (2022) and Derivativeit (n.d.)\n\n\n\\([\\sin(2x)]'\\)\n\n\\([\\sin(2x)]' = [f(g)]' = f'(g) \\times g'\\)\n\\([f(g)]' = \\begin{cases} f = \\sin x \\Rightarrow f' = \\cos x \\\\ g = 2x \\Rightarrow g' = 2 \\end{cases}\\)\n\\([\\sin(2x)]' = f'(g) \\times g' = \\cos (2x) \\times 2 = 2 \\cos(2x)\\)\n\n\\([e^{(x^{2})}]'\\)\n\n\\([e^{(x^{2})}]' = [f^{(g)}]' = f'^{(g)} \\times g'\\)\n\\([f^{(g)}]' = \\begin{cases} f = e^{x} \\Rightarrow f' = e^{x} \\\\ g = x^{2} \\Rightarrow g' = 2x \\end{cases}\\)\n\\([e^{(x^{2})}]' = f'^{(g)} \\times g' = e^{(x^{2})} \\times 2x\\)"
   },
   {
     "objectID": "qmd/derivatives.html#trigonometric-functions",
     "href": "qmd/derivatives.html#trigonometric-functions",
     "title": "10  Derivatives",
-    "section": "10.5 Trigonometric functions",
-    "text": "10.5 Trigonometric functions\n\nReference: Hass, Heil, and Weir (2018)\n\n\n\\((\\sin x)' = \\cos x\\)\n\\((\\cos x)' = - \\sin x\\)\n\\((\\tan x)' = \\sec^{2} x\\)\n\\((\\sec x)' = \\sec x \\tan x\\)\n\\((\\cot x)' = - \\csc^{2} x\\)\n\\((\\csc x)' = - \\csc x \\cot x\\)"
+    "section": "10.6 Trigonometric functions",
+    "text": "10.6 Trigonometric functions\n\nReference: Hass, Heil, and Weir (2018)\n\n\n\\((\\sin x)' = \\cos x\\)\n\\((\\cos x)' = - \\sin x\\)\n\\((\\tan x)' = \\sec^{2} x\\)\n\\((\\sec x)' = \\sec x \\tan x\\)\n\\((\\cot x)' = - \\csc^{2} x\\)\n\\((\\csc x)' = - \\csc x \\cot x\\)"
   },
   {
     "objectID": "qmd/derivatives.html#inverse-trigonometric-functions",
     "href": "qmd/derivatives.html#inverse-trigonometric-functions",
     "title": "10  Derivatives",
-    "section": "10.6 Inverse trigonometric functions",
-    "text": "10.6 Inverse trigonometric functions\n\nReference: Hass, Heil, and Weir (2018) and Hase (2022)\n\n\n\\((\\arcsin x)' = (\\sin^{-1} x)' = \\cfrac{1}{\\sqrt{1 - x^{2}}} \\ \\ \\ , \\ \\ \\ (|x| < 1)\\)\n\\((\\arccos x)' = (\\cos^{-1} x)' = - \\cfrac{1}{\\sqrt{1 - x^{2}}} \\ \\ \\ , \\ \\ \\ (|x| < 1)\\)\n\\((\\arctan x)' = (\\tan^{-1} x)' = \\cfrac{1}{1 + x^{2}}\\)\n\\((\\text{arccot} \\ x)' = (\\cot^{-1} x)' = - \\cfrac{1}{1 + x^{2}}\\)\n\\((\\text{arcsec} \\ x)' = (\\sec^{-1} x)' = \\cfrac{1}{|x| \\sqrt{x^{2} - 1}} \\ \\ \\ , \\ \\ \\ (|x| > 1)\\)\n\\((\\text{arccsc} \\ x)' = (\\csc^{-1} x)' = - \\cfrac{1}{|x| \\sqrt{x^{2} - 1}} \\ \\ \\ , \\ \\ \\ (|x| > 1)\\)"
+    "section": "10.7 Inverse trigonometric functions",
+    "text": "10.7 Inverse trigonometric functions\n\nReference: Hass, Heil, and Weir (2018) and Hase (2022)\n\n\n\\((\\arcsin x)' = (\\sin^{-1} x)' = \\cfrac{1}{\\sqrt{1 - x^{2}}} \\ \\ \\ , \\ \\ \\ (|x| < 1)\\)\n\\((\\arccos x)' = (\\cos^{-1} x)' = - \\cfrac{1}{\\sqrt{1 - x^{2}}} \\ \\ \\ , \\ \\ \\ (|x| < 1)\\)\n\\((\\arctan x)' = (\\tan^{-1} x)' = \\cfrac{1}{1 + x^{2}}\\)\n\\((\\text{arccot} \\ x)' = (\\cot^{-1} x)' = - \\cfrac{1}{1 + x^{2}}\\)\n\\((\\text{arcsec} \\ x)' = (\\sec^{-1} x)' = \\cfrac{1}{|x| \\sqrt{x^{2} - 1}} \\ \\ \\ , \\ \\ \\ (|x| > 1)\\)\n\\((\\text{arccsc} \\ x)' = (\\csc^{-1} x)' = - \\cfrac{1}{|x| \\sqrt{x^{2} - 1}} \\ \\ \\ , \\ \\ \\ (|x| > 1)\\)"
   },
   {
     "objectID": "qmd/derivatives.html#hyperbolic-functions",
     "href": "qmd/derivatives.html#hyperbolic-functions",
     "title": "10  Derivatives",
-    "section": "10.7 Hyperbolic functions",
-    "text": "10.7 Hyperbolic functions\n\nReference: Hass, Heil, and Weir (2018)\n\nIncomplete"
+    "section": "10.8 Hyperbolic functions",
+    "text": "10.8 Hyperbolic functions\n\nReference: Hass, Heil, and Weir (2018)\n\n\n\\((\\sinh x)' = \\cosh x\\)\n\\((\\cosh x)' = \\sinh x\\)\n\\((\\tanh x)' = \\text{sech}^{2} \\ x\\)\n\\((\\text{sech} \\ x)' = - \\text{sech} \\ x \\tanh x\\)\n\\((\\coth x)' = - \\text{csch}^{2} \\ x\\)\n\\((\\text{csch} \\ x)' = - \\text{csch} \\ x \\coth x\\)"
   },
   {
     "objectID": "qmd/derivatives.html#inverse-hyperbolic-functions",
     "href": "qmd/derivatives.html#inverse-hyperbolic-functions",
     "title": "10  Derivatives",
-    "section": "10.8 Inverse hyperbolic functions",
-    "text": "10.8 Inverse hyperbolic functions\n\nReference: Hass, Heil, and Weir (2018)\n\nIncomplete"
+    "section": "10.9 Inverse hyperbolic functions",
+    "text": "10.9 Inverse hyperbolic functions\n\nReference: Hass, Heil, and Weir (2018)\n\n\n\\((\\sinh^{-1} x)' = \\cfrac{1}{\\sqrt{1 + x^{2}}}\\)\n\\((\\cosh^{-1} x)' = \\cfrac{1}{\\sqrt{x^{2} - 1}}\\)\n\\((\\tanh^{-1} x)' = \\cfrac{1}{1 - x^{2}}\\)\n\\((\\text{sech}^{-1} \\ x)' = - \\cfrac{1}{x \\sqrt{1 - x^{2}}}\\)\n\\((\\coth^{-1} x)' = \\cfrac{1}{1 - x^{2}}\\)\n\\((\\text{csch}^{-1} \\ x)' = - \\cfrac{1}{|x| \\sqrt{1 + x^{2}}}\\)"
   },
   {
     "objectID": "qmd/derivatives.html#differential-of-a-function",
     "href": "qmd/derivatives.html#differential-of-a-function",
     "title": "10  Derivatives",
-    "section": "10.9 Differential of a function",
-    "text": "10.9 Differential of a function\n\nReference: Morettin, Hazzan, and Oliveira Bussab (2003)\n\n\\(df = f'(x_{0}) \\times \\Delta x\\), \\(df \\approx \\Delta f\\) para pequenos valores de \\(\\Delta x\\)."
+    "section": "10.10 Differential of a function",
+    "text": "10.10 Differential of a function\n\nReference: Morettin, Hazzan, and Oliveira Bussab (2003)\n\n\\(df = f'(x_{0}) \\times \\Delta x\\), \\(df \\approx \\Delta f\\) para pequenos valores de \\(\\Delta x\\)."
   },
   {
     "objectID": "qmd/derivatives.html#parametric-equations",
     "href": "qmd/derivatives.html#parametric-equations",
     "title": "10  Derivatives",
-    "section": "10.10 Parametric equations",
-    "text": "10.10 Parametric equations\n\nReference: Hass, Heil, and Weir (2018)\n\nIncomplete"
+    "section": "10.11 Parametric equations",
+    "text": "10.11 Parametric equations\n\nReference: Hass, Heil, and Weir (2018)\n\nIf \\(x = f(t)\\) and \\(y = g(t)\\) are differentiable, then\n\\[\ny' = \\cfrac{dy}{dx} = \\cfrac{dy / dt}{dx / dt}\n\\ \\ \\ \\text{and} \\ \\ \\\n\\cfrac{d^{2}y}{dx^{2}} = \\cfrac{dy' / dt}{dx / dt}\n\\]"
   },
   {
     "objectID": "qmd/derivatives.html#nd-3rd-order-derivatives",
     "href": "qmd/derivatives.html#nd-3rd-order-derivatives",
     "title": "10  Derivatives",
-    "section": "10.11 2nd, 3rd, … order derivatives",
-    "text": "10.11 2nd, 3rd, … order derivatives\n\nReference: Morettin, Hazzan, and Oliveira Bussab (2003)\n\n\\(f'(x) \\ f''(x) \\ f'''(x) \\ f^{(4)}(x)\\)\n\n\n\n\nDerivativeit. n.d. https://derivativeit.com/2020/09/28/derivative-of-e-x-2/.\n\n\nHase, Masayuki Oka. 2022. “Métodos Matemáticos e de Computação 1.”\n\n\nHass, Joel, Christopher Heil, and Maurice D. Weir. 2018. Thomas’ Calculus. 14th ed. Pearson.\n\n\nMorettin, Pedro Alberto, Samuel Hazzan, and Wilton de Oliveira Bussab. 2003. Cálculo: Funções de Uma e Várias Variáveis. Saraiva."
+    "section": "10.12 2nd, 3rd, … order derivatives",
+    "text": "10.12 2nd, 3rd, … order derivatives\n\nReference: Morettin, Hazzan, and Oliveira Bussab (2003)\n\n\\(f'(x) \\ f''(x) \\ f'''(x) \\ f^{(4)}(x)\\)\n\n\n\n\nDerivativeit. n.d. https://derivativeit.com/2020/09/28/derivative-of-e-x-2/.\n\n\nHase, Masayuki Oka. 2022. “Métodos Matemáticos e de Computação 1.”\n\n\nHass, Joel, Christopher Heil, and Maurice D. Weir. 2018. Thomas’ Calculus. 14th ed. Pearson.\n\n\nMorettin, Pedro Alberto, Samuel Hazzan, and Wilton de Oliveira Bussab. 2003. Cálculo: Funções de Uma e Várias Variáveis. Saraiva."
   },
   {
     "objectID": "qmd/applications-of-derivatives.html",
     "href": "qmd/applications-of-derivatives.html",
     "title": "11  Applications of derivatives",
     "section": "",
-    "text": "\\(f'(x) = 0\\) ou \\(f'(x) = \\nexists\\) ou indefinido"
+    "text": "Reference: Hase (2022) and Lucchesi (n.d.)\n\nAlthough there is no established rule to sketch the graph of a real function \\(f ∶ \\mathbb{R} \\to \\mathbb{R}\\) that is “sufficiently simple”, the following paths will be adopted as a guide:\n\nDetermination of the domain of \\(f\\).\nDetermination of the zeros of \\(f\\) (if they exist) (axis intersections).\nAnalysis of \\(f′\\) (the zeros of this function are candidates for local maxima/minima and indicate if the function is increasing or decreasing).\nAnalysis of \\(f′′\\) (the zeros of this function are candidates for inflection points and indicate if the function is concave or convex).\nDetermination of asymptotic behavior (determination of limits at the end of the domain).\nDetermination of asymptotes (if applicable) and of lateral limits at discontinuity points."
   },
   {
     "objectID": "qmd/applications-of-derivatives.html#maximum-minimum-and-inflection-points",
     "href": "qmd/applications-of-derivatives.html#maximum-minimum-and-inflection-points",
     "title": "11  Applications of derivatives",
-    "section": "11.2 Maximum, minimum, and inflection points",
-    "text": "11.2 Maximum, minimum, and inflection points\nPonto de mínimo (convexidade \\(\\bigcup\\) ) \\(\\rightarrow f''(x) > 0 \\ \\forall x \\in \\ ]a, b[\\)\nPonto de máximo (concavidade \\(\\bigcap\\) ) \\(\\rightarrow f''(x) < 0 \\ \\forall x \\in \\ ]a, b[\\)\nPonto de inflexão \\(\\rightarrow f''(x) = 0 \\ \\forall x \\in \\ ]a, b[\\)"
+    "section": "11.4 Maximum, minimum, and inflection points",
+    "text": "11.4 Maximum, minimum, and inflection points\n\nReference: Lucchesi (n.d.)\n\n\nMinimum point (convexity \\(\\bigcup\\)): \\(f''(x) > 0 \\ \\forall x \\in \\ ]a, b[\\)\nMaximum point (convexity \\(\\bigcap\\)): \\(f''(x) < 0 \\ \\forall x \\in \\ ]a, b[\\)\nInflection point: \\(f''(x) = 0 \\ \\forall x \\in \\ ]a, b[\\)"
   },
   {
     "objectID": "qmd/applications-of-derivatives.html#full-study-of-a-function",
@@ -318,15 +318,15 @@
     "objectID": "qmd/applications-of-derivatives.html#financialadministrative-functions",
     "href": "qmd/applications-of-derivatives.html#financialadministrative-functions",
     "title": "11  Applications of derivatives",
-    "section": "11.4 Financial/administrative functions",
-    "text": "11.4 Financial/administrative functions\n\n\\(R(P \\ ou \\ Q) = P \\times Q\\)\n\\(L(P \\ ou \\ Q) = R(P \\ ou \\ Q) - C (P \\ ou \\ Q)\\)\n\\(C_{mg}(x) = C'(x)\\), normalmente \\(\\Delta x = 1\\)\n\\(R_{mg}(x) = R'(x)\\), normalmente \\(\\Delta x = 1\\)\nProp. marginal a consumir (C) \\(\\rightarrow p^{c}_{mg} = C'(y)\\), \\(y =\\) renda disponível\nProp. marginal a poupar (S) \\(\\rightarrow p^{c}_{mg} = S'(y)\\), \\(y =\\) renda disponível\nProdutividade marginal \\(\\rightarrow P_{mg}(x) = P'(x)\\)"
+    "section": "11.5 Financial/administrative functions",
+    "text": "11.5 Financial/administrative functions\n\nReference: Morettin, Hazzan, and Oliveira Bussab (2003)\n\n\n\\(R(P \\ ou \\ Q) = P \\times Q\\)\n\\(L(P \\ ou \\ Q) = R(P \\ ou \\ Q) - C (P \\ ou \\ Q)\\)\n\\(C_{mg}(x) = C'(x) \\ \\ \\ , \\ \\ \\ \\text{usually for} \\ \\Delta x = 1\\)\n\\(R_{mg}(x) = R'(x) \\ \\ \\ , \\ \\ \\ \\text{usually for} \\ \\Delta x = 1\\)\nMarginal propensity to consume (C) \\(\\rightarrow p^{c}_{mg} = C'(y) \\ \\ \\ , \\ \\ \\ y = \\text{disposable income}\\)\nMarginal propensity to save (S) \\(\\rightarrow p^{s}_{mg} = S'(y) \\ \\ \\ , \\ \\ \\ y = \\text{disposable income}\\)\nMarginal productivity \\(\\rightarrow P_{mg}(x) = P'(x)\\)"
   },
   {
     "objectID": "qmd/applications-of-derivatives.html#elasticity---supply-and-demand-function",
     "href": "qmd/applications-of-derivatives.html#elasticity---supply-and-demand-function",
     "title": "11  Applications of derivatives",
-    "section": "11.5 Elasticity - Supply and Demand Function",
-    "text": "11.5 Elasticity - Supply and Demand Function\n\nFunção Demanda \\(\\rightarrow \\cfrac{dx}{dp} < 0\\)\nFunção Oferta \\(\\rightarrow \\cfrac{dx}{dp} > 0\\)\nPonto de Equilíbrio \\(\\rightarrow p_{d} = p_{o}\\)\nvariação percentual no preço \\(= \\cfrac{\\Delta p}{p_{0}}\\)\nVariação percentual na quantidade \\(= \\cfrac{\\Delta x}{x_{0}}\\)\n\\(e = \\begin{vmatrix} \\lim \\limits_{\\Delta p \\to 0} \\cfrac{\\cfrac{\\Delta x}{x_{0}}}{\\cfrac{\\Delta p}{p_{0}}} \\end{vmatrix} = \\cfrac{p_{0}}{x_{0}} \\times \\begin{vmatrix} \\lim \\limits_{\\Delta p \\to 0} \\cfrac{\\Delta x}{\\Delta p}\\end{vmatrix} = \\cfrac{p_{0}}{x_{0}} \\times \\begin{vmatrix} \\cfrac{dx}{dp}\\end{vmatrix}\\)\n\\(e > 1 \\rightarrow\\) elástica, \\(0 < e > 1 \\rightarrow\\) inelástica, \\(e = 1 \\rightarrow\\) elasticidade unitária\n* Não se aplica em caso de elasticidade cruzada."
+    "section": "11.6 Elasticity - Supply and Demand Function",
+    "text": "11.6 Elasticity - Supply and Demand Function\n\nReference: Morettin, Hazzan, and Oliveira Bussab (2003)\n\n\nDemand function: \\(\\cfrac{dx}{dp} < 0\\)\nSupply function \\(\\cfrac{dx}{dp} > 0\\)\nBreak-even point: \\(p_{d} = p_{o}\\)\nPercentage change in price: \\(\\cfrac{\\Delta p}{p_{0}}\\)\nPercentage change in quantity: \\(\\cfrac{\\Delta x}{x_{0}}\\)\n\\(e = \\begin{vmatrix} \\lim \\limits_{\\Delta p \\to 0} \\cfrac{\\cfrac{\\Delta x}{x_{0}}}{\\cfrac{\\Delta p}{p_{0}}} \\end{vmatrix} = \\cfrac{p_{0}}{x_{0}} \\times \\begin{vmatrix} \\lim \\limits_{\\Delta p \\to 0} \\cfrac{\\Delta x}{\\Delta p}\\end{vmatrix} = \\cfrac{p_{0}}{x_{0}} \\times \\begin{vmatrix} \\cfrac{dx}{dp}\\end{vmatrix}\\)\n\\(\\begin{cases} e > 1 \\rightarrow \\text{elastic} \\\\ 0 < e > 1 \\rightarrow \\text{inelastic} \\\\ e = 1 \\rightarrow \\text{unitary elasticity} \\end{cases}\\)\n* Does not apply in case of cross elasticity.\n\n\n\n\n\nHase, Masayuki Oka. 2022. “Métodos Matemáticos e de Computação 1.”\n\n\nLucchesi, Andrea. n.d.“”\n\n\nMorettin, Pedro Alberto, Samuel Hazzan, and Wilton de Oliveira Bussab. 2003. Cálculo: Funções de Uma e Várias Variáveis. Saraiva."
   },
   {
     "objectID": "qmd/integrals.html",
@@ -425,5 +425,54 @@
     "title": "References",
     "section": "",
     "text": "Derivativeit. n.d. https://derivativeit.com/2020/09/28/derivative-of-e-x-2/.\n\n\nHase, Masayuki Oka. 2022. “Métodos Matemáticos e de Computação\n1.”\n\n\nHass, Joel, Christopher Heil, and Maurice D. Weir. 2018. Thomas’\nCalculus. 14th ed. Pearson.\n\n\nLucchesi, Andrea. n.d.“”\n\n\nMorettin, Pedro Alberto, Samuel Hazzan, and Wilton de Oliveira Bussab.\n2003. Cálculo: Funções de Uma e Várias Variáveis. Saraiva.\n\n\nSó Matemática. n.d. http://www.somatematica.com.br/.\n\n\nVentura, Marcelo. n.d.“”"
+  },
+  {
+    "objectID": "qmd/derivatives.html#example-of-derivative-by-definition",
+    "href": "qmd/derivatives.html#example-of-derivative-by-definition",
+    "title": "10  Derivatives",
+    "section": "10.2 Example of derivative by definition",
+    "text": "10.2 Example of derivative by definition\n\\(f(x) = x^{2}\\)\n\\(\\cfrac{d}{dx} f(x) = [(f(x)]' = \\lim \\limits_{\\Delta x \\to 0} \\cfrac{f(x + \\Delta x) - f(x)}{\\Delta x}\\)\n\\(\\lim \\limits_{\\Delta x \\to 0} \\cfrac{(x + \\Delta x)^{2} - x^{2}}{\\Delta x}\\)\n\\(\\lim \\limits_{\\Delta x \\to 0} \\cfrac{x^{2} + 2x \\Delta x + (\\Delta x)^{2} - x^{2}}{\\Delta x}\\)\n\\(\\lim \\limits_{\\Delta x \\to 0} \\cfrac{\\Delta x (2x + \\Delta x)}{\\Delta x}\\)\n\\(\\lim \\limits_{\\Delta x \\to 0} 2x + \\Delta x = 2x\\)"
+  },
+  {
+    "objectID": "qmd/applications-of-derivatives.html#critical-points",
+    "href": "qmd/applications-of-derivatives.html#critical-points",
+    "title": "11  Applications of derivatives",
+    "section": "11.3 Critical points",
+    "text": "11.3 Critical points\n\nReference: Lucchesi (n.d.)\n\nWhen \\(f'(x) = 0\\) or \\(f'(x) = \\nexists \\ \\text{or is not defined}\\)."
+  },
+  {
+    "objectID": "qmd/applications-of-derivatives.html#example-of-how-to-graph-a-function",
+    "href": "qmd/applications-of-derivatives.html#example-of-how-to-graph-a-function",
+    "title": "11  Applications of derivatives",
+    "section": "11.2 Example of how to graph a function",
+    "text": "11.2 Example of how to graph a function\n\nReference: Hase (2022)\n\n\\(f(x) = \\cfrac{x^2 - 16}{x - 5}\\)\n1. The domain of \\(f\\) is a subset of \\(\\mathbb{R}\\) that excludes the points where the function \\(f\\) is not defined; therefore, \\(Dom(f) = \\mathbb{R} \\smallsetminus \\{5\\}\\).\n2. The zeros of \\(f\\), which are solutions of \\(f(x) = 0\\), are \\(x = 4\\) or \\(x = −4\\).\n3. In the analysis of \\(f′\\), where\n\\[f'(x) = \\cfrac{(x - 2) (x - 8)}{(x - 5)^{2}}\\]\na special attention should be paid to the points \\(x = 2\\) and \\(x = 8\\) (where \\(f′(x)\\) vanishes), besides \\(x = 5\\) (where the function is not defined). Therefore, one has:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(x\\)\n\\(x < 2\\)\n\\(2\\)\n\\(2 < x < 5\\)\n\\(5\\)\n\\(5 < x < 8\\)\n\\(8\\)\n\\(8 < x\\)\n\n\n\\(f'\\)\n\\(+\\)\n\\(0\\)\n\\(-\\)\n\\(\\times\\)\n\\(-\\)\n\\(0\\)\n\\(+\\)\n\n\n\\(\\text{Variation}\\)\n\\(\\nearrow\\)\n\\(\\longrightarrow\\)\n\\(\\searrow\\)\n\\(\\times\\)\n\\(\\searrow\\)\n\\(\\longrightarrow\\)\n\\(\\nearrow\\)\n\n\n\nThe candidates for the extremal points (local maxima or minima) are the roots of \\(f′(x) = 0\\), which are \\(x = 2\\) or \\(x = 8\\). From the table above, one can see that \\(x = 2\\) is a local maximum, while \\(x = 8\\) is a local minimum.\n4. The second derivative of \\(f\\), denoted by \\(f′′\\), is defined as the derivative of \\(f′\\). It can characterize the convexity of \\(f\\). As an example, consider the graphs of figure 1: the functions \\(f\\) are represented by black curves, while their slopes (the derivative of \\(f\\), represented by \\(f′\\)) are depicted by red segments at some points. In the left figure, the derivatives \\(f′\\) increase, which means that \\((f′)′ \\equiv f′′ > 0\\). On the other hand, the derivatives of the function decrease in the right picture, i. e., \\((f′)′ \\equiv f′′ < 0\\). The former is a concave function (at least in the region under consideration), and the latter is a convex function (again, in the region under analysis). If there exists a point \\(\\tilde x\\) that separates two different convexities, \\(\\tilde x\\) is called an inflection point. This means that \\(f′\\) changes sign at \\(\\tilde x\\). Therefore, looking for the zeros of \\(f′′\\) is a natural way to search for the candidates for inflection points.\n\nReturning to the example under examination, the behavior of \\(f′′\\), where\n\\[f''(x) = \\cfrac{18}{(x - 5)^{3}}\\]\nshould pay special attention to the point \\(x = 5\\) (where the function is not defined). Therefore, one has:\n\n\n\n\n\n\n\n\n\n\\(x\\)\n\\(x < 5\\)\n\\(5\\)\n\\(5 < x\\)\n\n\n\\(f''\\)\n\\(-\\)\n\\(\\times\\)\n\\(+\\)\n\n\n\\(\\text{Convexity}\\)\n\\(\\cap\\)\n\\(\\times\\)\n\\(\\cup\\)\n\n\n\nThe candidates for the inflection points (where the convexity of the function changes) are the roots of \\(f′′(x) = 0\\), which does not exist in this example.\n5. Analysis of \\(f\\) at the boundaries (\\(x \\to \\pm \\infty\\)) and singularities, which is at \\(x = 5\\) in this example:\n\\[\n\\lim \\limits_{x \\to - \\infty} f(x) = - \\infty\n\\quad , \\quad\n\\lim \\limits_{x \\to \\infty} f(x) = + \\infty\n\\quad , \\quad\n\\lim \\limits_{x \\to 5^{-}} f(x) = - \\infty\n\\quad , \\ \\text{and} \\quad\n\\lim \\limits_{x \\to 5^{+}} f(x) = + \\infty\n\\]\n6. For \\(|x| \\gg 1\\) (\\(\\gg := \\text{\"much greater than\"}\\)), the function \\(f\\) may display a linear behavior. In this case, the line \\(y = ax + b\\), where \\(a\\) and \\(b\\) are, respectively, the angular and linear coefficients, become a suitable description of \\(f\\). The line \\(y = ax + b\\) is the asymptote of \\(f\\) (when it exists). Symbolically, one has \\(f(x) \\approx (ax + b)\\), and the parameters \\(a\\) and \\(b\\) are evaluated as\n\\[\na = \\lim \\limits_{x \\to \\pm \\infty} \\cfrac{f(x)}{x}\n\\quad \\text{and} \\quad\nb = \\lim \\limits_{x \\to \\pm \\infty} [f(x) - ax]\n\\]\nThe present function has an asymptote, given by \\(g(x) = ax + b\\), where\n\\[\na = \\lim \\limits_{x \\to \\pm \\infty} \\cfrac{f(x)}{x} =\n\\lim \\limits_{x \\to \\pm \\infty} \\left(\\cfrac{x^2 - 16}{x - 5} \\right) \\cfrac{1}{x} = 1\n\\quad \\text{and} \\quad\nb = \\lim \\limits_{x \\to \\pm \\infty} [f(x) - ax] =\n\\lim \\limits_{x \\to \\pm \\infty} \\left[\\cfrac{x^2 - 16}{x - 5} - 5 \\right] = 5\n\\]\nThe equation of the asymptote is, therefore, \\(g(x) = x + 5\\). The function has also a vertical asymptote \\(x = 5\\).\nGathering together the information above, one can sketch the graph of \\(f\\) (figure 2)."
+  },
+  {
+    "objectID": "qmd/limits.html#inequalities",
+    "href": "qmd/limits.html#inequalities",
+    "title": "9  Limits",
+    "section": "9.2 Inequalities",
+    "text": "9.2 Inequalities\n\nReference: Hass, Heil, and Weir (2018)\n\nIf \\(f(x) \\leq g(x)\\) in an open interval containing \\(c\\), except possibly at \\(x = c\\), and both limits exists, then:\n\\[\\lim \\limits_{x \\to c} f(x) \\leq \\lim \\limits_{x \\to c} g(x)\\]"
+  },
+  {
+    "objectID": "qmd/limits.html#special-formulas",
+    "href": "qmd/limits.html#special-formulas",
+    "title": "9  Limits",
+    "section": "9.7 Special formulas",
+    "text": "9.7 Special formulas\n\nReference: Hase (2022)\n\n\nIf \\(P(x) = a_{n}x^{n} + a_{n - 1}x^{n - 1} + \\cdots + a_{0}\\), then \\(\\lim \\limits_{x \\to c} P(x) = P(c) = a_{n}c^{n} + a_{n - 1}c^{n - 1} + \\cdots + a_{0}\\)\nIf \\(P(x)\\) and \\(Q(x)\\) are polynomials and \\(Q(c) \\neq 0\\), then \\(\\lim \\limits_{x \\to c} \\cfrac{P(x)}{Q(x)} = \\cfrac{P(c)}{Q(c)}\\)\nIf \\(f(x)\\) is continuous at \\(x = c\\), then \\(\\lim \\limits_{x \\to c} f(x) = f(c)\\) , \\(\\lim \\limits_{x \\to c} \\cfrac{\\sin x}{x} = 1\\) , and \\(\\lim \\limits_{x \\to c} \\cfrac{1 - \\cos x}{x} = 0\\)"
+  },
+  {
+    "objectID": "qmd/algebra.html#pascals-triangle",
+    "href": "qmd/algebra.html#pascals-triangle",
+    "title": "3  Algebra",
+    "section": "3.6 Pascal’s triangle",
+    "text": "3.6 Pascal’s triangle\n\nReference: Wikiversity (n.d.)"
+  },
+  {
+    "objectID": "qmd/algebra.html#the-binominal-theorem-newtons-binomial",
+    "href": "qmd/algebra.html#the-binominal-theorem-newtons-binomial",
+    "title": "3  Algebra",
+    "section": "3.5 The binominal theorem (Newton’s binomial)",
+    "text": "3.5 The binominal theorem (Newton’s binomial)\n\nReference: Hass, Heil, and Weir (2018) and Khan Academy (n.d.) and Matika (n.d.)\n\nFor any positive integer \\(n\\),\n\\[\n(a + b)^{n} = a^{n} + na^{n - 1}b + \\cfrac{n (n - 1)}{1 \\cdot 2} a^{n - 2}b^{2} + \\cfrac{n (n - 1) (n - 2)}{1 \\cdot 2 \\cdot 3}a^{n - 3}b^{3} + \\cdots + nab^{n - 1} + b^{n}\n\\]\nThe same formula above can be written as\n\\[\n(a + b)^{n} = \\sum_{k = 0}^{n} \\binom{n}{k} \\cdot a^{n - k} \\cdot b^{k} \\quad , \\quad \\binom{n}{k} = \\cfrac{n!}{k! (n - k)!}\n\\]\n\nExample:\n\n\\[\n(a + b)^4 = a^{4} + 4a^{3}b + 6a^{2}b^{2} + 4ab^{3} + b^{4}\n\\]\nIn the case of \\((a - b)\\),\n\\[\n(a - b)^{n} = \\sum_{k = 0}^{n} \\binom{n}{k} \\cdot a^{n - k} \\cdot (- b)^{k}\n\\]\nNote that when the power of \\(− b\\) is even, the product is positive and if the power is odd, the product is negative.\n\nExample:\n\n\\[\n(a - b)^4 = a^{4} - 4a^{3}b + 6a^{2}b^{2} - 4ab^{3} + b^{4}\n\\]\nSee the “special products” section for more examples."
   }
 ]

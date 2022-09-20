@@ -15,6 +15,25 @@ span.underline{text-decoration: underline;}
 div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -232,11 +251,12 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#critical-points" id="toc-critical-points" class="nav-link active" data-scroll-target="#critical-points"> <span class="header-section-number">11.1</span> Critical points</a></li>
-  <li><a href="#maximum-minimum-and-inflection-points" id="toc-maximum-minimum-and-inflection-points" class="nav-link" data-scroll-target="#maximum-minimum-and-inflection-points"> <span class="header-section-number">11.2</span> Maximum, minimum, and inflection points</a></li>
-  <li><a href="#full-study-of-a-function" id="toc-full-study-of-a-function" class="nav-link" data-scroll-target="#full-study-of-a-function"> <span class="header-section-number">11.3</span> Full study of a function</a></li>
-  <li><a href="#financialadministrative-functions" id="toc-financialadministrative-functions" class="nav-link" data-scroll-target="#financialadministrative-functions"> <span class="header-section-number">11.4</span> Financial/administrative functions</a></li>
-  <li><a href="#elasticity---supply-and-demand-function" id="toc-elasticity---supply-and-demand-function" class="nav-link" data-scroll-target="#elasticity---supply-and-demand-function"> <span class="header-section-number">11.5</span> Elasticity - Supply and Demand Function</a></li>
+  <li><a href="#guide-for-full-study-of-a-function" id="toc-guide-for-full-study-of-a-function" class="nav-link active" data-scroll-target="#guide-for-full-study-of-a-function"> <span class="header-section-number">11.1</span> Guide for full study of a function</a></li>
+  <li><a href="#example-of-how-to-graph-a-function" id="toc-example-of-how-to-graph-a-function" class="nav-link" data-scroll-target="#example-of-how-to-graph-a-function"> <span class="header-section-number">11.2</span> Example of how to graph a function</a></li>
+  <li><a href="#critical-points" id="toc-critical-points" class="nav-link" data-scroll-target="#critical-points"> <span class="header-section-number">11.3</span> Critical points</a></li>
+  <li><a href="#maximum-minimum-and-inflection-points" id="toc-maximum-minimum-and-inflection-points" class="nav-link" data-scroll-target="#maximum-minimum-and-inflection-points"> <span class="header-section-number">11.4</span> Maximum, minimum, and inflection points</a></li>
+  <li><a href="#financialadministrative-functions" id="toc-financialadministrative-functions" class="nav-link" data-scroll-target="#financialadministrative-functions"> <span class="header-section-number">11.5</span> Financial/administrative functions</a></li>
+  <li><a href="#elasticity---supply-and-demand-function" id="toc-elasticity---supply-and-demand-function" class="nav-link" data-scroll-target="#elasticity---supply-and-demand-function"> <span class="header-section-number">11.6</span> Elasticity - Supply and Demand Function</a></li>
   </ul>
 </nav>
     </div>
@@ -259,53 +279,200 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<section id="critical-points" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="critical-points"><span class="header-section-number">11.1</span> Critical points</h2>
-<p><span class="math inline">\(f'(x) = 0\)</span> ou <span class="math inline">\(f'(x) = \nexists\)</span> ou indefinido</p>
-</section>
-<section id="maximum-minimum-and-inflection-points" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="maximum-minimum-and-inflection-points"><span class="header-section-number">11.2</span> Maximum, minimum, and inflection points</h2>
-<p>Ponto de mínimo (convexidade <span class="math inline">\(\bigcup\)</span> ) <span class="math inline">\(\rightarrow f''(x) &gt; 0 \ \forall x \in \ ]a, b[\)</span></p>
-<p>Ponto de máximo (concavidade <span class="math inline">\(\bigcap\)</span> ) <span class="math inline">\(\rightarrow f''(x) &lt; 0 \ \forall x \in \ ]a, b[\)</span></p>
-<p>Ponto de inflexão <span class="math inline">\(\rightarrow f''(x) = 0 \ \forall x \in \ ]a, b[\)</span></p>
-</section>
-<section id="full-study-of-a-function" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="full-study-of-a-function"><span class="header-section-number">11.3</span> Full study of a function</h2>
+<section id="guide-for-full-study-of-a-function" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="guide-for-full-study-of-a-function"><span class="header-section-number">11.1</span> Guide for full study of a function</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span> and <span class="citation" data-cites="lucchesi">Lucchesi (<a href="references.html#ref-lucchesi" role="doc-biblioref">n.d.</a>)</span></p>
+</blockquote>
+<p>Although there is no established rule to sketch the graph of a real function <span class="math inline">\(f ∶ \mathbb{R} \to \mathbb{R}\)</span> that is “sufficiently simple”, the following paths will be adopted as a guide:</p>
 <ol type="1">
-<li>Determinação do domínio.</li>
-<li>Determinação das intersecções com os eixos, quando possível/</li>
-<li>Determinação dos intervalos de crescimento e decrescimento e de possíveis pontos de máximo e mínimo.</li>
-<li>Determinação dos intervalos em que a função é côncava para cima ou para baixo e de possíveis pontos de inﬂexão.</li>
-<li>Determinação dos limites nos extremos do domínio e de possíveis assíntotas.</li>
-<li>Determinação dos limites laterais nos pontos de descontinuidades (quando houver e possíveis assíntotas).</li>
+<li>Determination of the domain of <span class="math inline">\(f\)</span>.</li>
+<li>Determination of the zeros of <span class="math inline">\(f\)</span> (if they exist) (axis intersections).</li>
+<li>Analysis of <span class="math inline">\(f′\)</span> (the zeros of this function are candidates for local maxima/minima and indicate if the function is increasing or decreasing).</li>
+<li>Analysis of <span class="math inline">\(f′′\)</span> (the zeros of this function are candidates for inflection points and indicate if the function is concave or convex).</li>
+<li>Determination of asymptotic behavior (determination of limits at the end of the domain).</li>
+<li>Determination of asymptotes (if applicable) and of lateral limits at discontinuity points.</li>
 </ol>
 </section>
-<section id="financialadministrative-functions" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="financialadministrative-functions"><span class="header-section-number">11.4</span> Financial/administrative functions</h2>
+<section id="example-of-how-to-graph-a-function" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="example-of-how-to-graph-a-function"><span class="header-section-number">11.2</span> Example of how to graph a function</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+</blockquote>
+<p><span class="math inline">\(f(x) = \cfrac{x^2 - 16}{x - 5}\)</span></p>
+<p>1. The domain of <span class="math inline">\(f\)</span> is a subset of <span class="math inline">\(\mathbb{R}\)</span> that excludes the points where the function <span class="math inline">\(f\)</span> is not defined; therefore, <span class="math inline">\(Dom(f) = \mathbb{R} \smallsetminus \{5\}\)</span>.</p>
+<p>2. The zeros of <span class="math inline">\(f\)</span>, which are solutions of <span class="math inline">\(f(x) = 0\)</span>, are <span class="math inline">\(x = 4\)</span> or <span class="math inline">\(x = −4\)</span>.</p>
+<p>3. In the analysis of <span class="math inline">\(f′\)</span>, where</p>
+<p><span class="math display">\[f'(x) = \cfrac{(x - 2) (x - 8)}{(x - 5)^{2}}\]</span></p>
+<p>a special attention should be paid to the points <span class="math inline">\(x = 2\)</span> and <span class="math inline">\(x = 8\)</span> (where <span class="math inline">\(f′(x)\)</span> vanishes), besides <span class="math inline">\(x = 5\)</span> (where the function is not defined). Therefore, one has:</p>
+<table class="table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 11%">
+<col style="width: 8%">
+<col style="width: 11%">
+<col style="width: 15%">
+<col style="width: 10%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(x\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(x &lt; 2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(2\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(2 &lt; x &lt; 5\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(5\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(5 &lt; x &lt; 8\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(8\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(8 &lt; x\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(f'\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(+\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\times\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(+\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\text{Variation}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\nearrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\longrightarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\searrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\times\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\searrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\longrightarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\nearrow\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The candidates for the extremal points (local maxima or minima) are the roots of <span class="math inline">\(f′(x) = 0\)</span>, which are <span class="math inline">\(x = 2\)</span> or <span class="math inline">\(x = 8\)</span>. From the table above, one can see that <span class="math inline">\(x = 2\)</span> is a local maximum, while <span class="math inline">\(x = 8\)</span> is a local minimum.</p>
+<p>4. The second derivative of <span class="math inline">\(f\)</span>, denoted by <span class="math inline">\(f′′\)</span>, is defined as the derivative of <span class="math inline">\(f′\)</span>. It can characterize the convexity of <span class="math inline">\(f\)</span>. As an example, consider the graphs of figure 1: the functions <span class="math inline">\(f\)</span> are represented by black curves, while their slopes (the derivative of <span class="math inline">\(f\)</span>, represented by <span class="math inline">\(f′\)</span>) are depicted by red segments at some points. In the left figure, the derivatives <span class="math inline">\(f′\)</span> increase, which means that <span class="math inline">\((f′)′ \equiv f′′ &gt; 0\)</span>. On the other hand, the derivatives of the function decrease in the right picture, i. e., <span class="math inline">\((f′)′ \equiv f′′ &lt; 0\)</span>. The former is a concave function (at least in the region under consideration), and the latter is a convex function (again, in the region under analysis). If there exists a point <span class="math inline">\(\tilde x\)</span> that separates two different convexities, <span class="math inline">\(\tilde x\)</span> is called an inflection point. This means that <span class="math inline">\(f′\)</span> changes sign at <span class="math inline">\(\tilde x\)</span>. Therefore, looking for the zeros of <span class="math inline">\(f′′\)</span> is a natural way to search for the candidates for inflection points.</p>
+<p><img src="../images/hase_lecture_4_figure_1.png" class="img-fluid"></p>
+<p>Returning to the example under examination, the behavior of <span class="math inline">\(f′′\)</span>, where</p>
+<p><span class="math display">\[f''(x) = \cfrac{18}{(x - 5)^{3}}\]</span></p>
+<p>should pay special attention to the point <span class="math inline">\(x = 5\)</span> (where the function is not defined). Therefore, one has:</p>
+<table class="table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 13%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(x\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(x &lt; 5\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(5\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(5 &lt; x\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(f''\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\times\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(+\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(\text{Convexity}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\cap\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\times\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\cup\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The candidates for the inflection points (where the convexity of the function changes) are the roots of <span class="math inline">\(f′′(x) = 0\)</span>, which does not exist in this example.</p>
+<p>5. Analysis of <span class="math inline">\(f\)</span> at the boundaries (<span class="math inline">\(x \to \pm \infty\)</span>) and singularities, which is at <span class="math inline">\(x = 5\)</span> in this example:</p>
+<p><span class="math display">\[
+\lim \limits_{x \to - \infty} f(x) = - \infty
+\quad , \quad
+\lim \limits_{x \to \infty} f(x) = + \infty
+\quad , \quad
+\lim \limits_{x \to 5^{-}} f(x) = - \infty
+\quad , \ \text{and} \quad
+\lim \limits_{x \to 5^{+}} f(x) = + \infty
+\]</span></p>
+<p>6. For <span class="math inline">\(|x| \gg 1\)</span> (<span class="math inline">\(\gg := \text{"much greater than"}\)</span>), the function <span class="math inline">\(f\)</span> may display a linear behavior. In this case, the line <span class="math inline">\(y = ax + b\)</span>, where <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are, respectively, the angular and linear coefficients, become a suitable description of <span class="math inline">\(f\)</span>. The line <span class="math inline">\(y = ax + b\)</span> is the asymptote of <span class="math inline">\(f\)</span> (when it exists). Symbolically, one has <span class="math inline">\(f(x) \approx (ax + b)\)</span>, and the parameters <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are evaluated as</p>
+<p><span class="math display">\[
+a = \lim \limits_{x \to \pm \infty} \cfrac{f(x)}{x}
+\quad \text{and} \quad
+b = \lim \limits_{x \to \pm \infty} [f(x) - ax]
+\]</span></p>
+<p>The present function has an asymptote, given by <span class="math inline">\(g(x) = ax + b\)</span>, where</p>
+<p><span class="math display">\[
+a = \lim \limits_{x \to \pm \infty} \cfrac{f(x)}{x} =
+\lim \limits_{x \to \pm \infty} \left(\cfrac{x^2 - 16}{x - 5} \right) \cfrac{1}{x} = 1
+\quad \text{and} \quad
+b = \lim \limits_{x \to \pm \infty} [f(x) - ax] =
+\lim \limits_{x \to \pm \infty} \left[\cfrac{x^2 - 16}{x - 5} - 5 \right] = 5
+\]</span></p>
+<p>The equation of the asymptote is, therefore, <span class="math inline">\(g(x) = x + 5\)</span>. The function has also a vertical asymptote <span class="math inline">\(x = 5\)</span>.</p>
+<p>Gathering together the information above, one can sketch the graph of <span class="math inline">\(f\)</span> (figure 2).</p>
+<p><img src="../images/hase_lecture_4_figure_2.png" class="img-fluid"></p>
+</section>
+<section id="critical-points" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="critical-points"><span class="header-section-number">11.3</span> Critical points</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="lucchesi">Lucchesi (<a href="references.html#ref-lucchesi" role="doc-biblioref">n.d.</a>)</span></p>
+</blockquote>
+<p>When <span class="math inline">\(f'(x) = 0\)</span> or <span class="math inline">\(f'(x) = \nexists \ \text{or is not defined}\)</span>.</p>
+</section>
+<section id="maximum-minimum-and-inflection-points" class="level2" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="maximum-minimum-and-inflection-points"><span class="header-section-number">11.4</span> Maximum, minimum, and inflection points</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="lucchesi">Lucchesi (<a href="references.html#ref-lucchesi" role="doc-biblioref">n.d.</a>)</span></p>
+</blockquote>
+<ul>
+<li><p>Minimum point (convexity <span class="math inline">\(\bigcup\)</span>): <span class="math inline">\(f''(x) &gt; 0 \ \forall x \in \ ]a, b[\)</span></p></li>
+<li><p>Maximum point (convexity <span class="math inline">\(\bigcap\)</span>): <span class="math inline">\(f''(x) &lt; 0 \ \forall x \in \ ]a, b[\)</span></p></li>
+<li><p>Inflection point: <span class="math inline">\(f''(x) = 0 \ \forall x \in \ ]a, b[\)</span></p></li>
+</ul>
+</section>
+<section id="financialadministrative-functions" class="level2" data-number="11.5">
+<h2 data-number="11.5" class="anchored" data-anchor-id="financialadministrative-functions"><span class="header-section-number">11.5</span> Financial/administrative functions</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="morettin2003">Morettin, Hazzan, and Oliveira Bussab (<a href="references.html#ref-morettin2003" role="doc-biblioref">2003</a>)</span></p>
+</blockquote>
 <ul>
 <li><span class="math inline">\(R(P \ ou \ Q) = P \times Q\)</span></li>
 <li><span class="math inline">\(L(P \ ou \ Q) = R(P \ ou \ Q) - C (P \ ou \ Q)\)</span></li>
-<li><span class="math inline">\(C_{mg}(x) = C'(x)\)</span>, normalmente <span class="math inline">\(\Delta x = 1\)</span></li>
-<li><span class="math inline">\(R_{mg}(x) = R'(x)\)</span>, normalmente <span class="math inline">\(\Delta x = 1\)</span></li>
-<li>Prop. marginal a consumir (C) <span class="math inline">\(\rightarrow p^{c}_{mg} = C'(y)\)</span>, <span class="math inline">\(y =\)</span> renda disponível</li>
-<li>Prop. marginal a poupar (S) <span class="math inline">\(\rightarrow p^{c}_{mg} = S'(y)\)</span>, <span class="math inline">\(y =\)</span> renda disponível</li>
-<li>Produtividade marginal <span class="math inline">\(\rightarrow P_{mg}(x) = P'(x)\)</span></li>
+<li><span class="math inline">\(C_{mg}(x) = C'(x) \ \ \ , \ \ \ \text{usually for} \ \Delta x = 1\)</span></li>
+<li><span class="math inline">\(R_{mg}(x) = R'(x) \ \ \ , \ \ \ \text{usually for} \ \Delta x = 1\)</span></li>
+<li>Marginal propensity to consume (C) <span class="math inline">\(\rightarrow p^{c}_{mg} = C'(y) \ \ \ , \ \ \ y = \text{disposable income}\)</span></li>
+<li>Marginal propensity to save (S) <span class="math inline">\(\rightarrow p^{s}_{mg} = S'(y) \ \ \ , \ \ \ y = \text{disposable income}\)</span></li>
+<li>Marginal productivity <span class="math inline">\(\rightarrow P_{mg}(x) = P'(x)\)</span></li>
 </ul>
 </section>
-<section id="elasticity---supply-and-demand-function" class="level2" data-number="11.5">
-<h2 data-number="11.5" class="anchored" data-anchor-id="elasticity---supply-and-demand-function"><span class="header-section-number">11.5</span> Elasticity - Supply and Demand Function</h2>
+<section id="elasticity---supply-and-demand-function" class="level2" data-number="11.6">
+<h2 data-number="11.6" class="anchored" data-anchor-id="elasticity---supply-and-demand-function"><span class="header-section-number">11.6</span> Elasticity - Supply and Demand Function</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="morettin2003">Morettin, Hazzan, and Oliveira Bussab (<a href="references.html#ref-morettin2003" role="doc-biblioref">2003</a>)</span></p>
+</blockquote>
 <ul>
-<li><p>Função Demanda <span class="math inline">\(\rightarrow \cfrac{dx}{dp} &lt; 0\)</span></p></li>
-<li><p>Função Oferta <span class="math inline">\(\rightarrow \cfrac{dx}{dp} &gt; 0\)</span></p></li>
-<li><p>Ponto de Equilíbrio <span class="math inline">\(\rightarrow p_{d} = p_{o}\)</span></p></li>
-<li><p>variação percentual no preço <span class="math inline">\(= \cfrac{\Delta p}{p_{0}}\)</span></p></li>
-<li><p>Variação percentual na quantidade <span class="math inline">\(= \cfrac{\Delta x}{x_{0}}\)</span></p></li>
+<li><p>Demand function: <span class="math inline">\(\cfrac{dx}{dp} &lt; 0\)</span></p></li>
+<li><p>Supply function <span class="math inline">\(\cfrac{dx}{dp} &gt; 0\)</span></p></li>
+<li><p>Break-even point: <span class="math inline">\(p_{d} = p_{o}\)</span></p></li>
+<li><p>Percentage change in price: <span class="math inline">\(\cfrac{\Delta p}{p_{0}}\)</span></p></li>
+<li><p>Percentage change in quantity: <span class="math inline">\(\cfrac{\Delta x}{x_{0}}\)</span></p></li>
 <li><p><span class="math inline">\(e = \begin{vmatrix} \lim \limits_{\Delta p \to 0} \cfrac{\cfrac{\Delta x}{x_{0}}}{\cfrac{\Delta p}{p_{0}}} \end{vmatrix} = \cfrac{p_{0}}{x_{0}} \times \begin{vmatrix} \lim \limits_{\Delta p \to 0} \cfrac{\Delta x}{\Delta p}\end{vmatrix} = \cfrac{p_{0}}{x_{0}} \times \begin{vmatrix} \cfrac{dx}{dp}\end{vmatrix}\)</span></p></li>
-<li><p><span class="math inline">\(e &gt; 1 \rightarrow\)</span> elástica, <span class="math inline">\(0 &lt; e &gt; 1 \rightarrow\)</span> inelástica, <span class="math inline">\(e = 1 \rightarrow\)</span> elasticidade unitária</p>
-<p>* Não se aplica em caso de elasticidade cruzada.</p></li>
+<li><p><span class="math inline">\(\begin{cases} e &gt; 1 \rightarrow \text{elastic} \\ 0 &lt; e &gt; 1 \rightarrow \text{inelastic} \\ e = 1 \rightarrow \text{unitary elasticity} \end{cases}\)</span></p>
+<p>* Does not apply in case of cross elasticity.</p></li>
 </ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-hase2022" class="csl-entry" role="doc-biblioentry">
+Hase, Masayuki Oka. 2022. <span>“Métodos Matemáticos e de Computação 1.”</span>
+</div>
+<div id="ref-lucchesi" class="csl-entry" role="doc-biblioentry">
+Lucchesi, Andrea. n.d.<span>“”</span>
+</div>
+<div id="ref-morettin2003" class="csl-entry" role="doc-biblioentry">
+Morettin, Pedro Alberto, Samuel Hazzan, and Wilton de Oliveira Bussab. 2003. <em>Cálculo: Funções de Uma e Várias Variáveis</em>. Saraiva.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

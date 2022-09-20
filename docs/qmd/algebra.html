@@ -255,13 +255,14 @@ div.csl-indent {
   <li><a href="#laws-of-signs" id="toc-laws-of-signs" class="nav-link" data-scroll-target="#laws-of-signs"> <span class="header-section-number">3.2</span> Laws of signs</a></li>
   <li><a href="#zero" id="toc-zero" class="nav-link" data-scroll-target="#zero"> <span class="header-section-number">3.3</span> Zero</a></li>
   <li><a href="#laws-of-expoents" id="toc-laws-of-expoents" class="nav-link" data-scroll-target="#laws-of-expoents"> <span class="header-section-number">3.4</span> Laws of expoents</a></li>
-  <li><a href="#the-binominal-theorem" id="toc-the-binominal-theorem" class="nav-link" data-scroll-target="#the-binominal-theorem"> <span class="header-section-number">3.5</span> The binominal theorem</a></li>
-  <li><a href="#factoring-the-difference-of-like-integer-powers-n-1" id="toc-factoring-the-difference-of-like-integer-powers-n-1" class="nav-link" data-scroll-target="#factoring-the-difference-of-like-integer-powers-n-1"> <span class="header-section-number">3.6</span> Factoring the difference of like integer powers, <span class="math inline">\(n &gt; 1\)</span></a>
+  <li><a href="#the-binominal-theorem-newtons-binomial" id="toc-the-binominal-theorem-newtons-binomial" class="nav-link" data-scroll-target="#the-binominal-theorem-newtons-binomial"> <span class="header-section-number">3.5</span> The binominal theorem (Newton’s binomial)</a></li>
+  <li><a href="#pascals-triangle" id="toc-pascals-triangle" class="nav-link" data-scroll-target="#pascals-triangle"> <span class="header-section-number">3.6</span> Pascal’s triangle</a></li>
+  <li><a href="#factoring-the-difference-of-like-integer-powers-n-1" id="toc-factoring-the-difference-of-like-integer-powers-n-1" class="nav-link" data-scroll-target="#factoring-the-difference-of-like-integer-powers-n-1"> <span class="header-section-number">3.7</span> Factoring the difference of like integer powers, <span class="math inline">\(n &gt; 1\)</span></a>
   <ul class="collapse">
-  <li><a href="#special-products" id="toc-special-products" class="nav-link" data-scroll-target="#special-products"> <span class="header-section-number">3.6.1</span> Special products</a></li>
+  <li><a href="#special-products" id="toc-special-products" class="nav-link" data-scroll-target="#special-products"> <span class="header-section-number">3.7.1</span> Special products</a></li>
   </ul></li>
-  <li><a href="#completing-the-square" id="toc-completing-the-square" class="nav-link" data-scroll-target="#completing-the-square"> <span class="header-section-number">3.7</span> Completing the square</a></li>
-  <li><a href="#the-quadratic-formula" id="toc-the-quadratic-formula" class="nav-link" data-scroll-target="#the-quadratic-formula"> <span class="header-section-number">3.8</span> The quadratic formula</a></li>
+  <li><a href="#completing-the-square" id="toc-completing-the-square" class="nav-link" data-scroll-target="#completing-the-square"> <span class="header-section-number">3.8</span> Completing the square</a></li>
+  <li><a href="#the-quadratic-formula" id="toc-the-quadratic-formula" class="nav-link" data-scroll-target="#the-quadratic-formula"> <span class="header-section-number">3.9</span> The quadratic formula</a></li>
   </ul>
 </nav>
     </div>
@@ -324,54 +325,116 @@ div.csl-indent {
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
 </blockquote>
-<p><code>Incomplete</code></p>
+<ul>
+<li><span class="math inline">\(a^{m} a^{n} = a^{m + n}\)</span></li>
+<li><span class="math inline">\((ab)^{m} = a^{m} b^{m}\)</span></li>
+<li><span class="math inline">\((a^{m})^{n} = a^{mn}\)</span></li>
+<li><span class="math inline">\(a^{m / n} = \sqrt[n]{a^{m}} = (\sqrt[n]{a})^{m}\)</span></li>
+</ul>
 </section>
-<section id="the-binominal-theorem" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="the-binominal-theorem"><span class="header-section-number">3.5</span> The binominal theorem</h2>
+<section id="the-binominal-theorem-newtons-binomial" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="the-binominal-theorem-newtons-binomial"><span class="header-section-number">3.5</span> The binominal theorem (Newton’s binomial)</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span> and <span class="citation" data-cites="khanacademy">Khan Academy (<a href="references.html#ref-khanacademy" role="doc-biblioref">n.d.</a>)</span> and <span class="citation" data-cites="matika">Matika (<a href="references.html#ref-matika" role="doc-biblioref">n.d.</a>)</span></p>
+</blockquote>
+<p>For any positive integer <span class="math inline">\(n\)</span>,</p>
+<p><span class="math display">\[
+(a + b)^{n} = a^{n} + na^{n - 1}b + \cfrac{n (n - 1)}{1 \cdot 2} a^{n - 2}b^{2} + \cfrac{n (n - 1) (n - 2)}{1 \cdot 2 \cdot 3}a^{n - 3}b^{3} + \cdots + nab^{n - 1} + b^{n}
+\]</span></p>
+<p>The same formula above can be written as</p>
+<p><span class="math display">\[
+(a + b)^{n} = \sum_{k = 0}^{n} \binom{n}{k} \cdot a^{n - k} \cdot b^{k} \quad , \quad \binom{n}{k} = \cfrac{n!}{k! (n - k)!}
+\]</span></p>
+<ul>
+<li>Example:</li>
+</ul>
+<p><span class="math display">\[
+(a + b)^4 = a^{4} + 4a^{3}b + 6a^{2}b^{2} + 4ab^{3} + b^{4}
+\]</span></p>
+<p>In the case of <span class="math inline">\((a - b)\)</span>,</p>
+<p><span class="math display">\[
+(a - b)^{n} = \sum_{k = 0}^{n} \binom{n}{k} \cdot a^{n - k} \cdot (- b)^{k}
+\]</span></p>
+<p>Note that when the power of <span class="math inline">\(− b\)</span> is even, the product is positive and if the power is odd, the product is negative.</p>
+<ul>
+<li>Example:</li>
+</ul>
+<p><span class="math display">\[
+(a - b)^4 = a^{4} - 4a^{3}b + 6a^{2}b^{2} - 4ab^{3} + b^{4}
+\]</span></p>
+<p>See the “special products” section for more examples.</p>
+</section>
+<section id="pascals-triangle" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="pascals-triangle"><span class="header-section-number">3.6</span> Pascal’s triangle</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="wikiversity">Wikiversity (<a href="references.html#ref-wikiversity" role="doc-biblioref">n.d.</a>)</span></p>
+</blockquote>
+<p><img src="../images/wikiversity_pascal-s-triangle_1.png" class="img-fluid"></p>
+<p><img src="../images/wikiversity_pascal-s-triangle_2.png" class="img-fluid"></p>
+<p><img src="../images/wikiversity_pascal-s-triangle_3.png" class="img-fluid"></p>
+</section>
+<section id="factoring-the-difference-of-like-integer-powers-n-1" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="factoring-the-difference-of-like-integer-powers-n-1"><span class="header-section-number">3.7</span> Factoring the difference of like integer powers, <span class="math inline">\(n &gt; 1\)</span></h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
 </blockquote>
-<p><code>Incomplete</code></p>
-</section>
-<section id="factoring-the-difference-of-like-integer-powers-n-1" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="factoring-the-difference-of-like-integer-powers-n-1"><span class="header-section-number">3.6</span> Factoring the difference of like integer powers, <span class="math inline">\(n &gt; 1\)</span></h2>
+<p><span class="math display">\[
+a^{n} - b^{n} = (a - b)(a^{n - 1} + a^{n - 2}b + a^{n -3}b^{2} + \cdots + ab^{n - 2} + b^{n - 1})
+\]</span></p>
+<p>See the “special products” section for examples.</p>
+<section id="special-products" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="special-products"><span class="header-section-number">3.7.1</span> Special products</h3>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
 </blockquote>
-<p><code>Incomplete</code></p>
-<section id="special-products" class="level3" data-number="3.6.1">
-<h3 data-number="3.6.1" class="anchored" data-anchor-id="special-products"><span class="header-section-number">3.6.1</span> Special products</h3>
 <ul>
 <li>Square of a sum: <span class="math inline">\((a + b)^{2} = a^{2} + 2ab + b^{2}\)</span></li>
-<li>Square of a difference: <span class="math inline">\((a-b)^{2} = a^{2} - 2ab + b^{2}\)</span></li>
+<li>Square of a difference: <span class="math inline">\((a - b)^{2} = a^{2} - 2ab + b^{2}\)</span></li>
 <li>Square of 3 terms sum: <span class="math inline">\((a + b + c)^{2} = a^{2} + b^{2} + c^{2} + 2ab + 2ac + 2bc\)</span></li>
-<li>Cube of a sum: <span class="math inline">\((a+b)^3 = a^{3} + 3a^{2}b + 3ab^{2} + b^{3}\)</span></li>
+<li>Cube of a sum: <span class="math inline">\((a + b)^3 = a^{3} + 3a^{2}b + 3ab^{2} + b^{3}\)</span></li>
 <li>Cube of a difference: <span class="math inline">\((a - b)^{3} = a^{3} - 3a^{2}b + 3ab^{2} - b^{3}\)</span></li>
 <li>Sum of cube: <span class="math inline">\(a^{3} + b^{3} = (a + b)(a^{2} - ab + b^{2})\)</span></li>
 <li>Difference of cube: <span class="math inline">\(a^{3} - b^{3} = (a - b)(a^{2} + ab + b^{2})\)</span></li>
+<li>Quad of a sum: <span class="math inline">\((a + b)^4 = a^{4} + 4a^{3}b + 6a^{2}b^{2} + 4ab^{3} + b^{4}\)</span></li>
+<li>Quad of a difference: <span class="math inline">\((a - b)^4 = a^{4} - 4a^{3}b + 6a^{2}b^{2} - 4ab^{3} + b^{4}\)</span></li>
 <li>Product of a sum: <span class="math inline">\((x + a)(x + b) = x^{2} + (a + b)x + ab\)</span></li>
 <li>Product of a sum and a difference: <span class="math inline">\((a + b)(a - b) = a^{2} - b^{2}\)</span></li>
 </ul>
 </section>
 </section>
-<section id="completing-the-square" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="completing-the-square"><span class="header-section-number">3.7</span> Completing the square</h2>
+<section id="completing-the-square" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="completing-the-square"><span class="header-section-number">3.8</span> Completing the square</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
 </blockquote>
-<p><code>Incomplete</code></p>
+<p>If <span class="math inline">\(a \neq 0\)</span>, then</p>
+<p><span class="math display">\[
+ax^{2} + bx + c = au^{2} + C \quad \left (u = x + \cfrac{b}{2a} \ , \ C = c - \cfrac{b^2}{4a} \right )
+\]</span></p>
 </section>
-<section id="the-quadratic-formula" class="level2" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id="the-quadratic-formula"><span class="header-section-number">3.8</span> The quadratic formula</h2>
+<section id="the-quadratic-formula" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="the-quadratic-formula"><span class="header-section-number">3.9</span> The quadratic formula</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
 </blockquote>
-<p><code>Incomplete</code></p>
+<p>If <span class="math inline">\(a \neq 0\)</span> and <span class="math inline">\(ax^{2} + bx + c = 0\)</span>, then</p>
+<p><span class="math display">\[
+x = \cfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} \quad \left (\Delta = b^2 - 4ac  \right )
+\]</span></p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
 <div id="ref-hass2018" class="csl-entry" role="doc-biblioentry">
 Hass, Joel, Christopher Heil, and Maurice D. Weir. 2018. <em>Thomas’ Calculus</em>. 14th ed. Pearson.
+</div>
+<div id="ref-khanacademy" class="csl-entry" role="doc-biblioentry">
+Khan Academy. n.d. <a href="https://www.khanacademy.org/" class="uri">https://www.khanacademy.org/</a>.
+</div>
+<div id="ref-matika" class="csl-entry" role="doc-biblioentry">
+Matika. n.d. <a href="https://matika.com.br/" class="uri">https://matika.com.br/</a>.
+</div>
+<div id="ref-wikiversity" class="csl-entry" role="doc-biblioentry">
+Wikiversity. n.d. <a href="https://en.wikiversity.org/" class="uri">https://en.wikiversity.org/</a>.
 </div>
 </div>
 </section>

@@ -15,9 +15,9 @@ Note that, from a geometrical standpoint, the derivative at $x$ corresponds to t
 $$
 \cfrac{\text{d}}{\text{d}x} f(x) = 
 \begin{cases} 
-> 0 \ \ \ , \ \ \ \text{function } f \text{ increasing with } x \text{ (at } x \text{)}
+    > 0 \ \ \ , \ \ \ \text{function } f \text{ increasing with } x \text{ (at } x \text{)}
 \\
-< 0 \ \ \ , \ \ \ \text{function } f \text{ decreasing with } x \text{ (at } x \text{)}
+    < 0 \ \ \ , \ \ \ \text{function } f \text{ decreasing with } x \text{ (at } x \text{)}
 \end{cases}
 .
 $$
@@ -31,6 +31,20 @@ The case $\cfrac{\text{d}}{\text{d}x} f(x) = 0$ is especially important since it
 * $y = mx + n$
 * $m = \cfrac{\Delta f}{\Delta x} \approx f'(x)$
 * $y - y_{0} = m(x - x_{0})$
+
+## Example of derivative by definition
+
+$f(x) = x^{2}$
+
+$\cfrac{d}{dx} f(x) = [(f(x)]' = \lim \limits_{\Delta x \to 0} \cfrac{f(x + \Delta x) - f(x)}{\Delta x}$
+
+$\lim \limits_{\Delta x \to 0} \cfrac{(x + \Delta x)^{2} - x^{2}}{\Delta x}$
+
+$\lim \limits_{\Delta x \to 0} \cfrac{x^{2} + 2x \Delta x + (\Delta x)^{2} - x^{2}}{\Delta x}$
+
+$\lim \limits_{\Delta x \to 0} \cfrac{\Delta x (2x + \Delta x)}{\Delta x}$
+
+$\lim \limits_{\Delta x \to 0} 2x + \Delta x = 2x$
 
 ## General formulas
 
@@ -63,11 +77,11 @@ Assume $f$ and $g$ are differentiable functions of $x$.
 
 * $[\sin(2x)]'$
 
-$(\sin(2x))' = [f(g)]' = f'(g) \times g'$
+$[\sin(2x)]' = [f(g)]' = f'(g) \times g'$
 
 $[f(g)]' = \begin{cases} f = \sin x \Rightarrow f' = \cos x \\ g = 2x \Rightarrow g' = 2 \end{cases}$
 
-$(\sin(2x))' = f'(g) \times g' = \cos (2x) \times 2 = 2 \cos(2x)$
+$[\sin(2x)]' = f'(g) \times g' = \cos (2x) \times 2 = 2 \cos(2x)$
 
 * $[e^{(x^{2})}]'$
 
@@ -103,13 +117,23 @@ $[e^{(x^{2})}]' = f'^{(g)} \times g' = e^{(x^{2})} \times 2x$
 
 > Reference: @hass2018
 
-`Incomplete`
+* $(\sinh x)' = \cosh x$
+* $(\cosh x)' = \sinh x$
+* $(\tanh x)' = \text{sech}^{2} \ x$
+* $(\text{sech} \ x)' = - \text{sech} \ x \tanh x$
+* $(\coth x)' = - \text{csch}^{2} \ x$
+* $(\text{csch} \ x)' = - \text{csch} \ x \coth x$
 
 ## Inverse hyperbolic functions
 
 > Reference: @hass2018
 
-`Incomplete`
+* $(\sinh^{-1} x)' = \cfrac{1}{\sqrt{1 + x^{2}}}$
+* $(\cosh^{-1} x)' = \cfrac{1}{\sqrt{x^{2} - 1}}$
+* $(\tanh^{-1} x)' = \cfrac{1}{1 - x^{2}}$
+* $(\text{sech}^{-1} \ x)' = - \cfrac{1}{x \sqrt{1 - x^{2}}}$
+* $(\coth^{-1} x)' = \cfrac{1}{1 - x^{2}}$
+* $(\text{csch}^{-1} \ x)' = - \cfrac{1}{|x| \sqrt{1 + x^{2}}}$
 
 ## Differential of a function
 
@@ -121,7 +145,13 @@ $df = f'(x_{0}) \times \Delta x$, $df \approx \Delta f$ para pequenos valores de
 
 > Reference: @hass2018
 
-`Incomplete`
+If $x = f(t)$ and $y = g(t)$ are differentiable, then
+
+$$
+y' = \cfrac{dy}{dx} = \cfrac{dy / dt}{dx / dt}
+\ \ \ \text{and} \ \ \
+\cfrac{d^{2}y}{dx^{2}} = \cfrac{dy' / dt}{dx / dt}
+$$
 
 ## 2nd, 3rd, ... order derivatives
 

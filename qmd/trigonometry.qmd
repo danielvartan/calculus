@@ -52,22 +52,22 @@
 
 > Reference: @hass2018
 
-![](../images/hase_2018_trigonometric-functions_1.png)
+![](../images/hass_2018_trigonometric-functions_1.png)
 
 $\cfrac{s}{r} = \cfrac{\theta}{1} = 1 \ \ \ \text{or} \ \ \ \theta = \cfrac{s}{r} \ , \ \text{180}^{o} = \pi \ \text{radians}$
 
 The angles of two common triangles, in degrees and radians.
 
-![](../images/hase_2018_trigonometric-functions_2.png)
+![](../images/hass_2018_trigonometric-functions_2.png)
 
-![](../images/hase_2018_trigonometric-functions_3.png)
+![](../images/hass_2018_trigonometric-functions_3.png)
 
-![](../images/hase_2018_trigonometric-functions_4.png)
+![](../images/hass_2018_trigonometric-functions_4.png)
 
-![](../images/hase_2018_trigonometric-functions_5.png)
+![](../images/hass_2018_trigonometric-functions_5.png)
 
-![](../images/hase_2018_trigonometric-functions_6.png)
+![](../images/hass_2018_trigonometric-functions_6.png)
 
-![](../images/hase_2018_trigonometric-functions_7.png)
+![](../images/hass_2018_trigonometric-functions_7.png)
 
-![](../images/hase_2018_trigonometric-functions_8.png)
+![](../images/hass_2018_trigonometric-functions_8.png)

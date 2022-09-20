@@ -1,10 +1,20 @@
 # Limits
 
-## Continuity at one point
+## Continuity
+
+> Reference: @hase2022
+
+If $P(x)$ is continuous at $x = c$, i.e., $\lim \limits_{x \to c^{-}} f(x) = \lim \limits_{x \to c^{+}} f(x)$, then 
+
+$$\lim \limits_{x \to c} f(x) = f(c)$$
+
+## Inequalities
 
 > Reference: @hass2018
 
-If $P(x)$ is continuous at $x = c$, i.e., $\lim \limits_{x \to c^{-}} f(x) = \lim \limits_{x \to c^{+}} f(x)$, then $\lim \limits_{x \to c} f(x) = f(c)$.
+If $f(x) \leq g(x)$ in an open interval containing $c$, except possibly at $x = c$, and both limits exists, then:
+
+$$\lim \limits_{x \to c} f(x) \leq \lim \limits_{x \to c} g(x)$$
 
 ## General laws
 
@@ -68,6 +78,16 @@ Therefore, since $\lim \limits_{x \to 0} \cos x = 1$ from the squeeze theorem, i
 $$\lim \limits_{x \to 0} \cfrac{\sin x}{x} = 1$$
 
 One should be aware that __this fundamental limit is valid when the angle $x$ is measured in radians__. If $x$ is measured in degree, one would have $S_{\sector OPQ} = \cfrac{r^{2} x}{2} \cfrac{\pi}{180}$, which would have lead to $\lim \limits_{x \to 0} \cfrac{\sin x}{x} = \cfrac{\pi}{180}$.
+
+## Special formulas
+
+> Reference: @hase2022
+
+* If $P(x) = a_{n}x^{n} + a_{n - 1}x^{n - 1} + \cdots + a_{0}$, then $\lim \limits_{x \to c} P(x) = P(c) = a_{n}c^{n} + a_{n - 1}c^{n - 1} + \cdots + a_{0}$
+
+* If $P(x)$ and $Q(x)$ are polynomials and $Q(c) \neq 0$, then $\lim \limits_{x \to c} \cfrac{P(x)}{Q(x)} = \cfrac{P(c)}{Q(c)}$
+
+* If $f(x)$ is continuous at $x = c$, then $\lim \limits_{x \to c} f(x) = f(c)$ , $\lim \limits_{x \to c} \cfrac{\sin x}{x} = 1$ , and $\lim \limits_{x \to c} \cfrac{1 - \cos x}{x} = 0$
 
 ## Other properties
 
