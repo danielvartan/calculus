@@ -26,6 +26,7 @@ book:
         - qmd/limits.qmd
         - qmd/derivatives.qmd
         - qmd/applications-of-derivatives.qmd
+        - qmd/series.qmd
         - qmd/integrals.qmd
     - part: qmd/multivariate-calculus.qmd
       chapters: 

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://danielvartan.github.io/calculus/index.html</loc>
-    <lastmod>2022-09-19T17:46:40.638Z</lastmod>
+    <lastmod>2022-09-26T19:31:17.954Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/pre-calculus.html</loc>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/algebra.html</loc>
-    <lastmod>2022-09-19T22:24:13.417Z</lastmod>
+    <lastmod>2022-09-27T01:45:37.671Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/progressions.html</loc>
@@ -50,11 +50,11 @@
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/derivatives.html</loc>
-    <lastmod>2022-09-19T21:44:51.729Z</lastmod>
+    <lastmod>2022-09-27T01:45:26.216Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/applications-of-derivatives.html</loc>
-    <lastmod>2022-09-19T23:56:12.963Z</lastmod>
+    <lastmod>2022-09-26T19:16:04.199Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/integrals.html</loc>
@@ -91,5 +91,9 @@
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/references.html</loc>
     <lastmod>2022-09-06T00:50:22.108Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielvartan.github.io/calculus/qmd/series.html</loc>
+    <lastmod>2022-09-27T02:27:40.444Z</lastmod>
   </url>
 </urlset>

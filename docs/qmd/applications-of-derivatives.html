@@ -44,7 +44,7 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../qmd/integrals.html" rel="next">
+<link href="../qmd/series.html" rel="next">
 <link href="../qmd/derivatives.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -192,7 +192,12 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Integrals</span></a>
+  <a href="../qmd/series.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Applications of derivatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Integrals</span></a>
   </div>
 </li>
       </ul>
@@ -207,27 +212,27 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/n-dimensional-space.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The n-dimensional space (<span class="math inline">\(\mathbb{R}^{n}\)</span>)</span></a>
+  <a href="../qmd/n-dimensional-space.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">The n-dimensional space (<span class="math inline">\(\mathbb{R}^{n}\)</span>)</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/two-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Two-variable functions</span></a>
+  <a href="../qmd/two-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Two-variable functions</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/three-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Functions of three or more variables</span></a>
+  <a href="../qmd/three-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Functions of three or more variables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Matrices</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
+  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
   </div>
 </li>
       </ul>
@@ -253,10 +258,8 @@ div.csl-indent {
   <ul>
   <li><a href="#guide-for-full-study-of-a-function" id="toc-guide-for-full-study-of-a-function" class="nav-link active" data-scroll-target="#guide-for-full-study-of-a-function"> <span class="header-section-number">11.1</span> Guide for full study of a function</a></li>
   <li><a href="#example-of-how-to-graph-a-function" id="toc-example-of-how-to-graph-a-function" class="nav-link" data-scroll-target="#example-of-how-to-graph-a-function"> <span class="header-section-number">11.2</span> Example of how to graph a function</a></li>
-  <li><a href="#critical-points" id="toc-critical-points" class="nav-link" data-scroll-target="#critical-points"> <span class="header-section-number">11.3</span> Critical points</a></li>
-  <li><a href="#maximum-minimum-and-inflection-points" id="toc-maximum-minimum-and-inflection-points" class="nav-link" data-scroll-target="#maximum-minimum-and-inflection-points"> <span class="header-section-number">11.4</span> Maximum, minimum, and inflection points</a></li>
-  <li><a href="#financialadministrative-functions" id="toc-financialadministrative-functions" class="nav-link" data-scroll-target="#financialadministrative-functions"> <span class="header-section-number">11.5</span> Financial/administrative functions</a></li>
-  <li><a href="#elasticity---supply-and-demand-function" id="toc-elasticity---supply-and-demand-function" class="nav-link" data-scroll-target="#elasticity---supply-and-demand-function"> <span class="header-section-number">11.6</span> Elasticity - Supply and Demand Function</a></li>
+  <li><a href="#financialadministrative-functions" id="toc-financialadministrative-functions" class="nav-link" data-scroll-target="#financialadministrative-functions"> <span class="header-section-number">11.3</span> Financial/administrative functions</a></li>
+  <li><a href="#elasticity---supply-and-demand-function" id="toc-elasticity---supply-and-demand-function" class="nav-link" data-scroll-target="#elasticity---supply-and-demand-function"> <span class="header-section-number">11.4</span> Elasticity - Supply and Demand Function</a></li>
   </ul>
 </nav>
     </div>
@@ -412,26 +415,8 @@ b = \lim \limits_{x \to \pm \infty} [f(x) - ax] =
 <p>Gathering together the information above, one can sketch the graph of <span class="math inline">\(f\)</span> (figure 2).</p>
 <p><img src="../images/hase_lecture_4_figure_2.png" class="img-fluid"></p>
 </section>
-<section id="critical-points" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="critical-points"><span class="header-section-number">11.3</span> Critical points</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="lucchesi">Lucchesi (<a href="references.html#ref-lucchesi" role="doc-biblioref">n.d.</a>)</span></p>
-</blockquote>
-<p>When <span class="math inline">\(f'(x) = 0\)</span> or <span class="math inline">\(f'(x) = \nexists \ \text{or is not defined}\)</span>.</p>
-</section>
-<section id="maximum-minimum-and-inflection-points" class="level2" data-number="11.4">
-<h2 data-number="11.4" class="anchored" data-anchor-id="maximum-minimum-and-inflection-points"><span class="header-section-number">11.4</span> Maximum, minimum, and inflection points</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="lucchesi">Lucchesi (<a href="references.html#ref-lucchesi" role="doc-biblioref">n.d.</a>)</span></p>
-</blockquote>
-<ul>
-<li><p>Minimum point (convexity <span class="math inline">\(\bigcup\)</span>): <span class="math inline">\(f''(x) &gt; 0 \ \forall x \in \ ]a, b[\)</span></p></li>
-<li><p>Maximum point (convexity <span class="math inline">\(\bigcap\)</span>): <span class="math inline">\(f''(x) &lt; 0 \ \forall x \in \ ]a, b[\)</span></p></li>
-<li><p>Inflection point: <span class="math inline">\(f''(x) = 0 \ \forall x \in \ ]a, b[\)</span></p></li>
-</ul>
-</section>
-<section id="financialadministrative-functions" class="level2" data-number="11.5">
-<h2 data-number="11.5" class="anchored" data-anchor-id="financialadministrative-functions"><span class="header-section-number">11.5</span> Financial/administrative functions</h2>
+<section id="financialadministrative-functions" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="financialadministrative-functions"><span class="header-section-number">11.3</span> Financial/administrative functions</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="morettin2003">Morettin, Hazzan, and Oliveira Bussab (<a href="references.html#ref-morettin2003" role="doc-biblioref">2003</a>)</span></p>
 </blockquote>
@@ -445,8 +430,8 @@ b = \lim \limits_{x \to \pm \infty} [f(x) - ax] =
 <li>Marginal productivity <span class="math inline">\(\rightarrow P_{mg}(x) = P'(x)\)</span></li>
 </ul>
 </section>
-<section id="elasticity---supply-and-demand-function" class="level2" data-number="11.6">
-<h2 data-number="11.6" class="anchored" data-anchor-id="elasticity---supply-and-demand-function"><span class="header-section-number">11.6</span> Elasticity - Supply and Demand Function</h2>
+<section id="elasticity---supply-and-demand-function" class="level2" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="elasticity---supply-and-demand-function"><span class="header-section-number">11.4</span> Elasticity - Supply and Demand Function</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="morettin2003">Morettin, Hazzan, and Oliveira Bussab (<a href="references.html#ref-morettin2003" role="doc-biblioref">2003</a>)</span></p>
 </blockquote>
@@ -580,8 +565,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../qmd/integrals.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Integrals</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../qmd/series.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Applications of derivatives</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
