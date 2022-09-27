@@ -417,7 +417,7 @@
     "href": "qmd/useful-resources.html",
     "title": "Useful resources",
     "section": "",
-    "text": "List of LaTeX mathematical symbols"
+    "text": "List of LaTeX mathematical symbols\nDesmos\nWolfram|Alpha\nSymbolab"
   },
   {
     "objectID": "qmd/references.html",
@@ -508,6 +508,6 @@
     "href": "qmd/series.html#big-oh-notation",
     "title": "12  Series",
     "section": "12.5 Big “Oh” notation",
-    "text": "12.5 Big “Oh” notation\nFor \\(x \\ll 1\\), expanding \\(f(x) = \\sin x\\) aroung \\(x_{0}\\) leads to\n\\[\n\\sin x = x - \\cfrac{x^{3}}{3!} + \\cfrac{x^{5}}{5!} - \\cfrac{x^{7}}{7!} + \\cdots\n\\]\nThe term in the series above decreases with its order. The series can also be represented by\n\\[\n\\sin x = x - \\cfrac{x^{3}}{3!} + \\cfrac{x^{5}}{5!} - \\cfrac{x^{7}}{7!} + \\mathcal{O} (x^{9})\n\\]\nwhere \\(\\mathcal{O} (x^{9})\\) stands for contributions of order \\(x^{9}\\) (id est, proportional to \\(x_{6}\\)) or less, since the absolute value of the remaining terms \\(\\left | \\cfrac{x^{9}}{9!} - \\cfrac{x^{11}}{11!} + \\cfrac{x^{13}}{13!} - \\cdots \\right |\\), does not does not exceed a term proportional to \\(x_{9}\\). It was also possible to write\n\\[\n\\sin x = x - \\cfrac{x^{3}}{3!} + \\cfrac{x^{5}}{5!} - \\cfrac{x^{7}}{7!} + \\mathcal{O} (x^{8})\n\\]\nbecause \\(\\mathcal{O} (x^{9})\\) is (much) smaller than terms proportional to \\(x^{8}\\) when \\(x \\sim 0\\).\n\n\n\n\nHase, Masayuki Oka. 2022. “Métodos Matemáticos e de Computação 1.”\n\n\nHass, Joel, Christopher Heil, and Maurice D. Weir. 2018. Thomas’ Calculus. 14th ed. Pearson."
+    "text": "12.5 Big “Oh” notation\nFor \\(x \\ll 1\\), expanding \\(f(x) = \\sin x\\) aroung \\(x_{0}\\) leads to\n\\[\n\\sin x = x - \\cfrac{x^{3}}{3!} + \\cfrac{x^{5}}{5!} - \\cfrac{x^{7}}{7!} + \\cdots\n\\]\nThe term in the series above decreases with its order. The series can also be represented by\n\\[\n\\sin x = x - \\cfrac{x^{3}}{3!} + \\cfrac{x^{5}}{5!} - \\cfrac{x^{7}}{7!} + \\mathcal{O} (x^{9})\n\\]\nwhere \\(\\mathcal{O} (x^{9})\\) stands for contributions of order \\(x^{9}\\) (id est, proportional to \\(x^{6}\\)) or less, since the absolute value of the remaining terms \\(\\left | \\cfrac{x^{9}}{9!} - \\cfrac{x^{11}}{11!} + \\cfrac{x^{13}}{13!} - \\cdots \\right |\\), does not exceed a term proportional to \\(x^{9}\\). It was also possible to write\n\\[\n\\sin x = x - \\cfrac{x^{3}}{3!} + \\cfrac{x^{5}}{5!} - \\cfrac{x^{7}}{7!} + \\mathcal{O} (x^{8})\n\\]\nbecause \\(\\mathcal{O} (x^{9})\\) is (much) smaller than terms proportional to \\(x^{8}\\) when \\(x \\sim 0\\).\n\n\n\n\nHase, Masayuki Oka. 2022. “Métodos Matemáticos e de Computação 1.”\n\n\nHass, Joel, Christopher Heil, and Maurice D. Weir. 2018. Thomas’ Calculus. 14th ed. Pearson."
   }
 ]
