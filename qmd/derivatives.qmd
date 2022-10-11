@@ -4,7 +4,7 @@
 
 The derivative of function $f$ at a point $x$ is defined as
 
-$$\cfrac{\text{d}}{\text{d}x} f(x) := \lim \limits_{\Delta x \to 0} \cfrac{\Delta y}{\Delta x} = \lim \limits_{\Delta x \to 0} \cfrac{f(x + \Delta x) - f(x)}{\Delta x}$$
+$$\cfrac{\mathrm{d}}{\mathrm{d} x} f(x) := \lim \limits_{\Delta x \to 0} \cfrac{\Delta y}{\Delta x} = \lim \limits_{\Delta x \to 0} \cfrac{f(x + \Delta x) - f(x)}{\Delta x}$$
 
 ![](../images/hase_lecture_2_figure_2.png)
 
@@ -13,7 +13,7 @@ A function is said to be differentiable if the derivative exists at every point 
 Note that, from a geometrical standpoint, the derivative at $x$ corresponds to the tangent of the curve $f$ at the same point. Therefore,
 
 $$
-\cfrac{\text{d}}{\text{d}x} f(x) = 
+\cfrac{\mathrm{d}}{\mathrm{d} x} f(x) = 
 \begin{cases} 
     > 0 \ \ \ , \ \ \ \text{function } f \text{ increasing with } x \text{ (at } x \text{)}
 \\
@@ -22,7 +22,7 @@ $$
 .
 $$
 
-The case $\cfrac{\text{d}}{\text{d}x} f(x) = 0$ is especially important since it's a necessary (although not sufficient) condition to determine the extremal points (local maxima and minima) of differentiable functions.
+The case $\cfrac{\mathrm{d}}{\mathrm{d} x} f(x) = 0$ is especially important since it's a necessary (although not sufficient) condition to determine the extremal points (local maxima and minima) of differentiable functions.
 
 ## Shortened line equation
 
@@ -34,17 +34,26 @@ The case $\cfrac{\text{d}}{\text{d}x} f(x) = 0$ is especially important since it
 
 ## Example of derivative by definition
 
-$f(x) = x^{2}$
+$$
+f(x) = x^{2}
+$$
 
-$\cfrac{d}{dx} f(x) = [(f(x)]' = \lim \limits_{\Delta x \to 0} \cfrac{f(x + \Delta x) - f(x)}{\Delta x}$
+$$
+\cfrac{\mathrm{d}}{\mathrm{d} x} f(x) = [(f(x)]' = \lim \limits_{\Delta x \to 0} \cfrac{f(x + \Delta x) - f(x)}{\Delta x}
+$$
 
-$\lim \limits_{\Delta x \to 0} \cfrac{(x + \Delta x)^{2} - x^{2}}{\Delta x}$
+$$
+(x^{2})' = \lim \limits_{\Delta x \to 0} \cfrac{(x + \Delta x)^{2} - x^{2}}{\Delta x} =
+$$$
 
-$\lim \limits_{\Delta x \to 0} \cfrac{x^{2} + 2x \Delta x + (\Delta x)^{2} - x^{2}}{\Delta x}$
+$$
+= \lim \limits_{\Delta x \to 0} \cfrac{x^{2} + 2x \Delta x + (\Delta x)^{2} - x^{2}}{\Delta x} =
+\lim \limits_{\Delta x \to 0} \cfrac{\Delta x (2x + \Delta x)}{\Delta x} =
+$$
 
-$\lim \limits_{\Delta x \to 0} \cfrac{\Delta x (2x + \Delta x)}{\Delta x}$
-
-$\lim \limits_{\Delta x \to 0} 2x + \Delta x = 2x$
+$$
+= \lim \limits_{\Delta x \to 0} 2x + \Delta x = 2x
+$$
 
 ## General formulas
 
@@ -148,9 +157,9 @@ $df = f'(x_{0}) \times \Delta x$, $df \approx \Delta f$ para pequenos valores de
 If $x = f(t)$ and $y = g(t)$ are differentiable, then
 
 $$
-y' = \cfrac{dy}{dx} = \cfrac{dy / dt}{dx / dt}
+y' = \cfrac{\mathrm{d} y}{\mathrm{d} x} = \cfrac{\mathrm{d} y / \mathrm{d} t}{\mathrm{d} x / \mathrm{d} t}
 \ \ \ \text{and} \ \ \
-\cfrac{d^{2}y}{dx^{2}} = \cfrac{dy' / dt}{dx / dt}
+\cfrac{\mathrm{d}^{2}y}{\mathrm{d} x^{2}} = \cfrac{\mathrm{d} y' / \mathrm{d} t}{\mathrm{d} x / \mathrm{d} t}
 $$
 
 ## 2nd, 3rd, ... order derivatives

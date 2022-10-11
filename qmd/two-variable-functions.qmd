@@ -1,7 +1,0 @@
-# Two-variable functions
-
-Nothing here yet!
-
-## Derivatives for functions of two variables
-
-## Maximums and minimums for two-variable functions

@@ -1,90 +1,239 @@
 # Integrals
 
-## Indefinite integral
+## Antiderivatives and indefinite integrals
 
-Chamamos de integral indefinida de $g(x)$ e indicamos pelo símbolo $\int g(x) \ dx$ a uma primitiva qualquer de $g(x)$ adicionada a uma constante arbitrária $c$. Assim:
+> Reference: @hase2022
 
-$\int g(x)dx = f(x) + c$
+The derivative $f'$ of a function $f : \mathbb{R} \to \mathbb{R}$ is defined by the formula
 
-em que $f(x)$ é uma primitiva de $g(x)$ , ou seja, $f'(x) = g(x)$.
+$$
+f'(x) = \lim \limits_{\Delta x \to 0} = \cfrac{f(x + \Delta x) - f(x)}{\Delta x}
+$$
 
-### Elementary functions
+Now, a different question can be proposed: given $f$, one may be interested in a function $F$ such that
 
-Podemos obter as integrais indefinidas das principais funções, que decorrem imediatamente das respectivas regras de derivação:
+$$
+F'(x) = f(x)
+$$
 
-1. $\int x^{n} dx = \cfrac {x^{n + 1}}{n+1} + c$, $\forall n \in \mathbb{Z} \mid n \neq -1$, pois a derivada de $\cfrac {x^{n + 1}} {n+1}$ é $x^{n}$
+for all $x$ in the domain of $f$. This is an inverse problem of derivation, and $F$ is called an __antiderivative__ of $f$. One may immediately note that the antiderivative of a function is not unique; for instance, if $f(x) = x$, then $\cfrac{x^{2}}{2}$, $\cfrac{x^{2}}{2} − 1$ and $\cfrac{x^{2}}{2} + \pi$ are some possible antiderivatives. However, as these examples indicate, the difference between any two antiderivatives of a given function is a constant. This means that if $F$ is an antiderivative of $f$, any other antiderivative of $f$ can be expressed by $F + c$, where $c \in \mathbb{R}$ is a constant.
 
-2. $\int \cfrac {1} {x} \ dx = \ln x + c$, para $x > 0$, pois a derivada de $\ln x$ é $\cfrac {1} {x}$
+If $F(x)$ is an antiderivative of $f(x)$ for $x \in (a, b) \subset \mathbb{R}$, the __family of functions__ $\{F + c\}$, where $c \in \mathbb{R}$ is a constant, is the __indefinite integral__ of $f$, and is denoted by
 
-    Observe que se $x < 0$ , $\int \cfrac {1} {x} \ dx = \ln (-x) + c$
-    
-    Assim, de modo geral, podemos escrever: $\int \frac {1} {x} \ dx = \ln |x| + c$
+$$
+\int f(x) \ dx
+$$
 
-3. Para qualquer real $\alpha \neq -1$, $\int x^{a} \ dx = \cfrac {x^{\alpha + 1}} {\alpha + 1} + c$, $(x > 0)$
+_id est_,
 
-4. $\int \cos xdx = \sin x + c$, pois a derivada de $\sin x$ é $\cos x$
+$$
+\int f(x) \ \mathrm{d} x = F(x) + c, \quad c \in \mathbb{R}, \quad \text{if} \quad F'(x) = f(x)
+$$
 
-5. $\int \sin xdx = - \cos x + c$, pois a derivada de $- \cos x$ é $\sin x$
+In $\displaystyle \int f(x) \ dx$, $f(x)$ is the integrand and the symbol $dx$ (the measure of integration) will play an important role later. Some remarks: 
 
-6. $\int e^{x} \ dx = e^{x} + c$, pois a derivada de $e^{x}$ é $e^{x}$
+1. From the definition, $\displaystyle \cfrac{\mathrm{d}}{\mathrm{d} x} \int f(x) \ \mathrm{d} x = f(x)$.
 
-7. $\int \cfrac {1}{1+x^{2}} \ dx = \arctan x + c$, pois a derivada de $\arctan x$ é $\cfrac {1}{1+x^{2}}$
+2. Geometrically, an indefinite integral is a family of curves, each one of them being related to others by a “vertical” translation.
 
-8. $\int \cfrac {1}{\sqrt{1 - x^{2}}} \ dx = \arcsin x + c$, pois a derivada de $\arcsin x$ é $\cfrac {1}{\sqrt{1 - x^{2}}}$, para $-1 < x < 1$
+3. Not every function has an indefinite integral; furthermore, not every function has an indefinite integral that can be expressed by a finite combination of elementary functions.
 
-Referências: @morettin2003
+Indefinite integrals are also defined for linear combinations of functions. As a consequence of linearity in derivatives, the following linear properties hold:
 
-### Operative properties
+* $\displaystyle \int [f(x) + f(x)] \ \mathrm{d} x = \int f(x) \ \mathrm{d} x + \int g(x) \ \mathrm{d} x$
+* $\displaystyle \int \alpha f(x) \ \mathrm{d} x = \alpha \int f(x) \ \mathrm{d} x \quad (\alpha \in \mathbb{R})$
 
-1. $\int [ f_{1} (x) + f_{2} (x) ] \ dx = \int f_{1} (x) \ dx + \int f_{2} (x) \ dx$
+To see the properties above, one should derive both sides of each identity and see that the results match. The identities should be understood in the sense that indefinite integrals are __equivalent up to a constant__. In particular, it
+follows that
 
-2. $\int [ f_{1} (x) - f_{2} (x) ] \ dx = \int f_{1} (x) \ dx - \int f_{2} (x) \ dx$}
+$$
+0 \cdot \int f(x) \ \mathrm{d} x = \int 0 \cdot f(x) \ \mathrm{d} x = \int 0 \ \mathrm{d} x = c \quad (c \in \mathbb{R})
+$$
 
-3. $\int c \cdot f(x) \ dx = c \cdot \int f(x) \ dx$
+and
 
-## Integral definida
+$$
+\int f(x) \ \mathrm{d} x - \int f(x) \ \mathrm{d} x = \int [f(x) - f(x)] \ \mathrm{d} x = \int 0 \ \mathrm{d} x = c \quad (c \in \mathbb{R})
+$$
 
-Seja $f(x)$ uma função e $g(x)$ uma de suas primitivas. Portanto, $\int f(x) \ dx = g(x) + c$ .
+These two examples remind one that indefinite integrals are a family of functions, and not simple functions.
 
-Definimos a integral definida de $f(x)$ entre os limites $a$ e $b$ como a diferença $g(b) - g(a)$, e indicamos simbólicamente $\int_{a}^{b} f(x) \ dx = g(b) - g(a) = \lim \limits_{x \to b-} [g(x)] - \lim \limits_{x \to a+} [g(x)]$.
+## Indefinite integrals of elementary functions
 
-A diferença $g(b) - g(a)$ também costuma ser indicada pelo símbolo $[g(x)]_{a}^{b}$.
+> Reference: @hase2022 and @morettin2003
 
-### Fundamental theorem of calculus
+For all $c \in \mathbb{R}$:
 
-O significado geométrico da integral definida é dado a seguir.
+* $\displaystyle \int \cos x \ \mathrm{d} x = \sin x + c \quad , \quad \text{since} \ \ \cfrac{\mathrm{d}}{\mathrm{d} x} \sin x = \cos x$
+* $\displaystyle \int \sin x \ \mathrm{d} x = - \cos x + c \quad , \quad \text{since} \ \ \cfrac{\mathrm{d}}{\mathrm{d} x} ( - \cos x) = \sin x$
+* $\displaystyle \int \sec^{2} x \ \mathrm{d} x = \tan x + c \quad , \quad \text{since} \ \ \cfrac{\mathrm{d}}{\mathrm{d} x} \tan x = \sec^{2} x$
+* $\displaystyle \int e^{2} \ \mathrm{d} x = e^{2} + c \quad , \quad \text{since} \ \ \cfrac{\mathrm{d}}{\mathrm{d} x} e^{2} = e^{2}$
 
-Seja $f(x)$ uma função __contínua e não negativa__ definida num intervalo $[a, b]$. A integral definida $\int_{a}^{b} f(x) \ dx$ representa a área da região compreendida entre o gráfico de $f(x)$, o eixo $x$ e as verticais que passam por $a$ e $b$.
+* $\displaystyle \int \alpha x^{\alpha - 1} \ \mathrm{d} x = x^{\alpha} + c \quad , \quad \text{since} \ \ \cfrac{\mathrm{d}}{\mathrm{d} x} x^{\alpha} = \alpha x^{\alpha - 1}$
+  
+  * $\displaystyle \int x^{\alpha} \ \mathrm{d} x = \cfrac {x^{\alpha + 1}} {\alpha + 1} + c \quad (\alpha \neq -1)$ 
 
-![](../images/morettin_figura-7-1.png)
+* $\displaystyle \int \cfrac{1}{x} \ \mathrm{d} x = \ln |x| + c \quad , \quad \text{since} \ \ \cfrac{\mathrm{d}}{\mathrm{d} x} \ln |x| = \cfrac{1}{x}$
 
-Assim, indicado por __$A$__ a área destacada da Figura 7.1, teremos: $A = \int_{a}^{b} f(x) \ dx$.
+## (Riemann) Integral - Definition
 
-(...) Caso $f(x)$ seja negativa no intervalo $[a, b]$ , a área $A$ da região delimitada pelo gráfico de $f(x)$, eixo $x$, e pelas verticais que passam por $a$ e por $b$ é dada por: $A = - \int_{a}^{b} f(x) \ dx$.
+> Reference: @hase2022
 
-### Propriedades operatórias
+Let $f : \mathbb{R} \to \mathbb{R}$ be a continuous function. Considering an interval $[a, b] \subset \mathbb{R}$, it is possible to choose a partition given by $a = x_{0} < x_{1} < \cdots  < x_{N - 1} < x_{N} = b$ (figure 1) from which one can define the sum
 
-1. $\int_{a}^{a} f(x) \ dx = F(a) - F(a) = 0$
-2. $\int_{a}^{b} f(x) \ dx = - \int_{b}^{a} f(x) \ dx$
-3. $\int_{a}^{b} f(x) \ dx = \int_{a}^{c} f(x) \ dx + \int_{c}^{b} f(x) \ dx$, sendo $a < c < b$.
+$$
+\sum \limits^{N}_{n = 1}  f(x_{n}) \Delta x_{n} \quad \text{where} \quad \Delta x_{n} := x_{n} - x_{n - 1}
+$$
 
-## Improper integral
+Note that if $f \geq 0$ in $[a, b]$, this sum approaches the area between $f$ and the $x$ axis when 
 
-Quando as hipóteses do teorema fundamental do cálculo falharem, aplicamos a integral imprópria.
+$\text{(a)}$ The size of each division is diminished.
 
-Caso 1: Intervalo de integração aberto (e.g., $]a, b]$).
+$\text{(b)}$ The number of divisions inside the partition is increased.
 
-Caso 2: Descontinuidade da função (e.g., $D = \mathbb{R} - (0)$).
+![Figure 1: Decomposition in rectangles](../images/hase_lecture_7_figure_1.png)
 
-Usa-se a propriedade da integral definida: $\int_{a}^{b} f(x) \ dx = \int_{a}^{c} f(x) \ dx + \int_{c}^{b} f(x) \ dx$ , sendo $a < c < b$.
+It should be clear that $\text{(a)}$ implies $\text{(b)}$, but the converse is false. The limit of such sum is the (Riemann) integral of $f$ in the interval $[a, b]$, and is denoted by
 
-Exemplo:
+$$
+\int^{b}_{a} f(x) \ \mathrm{d} x := \lim \limits_{\text{max}_{n} \ \Delta x_{n} \to 0} \sum \limits^{N}_{n = 1}  f(x_{n}) \Delta x_{n}
+$$
 
-$\int_{-1}^{1} \frac {1}{x^2} \ dx \ \longrightarrow \ D = \mathbb{R} - (0)$
+The interpretation of the formula above as being the area becomes clearer if the quantity $\displaystyle \int^{b}_{a} f(x) \ \mathrm{d} x$ is understood as $\displaystyle \int^{b}_{a} [f(x) - 0] \ \mathrm{d} x$. Hence, if $f \leq 0$ at $[a, b]$, $\displaystyle \int^{b}_{a} f(x) \ \mathrm{d} x$ would be the “opposite of the area”. The continuity condition of $f$ can be relaxed to piecewise continuity.
 
-$\int_{-1}^{1} \frac {1}{x^2} \ dx = \lim \limits_{z \to 0^{-}} \int_{-1}^{z} \frac {1}{x^2} \ dx + \lim \limits_{z \to 0^{+}} \int_{z}^{1} \frac {1}{x^2} \ dx$
+Two properties of the definite integral are assumed by definition:
 
-## Referências {.unnumbered}
+$$
+\int^{b}_{a} f(x) \ \mathrm{d} x = - \int^{a}_{b} f(x) \ \mathrm{d} x
+\tag{i}
+$$
 
-* @morettin2003
-* @lucchesi
+$$
+\int^{a}_{a} f(x) \ \mathrm{d} x = 0
+\tag{ii}
+$$
+
+## General formulas
+
+> Reference: @hass2018
+
+* Zero: $\displaystyle \int^{a}_{b} f(x) \ \mathrm{d} x = 0$
+* Order of integration: $\displaystyle \int^{a}_{b} f(x) \ \mathrm{d} x = - \int^{b}_{a} f(x) \ \mathrm{d} x$
+
+* Constant multiples:
+
+  * $\displaystyle \int^{b}_{a} k f(x) \ \mathrm{d} x = k \int^{b}_{a} f(x) \ \mathrm{d} x, \quad k \in \mathbb{R}$
+  * $\displaystyle \int^{b}_{a} - f(x) \ \mathrm{d} x = - \int^{b}_{a} f(x) \ \mathrm{d} x, \quad k = -1$
+
+* Sum: $\displaystyle \int^{b}_{a} [(f(x) + g(x)] \ \mathrm{d} x = \int^{b}_{a} f(x) \ \mathrm{d} x + \int^{b}_{a} g(x) \ \mathrm{d} x$
+* Difference: $\displaystyle \int^{b}_{a} [(f(x) - g(x)] \ \mathrm{d} x = \int^{b}_{a} f(x) \ \mathrm{d} x - \int^{b}_{a} g(x) \ \mathrm{d} x$
+* Additivity: $\displaystyle \int^{b}_{a} f(x) \ \mathrm{d} x + \int \limits^{c}_{b} f(x) \ \mathrm{d} x = \int \limits^{c}_{a} f(x) \ \mathrm{d} x$
+* Max-min inequality: If max $f$ and min $f$ are the maximum and minimum values of $f$ on $[a, b]$, then
+
+$$
+\text{min} \ f \cdot (b - a) \leq \int^{b}_{a} f(x) \ \mathrm{d} x \leq \text{max} \ f \cdot (b - a)
+$$
+
+* Domination:
+
+  * $\displaystyle f(x) \geq g(x) \quad \text{on} \quad [a, b] \quad \text{implies} \quad \int^{b}_{a} f(x) \ \mathrm{d} x \geq \int^{b}_{a} g(x) \ \mathrm{d} x$
+  * $\displaystyle f(x) \geq 0 \quad \text{on} \quad [a, b] \quad \text{implies} \quad \int^{b}_{a} f(x) \ \mathrm{d} x \geq 0$
+
+## Other properties
+
+> Reference: @hass2018
+
+* Substitution in deﬁnite Integrals: $\displaystyle \int^{a}_{b} f(g(x)) \cdot g'(x) \ \mathrm{d} x = \int^{g(b)}_{g(a)} f(u) \ \mathrm{d} u$
+* Integration by Parts: $\displaystyle \int^{b}_{a} u(x) v'(x) \ \mathrm{d} x = u(x) v(x) \biggr ]^{b}_{a} -\int^{b}_{a} v(x) u'(x) \ \mathrm{d} x$
+
+### (Riemann) Integral - Fundamental theorem of calculus
+
+> Reference: @hase2022
+
+This section establishes a connection between the integral of a function and its derivative. Concretely, this connection allows one to evaluate some integrals in terms of some known functions.
+
+Let $f$ be continuous in $\mathbb{R}$ (for simplicity) and consider the function
+
+$$
+F(x) := \int^{x}_{a} f(\xi) \ \mathrm{d} \xi
+\tag{iii}
+$$
+
+which represents the integral of $f$ from point $a$ (fixed) to another point $x$ (variable). Then, from the properties shown in the section above, it follow that
+
+$$
+\cfrac{F(x + \Delta x) - F(x)}{\Delta x} = 
+\cfrac{1}{\Delta x} \left [ \int^{x + \Delta x}_{a} f(\xi) \ \mathrm{d} \xi - \int^{x}_{a} f(\xi) \ \mathrm{d} \xi \right ] = 
+\cfrac{1}{\Delta x} \int^{x + \Delta x}_{x} f(\xi) \ \mathrm{d} \xi
+$$
+
+The integral in above is evaluated in the interval $[x, x + \Delta x)$; if the value of $\Delta x \ (> 0)$ is decreased, one has
+
+$f(\xi) \approx f(x)$ for $\xi \in [x, x + \Delta x)$, since $f$ is continuous. Therefore, 
+
+$$
+\cfrac{\mathrm{d}}{\mathrm{d} x} F(x) = 
+\lim \limits_{\Delta x \to 0} \cfrac{F(x + \Delta x) - F(x)}{\Delta x} = 
+\lim \limits_{\Delta x \to 0} \cfrac{1}{\Delta x} \int^{x + \Delta x}_{a} \underbrace{f(\xi)}_{\simeq f(x)} \ \mathrm{d} \xi = 
+$$
+
+$$
+= \lim \limits_{\Delta x \to 0} \cfrac{1}{\Delta x} f(x) \int^{x + \Delta x}_{a}  \mathrm{d} x = f(x) 
+$$
+
+remembering that the integral (in the variable $\xi$) does not act over $f(x)$, which is considered to be “constant”; moreover, $\displaystyle \int^{x + \Delta x}_{a}  \mathrm{d} \xi = \int^{x + \Delta x}_{a} 1 \ \mathrm{d} \xi$ is the area of the rectangle defined between the constant function $1$ and the $x$-axis in the interval $\xi \in [x, x + \Delta x)$. As a consequence, one has 
+
+$$
+\cfrac{\mathrm{d}}{\mathrm{d} x} \int^{x}_{a} f(\xi) \ \mathrm{d} \xi = f(x)
+\tag{iv}
+$$
+
+Note that this result does not depend on the choice of $a$.
+
+Suppose, now, that there is a function $g$ such that $f = g'$. This means that both $F$ and $g$ are antiderivatives of $f$. From $\text{(iii)}$ and $\text{(iv)}$, one has $F' = f = g'$ and, from the linearity of derivatives, $(F − g)' = 0$. Hence, the function $F − g$ should equal a constant, $c \in \mathbb{R}$, from which
+
+$$
+F(x) = g(x) + c \quad (x \in \mathbb{R})
+$$
+
+Since $F(a) = 0$ by $\text{(iii)}$, it is straightforward that $c = − g(a)$; then, $F(x) = g(x) − g(a)$ by the formula above. Finally, by choosing $x = b$ in $\text{(iii)}$, which implies $F(b) = g(b) − b(a)$, one has
+
+$$
+\int^{b}_{a} f(x) \ \mathrm{d} x = g(b) - g(a), \quad \text{where} \quad f = g'
+$$
+
+This is the definite integral, which is a “number”(indefinite integrals are families of functions). To evaluate the integral of $f$ from $a$ to $b$, it is necessary, then, to find a function $g$ whose derivative is $f$ and compute the difference $g(b) − g(a)$. Finally, one also has
+
+$$
+\int^{b}_{a} \left [ \cfrac{\mathrm{d}}{\mathrm{d} x} f(x) \right ] \ \mathrm{d} x = \int^{b}_{a} f'(x) \ \mathrm{d} x = f(b) - f(a)
+$$
+
+since $f$ is a function whose derivative is $f'$.
+
+__Example__: $\displaystyle \int^{\pi}_{0} \sin x \ \mathrm{d} x$
+
+Firstly,
+
+$$
+\int^{\pi}_{0} \sin x \ \mathrm{d} x = F(\pi) - F(0)
+$$
+
+where $F$ is such that $F' = f$. Therefore, taking $F(x) = − \cos x$ is a possibility (actually $\cos x + c$, $c \in \mathbb{R}$, also works, but the constant $c$ plays no role, since it cancels out in the difference $F(\pi) - F(0)$); as a consequence,
+
+$$
+\int^{\pi}_{0} \sin x \ \mathrm{d} x = [- \cos \pi] - [- \cos 0] = 2
+$$
+
+__Example__: $\displaystyle \int^{3}_{1} \left ( \cfrac{x^{3} - x}{x} \right ) \ \mathrm{d} x$
+
+Since $\cfrac{x^{3} - x}{x} = \cfrac{x^{3}}{x} - \cfrac{x}{x} = x^{2} - 1$ (for $x \neq 0$), then,
+
+$$
+\int^{3}_{1} \left ( \cfrac{x^{3} - x}{x} \right ) \ \mathrm{d} x = 
+\int^{3}_{1} x^{2} \ \mathrm{d} x - \int^{3}_{1} 1 \ \mathrm{d} x = 
+$$
+
+$$
+= \biggr [ \underbrace{\cfrac{x^{3}}{3}}_{\text{antiderivative of} \ x^{2}} \biggr ]^{3}_{1} - \biggr [ \underbrace{x}_{\text{antiderivative of} \ 1} \biggr ]^{3}_{1} = 
+\biggr [ \cfrac{3^{3}}{3} - \cfrac{1^{3}}{3} \biggr ] - \biggr [ 3 - 1 \biggr ] = \cfrac{20}{3}
+$$

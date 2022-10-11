@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Calculus: Formulas and Theorems - 13&nbsp; The n-dimensional space (\(\mathbb{R}^{n}\))</title>
+<title>Calculus: Formulas and Theorems - 14&nbsp; Functions of several variables</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -15,6 +15,25 @@ span.underline{text-decoration: underline;}
 div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -25,7 +44,7 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../qmd/two-variable-functions.html" rel="next">
+<link href="../qmd/partial-derivatives.html" rel="next">
 <link href="../qmd/multivariate-calculus.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -66,7 +85,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The n-dimensional space (<span class="math inline">\(\mathbb{R}^{n}\)</span>)</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Functions of several variables</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -173,7 +192,12 @@ ul.task-list{list-style: none;}
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Integrals</span></a>
+  <a href="../qmd/series.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Integrals</span></a>
   </div>
 </li>
       </ul>
@@ -188,27 +212,32 @@ ul.task-list{list-style: none;}
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/n-dimensional-space.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The n-dimensional space (<span class="math inline">\(\mathbb{R}^{n}\)</span>)</span></a>
+  <a href="../qmd/n-dimensional-space.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Functions of several variables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/two-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Two-variable functions</span></a>
+  <a href="../qmd/partial-derivatives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Partial derivatives</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/three-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Functions of three or more variables</span></a>
+  <a href="../qmd/taylor-expansion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">The Taylor expasion</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  <a href="../qmd/max-min-analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Matrices</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
+  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
   </div>
 </li>
       </ul>
@@ -228,14 +257,20 @@ ul.task-list{list-style: none;}
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#analysis-of-local-maximaminima" id="toc-analysis-of-local-maximaminima" class="nav-link active" data-scroll-target="#analysis-of-local-maximaminima"> <span class="header-section-number">14.1</span> Analysis of local maxima/minima</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The n-dimensional space (<span class="math inline">\(\mathbb{R}^{n}\)</span>)</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Functions of several variables</span></h1>
 </div>
 
 
@@ -249,9 +284,125 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<p>Nothing here yet!</p>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+</blockquote>
+<p>So far, differential calculus has been applied to functions of a single variable; in the next section, it will be extended to two or more, which require some notions of functions of several real variables. Although one can investigate general functions of real variables like <span class="math inline">\(f ∶\mathbb{R}^{n} \to \mathbb{R}^{m}\)</span>, this course examines the case <span class="math inline">\(m = 1\)</span> only. In this case, the graph of <span class="math inline">\(f\)</span> is given by</p>
+<p><span class="math display">\[
+G_{f} = \{(x_{1}, \ldots, x_{n}, \mathcal{z}) \in \mathbb{R}^{n + 1} : \mathcal{z} = f(x_{1}, \ldots, x_{n}) \}
+\]</span></p>
+<p>where the case <span class="math inline">\(n = 2\)</span> is an instructive one since one can visually sketch the graph. Some well-known graphs are depicted below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/hase_lecture_6_figure_1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 1: Graph of some functions <span class="math inline">\(f: \mathbb{R}^{2} \to \mathbb{R}\)</span>. Left: an elliptic paraboloid <span class="math inline">\(f(x, y) = x^{2} + y^{2}\)</span>; center: an elliptic paraboloid <span class="math inline">\(f(x, y) = −x^{2} − y^{2}\)</span>; right: a hyperbolic paraboloid <span class="math inline">\(f(x, y) = y^{2} − x^{2}\)</span>.</figcaption><p></p>
+</figure>
+</div>
+<p>The investigation of the variation of <span class="math inline">\(f\)</span> is now a more complex task than in the single variable case since there is more than one direction (actually, there are infinite) to analyze the variation of <span class="math inline">\(f\)</span>. In cartesian coordinates, there are two natural directions (along the <span class="math inline">\(x\)</span>-axis and <span class="math inline">\(y\)</span>-axis) to consider, and a more general type of derivative is defined below.</p>
+<section id="analysis-of-local-maximaminima" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="analysis-of-local-maximaminima"><span class="header-section-number">14.1</span> Analysis of local maxima/minima</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+</blockquote>
+<p>A function can display local maxima and minima in its graph. The analysis of the local behaviors will be considered here but restricted to the case of two independent variables. Nevertheless, the analysis can be extended to functions of more variables with the same idea.</p>
+<p>Let <span class="math inline">\(f : \mathbb{R}^{2} \to \mathbb{R}\)</span> be a differentiable function with graph <span class="math inline">\(\{(x, y , z) \in \mathbb{R}^{3} : \mathcal{z} = f(x, y)\}\)</span>. It can display regions where the graph reaches local maximum or minimum values, and let <span class="math inline">\((x_{0}, y_{0})\)</span> be one of these points. As in the calculus of a single variable, it is expected that the inclination of the tangent there would vanish. More precisely, the tangent plane at <span class="math inline">\((x_{0}, y_{0})\)</span> would be parallel to the <span class="math inline">\(xy\)</span> plane. This means that the <strong>critical points</strong> <span class="math inline">\((x_{0}, y_{0})\)</span>, which are solutions of</p>
+<p><span class="math display">\[
+\cfrac{\partial f}{\partial x} (x, y) = \cfrac{\partial f}{\partial y} (x, y) = 0
+\]</span></p>
+<p>are <strong>candidates</strong> for local maximum or minimum. Hence, the formula above is a necessary condition to characterize an extremal point (maximum or minimum), but not a sufficient one. It is important to stress that</p>
+<ul>
+<li><p>A point <span class="math inline">\(P(x_{0}, y_{0})\)</span> is a <strong>local maximum</strong> if <span class="math inline">\(f(x, y) &lt; f(x_{0}, y_{0})\)</span> for any pair <span class="math inline">\((x, y)\)</span> sufficiently close to <span class="math inline">\(P\)</span> (but different from <span class="math inline">\(P\)</span>);</p></li>
+<li><p>A point <span class="math inline">\(P(x_{0}, y_{0})\)</span> is a <strong>local minimum</strong> if <span class="math inline">\(f(x, y) &gt; f(x_{0}, y_{0})\)</span> for any pair <span class="math inline">\((x, y)\)</span> sufficiently close to <span class="math inline">\(P\)</span> (but different from <span class="math inline">\(P\)</span>);</p></li>
+</ul>
+<p>If <span class="math inline">\(P(x_{0}, y_{0})\)</span> is an extremal point, the following analysis tells about its nature. The Taylor expansion of <span class="math inline">\(f\)</span> around <span class="math inline">\(P\)</span> leads to</p>
+<p><span class="math display">\[
+f(x, y) =
+f(x_{0}, y_{0}) + \cfrac{\partial f}{\partial x} (x_{0}, y_{0}) (x - x_{0}) +
+\cfrac{\partial f}{\partial y} (x_{0}, y_{0}) (y - y_{0}) +
+\]</span></p>
+<p><span class="math display">\[
++
+\cfrac{1}{2!} \cfrac{\partial^{2} f}{\partial x^{2}} (x_{0}, y_{0}) (x - x_{0})^{2} +
+\cfrac{\partial^{2} f}{\partial x \partial y} (x_{0}, y_{0}) (x - x_{0}) (y - y_{0}) +
+\cfrac{1}{2!} \cfrac{\partial^{2} f}{\partial y^{2}} (x_{0}, y_{0}) (y - y_{0})^{2} +
+\cdots
+\]</span></p>
+<p>Inserting the two formulas above and introducing the notations</p>
+<p><span class="math display">\[
+A := \cfrac{\partial^{2} f}{\partial x^{2}} (x_{0}, y_{0}), \quad
+B := \cfrac{\partial^{2} f}{\partial x \partial y} (x_{0}, y_{0}), \quad
+C := \cfrac{\partial^{2} f}{\partial y^{2}} (x_{0}, y_{0}), \quad
+\Delta x := x - x_{0} \quad and \quad
+\Delta y := y - y_{0}
+\]</span></p>
+<p>one has</p>
+<p><span class="math display">\[
+\Delta f := f(x, y) - f(x_{0}, y_{0}) =
+\cfrac{A}{2} \Delta x^{2} + B \Delta x \Delta y + \cfrac{C}{2} \Delta y^{2} + \mathcal{O} (\Delta x^{3}, \Delta y^{3})
+\tag{i}
+\]</span></p>
+<p>For <span class="math inline">\(\Delta x\)</span> and <span class="math inline">\(\Delta y\)</span> sufficiently close to zero (which means that <span class="math inline">\((x, y)\)</span> is close to <span class="math inline">\((x_{0}, y_{0})\)</span>), the sign of <span class="math inline">\(\Delta f\)</span> in the formula above is governed by <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span>, as seen below. According to the definition above, <span class="math inline">\(\Delta f &gt; 0\)</span> and <span class="math inline">\(\Delta f &lt; 0\)</span> implies <span class="math inline">\((x_{0}, y_{0})\)</span> being a local minimum and maximum, respectively.</p>
+<p>The possible cases are listed below.</p>
+<p>1. <span class="math inline">\(A \ \text{and} \ C \ \text{are not both zero}\)</span>. Assume that <span class="math inline">\(A \neq 0\)</span> (the case <span class="math inline">\(C \neq 0\)</span> can be worked out <span class="math inline">\(mutatis \ mutandis\)</span>). Then, <span class="math inline">\(\Delta f\)</span> can be cast as</p>
+<p><span class="math display">\[
+\Delta f = \cfrac{A}{2} \left [ \Delta x + \cfrac{B}{A} \Delta y \right ] + \cfrac{AC - B^{2}}{2A} \Delta y^{2} + \mathcal{O} (\Delta x^{3}, \Delta y^{3}) =
+\]</span></p>
+<p><span class="math display">\[
+= \cfrac{A}{2} \Delta w^{2} + \cfrac{AC - B^{2}}{2A} \Delta y^{2} + \mathcal{O} (\Delta x^{3}, \Delta y^{3})
+\]</span></p>
+<p>where,</p>
+<p><span class="math display">\[
+\Delta w := \Delta x + \cfrac{B}{A} \Delta y
+\]</span></p>
+<p>The analysis will now be divided into some subcases.</p>
+<p>(a).<span class="math inline">\(AC - B^{2} = 0\)</span>. In this case, no general conclusion can be stated about the nature of <span class="math inline">\((x_{0}, y_{0})\)</span>, since <span class="math inline">\(\Delta w\)</span> can be zero without letting <span class="math inline">\(\Delta x = \Delta y = 0\)</span> (which is the critical point). When this happens, the sign of <span class="math inline">\(\Delta f = \cfrac{A}{2} \Delta w^{2} + \mathcal{O} (\Delta x^{3}, \Delta y^{3}) = \mathcal{O} (\Delta x^{3}, \Delta y^{3})\)</span> is decided by the third order terms, which requires further investigations.</p>
+<p>(b).<span class="math inline">\(AC - B^{2} &lt; 0\)</span>. In this case, the quadratic form in <span class="math inline">\((i)\)</span> can be either positive or negative, depending on the chosen region in the neighborhood of <span class="math inline">\((x_{0}, y_{0})\)</span>. Therefore, the condition <span class="math inline">\(AC - B^{2}\)</span> implies the critical point being a <strong>saddle-point</strong>.</p>
+<p>(c).<span class="math inline">\(AC - B^{2} &gt; 0\)</span>. In this case, both quadratic terms in <span class="math inline">\((i)\)</span> have the same sign and the classification of the critical point depends on the sign of <span class="math inline">\(A\)</span> only. If <span class="math inline">\(A &gt; 0 \ (A &lt; 0)\)</span>, then <span class="math inline">\(\Delta f &gt; 0 \ (\Delta f &lt; 0)\)</span>, which means that <span class="math inline">\((x_{0}, y_{0})\)</span> is a <strong>local minimum (maximum)</strong>.</p>
+<p>2. <span class="math inline">\(A = C = 0\)</span>. Here, <span class="math inline">\(\Delta f = B \Delta x \Delta y + \mathcal{O} (\Delta x^{3}, \Delta y^{3})\)</span>. The analysis will now be divided into some subcases.</p>
+<p>(a). If <span class="math inline">\(B = 0\)</span>, which implies <span class="math inline">\(AC - B^{2} = 0\)</span>, no general conclusion can be stated about the nature of <span class="math inline">\((x_{0}, y_{0})\)</span>, since it would depend on the third order terms.</p>
+<p>(b). if <span class="math inline">\(B \neq 0\)</span>, which implies <span class="math inline">\(AC - B^{2} &lt; 0\)</span>, the leading term, <span class="math inline">\(B \Delta x \Delta y\)</span> can be either positive or negative, depending on the <span class="math inline">\((x_{0}, y_{0})\)</span>. In this situation, <span class="math inline">\((x_{0}, y_{0})\)</span> is a <strong>saddle-point</strong>, where it can be seen as a local maximum according to some set of points <span class="math inline">\((x, y)\)</span>, but it can also be treated as a local minimum if another set of points <span class="math inline">\((x, y)\)</span> is chosen.</p>
+<p>All the cases above can be summarized by:</p>
+<p><span class="math display">\[
+A, B, C
+\begin{cases}
+AC - B^{2} = 0 \quad \quad \quad \quad \quad \ \ \ : \quad \text{inconclusive (based on the second-order terms only)} \\
+AC - B^{2} &lt; 0 \quad \quad \quad \quad \quad \ \ \ : \quad (x_{0}, y_{0}) \ \text{is a saddle point} \\
+AC - B^{2} &gt; 0 \ \text{and} \ A &gt; 0 \quad : \quad (x_{0}, y_{0}) \ \text{is a local minimum} \\
+AC - B^{2} &gt; 0 \ \text{and} \ A &lt; 0 \quad : \quad (x_{0}, y_{0}) \ \text{is a local maximum}
+\end{cases}
+\]</span></p>
+<p>Note that <span class="math inline">\(AC − B^{2} &gt; 0\)</span> and <span class="math inline">\(A = 0\)</span> are incompatible. Furthermore, <span class="math inline">\(AC − B^{2} &gt; 0\)</span> and <span class="math inline">\(A &gt; 0\)</span> imply <span class="math inline">\(C &gt; 0\)</span> (in the same fashion, <span class="math inline">\(AC − B^{2} &gt; 0\)</span> and <span class="math inline">\(A &lt; 0\)</span> lead to <span class="math inline">\(C &lt; 0\)</span>).</p>
+<p><strong>Example</strong>: Analyzing the critical points of <span class="math inline">\(f(x, y) = x^{3} − 3xy^{2} + y^{3} + 3y\)</span></p>
+<p>Firstly, the critical points, which are solutions of</p>
+<p><span class="math display">\[
+\begin{cases}
+\cfrac{\partial f}{\partial x} = 3x^{2} - 3y^{2} = 0 \\
+\cfrac{\partial f}{\partial y} = -6xy + 3y^{2} + 3 = 0
+\end{cases}
+\]</span></p>
+<p>The critical points are <span class="math inline">\((−1, −1)\)</span> or <span class="math inline">\((1, 1)\)</span>. Then, from</p>
+<p><span class="math display">\[
+A = \cfrac{\partial^{2} f}{\partial x^{2}} (x_{0}, y_{0}) = 6x_{0}, \quad
+B = \cfrac{\partial^{2} f}{\partial x \partial y} (x_{0}, y_{0}) = -6y_{0}, \quad \text{and} \quad
+C = \cfrac{\partial^{2} f}{\partial y^{2}} (x_{0}, y_{0}) = - 6x_{0} + 6y_{0}
+\]</span></p>
+<p>one sees that</p>
+<p><span class="math display">\[
+AC - B^{2} = 36y_{0} (- x^{2}_{0} + x_{0}y_{0} - y^{2}_{0}) =
+\begin{cases}
+\ \ 36 \quad \quad , \quad \text{if} \ (x_{0}, y_{0}) = (-1, -1) \\
+\ - 36 \quad , \quad \text{if} \ (x_{0}, y_{0}) = (1, 1)
+\end{cases}
+\]</span></p>
+<p>Thus, <span class="math inline">\((1, 1)\)</span> is a saddle-point <span class="math inline">\(AC - B^{2} &lt; 0\)</span>. Furthermore, <span class="math inline">\((−1, −1)\)</span> is a local maximum point, since <span class="math inline">\(A = −6 &lt; 0\)</span> and <span class="math inline">\(AC - B^{2} &lt; 0\)</span>.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-hase2022" class="csl-entry" role="doc-biblioentry">
+Hase, Masayuki Oka. 2022. <span>“Métodos Matemáticos e de Computação 1.”</span>
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -358,8 +509,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../qmd/two-variable-functions.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Two-variable functions</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../qmd/partial-derivatives.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Partial derivatives</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

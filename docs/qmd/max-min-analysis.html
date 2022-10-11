@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Calculus: Formulas and Theorems - 12&nbsp; Series</title>
+<title>Calculus: Formulas and Theorems - 18&nbsp; Analysis of local maxima/minima</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,8 +44,8 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../qmd/integrals.html" rel="next">
-<link href="../qmd/applications-of-derivatives.html" rel="prev">
+<link href="../qmd/matrices.html" rel="next">
+<link href="../qmd/taylor-expansion.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,11 +81,12 @@ div.csl-indent {
 
 <body class="nav-sidebar floating">
 
+
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Analysis of local maxima/minima</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -192,12 +193,17 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/series.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></a>
+  <a href="../qmd/series.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../qmd/integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Integrals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/table-of-integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Table of integrals</span></a>
   </div>
 </li>
       </ul>
@@ -212,27 +218,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/n-dimensional-space.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">The n-dimensional space (<span class="math inline">\(\mathbb{R}^{n}\)</span>)</span></a>
+  <a href="../qmd/funcion-of-several-variables.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Functions of several variables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/two-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Two-variable functions</span></a>
+  <a href="../qmd/partial-derivatives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Partial derivatives</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/three-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Functions of three or more variables</span></a>
+  <a href="../qmd/taylor-expansion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">The Taylor expasion</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  <a href="../qmd/max-min-analysis.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Analysis of local maxima/minima</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
+  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
   </div>
 </li>
       </ul>
@@ -252,24 +263,14 @@ div.csl-indent {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#tests-for-convergence-of-inﬁnite-series" id="toc-tests-for-convergence-of-inﬁnite-series" class="nav-link active" data-scroll-target="#tests-for-convergence-of-inﬁnite-series"> <span class="header-section-number">12.1</span> Tests for convergence of inﬁnite series</a></li>
-  <li><a href="#taylor-series" id="toc-taylor-series" class="nav-link" data-scroll-target="#taylor-series"> <span class="header-section-number">12.2</span> Taylor series</a></li>
-  <li><a href="#maclaurin-series" id="toc-maclaurin-series" class="nav-link" data-scroll-target="#maclaurin-series"> <span class="header-section-number">12.3</span> Maclaurin series</a></li>
-  <li><a href="#binomial-series" id="toc-binomial-series" class="nav-link" data-scroll-target="#binomial-series"> <span class="header-section-number">12.4</span> Binomial series</a></li>
-  <li><a href="#big-oh-notation" id="toc-big-oh-notation" class="nav-link" data-scroll-target="#big-oh-notation"> <span class="header-section-number">12.5</span> Big “Oh” notation</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Analysis of local maxima/minima</span></h1>
 </div>
 
 
@@ -283,121 +284,107 @@ div.csl-indent {
 
 </header>
 
-<section id="tests-for-convergence-of-inﬁnite-series" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="tests-for-convergence-of-inﬁnite-series"><span class="header-section-number">12.1</span> Tests for convergence of inﬁnite series</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
-</blockquote>
-<ol type="1">
-<li><strong>The nth-Term Test</strong>: Unless <span class="math inline">\(a_{n} \to 0\)</span>, the series diverges.</li>
-<li><strong>Geometric series</strong>: <span class="math inline">\(\sum ar^{n}\)</span> converges if <span class="math inline">\(|r| &lt; 1\)</span>; otherwise it diverges.</li>
-<li><strong>p-series</strong>: <span class="math inline">\(\sum \cfrac{1}{n^{p}}\)</span> converges if <span class="math inline">\(p &gt; 1\)</span>l otherwise it diverges.</li>
-<li><strong>Series with nonnegative terms</strong>: Try the Integral Test, Ratio Test, or Root Test. Try comparing to a known series with the Comparison Test or the Limit Comparison Test.</li>
-<li><strong>Series with some negative terms</strong>: Does <span class="math inline">\(\sum | a_{n} |\)</span> converge? If yes, so does <span class="math inline">\(\sum a_{ n}\)</span> because absolute convergence implies convergence.</li>
-<li><strong>Alternating series</strong>: <span class="math inline">\(\sum a_{n}\)</span> converges if the series satisﬁes the conditions of the Alternating Series Test.</li>
-</ol>
-</section>
-<section id="taylor-series" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="taylor-series"><span class="header-section-number">12.2</span> Taylor series</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
 </blockquote>
-<p>Let <span class="math inline">\(f\)</span> be a function that has all the “required” derivatives. One can demand its behavior in the neighborhood of a point, <span class="math inline">\(x_{0}\)</span>. In this case, it is possible to approximate <span class="math inline">\(f\)</span> with a polynomial (around <span class="math inline">\(x_{0}\)</span>), which is the Taylor series. Concretely, one has</p>
+<p>A function can display local maxima and minima in its graph. The analysis of the local behaviors will be considered here but restricted to the case of two independent variables. Nevertheless, the analysis can be extended to functions of more variables with the same idea.</p>
+<p>Let <span class="math inline">\(f : \mathbb{R}^{2} \to \mathbb{R}\)</span> be a differentiable function with graph <span class="math inline">\(\{(x, y , z) \in \mathbb{R}^{3} : \mathcal{z} = f(x, y)\}\)</span>. It can display regions where the graph reaches local maximum or minimum values, and let <span class="math inline">\((x_{0}, y_{0})\)</span> be one of these points. As in the calculus of a single variable, it is expected that the inclination of the tangent there would vanish. More precisely, the tangent plane at <span class="math inline">\((x_{0}, y_{0})\)</span> would be parallel to the <span class="math inline">\(xy\)</span> plane. This means that the <strong>critical points</strong> <span class="math inline">\((x_{0}, y_{0})\)</span>, which are solutions of</p>
 <p><span class="math display">\[
-f(x) = a_{0} + a_{1}(x - x_{0}) + a_{2}(x - x_{0})^{2} + a_{3}(x - x_{0})^{3} + \cdots + a_{n}(x - x_{0})^{n} + \cdots
-\tag{1}
+\cfrac{\partial f}{\partial x} (x, y) = \cfrac{\partial f}{\partial y} (x, y) = 0
 \]</span></p>
-<p>which is a polynomial representation in <span class="math inline">\((x - x_{0})\)</span>. Note that, intuitively, if the distance between <span class="math inline">\(x\)</span> and <span class="math inline">\(x_{0}\)</span> becomes small, the terms of this series decrease, <em>a priori</em>, with <span class="math inline">\(n\)</span>. The goal of this section is the determination of the set of coefficients <span class="math inline">\(\{a_{n}\}\)</span>.</p>
-<ol type="1">
-<li><p>Show, by imposing <span class="math inline">\(x = x_{0}\)</span> in <span class="math inline">\((1)\)</span>, that <span class="math inline">\(a_{0} = f(x_{0})\)</span>.</p></li>
-<li><p>Determine <span class="math inline">\(f′(x)\)</span>. Show, by imposing <span class="math inline">\(x = x_{0}\)</span> in the resultant equation, that <span class="math inline">\(a_{1} = \cfrac{1}{1!} f′(x_{0})\)</span>.</p></li>
-</ol>
-<p>Denote by <span class="math inline">\(\cfrac{d^{2}}{dx^{2}} f(x)\)</span>, or <span class="math inline">\(f′′(x)\)</span>, or <span class="math inline">\(f^{(2)}(x)\)</span>, the second order derivative of <span class="math inline">\(f\)</span>. This symbol stands for</p>
-<p><span class="math display">\[
-\cfrac{d^{2}}{dx^{2}} f(x) = \cfrac{d}{dx} \left [ \cfrac{d}{dx} f(x) \right ]
-\tag{2}
-\]</span></p>
-<p>Exemplifying, if <span class="math inline">\(g(x) = \sin x\)</span>, then <span class="math inline">\(g′(x) = \cos x\)</span> and <span class="math inline">\(g′′(x) = − \sin x\)</span>. Analogously,</p>
-<p><span class="math display">\[
-\cfrac{d^{3}}{dx^{3}} f(x) = \cfrac{d}{dx} \left [ \cfrac{d^{2}}{dx^{2}} f(x) \right ] = \cfrac{d}{dx} \left [ \cfrac{d}{dx} \left [ \cfrac{d}{dx} f(x) \right ] \right ] \quad , \quad \cfrac{d^{4}}{dx^{4}} f(x) = \cfrac{d}{dx} \left [ \cfrac{d^{3}}{dx^{3}} f(x) \right ] \cdots, \quad et \ cætera
-\tag{3}
-\]</span></p>
-<p>Furthermore, for <span class="math inline">\(g(x) = \sin x\)</span>, one has <span class="math inline">\(g^{(3)} (x) = − \cos x\)</span>, <span class="math inline">\(g^{(4)} (x) = \sin x\)</span>, <em>et cætera</em>.</p>
-<ol start="3" type="1">
-<li><p>Determine <span class="math inline">\(f′′(x)\)</span>. Show, by imposing <span class="math inline">\(x = x_{0}\)</span> in the resultant equation, that <span class="math inline">\(a_{2} = \cfrac{1}{2!} f′′(x_{0})\)</span>.</p></li>
-<li><p>Determine <span class="math inline">\(f^{(3)} (x)\)</span>. Show, by imposing <span class="math inline">\(x = x_{0}\)</span> in the resultant equation, that <span class="math inline">\(a_{3} = \cfrac{1}{3!} f^{(3)} (x_{0})\)</span>.</p></li>
-<li><p>Show that <span class="math inline">\(a_{n} = \cfrac{1}{n!} f^{(n)} (x_{0})\)</span>.</p></li>
-</ol>
-<p>In other words, if the series exists, one has</p>
-<p><span class="math display">\[
-f(x) = \sum \limits^{\infty}_{n = 0} \cfrac{1}{n!} f^{(n)} (x_{0}) (x - x_{0})^{n}
-\]</span></p>
-</section>
-<section id="maclaurin-series" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="maclaurin-series"><span class="header-section-number">12.3</span> Maclaurin series</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
-</blockquote>
-<p>A Maclaurin series is a Taylor series where <span class="math inline">\(x_{0} = 0\)</span>.</p>
+<p>are <strong>candidates</strong> for local maximum or minimum. Hence, the formula above is a necessary condition to characterize an extremal point (maximum or minimum), but not a sufficient one. It is important to stress that</p>
 <ul>
-<li><p><span class="math inline">\(\cfrac{1}{1 - x} = 1 + x + x^2 + \cdots + x^{n} + \cdots = \sum \limits^{\infty}_{n = 0} x^{n}, \quad |x| &lt; 1\)</span></p></li>
-<li><p><span class="math inline">\(\cfrac{1}{1 + x} = 1 - x + x^2 - \cdots + (- x^{n}) + \cdots = \sum \limits^{\infty}_{n = 0} (-1)^{n} x^{n}, \quad |x| &lt; 1\)</span></p></li>
-<li><p><span class="math inline">\(e^{x} = 1 + x + \cfrac{x^{2}}{2!} + \cdots + \cfrac{x^{n}}{n!} + \cdots = \sum \limits^{\infty}_{n = 0} \cfrac{x^{n}}{n!}, \quad |x| &lt; \infty\)</span></p></li>
-<li><p><span class="math inline">\(\sin x = x - \cfrac{x^{3}}{3!} + \cfrac{x^{5}}{5!} - \cdots + (-1)^{n} \cfrac{x^{2n + 1}}{(2n +1)!} + \cdots = \sum \limits^{\infty}_{n = 0} \cfrac{(-1)^{n} x^{2n + 1}}{(2n +1)!}, \quad |x| &lt; \infty\)</span></p></li>
-<li><p><span class="math inline">\(\cos x = 1 - \cfrac{x^{2}}{2!} + \cfrac{x^{4}}{4!} - \cdots + (-1)^{n} \cfrac{x^{2n}}{(2n)!} + \cdots = \sum \limits^{\infty}_{n = 0} \cfrac{(-1)^{n} x^{2n}}{(2n)!}, \quad |x| &lt; \infty\)</span></p></li>
-<li><p><span class="math inline">\(\ln (1 + x) = x - \cfrac{x^{2}}{2} + \cfrac{x^{3}}{3} - \cdots + (-1)^{n - 1} \cfrac{x^{n}}{n} + \cdots = \sum \limits^{\infty}_{n = 1} \cfrac{(-1)^{n - 1} x^{n}}{n}, \quad -1 &lt; x \leq 1\)</span></p></li>
-<li><p><span class="math inline">\(\ln \cfrac{1 + x}{1 - x} = 2 \tanh^{-1} x = 2 \left ( x + \cfrac{x^{3}}{3} + \cfrac{x^{5}}{5} + \cdots + \cfrac{x^{2n + 1}}{2n + 1} + \cdots \right ) = 2 \sum \limits_{n = 0}^{\infty} \cfrac{x^{2n + 1}}{2n - 1}, \quad |x| &lt; 1\)</span></p></li>
-<li><p><span class="math inline">\(\tan^{-1} x = x - \cfrac{x^{3}}{3} + \cfrac{x^{5}}{5} - \cdots + (- 1)^{n} \cfrac{x^{2n + 1}}{2n + 1} + \cdots = \sum \limits^{\infty}_{n = 0} \cfrac{(- 1)^{n} x^{2n + 1}}{2n + 1}, \quad |x| \leq 1\)</span></p></li>
+<li><p>A point <span class="math inline">\(P(x_{0}, y_{0})\)</span> is a <strong>local maximum</strong> if <span class="math inline">\(f(x, y) &lt; f(x_{0}, y_{0})\)</span> for any pair <span class="math inline">\((x, y)\)</span> sufficiently close to <span class="math inline">\(P\)</span> (but different from <span class="math inline">\(P\)</span>);</p></li>
+<li><p>A point <span class="math inline">\(P(x_{0}, y_{0})\)</span> is a <strong>local minimum</strong> if <span class="math inline">\(f(x, y) &gt; f(x_{0}, y_{0})\)</span> for any pair <span class="math inline">\((x, y)\)</span> sufficiently close to <span class="math inline">\(P\)</span> (but different from <span class="math inline">\(P\)</span>);</p></li>
 </ul>
-</section>
-<section id="binomial-series" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="binomial-series"><span class="header-section-number">12.4</span> Binomial series</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
-</blockquote>
+<p>If <span class="math inline">\(P(x_{0}, y_{0})\)</span> is an extremal point, the following analysis tells about its nature. The Taylor expansion of <span class="math inline">\(f\)</span> around <span class="math inline">\(P\)</span> leads to</p>
 <p><span class="math display">\[
-(1 + x)^{m} =
-1 + mx + \cfrac{m (m - 1) x^{2}}{2!} + \cfrac{m (m - 1) (m - 2) x^{3}}{3!} +
-\cdots +
+f(x, y) =
+f(x_{0}, y_{0}) + \cfrac{\partial f}{\partial x} (x_{0}, y_{0}) (x - x_{0}) +
+\cfrac{\partial f}{\partial y} (x_{0}, y_{0}) (y - y_{0}) +
 \]</span></p>
 <p><span class="math display">\[
-+ \cfrac{m (m - 1) (m - 2) \cdots (m - k + 1) x^{k}}{k!} + \cdots =
-1 + \sum \limits^{\infty}_{k = 1} \binom{m}{k} x^{k}, \quad |x| &lt; 1
++
+\cfrac{1}{2!} \cfrac{\partial^{2} f}{\partial x^{2}} (x_{0}, y_{0}) (x - x_{0})^{2} +
+\cfrac{\partial^{2} f}{\partial x \partial y} (x_{0}, y_{0}) (x - x_{0}) (y - y_{0}) +
+\cfrac{1}{2!} \cfrac{\partial^{2} f}{\partial y^{2}} (x_{0}, y_{0}) (y - y_{0})^{2} +
+\cdots
 \]</span></p>
-<p>Where</p>
+<p>Inserting the two formulas above and introducing the notations</p>
 <p><span class="math display">\[
-\binom{m}{1} = m, \quad \binom{m}{2} = \cfrac{m (m - 1)}{2!}, \quad \binom{m}{k} = \cfrac{m (m - 1) \cdots (m - k + 1)}{k!} \quad \text{for} \ k \geq 3
+A := \cfrac{\partial^{2} f}{\partial x^{2}} (x_{0}, y_{0}), \quad
+B := \cfrac{\partial^{2} f}{\partial x \partial y} (x_{0}, y_{0}), \quad
+C := \cfrac{\partial^{2} f}{\partial y^{2}} (x_{0}, y_{0}), \quad
+\Delta x := x - x_{0} \quad and \quad
+\Delta y := y - y_{0}
 \]</span></p>
-</section>
-<section id="big-oh-notation" class="level2" data-number="12.5">
-<h2 data-number="12.5" class="anchored" data-anchor-id="big-oh-notation"><span class="header-section-number">12.5</span> Big “Oh” notation</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
-</blockquote>
-<p>For <span class="math inline">\(x \ll 1\)</span>, expanding <span class="math inline">\(f(x) = \sin x\)</span> aroung <span class="math inline">\(x_{0}\)</span> leads to</p>
+<p>one has</p>
 <p><span class="math display">\[
-\sin x = x - \cfrac{x^{3}}{3!} + \cfrac{x^{5}}{5!} - \cfrac{x^{7}}{7!} + \cdots
+\Delta f := f(x, y) - f(x_{0}, y_{0}) =
+\cfrac{A}{2} \Delta x^{2} + B \Delta x \Delta y + \cfrac{C}{2} \Delta y^{2} + \mathcal{O} (\Delta x^{3}, \Delta y^{3})
+\tag{i}
 \]</span></p>
-<p>The term in the series above decreases with its order. The series can also be represented by</p>
+<p>For <span class="math inline">\(\Delta x\)</span> and <span class="math inline">\(\Delta y\)</span> sufficiently close to zero (which means that <span class="math inline">\((x, y)\)</span> is close to <span class="math inline">\((x_{0}, y_{0})\)</span>), the sign of <span class="math inline">\(\Delta f\)</span> in the formula above is governed by <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span>, as seen below. According to the definition above, <span class="math inline">\(\Delta f &gt; 0\)</span> and <span class="math inline">\(\Delta f &lt; 0\)</span> implies <span class="math inline">\((x_{0}, y_{0})\)</span> being a local minimum and maximum, respectively.</p>
+<p>The possible cases are listed below.</p>
+<p>1. <span class="math inline">\(A \ \text{and} \ C \ \text{are not both zero}\)</span>. Assume that <span class="math inline">\(A \neq 0\)</span> (the case <span class="math inline">\(C \neq 0\)</span> can be worked out <span class="math inline">\(mutatis \ mutandis\)</span>). Then, <span class="math inline">\(\Delta f\)</span> can be cast as</p>
 <p><span class="math display">\[
-\sin x = x - \cfrac{x^{3}}{3!} + \cfrac{x^{5}}{5!} - \cfrac{x^{7}}{7!} + \mathcal{O} (x^{9})
+\Delta f = \cfrac{A}{2} \left [ \Delta x + \cfrac{B}{A} \Delta y \right ] + \cfrac{AC - B^{2}}{2A} \Delta y^{2} + \mathcal{O} (\Delta x^{3}, \Delta y^{3}) =
 \]</span></p>
-<p>where <span class="math inline">\(\mathcal{O} (x^{9})\)</span> stands for contributions of order <span class="math inline">\(x^{9}\)</span> (<em>id est</em>, proportional to <span class="math inline">\(x^{6}\)</span>) <strong>or less</strong>, since the absolute value of the remaining terms <span class="math inline">\(\left | \cfrac{x^{9}}{9!} - \cfrac{x^{11}}{11!} + \cfrac{x^{13}}{13!} - \cdots \right |\)</span>, does not exceed a term proportional to <span class="math inline">\(x^{9}\)</span>. It was also possible to write</p>
 <p><span class="math display">\[
-\sin x = x - \cfrac{x^{3}}{3!} + \cfrac{x^{5}}{5!} - \cfrac{x^{7}}{7!} + \mathcal{O} (x^{8})
+= \cfrac{A}{2} \Delta w^{2} + \cfrac{AC - B^{2}}{2A} \Delta y^{2} + \mathcal{O} (\Delta x^{3}, \Delta y^{3})
 \]</span></p>
-<p>because <span class="math inline">\(\mathcal{O} (x^{9})\)</span> is (much) smaller than terms proportional to <span class="math inline">\(x^{8}\)</span> when <span class="math inline">\(x \sim 0\)</span>.</p>
+<p>where,</p>
+<p><span class="math display">\[
+\Delta w := \Delta x + \cfrac{B}{A} \Delta y
+\]</span></p>
+<p>The analysis will now be divided into some subcases.</p>
+<p>(a). <span class="math inline">\(AC - B^{2} = 0\)</span>. In this case, no general conclusion can be stated about the nature of <span class="math inline">\((x_{0}, y_{0})\)</span>, since <span class="math inline">\(\Delta w\)</span> can be zero without letting <span class="math inline">\(\Delta x = \Delta y = 0\)</span> (which is the critical point). When this happens, the sign of <span class="math inline">\(\Delta f = \cfrac{A}{2} \Delta w^{2} + \mathcal{O} (\Delta x^{3}, \Delta y^{3}) = \mathcal{O} (\Delta x^{3}, \Delta y^{3})\)</span> is decided by the third order terms, which requires further investigations.</p>
+<p>(b). <span class="math inline">\(AC - B^{2} &lt; 0\)</span>. In this case, the quadratic form in <span class="math inline">\(\text{(i)}\)</span> can be either positive or negative, depending on the chosen region in the neighborhood of <span class="math inline">\((x_{0}, y_{0})\)</span>. Therefore, the condition <span class="math inline">\(AC - B^{2}\)</span> implies the critical point being a <strong>saddle-point</strong>.</p>
+<p>(c). <span class="math inline">\(AC - B^{2} &gt; 0\)</span>. In this case, both quadratic terms in <span class="math inline">\(\text{(i)}\)</span> have the same sign and the classification of the critical point depends on the sign of <span class="math inline">\(A\)</span> only. If <span class="math inline">\(A &gt; 0 \ (A &lt; 0)\)</span>, then <span class="math inline">\(\Delta f &gt; 0 \ (\Delta f &lt; 0)\)</span>, which means that <span class="math inline">\((x_{0}, y_{0})\)</span> is a <strong>local minimum (maximum)</strong>.</p>
+<p>2. <span class="math inline">\(A = C = 0\)</span>. Here, <span class="math inline">\(\Delta f = B \Delta x \Delta y + \mathcal{O} (\Delta x^{3}, \Delta y^{3})\)</span>. The analysis will now be divided into some subcases.</p>
+<p>(a). If <span class="math inline">\(B = 0\)</span>, which implies <span class="math inline">\(AC - B^{2} = 0\)</span>, no general conclusion can be stated about the nature of <span class="math inline">\((x_{0}, y_{0})\)</span>, since it would depend on the third order terms.</p>
+<p>(b). if <span class="math inline">\(B \neq 0\)</span>, which implies <span class="math inline">\(AC - B^{2} &lt; 0\)</span>, the leading term, <span class="math inline">\(B \Delta x \Delta y\)</span> can be either positive or negative, depending on the <span class="math inline">\((x_{0}, y_{0})\)</span>. In this situation, <span class="math inline">\((x_{0}, y_{0})\)</span> is a <strong>saddle-point</strong>, where it can be seen as a local maximum according to some set of points <span class="math inline">\((x, y)\)</span>, but it can also be treated as a local minimum if another set of points <span class="math inline">\((x, y)\)</span> is chosen.</p>
+<p>All the cases above can be summarized by:</p>
+<p><span class="math display">\[
+A, B, C
+\begin{cases}
+AC - B^{2} = 0 \quad \quad \quad \quad \quad \ \ \ : \quad \text{inconclusive (based on the second-order terms only)} \\
+AC - B^{2} &lt; 0 \quad \quad \quad \quad \quad \ \ \ : \quad (x_{0}, y_{0}) \ \text{is a saddle point} \\
+AC - B^{2} &gt; 0 \ \text{and} \ A &gt; 0 \quad : \quad (x_{0}, y_{0}) \ \text{is a local minimum} \\
+AC - B^{2} &gt; 0 \ \text{and} \ A &lt; 0 \quad : \quad (x_{0}, y_{0}) \ \text{is a local maximum}
+\end{cases}
+\]</span></p>
+<p>Note that <span class="math inline">\(AC − B^{2} &gt; 0\)</span> and <span class="math inline">\(A = 0\)</span> are incompatible. Furthermore, <span class="math inline">\(AC − B^{2} &gt; 0\)</span> and <span class="math inline">\(A &gt; 0\)</span> imply <span class="math inline">\(C &gt; 0\)</span> (in the same fashion, <span class="math inline">\(AC − B^{2} &gt; 0\)</span> and <span class="math inline">\(A &lt; 0\)</span> lead to <span class="math inline">\(C &lt; 0\)</span>).</p>
+<p><strong>Example</strong>: Analyzing the critical points of <span class="math inline">\(f(x, y) = x^{3} − 3xy^{2} + y^{3} + 3y\)</span></p>
+<p>Firstly, the critical points, which are solutions of</p>
+<p><span class="math display">\[
+\begin{cases}
+\cfrac{\partial f}{\partial x} = 3x^{2} - 3y^{2} = 0 \\
+\cfrac{\partial f}{\partial y} = -6xy + 3y^{2} + 3 = 0
+\end{cases}
+\]</span></p>
+<p>The critical points are <span class="math inline">\((−1, −1)\)</span> or <span class="math inline">\((1, 1)\)</span>. Then, from</p>
+<p><span class="math display">\[
+A = \cfrac{\partial^{2} f}{\partial x^{2}} (x_{0}, y_{0}) = 6x_{0}, \quad
+B = \cfrac{\partial^{2} f}{\partial x \partial y} (x_{0}, y_{0}) = -6y_{0}, \quad \text{and} \quad
+C = \cfrac{\partial^{2} f}{\partial y^{2}} (x_{0}, y_{0}) = - 6x_{0} + 6y_{0}
+\]</span></p>
+<p>one sees that</p>
+<p><span class="math display">\[
+AC - B^{2} = 36y_{0} (- x^{2}_{0} + x_{0}y_{0} - y^{2}_{0}) =
+\begin{cases}
+\ \ 36 \quad \quad , \quad \text{if} \ (x_{0}, y_{0}) = (-1, -1) \\
+\ - 36 \quad , \quad \text{if} \ (x_{0}, y_{0}) = (1, 1)
+\end{cases}
+\]</span></p>
+<p>Thus, <span class="math inline">\((1, 1)\)</span> is a saddle-point <span class="math inline">\(AC - B^{2} &lt; 0\)</span>. Furthermore, <span class="math inline">\((−1, −1)\)</span> is a local maximum point, since <span class="math inline">\(A = −6 &lt; 0\)</span> and <span class="math inline">\(AC - B^{2} &lt; 0\)</span>.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
 <div id="ref-hase2022" class="csl-entry" role="doc-biblioentry">
 Hase, Masayuki Oka. 2022. <span>“Métodos Matemáticos e de Computação 1.”</span>
 </div>
-<div id="ref-hass2018" class="csl-entry" role="doc-biblioentry">
-Hass, Joel, Christopher Heil, and Maurice D. Weir. 2018. <em>Thomas’ Calculus</em>. 14th ed. Pearson.
 </div>
-</div>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -499,13 +486,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../qmd/applications-of-derivatives.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Applications of derivatives</span></span>
+      <a href="../qmd/taylor-expansion.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">The Taylor expasion</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../qmd/integrals.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Integrals</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../qmd/matrices.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Matrices</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

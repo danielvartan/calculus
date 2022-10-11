@@ -1,0 +1,51 @@
+# Partial derivatives
+
+> Reference: @hase2022
+
+Let $f : \mathbb{R}^{2} \to \mathbb{R}$; assuming that $f$ is differentiable, the partial derivative of $f$ with respect to $x$ is defined as
+
+$$
+\cfrac{\partial}{\partial x} f(x, y) = \lim \limits_{\Delta x \to 0} \cfrac{f(x + \Delta x, y) - f(x, y)}{\Delta x}
+$$
+This stands for the analysis of variation in the direction of the $x$-axis (at point $x$) when the other direction (parallel to $y$-axis) is kept constant (at point $y$). This definition is illustrated for a particular case in figure 1: at the plane $y = 0$, the function $f(x, y) = x^{2} +y^{2}$ behaves as $f(x, y = 0) = x^{2}$, which is the red curve; the partial derivative $\cfrac{\partial}{\partial x} f(x, 0)$ is just the derivative of the parabola $f(x, 0) = x^{2}$ in the direction of $x$-axis.
+
+![Figure 1: Graph of $f(x, y) = x^{2} +y^{2}$. The red curve corresponds to the section $y = 0$.](../images/hase_lecture_6_figure_2.png)
+
+Analogously, one can also define the partial derivative of f with respect to y as
+
+$$
+\cfrac{\partial}{\partial y} f(x, y) = \lim \limits_{\Delta y \to 0} \cfrac{f(x, y + \Delta y) - f(x, y)}{\Delta y}
+$$
+
+## Example of partial derivatives
+
+> Reference: @hase2022
+
+* $\cfrac{\partial}{\partial x} (x^{3} y^{2}) = 3x^{2} y^{2}$ (note that $y$ was "kept constant" in this operation).
+* $\cfrac{\partial}{\partial y} (x^{3} y^{2}) = 2x^{3} y$ (note that $x$ was "kept constant" in this operation).
+
+The partial derivative shares the property of linearity present in ordinary derivatives. Furthermore, the product and quotient rules, and also the chain rule hold.
+
+* $\cfrac{\partial}{\partial x} (x y^{2} e^{x y}) = y^{2} e^{xy} + x y^{3} e^{xy}$ (note that $y$ was "kept constant" in this operation).
+* $\cfrac{\partial}{\partial y} (x y^{2} e^{x y}) = 2 x y e^{xy} + x^{2} y^{2} e^{xy}$ (note that $x$ was "kept constant" in this operation).
+
+* $\cfrac{\partial}{\partial x} \left ( \cfrac{x + y}{y + 1} \right ) = \cfrac{1}{y + 1}$ (note that $y$ was "kept constant" in this operation).
+* $\cfrac{\partial}{\partial y} \left ( \cfrac{x + y}{y + 1} \right ) = \cfrac{1 - x}{(y + 1)^{2}}$ (note that $x$ was "kept constant" in this operation).
+
+* $\cfrac{\partial}{\partial x} [\sin(x y) +\sin x] = y \cos(xy) + \cos x$ (note that $y$ was "kept constant" in this operation).
+* $\cfrac{\partial}{\partial y} [\sin(x y) +\sin x] = x \cos(xy)$ (note that $x$ was "kept constant" in this operation).
+
+Partial derivatives of higher order can also be defined (trivially).
+
+* $\cfrac{\partial^{2}}{\partial x^{2}} e^{x y} = \cfrac{\partial}{\partial x} \left [ \cfrac{\partial}{\partial x} e^{x y} \right ] = \cfrac{\partial}{\partial x} [y e^{x y}] = y^{2} e^{x y}$
+
+* $\cfrac{\partial^{2}}{\partial y^{2}} [\sin(x y) +\sin x] = \cfrac{\partial}{\partial y} \left \{ \cfrac{\partial}{\partial y} [\sin(x y) +\sin x] \right \} = \cfrac{\partial}{\partial y} [x \cos (x y)] = -x^{2} \sin(x y_)$
+
+In differential calculus of several variables, one can also define the __mixed derivative__. In this case, derivatives associated with different variables are taken.
+
+* $\cfrac{\partial^{2}}{\partial x \partial y} \sin (x y) = \cfrac{\partial}{\partial x} \left [ \cfrac{\partial}{\partial y} \sin (x y) \right ] = \cfrac{\partial}{\partial x} [x \cos(x y)] = \cos (xy) - x y \sin(xy)$
+* $\cfrac{\partial^{2}}{\partial y \partial x} \sin (x y) = \cfrac{\partial}{\partial y} \left [ \cfrac{\partial}{\partial x} \sin (x y) \right ] = \cfrac{\partial}{\partial y} [y \cos(x y)] = \cos (xy) - x y \sin(xy)$
+
+* $\cfrac{\partial^{3}}{\partial x \partial y \partial z} e^{x y z} = \cfrac{\partial}{\partial x} \cfrac{\partial}{\partial y} \left [ \cfrac{\partial}{\partial z} e^{x y z} \right ] = \cfrac{\partial}{\partial x} \cfrac{\partial}{\partial y} [x y e^{x y z}] = \cfrac{\partial}{\partial x} [(x + x^{2} y z) e^{x y z}] = (1 + 3xyz + x^{2} y^{2} z^{2}]) e^{x y z}]$
+
+Note that $\cfrac{\partial^{2}}{\partial x \partial y} = \cfrac{\partial^{2}}{\partial y \partial x}$ in the two examples above. In principle, the derivatives of mixed derivatives do not commute, _id est_, $\cfrac{\partial^{2}}{\partial x \partial y} \neq \cfrac{\partial^{2}}{\partial y \partial x}$; however, this situation will not be seen in this course.

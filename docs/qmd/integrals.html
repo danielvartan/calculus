@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Calculus: Formulas and Theorems - 12&nbsp; Integrals</title>
+<title>Calculus: Formulas and Theorems - 13&nbsp; Integrals</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,8 +44,8 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../qmd/multivariate-calculus.html" rel="next">
-<link href="../qmd/applications-of-derivatives.html" rel="prev">
+<link href="../qmd/table-of-integrals.html" rel="next">
+<link href="../qmd/series.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,11 +81,12 @@ div.csl-indent {
 
 <body class="nav-sidebar floating">
 
+
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Integrals</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Integrals</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -192,7 +193,17 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/integrals.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Integrals</span></a>
+  <a href="../qmd/series.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/integrals.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Integrals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/table-of-integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Table of integrals</span></a>
   </div>
 </li>
       </ul>
@@ -207,27 +218,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/n-dimensional-space.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The n-dimensional space (<span class="math inline">\(\mathbb{R}^{n}\)</span>)</span></a>
+  <a href="../qmd/funcion-of-several-variables.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Functions of several variables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/two-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Two-variable functions</span></a>
+  <a href="../qmd/partial-derivatives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Partial derivatives</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/three-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Functions of three or more variables</span></a>
+  <a href="../qmd/taylor-expansion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">The Taylor expasion</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  <a href="../qmd/max-min-analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Analysis of local maxima/minima</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
+  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
   </div>
 </li>
       </ul>
@@ -251,18 +267,14 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#indefinite-integral" id="toc-indefinite-integral" class="nav-link active" data-scroll-target="#indefinite-integral"> <span class="header-section-number">12.1</span> Indefinite integral</a>
+  <li><a href="#antiderivatives-and-indefinite-integrals" id="toc-antiderivatives-and-indefinite-integrals" class="nav-link active" data-scroll-target="#antiderivatives-and-indefinite-integrals"> <span class="header-section-number">13.1</span> Antiderivatives and indefinite integrals</a></li>
+  <li><a href="#indefinite-integrals-of-elementary-functions" id="toc-indefinite-integrals-of-elementary-functions" class="nav-link" data-scroll-target="#indefinite-integrals-of-elementary-functions"> <span class="header-section-number">13.2</span> Indefinite integrals of elementary functions</a></li>
+  <li><a href="#riemann-integral---definition" id="toc-riemann-integral---definition" class="nav-link" data-scroll-target="#riemann-integral---definition"> <span class="header-section-number">13.3</span> (Riemann) Integral - Definition</a></li>
+  <li><a href="#general-formulas" id="toc-general-formulas" class="nav-link" data-scroll-target="#general-formulas"> <span class="header-section-number">13.4</span> General formulas</a></li>
+  <li><a href="#other-properties" id="toc-other-properties" class="nav-link" data-scroll-target="#other-properties"> <span class="header-section-number">13.5</span> Other properties</a>
   <ul class="collapse">
-  <li><a href="#elementary-functions" id="toc-elementary-functions" class="nav-link" data-scroll-target="#elementary-functions"> <span class="header-section-number">12.1.1</span> Elementary functions</a></li>
-  <li><a href="#operative-properties" id="toc-operative-properties" class="nav-link" data-scroll-target="#operative-properties"> <span class="header-section-number">12.1.2</span> Operative properties</a></li>
+  <li><a href="#riemann-integral---fundamental-theorem-of-calculus" id="toc-riemann-integral---fundamental-theorem-of-calculus" class="nav-link" data-scroll-target="#riemann-integral---fundamental-theorem-of-calculus"> <span class="header-section-number">13.5.1</span> (Riemann) Integral - Fundamental theorem of calculus</a></li>
   </ul></li>
-  <li><a href="#integral-definida" id="toc-integral-definida" class="nav-link" data-scroll-target="#integral-definida"> <span class="header-section-number">12.2</span> Integral definida</a>
-  <ul class="collapse">
-  <li><a href="#fundamental-theorem-of-calculus" id="toc-fundamental-theorem-of-calculus" class="nav-link" data-scroll-target="#fundamental-theorem-of-calculus"> <span class="header-section-number">12.2.1</span> Fundamental theorem of calculus</a></li>
-  <li><a href="#propriedades-operatórias" id="toc-propriedades-operatórias" class="nav-link" data-scroll-target="#propriedades-operatórias"> <span class="header-section-number">12.2.2</span> Propriedades operatórias</a></li>
-  </ul></li>
-  <li><a href="#improper-integral" id="toc-improper-integral" class="nav-link" data-scroll-target="#improper-integral"> <span class="header-section-number">12.3</span> Improper integral</a></li>
-  <li><a href="#referências" id="toc-referências" class="nav-link" data-scroll-target="#referências">Referências</a></li>
   </ul>
 </nav>
     </div>
@@ -271,7 +283,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Integrals</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Integrals</span></h1>
 </div>
 
 
@@ -285,85 +297,217 @@ div.csl-indent {
 
 </header>
 
-<section id="indefinite-integral" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="indefinite-integral"><span class="header-section-number">12.1</span> Indefinite integral</h2>
-<p>Chamamos de integral indefinida de <span class="math inline">\(g(x)\)</span> e indicamos pelo símbolo <span class="math inline">\(\int g(x) \ dx\)</span> a uma primitiva qualquer de <span class="math inline">\(g(x)\)</span> adicionada a uma constante arbitrária <span class="math inline">\(c\)</span>. Assim:</p>
-<p><span class="math inline">\(\int g(x)dx = f(x) + c\)</span></p>
-<p>em que <span class="math inline">\(f(x)\)</span> é uma primitiva de <span class="math inline">\(g(x)\)</span> , ou seja, <span class="math inline">\(f'(x) = g(x)\)</span>.</p>
-<section id="elementary-functions" class="level3" data-number="12.1.1">
-<h3 data-number="12.1.1" class="anchored" data-anchor-id="elementary-functions"><span class="header-section-number">12.1.1</span> Elementary functions</h3>
-<p>Podemos obter as integrais indefinidas das principais funções, que decorrem imediatamente das respectivas regras de derivação:</p>
+<section id="antiderivatives-and-indefinite-integrals" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="antiderivatives-and-indefinite-integrals"><span class="header-section-number">13.1</span> Antiderivatives and indefinite integrals</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+</blockquote>
+<p>The derivative <span class="math inline">\(f'\)</span> of a function <span class="math inline">\(f : \mathbb{R} \to \mathbb{R}\)</span> is defined by the formula</p>
+<p><span class="math display">\[
+f'(x) = \lim \limits_{\Delta x \to 0} = \cfrac{f(x + \Delta x) - f(x)}{\Delta x}
+\]</span></p>
+<p>Now, a different question can be proposed: given <span class="math inline">\(f\)</span>, one may be interested in a function <span class="math inline">\(F\)</span> such that</p>
+<p><span class="math display">\[
+F'(x) = f(x)
+\]</span></p>
+<p>for all <span class="math inline">\(x\)</span> in the domain of <span class="math inline">\(f\)</span>. This is an inverse problem of derivation, and <span class="math inline">\(F\)</span> is called an <strong>antiderivative</strong> of <span class="math inline">\(f\)</span>. One may immediately note that the antiderivative of a function is not unique; for instance, if <span class="math inline">\(f(x) = x\)</span>, then <span class="math inline">\(\cfrac{x^{2}}{2}\)</span>, <span class="math inline">\(\cfrac{x^{2}}{2} − 1\)</span> and <span class="math inline">\(\cfrac{x^{2}}{2} + \pi\)</span> are some possible antiderivatives. However, as these examples indicate, the difference between any two antiderivatives of a given function is a constant. This means that if <span class="math inline">\(F\)</span> is an antiderivative of <span class="math inline">\(f\)</span>, any other antiderivative of <span class="math inline">\(f\)</span> can be expressed by <span class="math inline">\(F + c\)</span>, where <span class="math inline">\(c \in \mathbb{R}\)</span> is a constant.</p>
+<p>If <span class="math inline">\(F(x)\)</span> is an antiderivative of <span class="math inline">\(f(x)\)</span> for <span class="math inline">\(x \in (a, b) \subset \mathbb{R}\)</span>, the <strong>family of functions</strong> <span class="math inline">\(\{F + c\}\)</span>, where <span class="math inline">\(c \in \mathbb{R}\)</span> is a constant, is the <strong>indefinite integral</strong> of <span class="math inline">\(f\)</span>, and is denoted by</p>
+<p><span class="math display">\[
+\int f(x) \ dx
+\]</span></p>
+<p><em>id est</em>,</p>
+<p><span class="math display">\[
+\int f(x) \ \mathrm{d} x = F(x) + c, \quad c \in \mathbb{R}, \quad \text{if} \quad F'(x) = f(x)
+\]</span></p>
+<p>In <span class="math inline">\(\displaystyle \int f(x) \ dx\)</span>, <span class="math inline">\(f(x)\)</span> is the integrand and the symbol <span class="math inline">\(dx\)</span> (the measure of integration) will play an important role later. Some remarks:</p>
 <ol type="1">
-<li><p><span class="math inline">\(\int x^{n} dx = \cfrac {x^{n + 1}}{n+1} + c\)</span>, <span class="math inline">\(\forall n \in \mathbb{Z} \mid n \neq -1\)</span>, pois a derivada de <span class="math inline">\(\cfrac {x^{n + 1}} {n+1}\)</span> é <span class="math inline">\(x^{n}\)</span></p></li>
-<li><p><span class="math inline">\(\int \cfrac {1} {x} \ dx = \ln x + c\)</span>, para <span class="math inline">\(x &gt; 0\)</span>, pois a derivada de <span class="math inline">\(\ln x\)</span> é <span class="math inline">\(\cfrac {1} {x}\)</span></p>
-<p>Observe que se <span class="math inline">\(x &lt; 0\)</span> , <span class="math inline">\(\int \cfrac {1} {x} \ dx = \ln (-x) + c\)</span></p>
-<p>Assim, de modo geral, podemos escrever: <span class="math inline">\(\int \frac {1} {x} \ dx = \ln |x| + c\)</span></p></li>
-<li><p>Para qualquer real <span class="math inline">\(\alpha \neq -1\)</span>, <span class="math inline">\(\int x^{a} \ dx = \cfrac {x^{\alpha + 1}} {\alpha + 1} + c\)</span>, <span class="math inline">\((x &gt; 0)\)</span></p></li>
-<li><p><span class="math inline">\(\int \cos xdx = \sin x + c\)</span>, pois a derivada de <span class="math inline">\(\sin x\)</span> é <span class="math inline">\(\cos x\)</span></p></li>
-<li><p><span class="math inline">\(\int \sin xdx = - \cos x + c\)</span>, pois a derivada de <span class="math inline">\(- \cos x\)</span> é <span class="math inline">\(\sin x\)</span></p></li>
-<li><p><span class="math inline">\(\int e^{x} \ dx = e^{x} + c\)</span>, pois a derivada de <span class="math inline">\(e^{x}\)</span> é <span class="math inline">\(e^{x}\)</span></p></li>
-<li><p><span class="math inline">\(\int \cfrac {1}{1+x^{2}} \ dx = \arctan x + c\)</span>, pois a derivada de <span class="math inline">\(\arctan x\)</span> é <span class="math inline">\(\cfrac {1}{1+x^{2}}\)</span></p></li>
-<li><p><span class="math inline">\(\int \cfrac {1}{\sqrt{1 - x^{2}}} \ dx = \arcsin x + c\)</span>, pois a derivada de <span class="math inline">\(\arcsin x\)</span> é <span class="math inline">\(\cfrac {1}{\sqrt{1 - x^{2}}}\)</span>, para <span class="math inline">\(-1 &lt; x &lt; 1\)</span></p></li>
+<li><p>From the definition, <span class="math inline">\(\displaystyle \cfrac{\mathrm{d}}{\mathrm{d} x} \int f(x) \ \mathrm{d} x = f(x)\)</span>.</p></li>
+<li><p>Geometrically, an indefinite integral is a family of curves, each one of them being related to others by a “vertical” translation.</p></li>
+<li><p>Not every function has an indefinite integral; furthermore, not every function has an indefinite integral that can be expressed by a finite combination of elementary functions.</p></li>
 </ol>
-<p>Referências: <span class="citation" data-cites="morettin2003">Morettin, Hazzan, and Oliveira Bussab (<a href="references.html#ref-morettin2003" role="doc-biblioref">2003</a>)</span></p>
-</section>
-<section id="operative-properties" class="level3" data-number="12.1.2">
-<h3 data-number="12.1.2" class="anchored" data-anchor-id="operative-properties"><span class="header-section-number">12.1.2</span> Operative properties</h3>
-<ol type="1">
-<li><p><span class="math inline">\(\int [ f_{1} (x) + f_{2} (x) ] \ dx = \int f_{1} (x) \ dx + \int f_{2} (x) \ dx\)</span></p></li>
-<li><p><span class="math inline">\(\int [ f_{1} (x) - f_{2} (x) ] \ dx = \int f_{1} (x) \ dx - \int f_{2} (x) \ dx\)</span>}</p></li>
-<li><p><span class="math inline">\(\int c \cdot f(x) \ dx = c \cdot \int f(x) \ dx\)</span></p></li>
-</ol>
-</section>
-</section>
-<section id="integral-definida" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="integral-definida"><span class="header-section-number">12.2</span> Integral definida</h2>
-<p>Seja <span class="math inline">\(f(x)\)</span> uma função e <span class="math inline">\(g(x)\)</span> uma de suas primitivas. Portanto, <span class="math inline">\(\int f(x) \ dx = g(x) + c\)</span> .</p>
-<p>Definimos a integral definida de <span class="math inline">\(f(x)\)</span> entre os limites <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span> como a diferença <span class="math inline">\(g(b) - g(a)\)</span>, e indicamos simbólicamente <span class="math inline">\(\int_{a}^{b} f(x) \ dx = g(b) - g(a) = \lim \limits_{x \to b-} [g(x)] - \lim \limits_{x \to a+} [g(x)]\)</span>.</p>
-<p>A diferença <span class="math inline">\(g(b) - g(a)\)</span> também costuma ser indicada pelo símbolo <span class="math inline">\([g(x)]_{a}^{b}\)</span>.</p>
-<section id="fundamental-theorem-of-calculus" class="level3" data-number="12.2.1">
-<h3 data-number="12.2.1" class="anchored" data-anchor-id="fundamental-theorem-of-calculus"><span class="header-section-number">12.2.1</span> Fundamental theorem of calculus</h3>
-<p>O significado geométrico da integral definida é dado a seguir.</p>
-<p>Seja <span class="math inline">\(f(x)\)</span> uma função <strong>contínua e não negativa</strong> definida num intervalo <span class="math inline">\([a, b]\)</span>. A integral definida <span class="math inline">\(\int_{a}^{b} f(x) \ dx\)</span> representa a área da região compreendida entre o gráfico de <span class="math inline">\(f(x)\)</span>, o eixo <span class="math inline">\(x\)</span> e as verticais que passam por <span class="math inline">\(a\)</span> e <span class="math inline">\(b\)</span>.</p>
-<p><img src="../images/morettin_figura-7-1.png" class="img-fluid"></p>
-<p>Assim, indicado por <strong><span class="math inline">\(A\)</span></strong> a área destacada da Figura 7.1, teremos: <span class="math inline">\(A = \int_{a}^{b} f(x) \ dx\)</span>.</p>
-<p>(…) Caso <span class="math inline">\(f(x)\)</span> seja negativa no intervalo <span class="math inline">\([a, b]\)</span> , a área <span class="math inline">\(A\)</span> da região delimitada pelo gráfico de <span class="math inline">\(f(x)\)</span>, eixo <span class="math inline">\(x\)</span>, e pelas verticais que passam por <span class="math inline">\(a\)</span> e por <span class="math inline">\(b\)</span> é dada por: <span class="math inline">\(A = - \int_{a}^{b} f(x) \ dx\)</span>.</p>
-</section>
-<section id="propriedades-operatórias" class="level3" data-number="12.2.2">
-<h3 data-number="12.2.2" class="anchored" data-anchor-id="propriedades-operatórias"><span class="header-section-number">12.2.2</span> Propriedades operatórias</h3>
-<ol type="1">
-<li><span class="math inline">\(\int_{a}^{a} f(x) \ dx = F(a) - F(a) = 0\)</span></li>
-<li><span class="math inline">\(\int_{a}^{b} f(x) \ dx = - \int_{b}^{a} f(x) \ dx\)</span></li>
-<li><span class="math inline">\(\int_{a}^{b} f(x) \ dx = \int_{a}^{c} f(x) \ dx + \int_{c}^{b} f(x) \ dx\)</span>, sendo <span class="math inline">\(a &lt; c &lt; b\)</span>.</li>
-</ol>
-</section>
-</section>
-<section id="improper-integral" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="improper-integral"><span class="header-section-number">12.3</span> Improper integral</h2>
-<p>Quando as hipóteses do teorema fundamental do cálculo falharem, aplicamos a integral imprópria.</p>
-<p>Caso 1: Intervalo de integração aberto (e.g., <span class="math inline">\(]a, b]\)</span>).</p>
-<p>Caso 2: Descontinuidade da função (e.g., <span class="math inline">\(D = \mathbb{R} - (0)\)</span>).</p>
-<p>Usa-se a propriedade da integral definida: <span class="math inline">\(\int_{a}^{b} f(x) \ dx = \int_{a}^{c} f(x) \ dx + \int_{c}^{b} f(x) \ dx\)</span> , sendo <span class="math inline">\(a &lt; c &lt; b\)</span>.</p>
-<p>Exemplo:</p>
-<p><span class="math inline">\(\int_{-1}^{1} \frac {1}{x^2} \ dx \ \longrightarrow \ D = \mathbb{R} - (0)\)</span></p>
-<p><span class="math inline">\(\int_{-1}^{1} \frac {1}{x^2} \ dx = \lim \limits_{z \to 0^{-}} \int_{-1}^{z} \frac {1}{x^2} \ dx + \lim \limits_{z \to 0^{+}} \int_{z}^{1} \frac {1}{x^2} \ dx\)</span></p>
-</section>
-<section id="referências" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="referências">Referências</h2>
+<p>Indefinite integrals are also defined for linear combinations of functions. As a consequence of linearity in derivatives, the following linear properties hold:</p>
 <ul>
-<li><span class="citation" data-cites="morettin2003">Morettin, Hazzan, and Oliveira Bussab (<a href="references.html#ref-morettin2003" role="doc-biblioref">2003</a>)</span></li>
-<li><span class="citation" data-cites="lucchesi">Lucchesi (<a href="references.html#ref-lucchesi" role="doc-biblioref">n.d.</a>)</span></li>
+<li><span class="math inline">\(\displaystyle \int [f(x) + f(x)] \ \mathrm{d} x = \int f(x) \ \mathrm{d} x + \int g(x) \ \mathrm{d} x\)</span></li>
+<li><span class="math inline">\(\displaystyle \int \alpha f(x) \ \mathrm{d} x = \alpha \int f(x) \ \mathrm{d} x \quad (\alpha \in \mathbb{R})\)</span></li>
 </ul>
+<p>To see the properties above, one should derive both sides of each identity and see that the results match. The identities should be understood in the sense that indefinite integrals are <strong>equivalent up to a constant</strong>. In particular, it follows that</p>
+<p><span class="math display">\[
+0 \cdot \int f(x) \ \mathrm{d} x = \int 0 \cdot f(x) \ \mathrm{d} x = \int 0 \ \mathrm{d} x = c \quad (c \in \mathbb{R})
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+\int f(x) \ \mathrm{d} x - \int f(x) \ \mathrm{d} x = \int [f(x) - f(x)] \ \mathrm{d} x = \int 0 \ \mathrm{d} x = c \quad (c \in \mathbb{R})
+\]</span></p>
+<p>These two examples remind one that indefinite integrals are a family of functions, and not simple functions.</p>
+</section>
+<section id="indefinite-integrals-of-elementary-functions" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="indefinite-integrals-of-elementary-functions"><span class="header-section-number">13.2</span> Indefinite integrals of elementary functions</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span> and <span class="citation" data-cites="morettin2003">Morettin, Hazzan, and Oliveira Bussab (<a href="references.html#ref-morettin2003" role="doc-biblioref">2003</a>)</span></p>
+</blockquote>
+<p>For all <span class="math inline">\(c \in \mathbb{R}\)</span>:</p>
+<ul>
+<li><p><span class="math inline">\(\displaystyle \int \cos x \ \mathrm{d} x = \sin x + c \quad , \quad \text{since} \ \ \cfrac{\mathrm{d}}{\mathrm{d} x} \sin x = \cos x\)</span></p></li>
+<li><p><span class="math inline">\(\displaystyle \int \sin x \ \mathrm{d} x = - \cos x + c \quad , \quad \text{since} \ \ \cfrac{\mathrm{d}}{\mathrm{d} x} ( - \cos x) = \sin x\)</span></p></li>
+<li><p><span class="math inline">\(\displaystyle \int \sec^{2} x \ \mathrm{d} x = \tan x + c \quad , \quad \text{since} \ \ \cfrac{\mathrm{d}}{\mathrm{d} x} \tan x = \sec^{2} x\)</span></p></li>
+<li><p><span class="math inline">\(\displaystyle \int e^{2} \ \mathrm{d} x = e^{2} + c \quad , \quad \text{since} \ \ \cfrac{\mathrm{d}}{\mathrm{d} x} e^{2} = e^{2}\)</span></p></li>
+<li><p><span class="math inline">\(\displaystyle \int \alpha x^{\alpha - 1} \ \mathrm{d} x = x^{\alpha} + c \quad , \quad \text{since} \ \ \cfrac{\mathrm{d}}{\mathrm{d} x} x^{\alpha} = \alpha x^{\alpha - 1}\)</span></p>
+<ul>
+<li><span class="math inline">\(\displaystyle \int x^{\alpha} \ \mathrm{d} x = \cfrac {x^{\alpha + 1}} {\alpha + 1} + c \quad (\alpha \neq -1)\)</span></li>
+</ul></li>
+<li><p><span class="math inline">\(\displaystyle \int \cfrac{1}{x} \ \mathrm{d} x = \ln |x| + c \quad , \quad \text{since} \ \ \cfrac{\mathrm{d}}{\mathrm{d} x} \ln |x| = \cfrac{1}{x}\)</span></p></li>
+</ul>
+</section>
+<section id="riemann-integral---definition" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="riemann-integral---definition"><span class="header-section-number">13.3</span> (Riemann) Integral - Definition</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+</blockquote>
+<p>Let <span class="math inline">\(f : \mathbb{R} \to \mathbb{R}\)</span> be a continuous function. Considering an interval <span class="math inline">\([a, b] \subset \mathbb{R}\)</span>, it is possible to choose a partition given by <span class="math inline">\(a = x_{0} &lt; x_{1} &lt; \cdots &lt; x_{N - 1} &lt; x_{N} = b\)</span> (figure 1) from which one can define the sum</p>
+<p><span class="math display">\[
+\sum \limits^{N}_{n = 1}  f(x_{n}) \Delta x_{n} \quad \text{where} \quad \Delta x_{n} := x_{n} - x_{n - 1}
+\]</span></p>
+<p>Note that if <span class="math inline">\(f \geq 0\)</span> in <span class="math inline">\([a, b]\)</span>, this sum approaches the area between <span class="math inline">\(f\)</span> and the <span class="math inline">\(x\)</span> axis when</p>
+<p><span class="math inline">\(\text{(a)}\)</span> The size of each division is diminished.</p>
+<p><span class="math inline">\(\text{(b)}\)</span> The number of divisions inside the partition is increased.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/hase_lecture_7_figure_1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 1: Decomposition in rectangles</figcaption><p></p>
+</figure>
+</div>
+<p>It should be clear that <span class="math inline">\(\text{(a)}\)</span> implies <span class="math inline">\(\text{(b)}\)</span>, but the converse is false. The limit of such sum is the (Riemann) integral of <span class="math inline">\(f\)</span> in the interval <span class="math inline">\([a, b]\)</span>, and is denoted by</p>
+<p><span class="math display">\[
+\int^{b}_{a} f(x) \ \mathrm{d} x := \lim \limits_{\text{max}_{n} \ \Delta x_{n} \to 0} \sum \limits^{N}_{n = 1}  f(x_{n}) \Delta x_{n}
+\]</span></p>
+<p>The interpretation of the formula above as being the area becomes clearer if the quantity <span class="math inline">\(\displaystyle \int^{b}_{a} f(x) \ \mathrm{d} x\)</span> is understood as <span class="math inline">\(\displaystyle \int^{b}_{a} [f(x) - 0] \ \mathrm{d} x\)</span>. Hence, if <span class="math inline">\(f \leq 0\)</span> at <span class="math inline">\([a, b]\)</span>, <span class="math inline">\(\displaystyle \int^{b}_{a} f(x) \ \mathrm{d} x\)</span> would be the “opposite of the area”. The continuity condition of <span class="math inline">\(f\)</span> can be relaxed to piecewise continuity.</p>
+<p>Two properties of the definite integral are assumed by definition:</p>
+<p><span class="math display">\[
+\int^{b}_{a} f(x) \ \mathrm{d} x = - \int^{a}_{b} f(x) \ \mathrm{d} x
+\tag{i}
+\]</span></p>
+<p><span class="math display">\[
+\int^{a}_{a} f(x) \ \mathrm{d} x = 0
+\tag{ii}
+\]</span></p>
+</section>
+<section id="general-formulas" class="level2" data-number="13.4">
+<h2 data-number="13.4" class="anchored" data-anchor-id="general-formulas"><span class="header-section-number">13.4</span> General formulas</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+<ul>
+<li><p>Zero: <span class="math inline">\(\displaystyle \int^{a}_{b} f(x) \ \mathrm{d} x = 0\)</span></p></li>
+<li><p>Order of integration: <span class="math inline">\(\displaystyle \int^{a}_{b} f(x) \ \mathrm{d} x = - \int^{b}_{a} f(x) \ \mathrm{d} x\)</span></p></li>
+<li><p>Constant multiples:</p>
+<ul>
+<li><span class="math inline">\(\displaystyle \int^{b}_{a} k f(x) \ \mathrm{d} x = k \int^{b}_{a} f(x) \ \mathrm{d} x, \quad k \in \mathbb{R}\)</span></li>
+<li><span class="math inline">\(\displaystyle \int^{b}_{a} - f(x) \ \mathrm{d} x = - \int^{b}_{a} f(x) \ \mathrm{d} x, \quad k = -1\)</span></li>
+</ul></li>
+<li><p>Sum: <span class="math inline">\(\displaystyle \int^{b}_{a} [(f(x) + g(x)] \ \mathrm{d} x = \int^{b}_{a} f(x) \ \mathrm{d} x + \int^{b}_{a} g(x) \ \mathrm{d} x\)</span></p></li>
+<li><p>Difference: <span class="math inline">\(\displaystyle \int^{b}_{a} [(f(x) - g(x)] \ \mathrm{d} x = \int^{b}_{a} f(x) \ \mathrm{d} x - \int^{b}_{a} g(x) \ \mathrm{d} x\)</span></p></li>
+<li><p>Additivity: <span class="math inline">\(\displaystyle \int^{b}_{a} f(x) \ \mathrm{d} x + \int \limits^{c}_{b} f(x) \ \mathrm{d} x = \int \limits^{c}_{a} f(x) \ \mathrm{d} x\)</span></p></li>
+<li><p>Max-min inequality: If max <span class="math inline">\(f\)</span> and min <span class="math inline">\(f\)</span> are the maximum and minimum values of <span class="math inline">\(f\)</span> on <span class="math inline">\([a, b]\)</span>, then</p></li>
+</ul>
+<p><span class="math display">\[
+\text{min} \ f \cdot (b - a) \leq \int^{b}_{a} f(x) \ \mathrm{d} x \leq \text{max} \ f \cdot (b - a)
+\]</span></p>
+<ul>
+<li><p>Domination:</p>
+<ul>
+<li><span class="math inline">\(\displaystyle f(x) \geq g(x) \quad \text{on} \quad [a, b] \quad \text{implies} \quad \int^{b}_{a} f(x) \ \mathrm{d} x \geq \int^{b}_{a} g(x) \ \mathrm{d} x\)</span></li>
+<li><span class="math inline">\(\displaystyle f(x) \geq 0 \quad \text{on} \quad [a, b] \quad \text{implies} \quad \int^{b}_{a} f(x) \ \mathrm{d} x \geq 0\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="other-properties" class="level2" data-number="13.5">
+<h2 data-number="13.5" class="anchored" data-anchor-id="other-properties"><span class="header-section-number">13.5</span> Other properties</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+<ul>
+<li>Substitution in deﬁnite Integrals: <span class="math inline">\(\displaystyle \int^{a}_{b} f(g(x)) \cdot g'(x) \ \mathrm{d} x = \int^{g(b)}_{g(a)} f(u) \ \mathrm{d} u\)</span></li>
+<li>Integration by Parts: <span class="math inline">\(\displaystyle \int^{b}_{a} u(x) v'(x) \ \mathrm{d} x = u(x) v(x) \biggr ]^{b}_{a} -\int^{b}_{a} v(x) u'(x) \ \mathrm{d} x\)</span></li>
+</ul>
+<section id="riemann-integral---fundamental-theorem-of-calculus" class="level3" data-number="13.5.1">
+<h3 data-number="13.5.1" class="anchored" data-anchor-id="riemann-integral---fundamental-theorem-of-calculus"><span class="header-section-number">13.5.1</span> (Riemann) Integral - Fundamental theorem of calculus</h3>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+</blockquote>
+<p>This section establishes a connection between the integral of a function and its derivative. Concretely, this connection allows one to evaluate some integrals in terms of some known functions.</p>
+<p>Let <span class="math inline">\(f\)</span> be continuous in <span class="math inline">\(\mathbb{R}\)</span> (for simplicity) and consider the function</p>
+<p><span class="math display">\[
+F(x) := \int^{x}_{a} f(\xi) \ \mathrm{d} \xi
+\tag{iii}
+\]</span></p>
+<p>which represents the integral of <span class="math inline">\(f\)</span> from point <span class="math inline">\(a\)</span> (fixed) to another point <span class="math inline">\(x\)</span> (variable). Then, from the properties shown in the section above, it follow that</p>
+<p><span class="math display">\[
+\cfrac{F(x + \Delta x) - F(x)}{\Delta x} =
+\cfrac{1}{\Delta x} \left [ \int^{x + \Delta x}_{a} f(\xi) \ \mathrm{d} \xi - \int^{x}_{a} f(\xi) \ \mathrm{d} \xi \right ] =
+\cfrac{1}{\Delta x} \int^{x + \Delta x}_{x} f(\xi) \ \mathrm{d} \xi
+\]</span></p>
+<p>The integral in above is evaluated in the interval <span class="math inline">\([x, x + \Delta x)\)</span>; if the value of <span class="math inline">\(\Delta x \ (&gt; 0)\)</span> is decreased, one has</p>
+<p><span class="math inline">\(f(\xi) \approx f(x)\)</span> for <span class="math inline">\(\xi \in [x, x + \Delta x)\)</span>, since <span class="math inline">\(f\)</span> is continuous. Therefore,</p>
+<p><span class="math display">\[
+\cfrac{\mathrm{d}}{\mathrm{d} x} F(x) =
+\lim \limits_{\Delta x \to 0} \cfrac{F(x + \Delta x) - F(x)}{\Delta x} =
+\lim \limits_{\Delta x \to 0} \cfrac{1}{\Delta x} \int^{x + \Delta x}_{a} \underbrace{f(\xi)}_{\simeq f(x)} \ \mathrm{d} \xi =
+\]</span></p>
+<p><span class="math display">\[
+= \lim \limits_{\Delta x \to 0} \cfrac{1}{\Delta x} f(x) \int^{x + \Delta x}_{a}  \mathrm{d} x = f(x)
+\]</span></p>
+<p>remembering that the integral (in the variable <span class="math inline">\(\xi\)</span>) does not act over <span class="math inline">\(f(x)\)</span>, which is considered to be “constant”; moreover, <span class="math inline">\(\displaystyle \int^{x + \Delta x}_{a} \mathrm{d} \xi = \int^{x + \Delta x}_{a} 1 \ \mathrm{d} \xi\)</span> is the area of the rectangle defined between the constant function <span class="math inline">\(1\)</span> and the <span class="math inline">\(x\)</span>-axis in the interval <span class="math inline">\(\xi \in [x, x + \Delta x)\)</span>. As a consequence, one has</p>
+<p><span class="math display">\[
+\cfrac{\mathrm{d}}{\mathrm{d} x} \int^{x}_{a} f(\xi) \ \mathrm{d} \xi = f(x)
+\tag{iv}
+\]</span></p>
+<p>Note that this result does not depend on the choice of <span class="math inline">\(a\)</span>.</p>
+<p>Suppose, now, that there is a function <span class="math inline">\(g\)</span> such that <span class="math inline">\(f = g'\)</span>. This means that both <span class="math inline">\(F\)</span> and <span class="math inline">\(g\)</span> are antiderivatives of <span class="math inline">\(f\)</span>. From <span class="math inline">\(\text{(iii)}\)</span> and <span class="math inline">\(\text{(iv)}\)</span>, one has <span class="math inline">\(F' = f = g'\)</span> and, from the linearity of derivatives, <span class="math inline">\((F − g)' = 0\)</span>. Hence, the function <span class="math inline">\(F − g\)</span> should equal a constant, <span class="math inline">\(c \in \mathbb{R}\)</span>, from which</p>
+<p><span class="math display">\[
+F(x) = g(x) + c \quad (x \in \mathbb{R})
+\]</span></p>
+<p>Since <span class="math inline">\(F(a) = 0\)</span> by <span class="math inline">\(\text{(iii)}\)</span>, it is straightforward that <span class="math inline">\(c = − g(a)\)</span>; then, <span class="math inline">\(F(x) = g(x) − g(a)\)</span> by the formula above. Finally, by choosing <span class="math inline">\(x = b\)</span> in <span class="math inline">\(\text{(iii)}\)</span>, which implies <span class="math inline">\(F(b) = g(b) − b(a)\)</span>, one has</p>
+<p><span class="math display">\[
+\int^{b}_{a} f(x) \ \mathrm{d} x = g(b) - g(a), \quad \text{where} \quad f = g'
+\]</span></p>
+<p>This is the definite integral, which is a “number”(indefinite integrals are families of functions). To evaluate the integral of <span class="math inline">\(f\)</span> from <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span>, it is necessary, then, to find a function <span class="math inline">\(g\)</span> whose derivative is <span class="math inline">\(f\)</span> and compute the difference <span class="math inline">\(g(b) − g(a)\)</span>. Finally, one also has</p>
+<p><span class="math display">\[
+\int^{b}_{a} \left [ \cfrac{\mathrm{d}}{\mathrm{d} x} f(x) \right ] \ \mathrm{d} x = \int^{b}_{a} f'(x) \ \mathrm{d} x = f(b) - f(a)
+\]</span></p>
+<p>since <span class="math inline">\(f\)</span> is a function whose derivative is <span class="math inline">\(f'\)</span>.</p>
+<p><strong>Example</strong>: <span class="math inline">\(\displaystyle \int^{\pi}_{0} \sin x \ \mathrm{d} x\)</span></p>
+<p>Firstly,</p>
+<p><span class="math display">\[
+\int^{\pi}_{0} \sin x \ \mathrm{d} x = F(\pi) - F(0)
+\]</span></p>
+<p>where <span class="math inline">\(F\)</span> is such that <span class="math inline">\(F' = f\)</span>. Therefore, taking <span class="math inline">\(F(x) = − \cos x\)</span> is a possibility (actually <span class="math inline">\(\cos x + c\)</span>, <span class="math inline">\(c \in \mathbb{R}\)</span>, also works, but the constant <span class="math inline">\(c\)</span> plays no role, since it cancels out in the difference <span class="math inline">\(F(\pi) - F(0)\)</span>); as a consequence,</p>
+<p><span class="math display">\[
+\int^{\pi}_{0} \sin x \ \mathrm{d} x = [- \cos \pi] - [- \cos 0] = 2
+\]</span></p>
+<p><strong>Example</strong>: <span class="math inline">\(\displaystyle \int^{3}_{1} \left ( \cfrac{x^{3} - x}{x} \right ) \ \mathrm{d} x\)</span></p>
+<p>Since <span class="math inline">\(\cfrac{x^{3} - x}{x} = \cfrac{x^{3}}{x} - \cfrac{x}{x} = x^{2} - 1\)</span> (for <span class="math inline">\(x \neq 0\)</span>), then,</p>
+<p><span class="math display">\[
+\int^{3}_{1} \left ( \cfrac{x^{3} - x}{x} \right ) \ \mathrm{d} x =
+\int^{3}_{1} x^{2} \ \mathrm{d} x - \int^{3}_{1} 1 \ \mathrm{d} x =
+\]</span></p>
+<p><span class="math display">\[
+= \biggr [ \underbrace{\cfrac{x^{3}}{3}}_{\text{antiderivative of} \ x^{2}} \biggr ]^{3}_{1} - \biggr [ \underbrace{x}_{\text{antiderivative of} \ 1} \biggr ]^{3}_{1} =
+\biggr [ \cfrac{3^{3}}{3} - \cfrac{1^{3}}{3} \biggr ] - \biggr [ 3 - 1 \biggr ] = \cfrac{20}{3}
+\]</span></p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-lucchesi" class="csl-entry" role="doc-biblioentry">
-Lucchesi, Andrea. n.d.<span>“”</span>
+<div id="ref-hase2022" class="csl-entry" role="doc-biblioentry">
+Hase, Masayuki Oka. 2022. <span>“Métodos Matemáticos e de Computação 1.”</span>
+</div>
+<div id="ref-hass2018" class="csl-entry" role="doc-biblioentry">
+Hass, Joel, Christopher Heil, and Maurice D. Weir. 2018. <em>Thomas’ Calculus</em>. 14th ed. Pearson.
 </div>
 <div id="ref-morettin2003" class="csl-entry" role="doc-biblioentry">
 Morettin, Pedro Alberto, Samuel Hazzan, and Wilton de Oliveira Bussab. 2003. <em>Cálculo: Funções de Uma e Várias Variáveis</em>. Saraiva.
 </div>
 </div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -464,15 +608,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../qmd/applications-of-derivatives.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Applications of derivatives</span></span>
+      <a href="../qmd/series.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../qmd/multivariate-calculus.html" class="pagination-link">
-        <span class="nav-page-text">Multivariate calculus</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../qmd/table-of-integrals.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Table of integrals</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

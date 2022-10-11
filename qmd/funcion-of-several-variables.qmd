@@ -1,0 +1,17 @@
+# Functions of several variables
+
+> Reference: @hase2022
+
+Although one can investigate general functions of real variables like $f ∶\mathbb{R}^{n} \to \mathbb{R}^{m}$, this chapter examines the case $m = 1$ only. In this case, the graph of $f$ is given by
+
+$$
+G_{f} = \{(x_{1}, \ldots, x_{n}, \mathcal{z}) \in \mathbb{R}^{n + 1} : \mathcal{z} = f(x_{1}, \ldots, x_{n}) \}
+$$
+
+where the case $n = 2$ is an instructive one since one can visually sketch the graph.
+
+Some well-known graphs are depicted below.
+
+![Figure 1: Graph of some functions $f: \mathbb{R}^{2} \to \mathbb{R}$. Left: an elliptic paraboloid $f(x, y) = x^{2} + y^{2}$; center: an elliptic paraboloid $f(x, y) = −x^{2} − y^{2}$; right: a hyperbolic paraboloid $f(x, y) = y^{2} − x^{2}$.](../images/hase_lecture_6_figure_1.png)
+
+The investigation of the variation of $f$ is now a more complex task than in the single variable case since there is more than one direction (actually, there are infinite) to analyze the variation of $f$. In cartesian coordinates, there are two natural directions (along the $x$-axis and $y$-axis) to consider, and a more general type of derivative is in the __partial derivatives__ chapter.

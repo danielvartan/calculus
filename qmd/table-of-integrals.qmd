@@ -1,0 +1,47 @@
+# Table of integrals
+
+Nothing here yet!
+
+## Basic forms
+
+> Reference: @hass2018
+
+## Forms involving $ax + b$
+
+> Reference: @hass2018
+
+## Forms involving $a^{2} + x^{2}$
+
+> Reference: @hass2018
+
+## Forms involving $a^{2} - x^{2}$
+
+> Reference: @hass2018
+
+## Forms involving $x^{2} - a^{2}$
+
+> Reference: @hass2018
+
+## Trigonometric forms
+
+> Reference: @hass2018
+
+## Inverse trigonometric forms
+
+> Reference: @hass2018
+
+## Exponential and logarithmic forms
+
+> Reference: @hass2018
+
+## Forms Involving $\sqrt{2ax - x^{2}} \quad (a > 0)$
+
+> Reference: @hass2018
+
+## Hyperbolic forms
+
+> Reference: @hass2018
+
+## Some definite integrals
+
+> Reference: @hass2018

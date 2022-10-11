@@ -83,7 +83,14 @@ A Maclaurin series is a Taylor series where $x_{0} = 0$.
 > Reference: @hass2018
 
 $$
-(1 + x)^{m} = 1 + mx + \cfrac{m (m - 1) x^{2}}{2!} + \cfrac{m (m - 1) (m - 2) x^{3}}{3!} + \cdots + \cfrac{m (m - 1) (m - 2) \cdots (m - k + 1) x^{k}}{k!} + \cdots = 1 + \sum \limits^{\infty}_{k = 1} \binom{m}{k} x^{k}, \quad |x| < 1
+(1 + x)^{m} = 
+1 + mx + \cfrac{m (m - 1) x^{2}}{2!} + \cfrac{m (m - 1) (m - 2) x^{3}}{3!} + 
+\cdots +
+$$
+
+$$
++ \cfrac{m (m - 1) (m - 2) \cdots (m - k + 1) x^{k}}{k!} + \cdots = 
+1 + \sum \limits^{\infty}_{k = 1} \binom{m}{k} x^{k}, \quad |x| < 1
 $$
 
 Where
@@ -93,6 +100,8 @@ $$
 $$
 
 ## Big "Oh" notation
+
+> Reference: @hase2022
 
 For $x \ll 1$, expanding $f(x) = \sin x$ aroung $x_{0}$ leads to
 

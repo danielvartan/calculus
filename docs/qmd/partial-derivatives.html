@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Calculus: Formulas and Theorems - 12&nbsp; Series</title>
+<title>Calculus: Formulas and Theorems - 15&nbsp; Partial derivatives</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,8 +44,8 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../qmd/integrals.html" rel="next">
-<link href="../qmd/applications-of-derivatives.html" rel="prev">
+<link href="../qmd/taylor-expansion.html" rel="next">
+<link href="../qmd/funcion-of-several-variables.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -85,7 +85,7 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Partial derivatives</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -192,7 +192,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/series.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></a>
+  <a href="../qmd/series.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -212,27 +212,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/n-dimensional-space.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">The n-dimensional space (<span class="math inline">\(\mathbb{R}^{n}\)</span>)</span></a>
+  <a href="../qmd/funcion-of-several-variables.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Functions of several variables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/two-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Two-variable functions</span></a>
+  <a href="../qmd/partial-derivatives.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Partial derivatives</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/three-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Functions of three or more variables</span></a>
+  <a href="../qmd/taylor-expansion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">The Taylor expasion</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  <a href="../qmd/max-min-analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Analysis of local maxima/minima</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
+  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
   </div>
 </li>
       </ul>
@@ -256,11 +261,7 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#tests-for-convergence-of-inﬁnite-series" id="toc-tests-for-convergence-of-inﬁnite-series" class="nav-link active" data-scroll-target="#tests-for-convergence-of-inﬁnite-series"> <span class="header-section-number">12.1</span> Tests for convergence of inﬁnite series</a></li>
-  <li><a href="#taylor-series" id="toc-taylor-series" class="nav-link" data-scroll-target="#taylor-series"> <span class="header-section-number">12.2</span> Taylor series</a></li>
-  <li><a href="#maclaurin-series" id="toc-maclaurin-series" class="nav-link" data-scroll-target="#maclaurin-series"> <span class="header-section-number">12.3</span> Maclaurin series</a></li>
-  <li><a href="#binomial-series" id="toc-binomial-series" class="nav-link" data-scroll-target="#binomial-series"> <span class="header-section-number">12.4</span> Binomial series</a></li>
-  <li><a href="#big-oh-notation" id="toc-big-oh-notation" class="nav-link" data-scroll-target="#big-oh-notation"> <span class="header-section-number">12.5</span> Big “Oh” notation</a></li>
+  <li><a href="#example-of-partial-derivatives" id="toc-example-of-partial-derivatives" class="nav-link active" data-scroll-target="#example-of-partial-derivatives"> <span class="header-section-number">15.1</span> Example of partial derivatives</a></li>
   </ul>
 </nav>
     </div>
@@ -269,7 +270,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Partial derivatives</span></h1>
 </div>
 
 
@@ -283,118 +284,59 @@ div.csl-indent {
 
 </header>
 
-<section id="tests-for-convergence-of-inﬁnite-series" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="tests-for-convergence-of-inﬁnite-series"><span class="header-section-number">12.1</span> Tests for convergence of inﬁnite series</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
-</blockquote>
-<ol type="1">
-<li><strong>The nth-Term Test</strong>: Unless <span class="math inline">\(a_{n} \to 0\)</span>, the series diverges.</li>
-<li><strong>Geometric series</strong>: <span class="math inline">\(\sum ar^{n}\)</span> converges if <span class="math inline">\(|r| &lt; 1\)</span>; otherwise it diverges.</li>
-<li><strong>p-series</strong>: <span class="math inline">\(\sum \cfrac{1}{n^{p}}\)</span> converges if <span class="math inline">\(p &gt; 1\)</span>l otherwise it diverges.</li>
-<li><strong>Series with nonnegative terms</strong>: Try the Integral Test, Ratio Test, or Root Test. Try comparing to a known series with the Comparison Test or the Limit Comparison Test.</li>
-<li><strong>Series with some negative terms</strong>: Does <span class="math inline">\(\sum | a_{n} |\)</span> converge? If yes, so does <span class="math inline">\(\sum a_{ n}\)</span> because absolute convergence implies convergence.</li>
-<li><strong>Alternating series</strong>: <span class="math inline">\(\sum a_{n}\)</span> converges if the series satisﬁes the conditions of the Alternating Series Test.</li>
-</ol>
-</section>
-<section id="taylor-series" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="taylor-series"><span class="header-section-number">12.2</span> Taylor series</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
 </blockquote>
-<p>Let <span class="math inline">\(f\)</span> be a function that has all the “required” derivatives. One can demand its behavior in the neighborhood of a point, <span class="math inline">\(x_{0}\)</span>. In this case, it is possible to approximate <span class="math inline">\(f\)</span> with a polynomial (around <span class="math inline">\(x_{0}\)</span>), which is the Taylor series. Concretely, one has</p>
+<p>Let <span class="math inline">\(f : \mathbb{R}^{2} \to \mathbb{R}\)</span>; assuming that <span class="math inline">\(f\)</span> is differentiable, the partial derivative of <span class="math inline">\(f\)</span> with respect to <span class="math inline">\(x\)</span> is defined as</p>
 <p><span class="math display">\[
-f(x) = a_{0} + a_{1}(x - x_{0}) + a_{2}(x - x_{0})^{2} + a_{3}(x - x_{0})^{3} + \cdots + a_{n}(x - x_{0})^{n} + \cdots
-\tag{1}
+\cfrac{\partial}{\partial x} f(x, y) = \lim \limits_{\Delta x \to 0} \cfrac{f(x + \Delta x, y) - f(x, y)}{\Delta x}
 \]</span></p>
-<p>which is a polynomial representation in <span class="math inline">\((x - x_{0})\)</span>. Note that, intuitively, if the distance between <span class="math inline">\(x\)</span> and <span class="math inline">\(x_{0}\)</span> becomes small, the terms of this series decrease, <em>a priori</em>, with <span class="math inline">\(n\)</span>. The goal of this section is the determination of the set of coefficients <span class="math inline">\(\{a_{n}\}\)</span>.</p>
-<ol type="1">
-<li><p>Show, by imposing <span class="math inline">\(x = x_{0}\)</span> in <span class="math inline">\((1)\)</span>, that <span class="math inline">\(a_{0} = f(x_{0})\)</span>.</p></li>
-<li><p>Determine <span class="math inline">\(f′(x)\)</span>. Show, by imposing <span class="math inline">\(x = x_{0}\)</span> in the resultant equation, that <span class="math inline">\(a_{1} = \cfrac{1}{1!} f′(x_{0})\)</span>.</p></li>
-</ol>
-<p>Denote by <span class="math inline">\(\cfrac{d^{2}}{dx^{2}} f(x)\)</span>, or <span class="math inline">\(f′′(x)\)</span>, or <span class="math inline">\(f^{(2)}(x)\)</span>, the second order derivative of <span class="math inline">\(f\)</span>. This symbol stands for</p>
+<p>This stands for the analysis of variation in the direction of the <span class="math inline">\(x\)</span>-axis (at point <span class="math inline">\(x\)</span>) when the other direction (parallel to <span class="math inline">\(y\)</span>-axis) is kept constant (at point <span class="math inline">\(y\)</span>). This definition is illustrated for a particular case in figure 1: at the plane <span class="math inline">\(y = 0\)</span>, the function <span class="math inline">\(f(x, y) = x^{2} +y^{2}\)</span> behaves as <span class="math inline">\(f(x, y = 0) = x^{2}\)</span>, which is the red curve; the partial derivative <span class="math inline">\(\cfrac{\partial}{\partial x} f(x, 0)\)</span> is just the derivative of the parabola <span class="math inline">\(f(x, 0) = x^{2}\)</span> in the direction of <span class="math inline">\(x\)</span>-axis.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/hase_lecture_6_figure_2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 1: Graph of <span class="math inline">\(f(x, y) = x^{2} +y^{2}\)</span>. The red curve corresponds to the section <span class="math inline">\(y = 0\)</span>.</figcaption><p></p>
+</figure>
+</div>
+<p>Analogously, one can also define the partial derivative of f with respect to y as</p>
 <p><span class="math display">\[
-\cfrac{d^{2}}{dx^{2}} f(x) = \cfrac{d}{dx} \left [ \cfrac{d}{dx} f(x) \right ]
-\tag{2}
+\cfrac{\partial}{\partial y} f(x, y) = \lim \limits_{\Delta y \to 0} \cfrac{f(x, y + \Delta y) - f(x, y)}{\Delta y}
 \]</span></p>
-<p>Exemplifying, if <span class="math inline">\(g(x) = \sin x\)</span>, then <span class="math inline">\(g′(x) = \cos x\)</span> and <span class="math inline">\(g′′(x) = − \sin x\)</span>. Analogously,</p>
-<p><span class="math display">\[
-\cfrac{d^{3}}{dx^{3}} f(x) = \cfrac{d}{dx} \left [ \cfrac{d^{2}}{dx^{2}} f(x) \right ] = \cfrac{d}{dx} \left [ \cfrac{d}{dx} \left [ \cfrac{d}{dx} f(x) \right ] \right ] \quad , \quad \cfrac{d^{4}}{dx^{4}} f(x) = \cfrac{d}{dx} \left [ \cfrac{d^{3}}{dx^{3}} f(x) \right ] \cdots, \quad et \ cætera
-\tag{3}
-\]</span></p>
-<p>Furthermore, for <span class="math inline">\(g(x) = \sin x\)</span>, one has <span class="math inline">\(g^{(3)} (x) = − \cos x\)</span>, <span class="math inline">\(g^{(4)} (x) = \sin x\)</span>, <em>et cætera</em>.</p>
-<ol start="3" type="1">
-<li><p>Determine <span class="math inline">\(f′′(x)\)</span>. Show, by imposing <span class="math inline">\(x = x_{0}\)</span> in the resultant equation, that <span class="math inline">\(a_{2} = \cfrac{1}{2!} f′′(x_{0})\)</span>.</p></li>
-<li><p>Determine <span class="math inline">\(f^{(3)} (x)\)</span>. Show, by imposing <span class="math inline">\(x = x_{0}\)</span> in the resultant equation, that <span class="math inline">\(a_{3} = \cfrac{1}{3!} f^{(3)} (x_{0})\)</span>.</p></li>
-<li><p>Show that <span class="math inline">\(a_{n} = \cfrac{1}{n!} f^{(n)} (x_{0})\)</span>.</p></li>
-</ol>
-<p>In other words, if the series exists, one has</p>
-<p><span class="math display">\[
-f(x) = \sum \limits^{\infty}_{n = 0} \cfrac{1}{n!} f^{(n)} (x_{0}) (x - x_{0})^{n}
-\]</span></p>
-</section>
-<section id="maclaurin-series" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="maclaurin-series"><span class="header-section-number">12.3</span> Maclaurin series</h2>
+<section id="example-of-partial-derivatives" class="level2" data-number="15.1">
+<h2 data-number="15.1" class="anchored" data-anchor-id="example-of-partial-derivatives"><span class="header-section-number">15.1</span> Example of partial derivatives</h2>
 <blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
 </blockquote>
-<p>A Maclaurin series is a Taylor series where <span class="math inline">\(x_{0} = 0\)</span>.</p>
 <ul>
-<li><p><span class="math inline">\(\cfrac{1}{1 - x} = 1 + x + x^2 + \cdots + x^{n} + \cdots = \sum \limits^{\infty}_{n = 0} x^{n}, \quad |x| &lt; 1\)</span></p></li>
-<li><p><span class="math inline">\(\cfrac{1}{1 + x} = 1 - x + x^2 - \cdots + (- x^{n}) + \cdots = \sum \limits^{\infty}_{n = 0} (-1)^{n} x^{n}, \quad |x| &lt; 1\)</span></p></li>
-<li><p><span class="math inline">\(e^{x} = 1 + x + \cfrac{x^{2}}{2!} + \cdots + \cfrac{x^{n}}{n!} + \cdots = \sum \limits^{\infty}_{n = 0} \cfrac{x^{n}}{n!}, \quad |x| &lt; \infty\)</span></p></li>
-<li><p><span class="math inline">\(\sin x = x - \cfrac{x^{3}}{3!} + \cfrac{x^{5}}{5!} - \cdots + (-1)^{n} \cfrac{x^{2n + 1}}{(2n +1)!} + \cdots = \sum \limits^{\infty}_{n = 0} \cfrac{(-1)^{n} x^{2n + 1}}{(2n +1)!}, \quad |x| &lt; \infty\)</span></p></li>
-<li><p><span class="math inline">\(\cos x = 1 - \cfrac{x^{2}}{2!} + \cfrac{x^{4}}{4!} - \cdots + (-1)^{n} \cfrac{x^{2n}}{(2n)!} + \cdots = \sum \limits^{\infty}_{n = 0} \cfrac{(-1)^{n} x^{2n}}{(2n)!}, \quad |x| &lt; \infty\)</span></p></li>
-<li><p><span class="math inline">\(\ln (1 + x) = x - \cfrac{x^{2}}{2} + \cfrac{x^{3}}{3} - \cdots + (-1)^{n - 1} \cfrac{x^{n}}{n} + \cdots = \sum \limits^{\infty}_{n = 1} \cfrac{(-1)^{n - 1} x^{n}}{n}, \quad -1 &lt; x \leq 1\)</span></p></li>
-<li><p><span class="math inline">\(\ln \cfrac{1 + x}{1 - x} = 2 \tanh^{-1} x = 2 \left ( x + \cfrac{x^{3}}{3} + \cfrac{x^{5}}{5} + \cdots + \cfrac{x^{2n + 1}}{2n + 1} + \cdots \right ) = 2 \sum \limits_{n = 0}^{\infty} \cfrac{x^{2n + 1}}{2n - 1}, \quad |x| &lt; 1\)</span></p></li>
-<li><p><span class="math inline">\(\tan^{-1} x = x - \cfrac{x^{3}}{3} + \cfrac{x^{5}}{5} - \cdots + (- 1)^{n} \cfrac{x^{2n + 1}}{2n + 1} + \cdots = \sum \limits^{\infty}_{n = 0} \cfrac{(- 1)^{n} x^{2n + 1}}{2n + 1}, \quad |x| \leq 1\)</span></p></li>
+<li><span class="math inline">\(\cfrac{\partial}{\partial x} (x^{3} y^{2}) = 3x^{2} y^{2}\)</span> (note that <span class="math inline">\(y\)</span> was “kept constant” in this operation).</li>
+<li><span class="math inline">\(\cfrac{\partial}{\partial y} (x^{3} y^{2}) = 2x^{3} y\)</span> (note that <span class="math inline">\(x\)</span> was “kept constant” in this operation).</li>
 </ul>
-</section>
-<section id="binomial-series" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="binomial-series"><span class="header-section-number">12.4</span> Binomial series</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
-</blockquote>
-<p><span class="math display">\[
-(1 + x)^{m} =
-1 + mx + \cfrac{m (m - 1) x^{2}}{2!} + \cfrac{m (m - 1) (m - 2) x^{3}}{3!} +
-\cdots +
-\]</span></p>
-<p><span class="math display">\[
-+ \cfrac{m (m - 1) (m - 2) \cdots (m - k + 1) x^{k}}{k!} + \cdots =
-1 + \sum \limits^{\infty}_{k = 1} \binom{m}{k} x^{k}, \quad |x| &lt; 1
-\]</span></p>
-<p>Where</p>
-<p><span class="math display">\[
-\binom{m}{1} = m, \quad \binom{m}{2} = \cfrac{m (m - 1)}{2!}, \quad \binom{m}{k} = \cfrac{m (m - 1) \cdots (m - k + 1)}{k!} \quad \text{for} \ k \geq 3
-\]</span></p>
-</section>
-<section id="big-oh-notation" class="level2" data-number="12.5">
-<h2 data-number="12.5" class="anchored" data-anchor-id="big-oh-notation"><span class="header-section-number">12.5</span> Big “Oh” notation</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
-</blockquote>
-<p>For <span class="math inline">\(x \ll 1\)</span>, expanding <span class="math inline">\(f(x) = \sin x\)</span> aroung <span class="math inline">\(x_{0}\)</span> leads to</p>
-<p><span class="math display">\[
-\sin x = x - \cfrac{x^{3}}{3!} + \cfrac{x^{5}}{5!} - \cfrac{x^{7}}{7!} + \cdots
-\]</span></p>
-<p>The term in the series above decreases with its order. The series can also be represented by</p>
-<p><span class="math display">\[
-\sin x = x - \cfrac{x^{3}}{3!} + \cfrac{x^{5}}{5!} - \cfrac{x^{7}}{7!} + \mathcal{O} (x^{9})
-\]</span></p>
-<p>where <span class="math inline">\(\mathcal{O} (x^{9})\)</span> stands for contributions of order <span class="math inline">\(x^{9}\)</span> (<em>id est</em>, proportional to <span class="math inline">\(x^{6}\)</span>) <strong>or less</strong>, since the absolute value of the remaining terms <span class="math inline">\(\left | \cfrac{x^{9}}{9!} - \cfrac{x^{11}}{11!} + \cfrac{x^{13}}{13!} - \cdots \right |\)</span>, does not exceed a term proportional to <span class="math inline">\(x^{9}\)</span>. It was also possible to write</p>
-<p><span class="math display">\[
-\sin x = x - \cfrac{x^{3}}{3!} + \cfrac{x^{5}}{5!} - \cfrac{x^{7}}{7!} + \mathcal{O} (x^{8})
-\]</span></p>
-<p>because <span class="math inline">\(\mathcal{O} (x^{9})\)</span> is (much) smaller than terms proportional to <span class="math inline">\(x^{8}\)</span> when <span class="math inline">\(x \sim 0\)</span>.</p>
+<p>The partial derivative shares the property of linearity present in ordinary derivatives. Furthermore, the product and quotient rules, and also the chain rule hold.</p>
+<ul>
+<li><p><span class="math inline">\(\cfrac{\partial}{\partial x} (x y^{2} e^{x y}) = y^{2} e^{xy} + x y^{3} e^{xy}\)</span> (note that <span class="math inline">\(y\)</span> was “kept constant” in this operation).</p></li>
+<li><p><span class="math inline">\(\cfrac{\partial}{\partial y} (x y^{2} e^{x y}) = 2 x y e^{xy} + x^{2} y^{2} e^{xy}\)</span> (note that <span class="math inline">\(x\)</span> was “kept constant” in this operation).</p></li>
+<li><p><span class="math inline">\(\cfrac{\partial}{\partial x} \left ( \cfrac{x + y}{y + 1} \right ) = \cfrac{1}{y + 1}\)</span> (note that <span class="math inline">\(y\)</span> was “kept constant” in this operation).</p></li>
+<li><p><span class="math inline">\(\cfrac{\partial}{\partial y} \left ( \cfrac{x + y}{y + 1} \right ) = \cfrac{1 - x}{(y + 1)^{2}}\)</span> (note that <span class="math inline">\(x\)</span> was “kept constant” in this operation).</p></li>
+<li><p><span class="math inline">\(\cfrac{\partial}{\partial x} [\sin(x y) +\sin x] = y \cos(xy) + \cos x\)</span> (note that <span class="math inline">\(y\)</span> was “kept constant” in this operation).</p></li>
+<li><p><span class="math inline">\(\cfrac{\partial}{\partial y} [\sin(x y) +\sin x] = x \cos(xy)\)</span> (note that <span class="math inline">\(x\)</span> was “kept constant” in this operation).</p></li>
+</ul>
+<p>Partial derivatives of higher order can also be defined (trivially).</p>
+<ul>
+<li><p><span class="math inline">\(\cfrac{\partial^{2}}{\partial x^{2}} e^{x y} = \cfrac{\partial}{\partial x} \left [ \cfrac{\partial}{\partial x} e^{x y} \right ] = \cfrac{\partial}{\partial x} [y e^{x y}] = y^{2} e^{x y}\)</span></p></li>
+<li><p><span class="math inline">\(\cfrac{\partial^{2}}{\partial y^{2}} [\sin(x y) +\sin x] = \cfrac{\partial}{\partial y} \left \{ \cfrac{\partial}{\partial y} [\sin(x y) +\sin x] \right \} = \cfrac{\partial}{\partial y} [x \cos (x y)] = -x^{2} \sin(x y_)\)</span></p></li>
+</ul>
+<p>In differential calculus of several variables, one can also define the <strong>mixed derivative</strong>. In this case, derivatives associated with different variables are taken.</p>
+<ul>
+<li><p><span class="math inline">\(\cfrac{\partial^{2}}{\partial x \partial y} \sin (x y) = \cfrac{\partial}{\partial x} \left [ \cfrac{\partial}{\partial y} \sin (x y) \right ] = \cfrac{\partial}{\partial x} [x \cos(x y)] = \cos (xy) - x y \sin(xy)\)</span></p></li>
+<li><p><span class="math inline">\(\cfrac{\partial^{2}}{\partial y \partial x} \sin (x y) = \cfrac{\partial}{\partial y} \left [ \cfrac{\partial}{\partial x} \sin (x y) \right ] = \cfrac{\partial}{\partial y} [y \cos(x y)] = \cos (xy) - x y \sin(xy)\)</span></p></li>
+<li><p><span class="math inline">\(\cfrac{\partial^{3}}{\partial x \partial y \partial z} e^{x y z} = \cfrac{\partial}{\partial x} \cfrac{\partial}{\partial y} \left [ \cfrac{\partial}{\partial z} e^{x y z} \right ] = \cfrac{\partial}{\partial x} \cfrac{\partial}{\partial y} [x y e^{x y z}] = \cfrac{\partial}{\partial x} [(x + x^{2} y z) e^{x y z}] = (1 + 3xyz + x^{2} y^{2} z^{2}]) e^{x y z}]\)</span></p></li>
+</ul>
+<p>Note that <span class="math inline">\(\cfrac{\partial^{2}}{\partial x \partial y} = \cfrac{\partial^{2}}{\partial y \partial x}\)</span> in the two examples above. In principle, the derivatives of mixed derivatives do not commute, <em>id est</em>, <span class="math inline">\(\cfrac{\partial^{2}}{\partial x \partial y} \neq \cfrac{\partial^{2}}{\partial y \partial x}\)</span>; however, this situation will not be seen in this course.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
 <div id="ref-hase2022" class="csl-entry" role="doc-biblioentry">
 Hase, Masayuki Oka. 2022. <span>“Métodos Matemáticos e de Computação 1.”</span>
-</div>
-<div id="ref-hass2018" class="csl-entry" role="doc-biblioentry">
-Hass, Joel, Christopher Heil, and Maurice D. Weir. 2018. <em>Thomas’ Calculus</em>. 14th ed. Pearson.
 </div>
 </div>
 </section>
@@ -499,13 +441,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../qmd/applications-of-derivatives.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Applications of derivatives</span></span>
+      <a href="../qmd/funcion-of-several-variables.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Functions of several variables</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../qmd/integrals.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Integrals</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../qmd/taylor-expansion.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">The Taylor expasion</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

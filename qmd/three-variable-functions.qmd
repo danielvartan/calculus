@@ -1,3 +1,0 @@
-# Functions of three or more variables
-
-Nothing here yet!

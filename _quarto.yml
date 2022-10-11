@@ -28,11 +28,13 @@ book:
         - qmd/applications-of-derivatives.qmd
         - qmd/series.qmd
         - qmd/integrals.qmd
+        - qmd/table-of-integrals.qmd
     - part: qmd/multivariate-calculus.qmd
       chapters: 
-        - qmd/n-dimensional-space.qmd
-        - qmd/two-variable-functions.qmd
-        - qmd/three-variable-functions.qmd
+        - qmd/funcion-of-several-variables.qmd
+        - qmd/partial-derivatives.qmd
+        - qmd/taylor-expansion.qmd
+        - qmd/max-min-analysis.qmd
         - qmd/matrices.qmd
         - qmd/systems-of-equations.qmd
     - qmd/useful-resources.qmd

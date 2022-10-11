@@ -1,0 +1,40 @@
+# The Taylor expasion
+
+> Reference: @hase2022
+
+The Taylor expansion of a function $f$ of several variables can be performed by expanding $f$ for each variable separately (assuming all the pertinent derivatives). For instance, the Taylor expansion of $f = f(x, y)$ at $(x, y) = (x_{0}, y_{0})$ can be determined by first noting that
+
+$$
+f(x, y) = f(x_{0}, y) + \cfrac{\partial f}{\partial x} (x_{0}, y) (x - x_{0}) + \cfrac{1}{2!} \cfrac{\partial^{2} f}{\partial x^{2}} (x_{0}, y) (x - x_{0})^{2} + \cdots 
+$$
+where terms of $\mathcal{O} ((x − x_{0})^{3})$ were neglected. In the formula above, the expansion was performed on the variable $x$ only.
+
+Expanding now in the $y$ variable leads to
+
+$$
+f(x, y) = 
+\overbrace{\left [ f(x_{0}, y_{0}) + \cfrac{\partial f}{\partial y} (x_{0}, y_{0}) (y - y_{0}) + \cfrac{1}{2!} \cfrac{\partial^{2} f}{\partial y^{2}} (x_{0}, y_{0}) (y - y_{0})^{2} + \cdots \right ]}^{= f(x_{0}, y)} +
+$$
+$$
++ \overbrace{\left [ \cfrac{\partial f}{\partial x} (x_{0}, y_{0}) (x - x_{0}) + \cfrac{\partial}{\partial y} \cfrac{\partial f}{\partial x} (x_{0}, y_{0}) (x - x_{0}) (y - y_{0}) + \cdots \right ]}^{= \cfrac{\partial f}{\partial x} (x_{0}, y) (x - x_{0})} +
+\overbrace{\left [ \cfrac{1}{2!} \cfrac{\partial^{2} f}{\partial x^{2}} (x_{0}, y_{0}) (x - x_{0})^{2} + \cdots \right ]}^{= \cfrac{1}{2!} \cfrac{\partial^{2} f}{\partial x^{2}} (x_{0}, y) (x - x_{0})^{2}} +
+\cdots
+$$
+
+and rearranging the expression above yields
+
+$$
+f(x, y) = 
+f(x_{0}, y_{0}) + \cfrac{\partial f}{\partial x} (x_{0}, y_{0}) (x - x_{0}) +
+\cfrac{\partial f}{\partial y} (x_{0}, y_{0}) (y - y_{0}) +
+$$
+
+$$
++
+\cfrac{1}{2!} \cfrac{\partial^{2} f}{\partial x^{2}} (x_{0}, y_{0}) (x - x_{0})^{2} + 
+\cfrac{\partial^{2} f}{\partial x \partial y} (x_{0}, y_{0}) (x - x_{0}) (y - y_{0}) +
+\cfrac{1}{2!} \cfrac{\partial^{2} f}{\partial y^{2}} (x_{0}, y_{0}) (y - y_{0})^{2} +
+\cdots
+$$
+
+This is the Taylor expansion of $f = f(x, y)$ up to second order terms.

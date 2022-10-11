@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Calculus: Formulas and Theorems - 12&nbsp; Series</title>
+<title>Calculus: Formulas and Theorems - 14&nbsp; Table of integrals</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,8 +44,8 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../qmd/integrals.html" rel="next">
-<link href="../qmd/applications-of-derivatives.html" rel="prev">
+<link href="../qmd/multivariate-calculus.html" rel="next">
+<link href="../qmd/integrals.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,11 +81,12 @@ div.csl-indent {
 
 <body class="nav-sidebar floating">
 
+
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Table of integrals</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -192,12 +193,17 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/series.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></a>
+  <a href="../qmd/series.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../qmd/integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Integrals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/table-of-integrals.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Table of integrals</span></a>
   </div>
 </li>
       </ul>
@@ -212,27 +218,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/n-dimensional-space.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">The n-dimensional space (<span class="math inline">\(\mathbb{R}^{n}\)</span>)</span></a>
+  <a href="../qmd/funcion-of-several-variables.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Functions of several variables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/two-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Two-variable functions</span></a>
+  <a href="../qmd/partial-derivatives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Partial derivatives</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/three-variable-functions.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Functions of three or more variables</span></a>
+  <a href="../qmd/taylor-expansion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">The Taylor expasion</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  <a href="../qmd/max-min-analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Analysis of local maxima/minima</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
+  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
   </div>
 </li>
       </ul>
@@ -256,11 +267,17 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#tests-for-convergence-of-inﬁnite-series" id="toc-tests-for-convergence-of-inﬁnite-series" class="nav-link active" data-scroll-target="#tests-for-convergence-of-inﬁnite-series"> <span class="header-section-number">12.1</span> Tests for convergence of inﬁnite series</a></li>
-  <li><a href="#taylor-series" id="toc-taylor-series" class="nav-link" data-scroll-target="#taylor-series"> <span class="header-section-number">12.2</span> Taylor series</a></li>
-  <li><a href="#maclaurin-series" id="toc-maclaurin-series" class="nav-link" data-scroll-target="#maclaurin-series"> <span class="header-section-number">12.3</span> Maclaurin series</a></li>
-  <li><a href="#binomial-series" id="toc-binomial-series" class="nav-link" data-scroll-target="#binomial-series"> <span class="header-section-number">12.4</span> Binomial series</a></li>
-  <li><a href="#big-oh-notation" id="toc-big-oh-notation" class="nav-link" data-scroll-target="#big-oh-notation"> <span class="header-section-number">12.5</span> Big “Oh” notation</a></li>
+  <li><a href="#basic-forms" id="toc-basic-forms" class="nav-link active" data-scroll-target="#basic-forms"> <span class="header-section-number">14.1</span> Basic forms</a></li>
+  <li><a href="#forms-involving-ax-b" id="toc-forms-involving-ax-b" class="nav-link" data-scroll-target="#forms-involving-ax-b"> <span class="header-section-number">14.2</span> Forms involving <span class="math inline">\(ax + b\)</span></a></li>
+  <li><a href="#forms-involving-a2-x2" id="toc-forms-involving-a2-x2" class="nav-link" data-scroll-target="#forms-involving-a2-x2"> <span class="header-section-number">14.3</span> Forms involving <span class="math inline">\(a^{2} + x^{2}\)</span></a></li>
+  <li><a href="#forms-involving-a2---x2" id="toc-forms-involving-a2---x2" class="nav-link" data-scroll-target="#forms-involving-a2---x2"> <span class="header-section-number">14.4</span> Forms involving <span class="math inline">\(a^{2} - x^{2}\)</span></a></li>
+  <li><a href="#forms-involving-x2---a2" id="toc-forms-involving-x2---a2" class="nav-link" data-scroll-target="#forms-involving-x2---a2"> <span class="header-section-number">14.5</span> Forms involving <span class="math inline">\(x^{2} - a^{2}\)</span></a></li>
+  <li><a href="#trigonometric-forms" id="toc-trigonometric-forms" class="nav-link" data-scroll-target="#trigonometric-forms"> <span class="header-section-number">14.6</span> Trigonometric forms</a></li>
+  <li><a href="#inverse-trigonometric-forms" id="toc-inverse-trigonometric-forms" class="nav-link" data-scroll-target="#inverse-trigonometric-forms"> <span class="header-section-number">14.7</span> Inverse trigonometric forms</a></li>
+  <li><a href="#exponential-and-logarithmic-forms" id="toc-exponential-and-logarithmic-forms" class="nav-link" data-scroll-target="#exponential-and-logarithmic-forms"> <span class="header-section-number">14.8</span> Exponential and logarithmic forms</a></li>
+  <li><a href="#forms-involving-sqrt2ax---x2-quad-a-0" id="toc-forms-involving-sqrt2ax---x2-quad-a-0" class="nav-link" data-scroll-target="#forms-involving-sqrt2ax---x2-quad-a-0"> <span class="header-section-number">14.9</span> Forms Involving <span class="math inline">\(\sqrt{2ax - x^{2}} \quad (a &gt; 0)\)</span></a></li>
+  <li><a href="#hyperbolic-forms" id="toc-hyperbolic-forms" class="nav-link" data-scroll-target="#hyperbolic-forms"> <span class="header-section-number">14.10</span> Hyperbolic forms</a></li>
+  <li><a href="#some-definite-integrals" id="toc-some-definite-integrals" class="nav-link" data-scroll-target="#some-definite-integrals"> <span class="header-section-number">14.11</span> Some definite integrals</a></li>
   </ul>
 </nav>
     </div>
@@ -269,7 +286,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Series</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Table of integrals</span></h1>
 </div>
 
 
@@ -283,116 +300,75 @@ div.csl-indent {
 
 </header>
 
-<section id="tests-for-convergence-of-inﬁnite-series" class="level2" data-number="12.1">
-<h2 data-number="12.1" class="anchored" data-anchor-id="tests-for-convergence-of-inﬁnite-series"><span class="header-section-number">12.1</span> Tests for convergence of inﬁnite series</h2>
+<p>Nothing here yet!</p>
+<section id="basic-forms" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="basic-forms"><span class="header-section-number">14.1</span> Basic forms</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
 </blockquote>
-<ol type="1">
-<li><strong>The nth-Term Test</strong>: Unless <span class="math inline">\(a_{n} \to 0\)</span>, the series diverges.</li>
-<li><strong>Geometric series</strong>: <span class="math inline">\(\sum ar^{n}\)</span> converges if <span class="math inline">\(|r| &lt; 1\)</span>; otherwise it diverges.</li>
-<li><strong>p-series</strong>: <span class="math inline">\(\sum \cfrac{1}{n^{p}}\)</span> converges if <span class="math inline">\(p &gt; 1\)</span>l otherwise it diverges.</li>
-<li><strong>Series with nonnegative terms</strong>: Try the Integral Test, Ratio Test, or Root Test. Try comparing to a known series with the Comparison Test or the Limit Comparison Test.</li>
-<li><strong>Series with some negative terms</strong>: Does <span class="math inline">\(\sum | a_{n} |\)</span> converge? If yes, so does <span class="math inline">\(\sum a_{ n}\)</span> because absolute convergence implies convergence.</li>
-<li><strong>Alternating series</strong>: <span class="math inline">\(\sum a_{n}\)</span> converges if the series satisﬁes the conditions of the Alternating Series Test.</li>
-</ol>
 </section>
-<section id="taylor-series" class="level2" data-number="12.2">
-<h2 data-number="12.2" class="anchored" data-anchor-id="taylor-series"><span class="header-section-number">12.2</span> Taylor series</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
-</blockquote>
-<p>Let <span class="math inline">\(f\)</span> be a function that has all the “required” derivatives. One can demand its behavior in the neighborhood of a point, <span class="math inline">\(x_{0}\)</span>. In this case, it is possible to approximate <span class="math inline">\(f\)</span> with a polynomial (around <span class="math inline">\(x_{0}\)</span>), which is the Taylor series. Concretely, one has</p>
-<p><span class="math display">\[
-f(x) = a_{0} + a_{1}(x - x_{0}) + a_{2}(x - x_{0})^{2} + a_{3}(x - x_{0})^{3} + \cdots + a_{n}(x - x_{0})^{n} + \cdots
-\tag{1}
-\]</span></p>
-<p>which is a polynomial representation in <span class="math inline">\((x - x_{0})\)</span>. Note that, intuitively, if the distance between <span class="math inline">\(x\)</span> and <span class="math inline">\(x_{0}\)</span> becomes small, the terms of this series decrease, <em>a priori</em>, with <span class="math inline">\(n\)</span>. The goal of this section is the determination of the set of coefficients <span class="math inline">\(\{a_{n}\}\)</span>.</p>
-<ol type="1">
-<li><p>Show, by imposing <span class="math inline">\(x = x_{0}\)</span> in <span class="math inline">\((1)\)</span>, that <span class="math inline">\(a_{0} = f(x_{0})\)</span>.</p></li>
-<li><p>Determine <span class="math inline">\(f′(x)\)</span>. Show, by imposing <span class="math inline">\(x = x_{0}\)</span> in the resultant equation, that <span class="math inline">\(a_{1} = \cfrac{1}{1!} f′(x_{0})\)</span>.</p></li>
-</ol>
-<p>Denote by <span class="math inline">\(\cfrac{d^{2}}{dx^{2}} f(x)\)</span>, or <span class="math inline">\(f′′(x)\)</span>, or <span class="math inline">\(f^{(2)}(x)\)</span>, the second order derivative of <span class="math inline">\(f\)</span>. This symbol stands for</p>
-<p><span class="math display">\[
-\cfrac{d^{2}}{dx^{2}} f(x) = \cfrac{d}{dx} \left [ \cfrac{d}{dx} f(x) \right ]
-\tag{2}
-\]</span></p>
-<p>Exemplifying, if <span class="math inline">\(g(x) = \sin x\)</span>, then <span class="math inline">\(g′(x) = \cos x\)</span> and <span class="math inline">\(g′′(x) = − \sin x\)</span>. Analogously,</p>
-<p><span class="math display">\[
-\cfrac{d^{3}}{dx^{3}} f(x) = \cfrac{d}{dx} \left [ \cfrac{d^{2}}{dx^{2}} f(x) \right ] = \cfrac{d}{dx} \left [ \cfrac{d}{dx} \left [ \cfrac{d}{dx} f(x) \right ] \right ] \quad , \quad \cfrac{d^{4}}{dx^{4}} f(x) = \cfrac{d}{dx} \left [ \cfrac{d^{3}}{dx^{3}} f(x) \right ] \cdots, \quad et \ cætera
-\tag{3}
-\]</span></p>
-<p>Furthermore, for <span class="math inline">\(g(x) = \sin x\)</span>, one has <span class="math inline">\(g^{(3)} (x) = − \cos x\)</span>, <span class="math inline">\(g^{(4)} (x) = \sin x\)</span>, <em>et cætera</em>.</p>
-<ol start="3" type="1">
-<li><p>Determine <span class="math inline">\(f′′(x)\)</span>. Show, by imposing <span class="math inline">\(x = x_{0}\)</span> in the resultant equation, that <span class="math inline">\(a_{2} = \cfrac{1}{2!} f′′(x_{0})\)</span>.</p></li>
-<li><p>Determine <span class="math inline">\(f^{(3)} (x)\)</span>. Show, by imposing <span class="math inline">\(x = x_{0}\)</span> in the resultant equation, that <span class="math inline">\(a_{3} = \cfrac{1}{3!} f^{(3)} (x_{0})\)</span>.</p></li>
-<li><p>Show that <span class="math inline">\(a_{n} = \cfrac{1}{n!} f^{(n)} (x_{0})\)</span>.</p></li>
-</ol>
-<p>In other words, if the series exists, one has</p>
-<p><span class="math display">\[
-f(x) = \sum \limits^{\infty}_{n = 0} \cfrac{1}{n!} f^{(n)} (x_{0}) (x - x_{0})^{n}
-\]</span></p>
-</section>
-<section id="maclaurin-series" class="level2" data-number="12.3">
-<h2 data-number="12.3" class="anchored" data-anchor-id="maclaurin-series"><span class="header-section-number">12.3</span> Maclaurin series</h2>
+<section id="forms-involving-ax-b" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="forms-involving-ax-b"><span class="header-section-number">14.2</span> Forms involving <span class="math inline">\(ax + b\)</span></h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
 </blockquote>
-<p>A Maclaurin series is a Taylor series where <span class="math inline">\(x_{0} = 0\)</span>.</p>
-<ul>
-<li><p><span class="math inline">\(\cfrac{1}{1 - x} = 1 + x + x^2 + \cdots + x^{n} + \cdots = \sum \limits^{\infty}_{n = 0} x^{n}, \quad |x| &lt; 1\)</span></p></li>
-<li><p><span class="math inline">\(\cfrac{1}{1 + x} = 1 - x + x^2 - \cdots + (- x^{n}) + \cdots = \sum \limits^{\infty}_{n = 0} (-1)^{n} x^{n}, \quad |x| &lt; 1\)</span></p></li>
-<li><p><span class="math inline">\(e^{x} = 1 + x + \cfrac{x^{2}}{2!} + \cdots + \cfrac{x^{n}}{n!} + \cdots = \sum \limits^{\infty}_{n = 0} \cfrac{x^{n}}{n!}, \quad |x| &lt; \infty\)</span></p></li>
-<li><p><span class="math inline">\(\sin x = x - \cfrac{x^{3}}{3!} + \cfrac{x^{5}}{5!} - \cdots + (-1)^{n} \cfrac{x^{2n + 1}}{(2n +1)!} + \cdots = \sum \limits^{\infty}_{n = 0} \cfrac{(-1)^{n} x^{2n + 1}}{(2n +1)!}, \quad |x| &lt; \infty\)</span></p></li>
-<li><p><span class="math inline">\(\cos x = 1 - \cfrac{x^{2}}{2!} + \cfrac{x^{4}}{4!} - \cdots + (-1)^{n} \cfrac{x^{2n}}{(2n)!} + \cdots = \sum \limits^{\infty}_{n = 0} \cfrac{(-1)^{n} x^{2n}}{(2n)!}, \quad |x| &lt; \infty\)</span></p></li>
-<li><p><span class="math inline">\(\ln (1 + x) = x - \cfrac{x^{2}}{2} + \cfrac{x^{3}}{3} - \cdots + (-1)^{n - 1} \cfrac{x^{n}}{n} + \cdots = \sum \limits^{\infty}_{n = 1} \cfrac{(-1)^{n - 1} x^{n}}{n}, \quad -1 &lt; x \leq 1\)</span></p></li>
-<li><p><span class="math inline">\(\ln \cfrac{1 + x}{1 - x} = 2 \tanh^{-1} x = 2 \left ( x + \cfrac{x^{3}}{3} + \cfrac{x^{5}}{5} + \cdots + \cfrac{x^{2n + 1}}{2n + 1} + \cdots \right ) = 2 \sum \limits_{n = 0}^{\infty} \cfrac{x^{2n + 1}}{2n - 1}, \quad |x| &lt; 1\)</span></p></li>
-<li><p><span class="math inline">\(\tan^{-1} x = x - \cfrac{x^{3}}{3} + \cfrac{x^{5}}{5} - \cdots + (- 1)^{n} \cfrac{x^{2n + 1}}{2n + 1} + \cdots = \sum \limits^{\infty}_{n = 0} \cfrac{(- 1)^{n} x^{2n + 1}}{2n + 1}, \quad |x| \leq 1\)</span></p></li>
-</ul>
 </section>
-<section id="binomial-series" class="level2" data-number="12.4">
-<h2 data-number="12.4" class="anchored" data-anchor-id="binomial-series"><span class="header-section-number">12.4</span> Binomial series</h2>
+<section id="forms-involving-a2-x2" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="forms-involving-a2-x2"><span class="header-section-number">14.3</span> Forms involving <span class="math inline">\(a^{2} + x^{2}\)</span></h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
 </blockquote>
-<p><span class="math display">\[
-(1 + x)^{m} =
-1 + mx + \cfrac{m (m - 1) x^{2}}{2!} + \cfrac{m (m - 1) (m - 2) x^{3}}{3!} +
-\cdots +
-\]</span></p>
-<p><span class="math display">\[
-+ \cfrac{m (m - 1) (m - 2) \cdots (m - k + 1) x^{k}}{k!} + \cdots =
-1 + \sum \limits^{\infty}_{k = 1} \binom{m}{k} x^{k}, \quad |x| &lt; 1
-\]</span></p>
-<p>Where</p>
-<p><span class="math display">\[
-\binom{m}{1} = m, \quad \binom{m}{2} = \cfrac{m (m - 1)}{2!}, \quad \binom{m}{k} = \cfrac{m (m - 1) \cdots (m - k + 1)}{k!} \quad \text{for} \ k \geq 3
-\]</span></p>
 </section>
-<section id="big-oh-notation" class="level2" data-number="12.5">
-<h2 data-number="12.5" class="anchored" data-anchor-id="big-oh-notation"><span class="header-section-number">12.5</span> Big “Oh” notation</h2>
+<section id="forms-involving-a2---x2" class="level2" data-number="14.4">
+<h2 data-number="14.4" class="anchored" data-anchor-id="forms-involving-a2---x2"><span class="header-section-number">14.4</span> Forms involving <span class="math inline">\(a^{2} - x^{2}\)</span></h2>
 <blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
 </blockquote>
-<p>For <span class="math inline">\(x \ll 1\)</span>, expanding <span class="math inline">\(f(x) = \sin x\)</span> aroung <span class="math inline">\(x_{0}\)</span> leads to</p>
-<p><span class="math display">\[
-\sin x = x - \cfrac{x^{3}}{3!} + \cfrac{x^{5}}{5!} - \cfrac{x^{7}}{7!} + \cdots
-\]</span></p>
-<p>The term in the series above decreases with its order. The series can also be represented by</p>
-<p><span class="math display">\[
-\sin x = x - \cfrac{x^{3}}{3!} + \cfrac{x^{5}}{5!} - \cfrac{x^{7}}{7!} + \mathcal{O} (x^{9})
-\]</span></p>
-<p>where <span class="math inline">\(\mathcal{O} (x^{9})\)</span> stands for contributions of order <span class="math inline">\(x^{9}\)</span> (<em>id est</em>, proportional to <span class="math inline">\(x^{6}\)</span>) <strong>or less</strong>, since the absolute value of the remaining terms <span class="math inline">\(\left | \cfrac{x^{9}}{9!} - \cfrac{x^{11}}{11!} + \cfrac{x^{13}}{13!} - \cdots \right |\)</span>, does not exceed a term proportional to <span class="math inline">\(x^{9}\)</span>. It was also possible to write</p>
-<p><span class="math display">\[
-\sin x = x - \cfrac{x^{3}}{3!} + \cfrac{x^{5}}{5!} - \cfrac{x^{7}}{7!} + \mathcal{O} (x^{8})
-\]</span></p>
-<p>because <span class="math inline">\(\mathcal{O} (x^{9})\)</span> is (much) smaller than terms proportional to <span class="math inline">\(x^{8}\)</span> when <span class="math inline">\(x \sim 0\)</span>.</p>
+</section>
+<section id="forms-involving-x2---a2" class="level2" data-number="14.5">
+<h2 data-number="14.5" class="anchored" data-anchor-id="forms-involving-x2---a2"><span class="header-section-number">14.5</span> Forms involving <span class="math inline">\(x^{2} - a^{2}\)</span></h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+</section>
+<section id="trigonometric-forms" class="level2" data-number="14.6">
+<h2 data-number="14.6" class="anchored" data-anchor-id="trigonometric-forms"><span class="header-section-number">14.6</span> Trigonometric forms</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+</section>
+<section id="inverse-trigonometric-forms" class="level2" data-number="14.7">
+<h2 data-number="14.7" class="anchored" data-anchor-id="inverse-trigonometric-forms"><span class="header-section-number">14.7</span> Inverse trigonometric forms</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+</section>
+<section id="exponential-and-logarithmic-forms" class="level2" data-number="14.8">
+<h2 data-number="14.8" class="anchored" data-anchor-id="exponential-and-logarithmic-forms"><span class="header-section-number">14.8</span> Exponential and logarithmic forms</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+</section>
+<section id="forms-involving-sqrt2ax---x2-quad-a-0" class="level2" data-number="14.9">
+<h2 data-number="14.9" class="anchored" data-anchor-id="forms-involving-sqrt2ax---x2-quad-a-0"><span class="header-section-number">14.9</span> Forms Involving <span class="math inline">\(\sqrt{2ax - x^{2}} \quad (a &gt; 0)\)</span></h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+</section>
+<section id="hyperbolic-forms" class="level2" data-number="14.10">
+<h2 data-number="14.10" class="anchored" data-anchor-id="hyperbolic-forms"><span class="header-section-number">14.10</span> Hyperbolic forms</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
+</section>
+<section id="some-definite-integrals" class="level2" data-number="14.11">
+<h2 data-number="14.11" class="anchored" data-anchor-id="some-definite-integrals"><span class="header-section-number">14.11</span> Some definite integrals</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+</blockquote>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-hase2022" class="csl-entry" role="doc-biblioentry">
-Hase, Masayuki Oka. 2022. <span>“Métodos Matemáticos e de Computação 1.”</span>
-</div>
 <div id="ref-hass2018" class="csl-entry" role="doc-biblioentry">
 Hass, Joel, Christopher Heil, and Maurice D. Weir. 2018. <em>Thomas’ Calculus</em>. 14th ed. Pearson.
 </div>
@@ -499,13 +475,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../qmd/applications-of-derivatives.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Applications of derivatives</span></span>
+      <a href="../qmd/integrals.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Integrals</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../qmd/integrals.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Integrals</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../qmd/multivariate-calculus.html" class="pagination-link">
+        <span class="nav-page-text">Multivariate calculus</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
