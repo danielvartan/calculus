@@ -116,7 +116,7 @@ Gathering together the information above, one can sketch the graph of $f$ (figur
 * Break-even point: $p_{d} = p_{o}$
 * Percentage change in price: $\cfrac{\Delta p}{p_{0}}$
 * Percentage change in quantity: $\cfrac{\Delta x}{x_{0}}$ 
-* $e = \left | \lim \limits_{\Delta p \to 0} \cfrac{\cfrac{\Delta x}{x_{0}}}{\cfrac{\Delta p}{p_{0}}} right | = \cfrac{p_{0}}{x_{0}} \times \left | \lim \limits_{\Delta p \to 0} \cfrac{\Delta x}{\Delta p} right | = \cfrac{p_{0}}{x_{0}} \times \left | \cfrac{\mathrm{d} x}{\mathrm{d} p} right |$
+* $e = \left | \lim \limits_{\Delta p \to 0} \cfrac{\cfrac{\Delta x}{x_{0}}}{\cfrac{\Delta p}{p_{0}}} \right | = \cfrac{p_{0}}{x_{0}} \times \left | \lim \limits_{\Delta p \to 0} \cfrac{\Delta x}{\Delta p} \right | = \cfrac{p_{0}}{x_{0}} \times \left | \cfrac{\mathrm{d} x}{\mathrm{d} p} \right |$
 * $\begin{cases} e > 1 \rightarrow \text{elastic} \\ 0 < e > 1 \rightarrow \text{inelastic} \\ e = 1 \rightarrow \text{unitary elasticity} \end{cases}$
     
     \* Does not apply in case of cross elasticity.

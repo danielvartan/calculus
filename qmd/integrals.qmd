@@ -117,7 +117,7 @@ $$
 
 > Reference: @hass2018
 
-* Zero: $\displaystyle \int^{a}_{b} f(x) \ \mathrm{d} x = 0$
+* Zero: $\displaystyle \int^{a}_{a} f(x) \ \mathrm{d} x = 0$
 * Order of integration: $\displaystyle \int^{a}_{b} f(x) \ \mathrm{d} x = - \int^{b}_{a} f(x) \ \mathrm{d} x$
 
 * Constant multiples:
@@ -139,14 +139,7 @@ $$
   * $\displaystyle f(x) \geq g(x) \quad \text{on} \quad [a, b] \quad \text{implies} \quad \int^{b}_{a} f(x) \ \mathrm{d} x \geq \int^{b}_{a} g(x) \ \mathrm{d} x$
   * $\displaystyle f(x) \geq 0 \quad \text{on} \quad [a, b] \quad \text{implies} \quad \int^{b}_{a} f(x) \ \mathrm{d} x \geq 0$
 
-## Other properties
-
-> Reference: @hass2018
-
-* Substitution in deﬁnite Integrals: $\displaystyle \int^{a}_{b} f(g(x)) \cdot g'(x) \ \mathrm{d} x = \int^{g(b)}_{g(a)} f(u) \ \mathrm{d} u$
-* Integration by Parts: $\displaystyle \int^{b}_{a} u(x) v'(x) \ \mathrm{d} x = u(x) v(x) \biggr ]^{b}_{a} -\int^{b}_{a} v(x) u'(x) \ \mathrm{d} x$
-
-### (Riemann) Integral - Fundamental theorem of calculus
+## (Riemann) Integral - Fundamental theorem of calculus
 
 > Reference: @hase2022
 
@@ -167,9 +160,7 @@ $$
 \cfrac{1}{\Delta x} \int^{x + \Delta x}_{x} f(\xi) \ \mathrm{d} \xi
 $$
 
-The integral in above is evaluated in the interval $[x, x + \Delta x)$; if the value of $\Delta x \ (> 0)$ is decreased, one has
-
-$f(\xi) \approx f(x)$ for $\xi \in [x, x + \Delta x)$, since $f$ is continuous. Therefore, 
+The integral above is evaluated in the interval $[x, x + \Delta x)$; if the value of $\Delta x \ (> 0)$ is decreased, one has $f(\xi) \approx f(x)$ for $\xi \in [x, x + \Delta x)$, since $f$ is continuous. Therefore, 
 
 $$
 \cfrac{\mathrm{d}}{\mathrm{d} x} F(x) = 

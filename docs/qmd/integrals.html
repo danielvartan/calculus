@@ -44,7 +44,7 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../qmd/table-of-integrals.html" rel="next">
+<link href="../qmd/integration-techniques.html" rel="next">
 <link href="../qmd/series.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -203,7 +203,12 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/table-of-integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Table of integrals</span></a>
+  <a href="../qmd/integration-techniques.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Integration techniques</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/table-of-integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Table of integrals</span></a>
   </div>
 </li>
       </ul>
@@ -218,32 +223,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/funcion-of-several-variables.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Functions of several variables</span></a>
+  <a href="../qmd/funcion-of-several-variables.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Functions of several variables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/partial-derivatives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Partial derivatives</span></a>
+  <a href="../qmd/partial-derivatives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Partial derivatives</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/taylor-expansion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">The Taylor expasion</span></a>
+  <a href="../qmd/taylor-expansion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">The Taylor expasion</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/max-min-analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Analysis of local maxima/minima</span></a>
+  <a href="../qmd/max-min-analysis.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Analysis of local maxima/minima</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Matrices</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
+  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
   </div>
 </li>
       </ul>
@@ -271,10 +276,7 @@ div.csl-indent {
   <li><a href="#indefinite-integrals-of-elementary-functions" id="toc-indefinite-integrals-of-elementary-functions" class="nav-link" data-scroll-target="#indefinite-integrals-of-elementary-functions"> <span class="header-section-number">13.2</span> Indefinite integrals of elementary functions</a></li>
   <li><a href="#riemann-integral---definition" id="toc-riemann-integral---definition" class="nav-link" data-scroll-target="#riemann-integral---definition"> <span class="header-section-number">13.3</span> (Riemann) Integral - Definition</a></li>
   <li><a href="#general-formulas" id="toc-general-formulas" class="nav-link" data-scroll-target="#general-formulas"> <span class="header-section-number">13.4</span> General formulas</a></li>
-  <li><a href="#other-properties" id="toc-other-properties" class="nav-link" data-scroll-target="#other-properties"> <span class="header-section-number">13.5</span> Other properties</a>
-  <ul class="collapse">
-  <li><a href="#riemann-integral---fundamental-theorem-of-calculus" id="toc-riemann-integral---fundamental-theorem-of-calculus" class="nav-link" data-scroll-target="#riemann-integral---fundamental-theorem-of-calculus"> <span class="header-section-number">13.5.1</span> (Riemann) Integral - Fundamental theorem of calculus</a></li>
-  </ul></li>
+  <li><a href="#riemann-integral---fundamental-theorem-of-calculus" id="toc-riemann-integral---fundamental-theorem-of-calculus" class="nav-link" data-scroll-target="#riemann-integral---fundamental-theorem-of-calculus"> <span class="header-section-number">13.5</span> (Riemann) Integral - Fundamental theorem of calculus</a></li>
   </ul>
 </nav>
     </div>
@@ -397,7 +399,7 @@ F'(x) = f(x)
 <p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
 </blockquote>
 <ul>
-<li><p>Zero: <span class="math inline">\(\displaystyle \int^{a}_{b} f(x) \ \mathrm{d} x = 0\)</span></p></li>
+<li><p>Zero: <span class="math inline">\(\displaystyle \int^{a}_{a} f(x) \ \mathrm{d} x = 0\)</span></p></li>
 <li><p>Order of integration: <span class="math inline">\(\displaystyle \int^{a}_{b} f(x) \ \mathrm{d} x = - \int^{b}_{a} f(x) \ \mathrm{d} x\)</span></p></li>
 <li><p>Constant multiples:</p>
 <ul>
@@ -420,17 +422,8 @@ F'(x) = f(x)
 </ul></li>
 </ul>
 </section>
-<section id="other-properties" class="level2" data-number="13.5">
-<h2 data-number="13.5" class="anchored" data-anchor-id="other-properties"><span class="header-section-number">13.5</span> Other properties</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
-</blockquote>
-<ul>
-<li>Substitution in deﬁnite Integrals: <span class="math inline">\(\displaystyle \int^{a}_{b} f(g(x)) \cdot g'(x) \ \mathrm{d} x = \int^{g(b)}_{g(a)} f(u) \ \mathrm{d} u\)</span></li>
-<li>Integration by Parts: <span class="math inline">\(\displaystyle \int^{b}_{a} u(x) v'(x) \ \mathrm{d} x = u(x) v(x) \biggr ]^{b}_{a} -\int^{b}_{a} v(x) u'(x) \ \mathrm{d} x\)</span></li>
-</ul>
-<section id="riemann-integral---fundamental-theorem-of-calculus" class="level3" data-number="13.5.1">
-<h3 data-number="13.5.1" class="anchored" data-anchor-id="riemann-integral---fundamental-theorem-of-calculus"><span class="header-section-number">13.5.1</span> (Riemann) Integral - Fundamental theorem of calculus</h3>
+<section id="riemann-integral---fundamental-theorem-of-calculus" class="level2" data-number="13.5">
+<h2 data-number="13.5" class="anchored" data-anchor-id="riemann-integral---fundamental-theorem-of-calculus"><span class="header-section-number">13.5</span> (Riemann) Integral - Fundamental theorem of calculus</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
 </blockquote>
@@ -446,8 +439,7 @@ F(x) := \int^{x}_{a} f(\xi) \ \mathrm{d} \xi
 \cfrac{1}{\Delta x} \left [ \int^{x + \Delta x}_{a} f(\xi) \ \mathrm{d} \xi - \int^{x}_{a} f(\xi) \ \mathrm{d} \xi \right ] =
 \cfrac{1}{\Delta x} \int^{x + \Delta x}_{x} f(\xi) \ \mathrm{d} \xi
 \]</span></p>
-<p>The integral in above is evaluated in the interval <span class="math inline">\([x, x + \Delta x)\)</span>; if the value of <span class="math inline">\(\Delta x \ (&gt; 0)\)</span> is decreased, one has</p>
-<p><span class="math inline">\(f(\xi) \approx f(x)\)</span> for <span class="math inline">\(\xi \in [x, x + \Delta x)\)</span>, since <span class="math inline">\(f\)</span> is continuous. Therefore,</p>
+<p>The integral above is evaluated in the interval <span class="math inline">\([x, x + \Delta x)\)</span>; if the value of <span class="math inline">\(\Delta x \ (&gt; 0)\)</span> is decreased, one has <span class="math inline">\(f(\xi) \approx f(x)\)</span> for <span class="math inline">\(\xi \in [x, x + \Delta x)\)</span>, since <span class="math inline">\(f\)</span> is continuous. Therefore,</p>
 <p><span class="math display">\[
 \cfrac{\mathrm{d}}{\mathrm{d} x} F(x) =
 \lim \limits_{\Delta x \to 0} \cfrac{F(x + \Delta x) - F(x)}{\Delta x} =
@@ -507,7 +499,6 @@ Hass, Joel, Christopher Heil, and Maurice D. Weir. 2018. <em>Thomas’ Calculus<
 Morettin, Pedro Alberto, Samuel Hazzan, and Wilton de Oliveira Bussab. 2003. <em>Cálculo: Funções de Uma e Várias Variáveis</em>. Saraiva.
 </div>
 </div>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -608,7 +599,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../qmd/series.html" class="pagination-link">
@@ -616,8 +606,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../qmd/table-of-integrals.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Table of integrals</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../qmd/integration-techniques.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Integration techniques</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

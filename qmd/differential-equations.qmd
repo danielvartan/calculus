@@ -1,0 +1,25 @@
+# Differential equations
+
+## Ordinary differential equations (Malthus’ model)
+
+> Reference: @hase2022
+
+
+
+## Ordinary differential equations (Malthus-Verhulst’s model)
+
+> Reference: @hase2022
+
+
+
+## Examples
+
+> Reference: @hase2022
+
+
+
+## Important example 
+
+> Reference: @hase2022
+
+

@@ -28,7 +28,9 @@ book:
         - qmd/applications-of-derivatives.qmd
         - qmd/series.qmd
         - qmd/integrals.qmd
+        - qmd/integration-techniques.qmd
         - qmd/table-of-integrals.qmd
+        - qmd/differential-equations.qmd
     - part: qmd/multivariate-calculus.qmd
       chapters: 
         - qmd/funcion-of-several-variables.qmd

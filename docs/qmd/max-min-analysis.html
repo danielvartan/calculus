@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Calculus: Formulas and Theorems - 18&nbsp; Analysis of local maxima/minima</title>
+<title>Calculus: Formulas and Theorems - 20&nbsp; Analysis of local maxima/minima</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -86,7 +86,7 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Analysis of local maxima/minima</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Analysis of local maxima/minima</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -203,7 +203,17 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/table-of-integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Table of integrals</span></a>
+  <a href="../qmd/integration-techniques.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Integration techniques</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/table-of-integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Table of integrals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmd/differential-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Differential equations</span></a>
   </div>
 </li>
       </ul>
@@ -218,32 +228,32 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/funcion-of-several-variables.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Functions of several variables</span></a>
+  <a href="../qmd/funcion-of-several-variables.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Functions of several variables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/partial-derivatives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Partial derivatives</span></a>
+  <a href="../qmd/partial-derivatives.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Partial derivatives</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/taylor-expansion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">The Taylor expasion</span></a>
+  <a href="../qmd/taylor-expansion.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Taylor expasion</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/max-min-analysis.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Analysis of local maxima/minima</span></a>
+  <a href="../qmd/max-min-analysis.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Analysis of local maxima/minima</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Matrices</span></a>
+  <a href="../qmd/matrices.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Matrices</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
+  <a href="../qmd/systems-of-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Systems of equations</span></a>
   </div>
 </li>
       </ul>
@@ -270,7 +280,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Analysis of local maxima/minima</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Analysis of local maxima/minima</span></h1>
 </div>
 
 
@@ -326,7 +336,7 @@ C := \cfrac{\partial^{2} f}{\partial y^{2}} (x_{0}, y_{0}), \quad
 \]</span></p>
 <p>For <span class="math inline">\(\Delta x\)</span> and <span class="math inline">\(\Delta y\)</span> sufficiently close to zero (which means that <span class="math inline">\((x, y)\)</span> is close to <span class="math inline">\((x_{0}, y_{0})\)</span>), the sign of <span class="math inline">\(\Delta f\)</span> in the formula above is governed by <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span>, as seen below. According to the definition above, <span class="math inline">\(\Delta f &gt; 0\)</span> and <span class="math inline">\(\Delta f &lt; 0\)</span> implies <span class="math inline">\((x_{0}, y_{0})\)</span> being a local minimum and maximum, respectively.</p>
 <p>The possible cases are listed below.</p>
-<p>1. <span class="math inline">\(A \ \text{and} \ C \ \text{are not both zero}\)</span>. Assume that <span class="math inline">\(A \neq 0\)</span> (the case <span class="math inline">\(C \neq 0\)</span> can be worked out <span class="math inline">\(mutatis \ mutandis\)</span>). Then, <span class="math inline">\(\Delta f\)</span> can be cast as</p>
+<p><span class="math inline">\(\text{1}.\)</span> <span class="math inline">\(A \ \text{and} \ C \ \text{are not both zero}\)</span>. Assume that <span class="math inline">\(A \neq 0\)</span> (the case <span class="math inline">\(C \neq 0\)</span> can be worked out <span class="math inline">\(mutatis \ mutandis\)</span>). Then, <span class="math inline">\(\Delta f\)</span> can be cast as</p>
 <p><span class="math display">\[
 \Delta f = \cfrac{A}{2} \left [ \Delta x + \cfrac{B}{A} \Delta y \right ] + \cfrac{AC - B^{2}}{2A} \Delta y^{2} + \mathcal{O} (\Delta x^{3}, \Delta y^{3}) =
 \]</span></p>
@@ -338,12 +348,12 @@ C := \cfrac{\partial^{2} f}{\partial y^{2}} (x_{0}, y_{0}), \quad
 \Delta w := \Delta x + \cfrac{B}{A} \Delta y
 \]</span></p>
 <p>The analysis will now be divided into some subcases.</p>
-<p>(a). <span class="math inline">\(AC - B^{2} = 0\)</span>. In this case, no general conclusion can be stated about the nature of <span class="math inline">\((x_{0}, y_{0})\)</span>, since <span class="math inline">\(\Delta w\)</span> can be zero without letting <span class="math inline">\(\Delta x = \Delta y = 0\)</span> (which is the critical point). When this happens, the sign of <span class="math inline">\(\Delta f = \cfrac{A}{2} \Delta w^{2} + \mathcal{O} (\Delta x^{3}, \Delta y^{3}) = \mathcal{O} (\Delta x^{3}, \Delta y^{3})\)</span> is decided by the third order terms, which requires further investigations.</p>
-<p>(b). <span class="math inline">\(AC - B^{2} &lt; 0\)</span>. In this case, the quadratic form in <span class="math inline">\(\text{(i)}\)</span> can be either positive or negative, depending on the chosen region in the neighborhood of <span class="math inline">\((x_{0}, y_{0})\)</span>. Therefore, the condition <span class="math inline">\(AC - B^{2}\)</span> implies the critical point being a <strong>saddle-point</strong>.</p>
-<p>(c). <span class="math inline">\(AC - B^{2} &gt; 0\)</span>. In this case, both quadratic terms in <span class="math inline">\(\text{(i)}\)</span> have the same sign and the classification of the critical point depends on the sign of <span class="math inline">\(A\)</span> only. If <span class="math inline">\(A &gt; 0 \ (A &lt; 0)\)</span>, then <span class="math inline">\(\Delta f &gt; 0 \ (\Delta f &lt; 0)\)</span>, which means that <span class="math inline">\((x_{0}, y_{0})\)</span> is a <strong>local minimum (maximum)</strong>.</p>
-<p>2. <span class="math inline">\(A = C = 0\)</span>. Here, <span class="math inline">\(\Delta f = B \Delta x \Delta y + \mathcal{O} (\Delta x^{3}, \Delta y^{3})\)</span>. The analysis will now be divided into some subcases.</p>
-<p>(a). If <span class="math inline">\(B = 0\)</span>, which implies <span class="math inline">\(AC - B^{2} = 0\)</span>, no general conclusion can be stated about the nature of <span class="math inline">\((x_{0}, y_{0})\)</span>, since it would depend on the third order terms.</p>
-<p>(b). if <span class="math inline">\(B \neq 0\)</span>, which implies <span class="math inline">\(AC - B^{2} &lt; 0\)</span>, the leading term, <span class="math inline">\(B \Delta x \Delta y\)</span> can be either positive or negative, depending on the <span class="math inline">\((x_{0}, y_{0})\)</span>. In this situation, <span class="math inline">\((x_{0}, y_{0})\)</span> is a <strong>saddle-point</strong>, where it can be seen as a local maximum according to some set of points <span class="math inline">\((x, y)\)</span>, but it can also be treated as a local minimum if another set of points <span class="math inline">\((x, y)\)</span> is chosen.</p>
+<p><span class="math inline">\((\text{a})\)</span> <span class="math inline">\(AC - B^{2} = 0\)</span>. In this case, no general conclusion can be stated about the nature of <span class="math inline">\((x_{0}, y_{0})\)</span>, since <span class="math inline">\(\Delta w\)</span> can be zero without letting <span class="math inline">\(\Delta x = \Delta y = 0\)</span> (which is the critical point). When this happens, the sign of <span class="math inline">\(\Delta f = \cfrac{A}{2} \Delta w^{2} + \mathcal{O} (\Delta x^{3}, \Delta y^{3}) = \mathcal{O} (\Delta x^{3}, \Delta y^{3})\)</span> is decided by the third order terms, which requires further investigations.</p>
+<p><span class="math inline">\((\text{b})\)</span> <span class="math inline">\(AC - B^{2} &lt; 0\)</span>. In this case, the quadratic form in <span class="math inline">\(\text{(i)}\)</span> can be either positive or negative, depending on the chosen region in the neighborhood of <span class="math inline">\((x_{0}, y_{0})\)</span>. Therefore, the condition <span class="math inline">\(AC - B^{2}\)</span> implies the critical point being a <strong>saddle-point</strong>.</p>
+<p><span class="math inline">\((\text{c})\)</span> <span class="math inline">\(AC - B^{2} &gt; 0\)</span>. In this case, both quadratic terms in <span class="math inline">\(\text{(i)}\)</span> have the same sign and the classification of the critical point depends on the sign of <span class="math inline">\(A\)</span> only. If <span class="math inline">\(A &gt; 0 \ (A &lt; 0)\)</span>, then <span class="math inline">\(\Delta f &gt; 0 \ (\Delta f &lt; 0)\)</span>, which means that <span class="math inline">\((x_{0}, y_{0})\)</span> is a <strong>local minimum (maximum)</strong>.</p>
+<p><span class="math inline">\(\text{2}.\)</span> <span class="math inline">\(A = C = 0\)</span>. Here, <span class="math inline">\(\Delta f = B \Delta x \Delta y + \mathcal{O} (\Delta x^{3}, \Delta y^{3})\)</span>. The analysis will now be divided into some subcases.</p>
+<p><span class="math inline">\((\text{a})\)</span> If <span class="math inline">\(B = 0\)</span>, which implies <span class="math inline">\(AC - B^{2} = 0\)</span>, no general conclusion can be stated about the nature of <span class="math inline">\((x_{0}, y_{0})\)</span>, since it would depend on the third order terms.</p>
+<p><span class="math inline">\((\text{b})\)</span> if <span class="math inline">\(B \neq 0\)</span>, which implies <span class="math inline">\(AC - B^{2} &lt; 0\)</span>, the leading term, <span class="math inline">\(B \Delta x \Delta y\)</span> can be either positive or negative, depending on the <span class="math inline">\((x_{0}, y_{0})\)</span>. In this situation, <span class="math inline">\((x_{0}, y_{0})\)</span> is a <strong>saddle-point</strong>, where it can be seen as a local maximum according to some set of points <span class="math inline">\((x, y)\)</span>, but it can also be treated as a local minimum if another set of points <span class="math inline">\((x, y)\)</span> is chosen.</p>
 <p>All the cases above can be summarized by:</p>
 <p><span class="math display">\[
 A, B, C
@@ -487,12 +497,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../qmd/taylor-expansion.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">The Taylor expasion</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Taylor expasion</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../qmd/matrices.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Matrices</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">Matrices</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

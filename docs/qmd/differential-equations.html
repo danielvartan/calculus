@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Calculus: Formulas and Theorems - 15&nbsp; Table of integrals</title>
+<title>Calculus: Formulas and Theorems - 16&nbsp; Differential equations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,8 +44,8 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../qmd/differential-equations.html" rel="next">
-<link href="../qmd/integration-techniques.html" rel="prev">
+<link href="../qmd/multivariate-calculus.html" rel="next">
+<link href="../qmd/table-of-integrals.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -75,7 +75,6 @@ div.csl-indent {
   }
 }</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -86,7 +85,7 @@ div.csl-indent {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Table of integrals</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Differential equations</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -208,12 +207,12 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/table-of-integrals.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Table of integrals</span></a>
+  <a href="../qmd/table-of-integrals.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Table of integrals</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/differential-equations.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Differential equations</span></a>
+  <a href="../qmd/differential-equations.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Differential equations</span></a>
   </div>
 </li>
       </ul>
@@ -277,17 +276,10 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#basic-forms" id="toc-basic-forms" class="nav-link active" data-scroll-target="#basic-forms"> <span class="header-section-number">15.1</span> Basic forms</a></li>
-  <li><a href="#forms-involving-ax-b" id="toc-forms-involving-ax-b" class="nav-link" data-scroll-target="#forms-involving-ax-b"> <span class="header-section-number">15.2</span> Forms involving <span class="math inline">\(ax + b\)</span></a></li>
-  <li><a href="#forms-involving-a2-x2" id="toc-forms-involving-a2-x2" class="nav-link" data-scroll-target="#forms-involving-a2-x2"> <span class="header-section-number">15.3</span> Forms involving <span class="math inline">\(a^{2} + x^{2}\)</span></a></li>
-  <li><a href="#forms-involving-a2---x2" id="toc-forms-involving-a2---x2" class="nav-link" data-scroll-target="#forms-involving-a2---x2"> <span class="header-section-number">15.4</span> Forms involving <span class="math inline">\(a^{2} - x^{2}\)</span></a></li>
-  <li><a href="#forms-involving-x2---a2" id="toc-forms-involving-x2---a2" class="nav-link" data-scroll-target="#forms-involving-x2---a2"> <span class="header-section-number">15.5</span> Forms involving <span class="math inline">\(x^{2} - a^{2}\)</span></a></li>
-  <li><a href="#trigonometric-forms" id="toc-trigonometric-forms" class="nav-link" data-scroll-target="#trigonometric-forms"> <span class="header-section-number">15.6</span> Trigonometric forms</a></li>
-  <li><a href="#inverse-trigonometric-forms" id="toc-inverse-trigonometric-forms" class="nav-link" data-scroll-target="#inverse-trigonometric-forms"> <span class="header-section-number">15.7</span> Inverse trigonometric forms</a></li>
-  <li><a href="#exponential-and-logarithmic-forms" id="toc-exponential-and-logarithmic-forms" class="nav-link" data-scroll-target="#exponential-and-logarithmic-forms"> <span class="header-section-number">15.8</span> Exponential and logarithmic forms</a></li>
-  <li><a href="#forms-involving-sqrt2ax---x2-quad-a-0" id="toc-forms-involving-sqrt2ax---x2-quad-a-0" class="nav-link" data-scroll-target="#forms-involving-sqrt2ax---x2-quad-a-0"> <span class="header-section-number">15.9</span> Forms Involving <span class="math inline">\(\sqrt{2ax - x^{2}} \quad (a &gt; 0)\)</span></a></li>
-  <li><a href="#hyperbolic-forms" id="toc-hyperbolic-forms" class="nav-link" data-scroll-target="#hyperbolic-forms"> <span class="header-section-number">15.10</span> Hyperbolic forms</a></li>
-  <li><a href="#some-definite-integrals" id="toc-some-definite-integrals" class="nav-link" data-scroll-target="#some-definite-integrals"> <span class="header-section-number">15.11</span> Some definite integrals</a></li>
+  <li><a href="#ordinary-differential-equations-malthus-model" id="toc-ordinary-differential-equations-malthus-model" class="nav-link active" data-scroll-target="#ordinary-differential-equations-malthus-model"> <span class="header-section-number">16.1</span> Ordinary differential equations (Malthus’ model)</a></li>
+  <li><a href="#ordinary-differential-equations-malthus-verhulsts-model" id="toc-ordinary-differential-equations-malthus-verhulsts-model" class="nav-link" data-scroll-target="#ordinary-differential-equations-malthus-verhulsts-model"> <span class="header-section-number">16.2</span> Ordinary differential equations (Malthus-Verhulst’s model)</a></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"> <span class="header-section-number">16.3</span> Examples</a></li>
+  <li><a href="#important-example" id="toc-important-example" class="nav-link" data-scroll-target="#important-example"> <span class="header-section-number">16.4</span> Important example</a></li>
   </ul>
 </nav>
     </div>
@@ -296,7 +288,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Table of integrals</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Differential equations</span></h1>
 </div>
 
 
@@ -310,77 +302,34 @@ div.csl-indent {
 
 </header>
 
-<p>Nothing here yet!</p>
-<section id="basic-forms" class="level2" data-number="15.1">
-<h2 data-number="15.1" class="anchored" data-anchor-id="basic-forms"><span class="header-section-number">15.1</span> Basic forms</h2>
+<section id="ordinary-differential-equations-malthus-model" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="ordinary-differential-equations-malthus-model"><span class="header-section-number">16.1</span> Ordinary differential equations (Malthus’ model)</h2>
 <blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
 </blockquote>
 </section>
-<section id="forms-involving-ax-b" class="level2" data-number="15.2">
-<h2 data-number="15.2" class="anchored" data-anchor-id="forms-involving-ax-b"><span class="header-section-number">15.2</span> Forms involving <span class="math inline">\(ax + b\)</span></h2>
+<section id="ordinary-differential-equations-malthus-verhulsts-model" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="ordinary-differential-equations-malthus-verhulsts-model"><span class="header-section-number">16.2</span> Ordinary differential equations (Malthus-Verhulst’s model)</h2>
 <blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
 </blockquote>
 </section>
-<section id="forms-involving-a2-x2" class="level2" data-number="15.3">
-<h2 data-number="15.3" class="anchored" data-anchor-id="forms-involving-a2-x2"><span class="header-section-number">15.3</span> Forms involving <span class="math inline">\(a^{2} + x^{2}\)</span></h2>
+<section id="examples" class="level2" data-number="16.3">
+<h2 data-number="16.3" class="anchored" data-anchor-id="examples"><span class="header-section-number">16.3</span> Examples</h2>
 <blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
 </blockquote>
 </section>
-<section id="forms-involving-a2---x2" class="level2" data-number="15.4">
-<h2 data-number="15.4" class="anchored" data-anchor-id="forms-involving-a2---x2"><span class="header-section-number">15.4</span> Forms involving <span class="math inline">\(a^{2} - x^{2}\)</span></h2>
+<section id="important-example" class="level2" data-number="16.4">
+<h2 data-number="16.4" class="anchored" data-anchor-id="important-example"><span class="header-section-number">16.4</span> Important example</h2>
 <blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
-</blockquote>
-</section>
-<section id="forms-involving-x2---a2" class="level2" data-number="15.5">
-<h2 data-number="15.5" class="anchored" data-anchor-id="forms-involving-x2---a2"><span class="header-section-number">15.5</span> Forms involving <span class="math inline">\(x^{2} - a^{2}\)</span></h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
-</blockquote>
-</section>
-<section id="trigonometric-forms" class="level2" data-number="15.6">
-<h2 data-number="15.6" class="anchored" data-anchor-id="trigonometric-forms"><span class="header-section-number">15.6</span> Trigonometric forms</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
-</blockquote>
-</section>
-<section id="inverse-trigonometric-forms" class="level2" data-number="15.7">
-<h2 data-number="15.7" class="anchored" data-anchor-id="inverse-trigonometric-forms"><span class="header-section-number">15.7</span> Inverse trigonometric forms</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
-</blockquote>
-</section>
-<section id="exponential-and-logarithmic-forms" class="level2" data-number="15.8">
-<h2 data-number="15.8" class="anchored" data-anchor-id="exponential-and-logarithmic-forms"><span class="header-section-number">15.8</span> Exponential and logarithmic forms</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
-</blockquote>
-</section>
-<section id="forms-involving-sqrt2ax---x2-quad-a-0" class="level2" data-number="15.9">
-<h2 data-number="15.9" class="anchored" data-anchor-id="forms-involving-sqrt2ax---x2-quad-a-0"><span class="header-section-number">15.9</span> Forms Involving <span class="math inline">\(\sqrt{2ax - x^{2}} \quad (a &gt; 0)\)</span></h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
-</blockquote>
-</section>
-<section id="hyperbolic-forms" class="level2" data-number="15.10">
-<h2 data-number="15.10" class="anchored" data-anchor-id="hyperbolic-forms"><span class="header-section-number">15.10</span> Hyperbolic forms</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
-</blockquote>
-</section>
-<section id="some-definite-integrals" class="level2" data-number="15.11">
-<h2 data-number="15.11" class="anchored" data-anchor-id="some-definite-integrals"><span class="header-section-number">15.11</span> Some definite integrals</h2>
-<blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hass2018">Hass, Heil, and Weir (<a href="references.html#ref-hass2018" role="doc-biblioref">2018</a>)</span></p>
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
 </blockquote>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-hass2018" class="csl-entry" role="doc-biblioentry">
-Hass, Joel, Christopher Heil, and Maurice D. Weir. 2018. <em>Thomas’ Calculus</em>. 14th ed. Pearson.
+<div id="ref-hase2022" class="csl-entry" role="doc-biblioentry">
+Hase, Masayuki Oka. 2022. <span>“Métodos Matemáticos e de Computação 1.”</span>
 </div>
 </div>
 </section>
@@ -483,15 +432,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../qmd/integration-techniques.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Integration techniques</span></span>
+      <a href="../qmd/table-of-integrals.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Table of integrals</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../qmd/differential-equations.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Differential equations</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../qmd/multivariate-calculus.html" class="pagination-link">
+        <span class="nav-page-text">Multivariate calculus</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

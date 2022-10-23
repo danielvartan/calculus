@@ -1,0 +1,521 @@
+# Integration techniques
+
+## Integration by substitution
+
+> Reference: @hase2022
+
+Consider the integral
+
+$$
+\int^{\cfrac{\pi}{2}}_{0} \cos(2x) \ \mathrm{d} x
+\tag{1}
+$$
+
+Although the integral
+
+$$
+\int \cos(\xi) \ \mathrm{d} \xi = \sin \xi \quad (+c \in \mathbb{R})
+\quad \text{and/or} \quad
+\int^{b}_{a} \cos(\xi) \ \mathrm{d} \xi = \sin b - \sin a
+$$
+
+is a well-known one, the main difficulty that precludes a simple evaluation of $(1)$ is, at a first glance, the argument of the cosine function $(2x)$, which is not “in accordance” with the measure $\mathrm{d} x$. This is a typical example that requires the technique of __integration by substitution__.
+
+The resolution of $(1)$ requires a strategy that transforms it into a known elementary integral. This procedure demands three steps: 
+
+1. Definition of a new suitable variable.
+
+Firstly, one may define
+
+$$
+u(x) := 2x
+$$
+
+It is clear that this choice leads to “$\cos u$” instead of “$\cos(2x)$”. This fact suggests an approximation to a known integral. 
+
+2. Change of measure.
+
+With the introduction of the (new) variable $u$, the integration can not be performed with the measure $\mathrm{d} x$ anymore. To introduce the measure “$\mathrm{d} u$”, note that
+
+$$
+\cfrac{\mathrm{d}}{\mathrm{d} x} u(x) = 2
+$$
+
+from which
+
+$$
+\mathrm{d} u = 2 \mathrm{d} x \quad \text{or} \quad \mathrm{d} x = \cfrac{1}{2} \mathrm{d} u
+$$
+3. Change of the domain of integration.
+
+Since the integral of $(1)$ is evaluated in the interval that runs from $0$ to $\cfrac{\pi}{2}$ for the $x$ variable, one should find the corresponding extremal points for the new variable $u$:
+
+$$
+\begin{cases}
+x = 0 \quad \ \ \longrightarrow \quad u(x = 0) = 2 \cdot 0 = 0 \\
+x = \cfrac{\pi}{2} \quad \longrightarrow \quad u(x = \cfrac{\pi}{2}) = 2 \cdot \cfrac{\pi}{2} = \pi
+\end{cases}
+$$
+
+The three steps above lead to
+
+$$
+\int^{\cfrac{\pi}{2}}_{0} \cos(2x) \ \mathrm{d} x = 
+\int^{\pi}_{0} \cos u \left ( \cfrac{1}{2} \ \mathrm{d} u \right ) = 
+\cfrac{1}{2} \int^{\pi}_{0} \cos u \ \mathrm{d} u = 
+\cfrac{1}{2} \biggr [ \sin u \biggr ]^{\pi}_{0}
+$$
+
+This technique can be summarized by the two formulas below.
+
+> Tip: For definite integrals, use the first formula and then compute the definite value.
+
+$$
+\int f(g(x)) \cdot g'(x) \ \mathrm{d} x = \int f(u) \ \mathrm{d} u
+$$
+
+$$
+\int^{b}_{a} f(g(x)) \cdot g'(x) \ \mathrm{d} x = \int^{g(b)}_{g(a)} f(u) \ \mathrm{d} u
+$$
+
+## Example of integration by substitution
+
+> Reference: @hase2022
+
+Consider the integral
+
+$$
+\int \cfrac{1}{\pi x + 1} \ \mathrm{d} x
+$$
+
+Introducing $u(x) := \pi x + 1$, one has $\cfrac{\mathrm{d}}{\mathrm{d}x} u(x) = \pi$, from which $\mathrm{d} u = \pi \ \mathrm{d} x$ or $\mathrm{d} x = \cfrac{1}{\pi} \mathrm{d}u$. Then,
+
+$$
+\int \cfrac{1}{\pi x + 1} \ \mathrm{d} x = 
+\int \cfrac{1}{u} \left ( \cfrac{1}{\pi} \mathrm{d} u \right ) =
+\cfrac{1}{\pi} \int \cfrac{1}{u} \mathrm{d} u = 
+\cfrac{1}{\pi} \ \ln|u| + c \quad (c \in \mathbb{R})
+$$
+
+Finally, the variable $u$ was introduced for convenience, and one should return to the original variable $x$. Since $u = \pi x + 1$, then,
+
+$$
+\int \cfrac{1}{\pi x + 1} \ \mathrm{d} x = 
+\cfrac{1}{\pi} \ \ln|\overbrace{\pi x + 1}^{= u}| + c \quad (c \in \mathbb{R})
+$$
+
+## Principal part
+
+Consider the integral
+
+$$
+\int^{\cfrac{\pi}{2}}_{0} e^{-\tan x} \sec^{2}x \ \mathrm{d} x
+$$
+
+Introducing $u(x) := −\tan x$, one has $\cfrac{\mathrm{d}}{\mathrm{d}x} u(x) = - \sec^{2}x$, from which $- \mathrm{d} u = \sec^{2}x \ \mathrm{d} x$ or $\mathrm{d} x = - \cfrac{1}{\sec^{2}x} \ \mathrm{d} u$. Then,
+
+$$
+\begin{cases}
+x = 0 \quad \ \ \longrightarrow \quad u(x = 0) = - \tan 0 = 0 \\
+x = \cfrac{\pi}{2} \quad \longrightarrow \quad u(x = \cfrac{\pi}{2}) = - \tan  \cfrac{\pi}{2} = - \infty
+\end{cases}
+$$
+
+In this case, one should consider the tangent function in its principal interval, $- \cfrac{\pi}{2} < x < \cfrac{\pi}{2}$. Consequently, "$x = \cfrac{\pi}{2}$" means $x \to \cfrac{\pi}{2}^{-}$ and $u(\cfrac{\pi}{2}) = - \lim \limits_{x \to \frac{\pi}{2}^{-}} u(x) = - \infty$.
+
+Then,
+
+$$
+\int^{\cfrac{\pi}{2}}_{0} e^{-\tan x} \sec^{2}x \ \mathrm{d} x = 
+\int^{- \infty}_{0} e^{u} (- \mathrm{d} u) = 
+\int^{0}_{- \infty} e^{u} \ \mathrm{d} u = 
+\biggr [ e^{u} \biggr ]^{0}_{- \infty} = 1
+$$
+
+For indefinite integrals, one should cast the result in terms of the “original variables” only.
+
+In the example above, the variable $u = −\tan x$ led to $u = - \tan \cfrac{\pi}{2}$ in one limit of integration. This was interpreted as $\tan \cfrac{\pi}{2}^{-}$, but not $\tan \cfrac{\pi}{2}^{+}$. In trigonometric functions, there are principal parts, which are:
+
++:--------:+:---------------------------------------:+
+| Function | Principal part                          |
++==========+=========================================+
+| $\sin x$ | $- \cfrac{\pi}{2} < x < \cfrac{\pi}{2}$ |
++----------+-----------------------------------------+
+| $\cos x$ | $0 < x < \pi$                           |
++----------+-----------------------------------------+
+| $\tan x$ | $- \cfrac{\pi}{2} < x < \cfrac{\pi}{2}$ |
++----------+-----------------------------------------+
+
+For instance, if one performs a integration by substitution in $\displaystyle \int^{1}_{0} \sqrt{1 - x^{2}} \ \mathrm{d} x$ by introducing $x(\theta) = \sin \theta$ (and $\mathrm{d} x = \cos \theta \ \mathrm{d} \theta$), the integration limits have to be replaced by
+
+$$
+\begin{cases}
+x = 0 \quad \longrightarrow \quad \sin \theta = 0 
+\quad \longrightarrow \quad \theta = 0 \ (\underline{\text{not}} \ \theta = \pm \pi, \pm 2 \pi, et \ cætera) \\
+x = 1 \quad \longrightarrow \quad \sin \theta = 0 
+\quad \longrightarrow \quad  \theta = \cfrac{\pi}{2} \ (\underline{\text{not}} \ \theta = \cfrac{5 \pi}{2}, - \cfrac{3 \pi}{2}, et \ cætera)
+\end{cases}
+$$
+
+In other words, the new variable $\theta$, associated with the angle of a trigonometric function, should lie in the principal part. Then, one has
+
+$$
+\int^{1}_{0} \sqrt{1 - x^{2}} \ \mathrm{d} x = 
+\int^{\cfrac{\pi}{2}}_{0} \sqrt{1 - \sin^{2} \theta} \ \cos \theta \ \mathrm{d} \theta = 
+\int^{\cfrac{\pi}{2}}_{0} |\cos \theta| \ \cos \theta \ \mathrm{d} \theta
+$$
+
+Since $\cos \theta \geq 0$ in the interval $\left [ 0, \cfrac{\pi}{2} \right ]$, it follows that $| \cos \theta | = \cos \theta$, which leads to
+
+$$
+\int^{\cfrac{\pi}{2}}_{0} |\cos \theta| \ \cos \theta \ \mathrm{d} \theta = 
+\int^{\cfrac{\pi}{2}}_{0} \cos^{2} \theta \ \mathrm{d} \theta
+$$
+
+This integral is performed by first noting that 
+
+$$
+\cos (2x) = \cos^{2} x - \sin^{2} x = \cos^{2} x - (1 - \cos^{2} x) = 2 \cos^{2} x  - 1
+$$
+
+From which one has
+
+$$
+\cos^{2} x = \cfrac{1 + \cos (2x)}{2}
+$$
+
+Then,
+
+$$
+\int \cos^{2} x \ \mathrm{d} x = 
+\int \left [ \cfrac{1 + \cos (2x)}{2} \right ] \ \mathrm{d} x = 
+\cfrac{1}{2} \int 1 \ \mathrm{d} x + \cfrac{1}{2} \int \cos (2x) \ \mathrm{d} x =
+\tag{2.1}
+$$
+
+$$
+= \cfrac{x}{2} + \cfrac{\sin (2x)}{4} + c \quad (c \in \mathbb{R})
+\tag{2.2}
+$$
+
+where a simple integration by substitution was invoked in the last passage.
+
+The integral $\displaystyle \int \sin^{2} x \ \mathrm{d} x$ is
+performed $mutatis \ mutandis$.
+
+A simple application of this result is the evaluation of the area $S_{\circ}$ of a circle. Without loss of generality, consider a circle of radius $r$ where the center is located at the origin $(0, 0)$ in cartesian coordinates $(x, y)$; this circle is described by $x^{2} + y^{2} = r^{2}$, with $-r \leq x$, $y \leq r$. Since it is not a function, one should separate the curve conveniently in the upper semi-circle, described by $y = \sqrt{r^{2} - x^{2}}$, and the lower semi-circle, given by $y = - \sqrt{r^{2} - x^{2}}$. By symmetry argument, the area can be evaluated by the double of the area of the upper (or lower) semi-circle, which is
+
+$$
+S_{\circ} = 2 \int^{r}_{-r} \biggr [ \sqrt{r^{2} - x^{2}} - 0 \biggr ] \ \mathrm{d} x
+$$
+
+If one chooses the lower semi-circle, the integral should be the same,
+
+$$
+\int^{r}_{-r} \biggr [ 0 - \left ( - \sqrt{r^{2} - x^{2}} \right ) \biggr ] \ \mathrm{d} x = 
+\int^{r}_{-r} \sqrt{r^{2} - x^{2}} \ \mathrm{d} x
+$$
+
+Introducing the variable $\theta$ through $x = r \sin \theta$ (which implies $\mathrm{d} x = r \cos \theta \ \mathrm{d} \theta$, one has
+
+
+$$
+S_{\circ} = 
+2 \int^{\cfrac{\pi}{2}}_{- \cfrac{\pi}{2}} \sqrt{r^{2} - r^{2} \sin^{2} \theta} \ (r \cos \theta) \ \mathrm{d} \theta = 
+2 r \int^{\cfrac{\pi}{2}}_{- \cfrac{\pi}{2}} \sqrt{r^{2} (1 - \sin^{2} \theta)} \ \cos \theta \ \mathrm{d} \theta
+$$
+
+Remember that
+
+$$
+\sin^{2} \theta + \cos^{2} \theta = 1 
+\quad \text{hence} \quad 
+\cos^{2} \theta = 1 - \sin^{2} \theta
+$$
+
+Then
+
+$$
+S_{\circ} = 
+2 r \int^{\cfrac{\pi}{2}}_{- \cfrac{\pi}{2}} \sqrt{r^{2} \cos^{2} \theta} \ \cos \theta \ \mathrm{d} \theta = 
+2 r^{2} \int^{\cfrac{\pi}{2}}_{- \cfrac{\pi}{2}} |\cos \theta| \cos \theta \ \mathrm{d} \theta
+$$
+
+Note that $x = - r$ and $x = r$ correspond to $\theta = - \cfrac{\pi}{2}$ and $\theta = \cfrac{\pi}{2}$, respectively. Since $\cos \theta \geq 0$ when $\theta \in \left [ - \cfrac{\pi}{2}, \cfrac{\pi}{2} \right ]$, then $|\cos \theta| = \cos \theta$; hence,
+
+$$
+S_{\circ} = 2 r^{2} \int^{\cfrac{\pi}{2}}_{- \cfrac{\pi}{2}} \cos^{2} \theta \ \mathrm{d} \theta
+$$
+
+Using $(2)$, this result leads to
+
+$$
+S_{\circ} = 2 r^{2} \left[ \cfrac{\theta}{2} + \cfrac{\sin (2 \theta)}{4} \right ]^{\cfrac{\pi}{2}}_{- \cfrac{\pi}{2}} = \pi r^{2}
+$$
+
+which is the area of a circle of radius $r$.
+
+## Integration by parts
+
+> Reference: @hase2022
+
+Consider the integral
+
+$$
+\int^{\cfrac{\pi}{2}}_{0} x \cos x \ \mathrm{d} x
+\tag{3}
+$$
+
+Although the integral
+
+$$
+\int \cos(\xi) \ \mathrm{d} \xi = \sin \xi \quad (+c \in \mathbb{R})
+\quad \text{and/or} \quad
+\int^{b}_{a} \cos(\xi) \ \mathrm{d} \xi = \sin b - \sin a
+$$
+
+can be solved, the main issue that precludes the computation of $(3)$ is, at a first glance, the presence of an “extra term” in the integrand ($x$). A possible strategy to solve this kind of integral is the __integration by parts__.
+
+Before presenting this technique, it is convenient to remember the product rule for derivatives, which is
+
+$$
+\cfrac{\mathrm{d}}{\mathrm{d}x} [u(x) v(x)] = 
+v(x) \cfrac{\mathrm{d}}{\mathrm{d}x} u(x) + u(x) \cfrac{\mathrm{d}}{\mathrm{d}x} v(x)
+$$
+
+Integrating both sides in the interval $[a, b]$ leads to
+
+$$
+\int^{b}_{a} \cfrac{\mathrm{d}}{\mathrm{d}x} [u(x) v(x)] = 
+\int^{b}_{a} v(x) \cfrac{\mathrm{d}}{\mathrm{d}x} u(x) + 
+\int^{b}_{a} u(x) \cfrac{\mathrm{d}}{\mathrm{d}x} v(x)
+$$
+
+which can be cast as
+
+$$
+\biggr [ u(x) v(x) \biggr ]^{b}_{a} = 
+\int^{b}_{a} v(x) u'(x) + \int^{b}_{a} u(x) v'(x)
+$$
+
+or, finally,
+
+$$
+\int^{b}_{a} u(x) v'(x) = 
+\biggr [ u(x) v(x) \biggr ]^{b}_{a} - \int^{b}_{a} u'(x) v(x)
+$$
+
+For indefinite integrals, one has
+
+$$
+\int u(x) v'(x) \ \mathrm{d} x = u(x) v(x) - \int u'(x) v(x) \ \mathrm{d} x + c \quad (c \in \mathbb{R})
+$$
+
+To summarize, using $u(x) = f(x)$ and $v(x) = g(x)$, we can have
+
+> Tip: For definite integrals, use the first formula and then compute the definite value.
+
+$$
+\int f(x) g'(x) \ \mathrm{d} x = f(x) g(x) -\int f'(x) g(x) \ \mathrm{d} x  + c \quad (c \in \mathbb{R})
+$$
+
+$$
+\int^{b}_{a} f(x) g'(x) \ \mathrm{d} x = \biggr [ f(x) g(x) \biggr ]^{b}_{a} -\int^{b}_{a} f'(x) g(x) \ \mathrm{d} x
+\tag{4}
+$$
+
+The strategy to solve $(3)$ is transforming it into another integral that is analytically accessible. One should first define the functions that correspond to $f$ and $g'$. Taking
+
+$$
+\begin{cases}
+f(x) \ = x \\
+g'(x) = \cos (x)
+\end{cases}
+\quad \text{, then} \quad
+\begin{cases}
+f'(x) = 1 \\
+g(x) \ = \sin x
+\end{cases}
+$$
+
+Hence,
+
+$$
+\int^{\cfrac{\pi}{2}}_{0} \overbrace{x}^{f} \overbrace{\cos x}^{g'} \ \mathrm{d} x =
+\biggr [ \overbrace{x}^{f} \overbrace{\sin x}^{g} \biggr ]^{\cfrac{\pi}{2}}_{0} - \int^{\cfrac{\pi}{2}}_{0} \overbrace{1}^{f'} \cdot \overbrace{\sin x}^{g} \ \mathrm{d} x = 
+\cfrac{\pi}{2} - 1
+$$
+
+Note that the determination of $g(x)$ from $g'(x)$ requires an antiderivative, and the integration constant can be ignored; this procedure is usually adopted since this constant is canceled out, as one can see from $(4)$ by replacing $g$ for $g + c$ in the right-hand side:
+
+$$
+\int^{b}_{a} f(x) g'(x) \ \mathrm{d} x = \biggr [ f(x) g(x) \biggr ]^{b}_{a} - \int^{b}_{a} f'(x) g(x) \ \mathrm{d} x =
+$$
+
+$$
+= \biggr [ f(x) (g(x) + c) \biggr ]^{b}_{a} - \int^{b}_{a} f'(x) (g(x) + c) \ \mathrm{d} x =
+$$
+
+$$
+= \biggr [ f(x) g(x) \biggr ]^{b}_{a} + c \biggr [ f(x) \biggr ]^{b}_{a} - c \int^{b}_{a} f'(x) \ \mathrm{d} x - \int^{b}_{a} f'(x) g(x) \ \mathrm{d} x =
+$$
+
+$$
+= \biggr [ f(x) g(x) \biggr ]^{b}_{a} + c \biggr [ f(x) \biggr ]^{b}_{a} - c \biggr [ f(x) \biggr ]^{b}_{a} - \int^{b}_{a} f'(x) g(x) \ \mathrm{d} x =
+$$
+
+$$
+= \biggr [ f(x) g(x) \biggr ]^{b}_{a} - \int^{b}_{a} f'(x) g(x) \ \mathrm{d} x
+$$
+
+## Example of integration by parts
+
+> Reference: @hase2022
+
+Consider the integral
+
+$$
+\int \ln x \ \mathrm{d} x
+$$
+
+One should notice in this case that the integrand is
+
+$$
+1 \cdot \ln x: \int \ln x \ \mathrm{d} x = \int 1 \cdot \ln x \ \mathrm{d} x
+$$
+
+Defining
+
+$$
+\begin{cases}
+f(x) \ = \ln x \\
+g'(x) = 1
+\end{cases}
+\quad \text{, then} \quad
+\begin{cases}
+f'(x) = \cfrac{1}{x} \\
+g(x) \ = x
+\end{cases}
+$$
+
+Therefore,
+
+$$
+\int \overbrace{\ln x}^{f} \cdot \overbrace{1}^{g'} \ \mathrm{d} x = 
+[ \ \overbrace{\ln x}^{f} \overbrace{x}^{g} \ ] - \int \overbrace{\cfrac{1}{x}}^{f'} \overbrace{x}^{g} \ \mathrm{d} x = 
+x \ln x - x + c \quad (c \in \mathbb{R})
+$$
+
+## Integration by partial fractions
+
+Let $R$ be a rational fraction of a single variable, _id est_, a fraction where both numerator and denominator are polynomials. A partial fraction decomposition of $R$ is its representation in terms of a polynomial and a sum of fractions of simpler denominators. Concretely, one has
+
+$$
+R(x) = P(x) + \sum \limits_{i} \cfrac{N_{i}(x)}{D_{i}(x)}
+$$
+
+where $P$, $\{N_{i}\}$ and $\{D_{i}\}$ are polynomials. It is important to stress that in this representation, the degree of polynomial $N_{i}$ is strictly smaller than the degree of $D_{i}$, which is a power of an irreducible polynomial (_id est_, it is not factorable into other polynomials). Note that in the formula above, $P$ can be zero. As an example, one has
+
+$$
+\cfrac{x^{2} + 1}{(x - 1)^{2} (x - 2)} = \cfrac{(-4x + 2)}{(x - 1)^{2}} + \cfrac{5}{x - 2}
+$$
+
+The procedure to obtain this kind of representation is illustrated below.
+
+Consider, now, the integral
+
+$$
+\int \cfrac{\mathrm{d} x}{x (x - 1)}
+$$
+
+When the integrand has a polynomial in its denominator, the integral can be tackled, sometimes, by the method of partial fractions. The main idea is finding a decomposition that breaks the original fraction into simpler ones. In the present case, one should invoke an identity of the form
+
+$$
+\cfrac{1}{x (x - 1)} = \cfrac{A}{x} + \cfrac{B}{x - 1}
+$$
+where $A$ and $B$ are polynomials with degrees smaller than their denominators. The equation above can be written as
+
+$$
+\cfrac{0 \cdot x + 1}{x (x - 1)} = \cfrac{A}{x} + \cfrac{B}{x + 1} = 
+\cfrac{A (x - 1) + Bx}{x (x - 1)} =
+$$
+
+$$
+= \cfrac{Ax - A + Bx}{x (x - 1)} = 
+\cfrac{(A + B) x + (-A)}{x (x - 1)}
+$$
+
+Identifying the polynomials of the numerators, one has the linear system
+
+$$
+\begin{cases} 0 = A + B \\ 1 = - A \end{cases} \quad , \quad
+\text{from which} \quad A = -1 \quad \text{and} \quad B = 1
+$$
+
+Then, one finds
+
+$$
+\cfrac{1}{x (x - 1)} = \cfrac{1}{x} + \cfrac{1}{x - 1}
+$$
+
+consequently,
+
+$$
+\int \cfrac{1}{x (x - 1)} \ \mathrm{dx} = 
+\int \left ( - \cfrac{1}{x} + \cfrac{1}{x - 1} \right ) \ \mathrm{dx} = 
+$$
+
+$$
+= - \int \cfrac{1}{x} \ \mathrm{dx} + \int \cfrac{1}{x - 1} \ \mathrm{dx} =
+- \ln|x| + \ln|x - 1| + c \quad , \quad c \in \mathbb{R}
+$$
+
+## Example of integration by partial fractions
+
+$$
+\int \cfrac{\mathrm{d} x}{x^{2} (x + 2) (x - 1)}
+$$
+
+From
+
+$$
+\cfrac{\mathrm{d} x}{x^{2} (x + 2) (x - 1)} = 
+\cfrac{Ax + B}{x^{2}} + \cfrac{C}{x + 2} + \cfrac{D}{x - 1} =
+$$
+
+$$
+= \cfrac{(A + C + D) x^{3} + (A + B - C + 2D) x^{2} + (-2A + B) x + (-2B)}{x^{2} (x + 2) (x - 1)}
+$$
+
+One has
+
+$$
+\begin{cases}
+0 = A + C +D \\
+0 = A + B - C + 2D \\
+0 = -2A + B \\
+1 = -2B
+\end{cases}
+\quad , \quad \text{from which} \quad
+\begin{cases}
+A = - \cfrac{1}{4} \\
+B = - \cfrac{1}{2} \\
+C = - \cfrac{1}{12} \\
+D = \cfrac{1}{3}
+\end{cases}
+$$
+
+Then,
+
+$$
+\int \cfrac{\mathrm{d} x}{x^{2} (x + 2) (x - 1)} = 
+\int \left ( \cfrac{- \frac{x}{4} - \frac{1}{2}}{x^{2}} + \cfrac{- \frac{1}{12}}{x + 2} + \cfrac{\frac{1}{3}}{x - 1} \right ) \ \mathrm{d} x =
+$$
+
+$$
+= \int \left ( - \cfrac{1}{4x} - \cfrac{1}{x^{2}} - \cfrac{1}{12} \cdot \cfrac{1}{x + 2} + \cfrac{1}{3} \cdot \cfrac{1}{x - 1} \right ) \ \mathrm{d} x = 
+$$
+
+$$
+= - \cfrac{1}{4} \ln|x| + \cfrac{1}{x} - \cfrac{1}{12} \ln|x + 2| + \cfrac{1}{3} \ln|x - 1| + c \quad , \quad c \in \mathbb{R}       
+$$

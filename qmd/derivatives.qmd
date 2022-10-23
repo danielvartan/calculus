@@ -61,13 +61,13 @@ $$
 
 Assume $f$ and $g$ are differentiable functions of $x$.
 
-* Constant: $c' = 0 \ \ \ , \ \ \ c \in \mathbb{R}$
+* Constant: $(c)' = 0 ] \quad (c \in \mathbb{R})$
 * Sum: $(f + g)' = f' + g'$
 * Difference: $(f - g)' = f' - g'$
-* Constant multiple: $(c f)' = c f' \ \ \ , \ \ \ c \in \mathbb{R}$
+* Constant multiple: $(c f)' = c f' \quad (c \in \mathbb{R})$
 * Product: $(fg)' = f' g + f g'$
-* Quotient: $(\cfrac{f}{g})' = \cfrac{f' g - f g'}{g^{2}} \ \ \ , \ \ \ g \ne 0$
-* Power: $(x^{n})' = nx^{n - 1} \ \ \ , \ \ \ n \in \mathbb{R}$
+* Quotient: $(\cfrac{f}{g})' = \cfrac{f' g - f g'}{g^{2}} \quad (g \ne 0)$
+* Power: $(x^{n})' = nx^{n - 1} \quad (n \in \mathbb{R})$
 * Chain rule = $[f(g)]' = f'(g) \times g'$
 * Other (1) = $(\cfrac{1}{f})' = \cfrac{f'}{f^{2}}$
 
