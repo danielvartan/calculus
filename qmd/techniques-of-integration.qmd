@@ -1,8 +1,8 @@
-# Integration techniques
+# Techniques of integration
 
 ## Integration by substitution
 
-> Reference: @hase2022
+> Reference: @hase2022 and @hass2018
 
 Consider the integral
 
@@ -257,7 +257,7 @@ which is the area of a circle of radius $r$.
 
 ## Integration by parts
 
-> Reference: @hase2022
+> Reference: @hase2022 and @hass2018
 
 Consider the integral
 

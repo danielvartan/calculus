@@ -1,3 +1,19 @@
-# Irrational numbers and natural constants
+# Numbers
 
 Nothing here yet!
+
+## Irrational numbers and natural constants
+
+Nothing here yet!
+
+## Complex numbers
+
+> Reference: @stewart2016a
+
+For the complex number $\mathcal{z} = a + bi$
+
+* The __conjugate__ is $\overline{\mathcal{z}} = a - bi$
+* The __modulus__ is $|\mathcal{z}| = \sqrt{a^{2} + b^{2}}$
+* The __argument__ is $\theta$, where $\tan \theta = b / a$
+
+![](../images/stewart_2016a_complex-numbers_1.png)

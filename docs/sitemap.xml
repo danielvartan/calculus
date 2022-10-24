@@ -2,126 +2,114 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://danielvartan.github.io/calculus/index.html</loc>
-    <lastmod>2022-10-22T19:42:17.904Z</lastmod>
+    <lastmod>2022-10-24T06:20:24.328Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/pre-calculus.html</loc>
-    <lastmod>2022-09-06T00:50:22.029Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.484Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/zf-axioms.html</loc>
-    <lastmod>2022-09-06T00:50:22.032Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.485Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/numbers.html</loc>
-    <lastmod>2022-10-10T19:29:19.579Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.486Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/algebra.html</loc>
-    <lastmod>2022-10-10T19:27:54.183Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.488Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/progressions.html</loc>
-    <lastmod>2022-10-10T19:29:24.077Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.490Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/logarithms.html</loc>
-    <lastmod>2022-10-10T19:29:27.429Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.491Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/geometry.html</loc>
-    <lastmod>2022-10-23T02:01:36.038Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.492Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/trigonometry.html</loc>
-    <lastmod>2022-10-23T02:07:58.567Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.493Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/functions.html</loc>
-    <lastmod>2022-10-10T19:29:34.970Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.495Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/univariate-calculus.html</loc>
-    <lastmod>2022-09-06T00:50:22.072Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.496Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/limits.html</loc>
-    <lastmod>2022-09-19T22:51:03.004Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.498Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/derivatives.html</loc>
-    <lastmod>2022-10-17T21:03:36.299Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.502Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/applications-of-derivatives.html</loc>
-    <lastmod>2022-10-11T21:46:19.872Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielvartan.github.io/calculus/qmd/integrals.html</loc>
-    <lastmod>2022-10-22T23:48:07.098Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielvartan.github.io/calculus/qmd/multivariate-calculus.html</loc>
-    <lastmod>2022-09-06T00:50:22.088Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielvartan.github.io/calculus/qmd/n-dimensional-space.html</loc>
-    <lastmod>2022-10-10T19:24:07.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielvartan.github.io/calculus/qmd/two-variable-functions.html</loc>
-    <lastmod>2022-09-27T21:22:36.963Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielvartan.github.io/calculus/qmd/three-variable-functions.html</loc>
-    <lastmod>2022-09-27T21:22:46.870Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielvartan.github.io/calculus/qmd/matrices.html</loc>
-    <lastmod>2022-09-06T00:50:22.102Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielvartan.github.io/calculus/qmd/systems-of-equations.html</loc>
-    <lastmod>2022-10-10T19:22:57.498Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielvartan.github.io/calculus/qmd/useful-resources.html</loc>
-    <lastmod>2022-10-23T00:10:41.088Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielvartan.github.io/calculus/qmd/references.html</loc>
-    <lastmod>2022-10-23T03:13:09.059Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.506Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/series.html</loc>
-    <lastmod>2022-10-10T19:13:35.595Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.512Z</lastmod>
   </url>
   <url>
-    <loc>https://danielvartan.github.io/calculus/qmd/max-min-analysis.html</loc>
-    <lastmod>2022-10-23T03:12:37.993Z</lastmod>
+    <loc>https://danielvartan.github.io/calculus/qmd/integrals.html</loc>
+    <lastmod>2022-10-24T06:20:18.518Z</lastmod>
   </url>
   <url>
-    <loc>https://danielvartan.github.io/calculus/qmd/taylor-expansion.html</loc>
-    <lastmod>2022-10-10T20:02:57.659Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielvartan.github.io/calculus/qmd/partial-derivatives.html</loc>
-    <lastmod>2022-10-23T03:12:25.842Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielvartan.github.io/calculus/qmd/funcion-of-several-variables.html</loc>
-    <lastmod>2022-10-10T23:48:28.313Z</lastmod>
+    <loc>https://danielvartan.github.io/calculus/qmd/techniques-of-integration.html</loc>
+    <lastmod>2022-10-24T06:20:18.520Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/table-of-integrals.html</loc>
-    <lastmod>2022-10-23T03:11:05.026Z</lastmod>
-  </url>
-  <url>
-    <loc>https://danielvartan.github.io/calculus/qmd/integration-techniques.html</loc>
-    <lastmod>2022-10-23T03:09:33.922Z</lastmod>
+    <lastmod>2022-10-24T06:20:18.523Z</lastmod>
   </url>
   <url>
     <loc>https://danielvartan.github.io/calculus/qmd/differential-equations.html</loc>
-    <lastmod>2022-10-23T03:11:56.251Z</lastmod>
+    <lastmod>2022-10-24T06:21:32.634Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielvartan.github.io/calculus/qmd/multivariate-calculus.html</loc>
+    <lastmod>2022-10-24T06:20:18.530Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielvartan.github.io/calculus/qmd/funcion-of-several-variables.html</loc>
+    <lastmod>2022-10-24T06:20:18.532Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielvartan.github.io/calculus/qmd/partial-derivatives.html</loc>
+    <lastmod>2022-10-24T06:20:18.534Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielvartan.github.io/calculus/qmd/taylor-expansion.html</loc>
+    <lastmod>2022-10-24T06:20:18.536Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielvartan.github.io/calculus/qmd/max-min-analysis.html</loc>
+    <lastmod>2022-10-24T06:20:18.538Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielvartan.github.io/calculus/qmd/matrices.html</loc>
+    <lastmod>2022-10-24T06:20:18.539Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielvartan.github.io/calculus/qmd/systems-of-equations.html</loc>
+    <lastmod>2022-10-24T06:20:18.541Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielvartan.github.io/calculus/qmd/useful-resources.html</loc>
+    <lastmod>2022-10-24T06:20:18.542Z</lastmod>
+  </url>
+  <url>
+    <loc>https://danielvartan.github.io/calculus/qmd/references.html</loc>
+    <lastmod>2022-10-24T06:20:18.543Z</lastmod>
   </url>
 </urlset>

@@ -31,7 +31,8 @@ Division by $0$ is not defined.
 
 > Reference: @hass2018
 
-* $a^{m} a^{n} = a^{m + n}$
+* $a^{m} \cdot a^{n} = a^{m + n}$
+* $\cfrac{a^{m}}{a^{n}} = a^{m - n}$
 * $(ab)^{m} = a^{m} b^{m}$
 * $(a^{m})^{n} = a^{mn}$
 * $a^{m / n} = \sqrt[n]{a^{m}} = (\sqrt[n]{a})^{m}$

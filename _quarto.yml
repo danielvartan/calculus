@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 book:
-  title: "Calculus: Formulas and Theorems"
+  title: "Calculus: Theorems, Formulas, and Definitions"
   author: "Daniel Vartanian"
   site-url: https://danielvartan.github.io/calculus/
   repo-url: https://github.com/danielvartan/calculus/
@@ -28,7 +28,7 @@ book:
         - qmd/applications-of-derivatives.qmd
         - qmd/series.qmd
         - qmd/integrals.qmd
-        - qmd/integration-techniques.qmd
+        - qmd/techniques-of-integration.qmd
         - qmd/table-of-integrals.qmd
         - qmd/differential-equations.qmd
     - part: qmd/multivariate-calculus.qmd

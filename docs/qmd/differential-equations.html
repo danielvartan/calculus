@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Calculus: Formulas and Theorems - 16&nbsp; Differential equations</title>
+<title>Calculus: Theorems, Formulas, and Definitions - 16&nbsp; Differential equations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -75,6 +75,7 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -98,7 +99,7 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="../">Calculus: Formulas and Theorems</a> 
+      <a href="../">Calculus: Theorems, Formulas, and Definitions</a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/danielvartan/calculus/" title="Source Code" class="sidebar-tool px-1"><i class="bi bi-github"></i></a>
     <a href="https://twitter.com/intent/tweet?url=|url|" title="Twitter" class="sidebar-tool px-1"><i class="bi bi-twitter"></i></a>
@@ -132,7 +133,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/numbers.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Irrational numbers and natural constants</span></a>
+  <a href="../qmd/numbers.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Numbers</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -202,7 +203,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../qmd/integration-techniques.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Integration techniques</span></a>
+  <a href="../qmd/techniques-of-integration.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Techniques of integration</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -276,10 +277,25 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#ordinary-differential-equations-malthus-model" id="toc-ordinary-differential-equations-malthus-model" class="nav-link active" data-scroll-target="#ordinary-differential-equations-malthus-model"> <span class="header-section-number">16.1</span> Ordinary differential equations (Malthus’ model)</a></li>
-  <li><a href="#ordinary-differential-equations-malthus-verhulsts-model" id="toc-ordinary-differential-equations-malthus-verhulsts-model" class="nav-link" data-scroll-target="#ordinary-differential-equations-malthus-verhulsts-model"> <span class="header-section-number">16.2</span> Ordinary differential equations (Malthus-Verhulst’s model)</a></li>
-  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"> <span class="header-section-number">16.3</span> Examples</a></li>
-  <li><a href="#important-example" id="toc-important-example" class="nav-link" data-scroll-target="#important-example"> <span class="header-section-number">16.4</span> Important example</a></li>
+  <li><a href="#general-differential-equations" id="toc-general-differential-equations" class="nav-link active" data-scroll-target="#general-differential-equations"> <span class="header-section-number">16.1</span> General differential equations</a></li>
+  <li><a href="#example-of-a-differential-equation-population-growth" id="toc-example-of-a-differential-equation-population-growth" class="nav-link" data-scroll-target="#example-of-a-differential-equation-population-growth"> <span class="header-section-number">16.2</span> Example of a differential equation: Population growth</a></li>
+  <li><a href="#modeling-with-differential-equations" id="toc-modeling-with-differential-equations" class="nav-link" data-scroll-target="#modeling-with-differential-equations"> <span class="header-section-number">16.3</span> Modeling with differential equations</a></li>
+  <li><a href="#ordinary-differential-equations-malthus-model" id="toc-ordinary-differential-equations-malthus-model" class="nav-link" data-scroll-target="#ordinary-differential-equations-malthus-model"> <span class="header-section-number">16.4</span> Ordinary differential equations (Malthus’ model)</a>
+  <ul class="collapse">
+  <li><a href="#first-resolution" id="toc-first-resolution" class="nav-link" data-scroll-target="#first-resolution"> <span class="header-section-number">16.4.1</span> First resolution</a></li>
+  <li><a href="#second-resolution" id="toc-second-resolution" class="nav-link" data-scroll-target="#second-resolution"> <span class="header-section-number">16.4.2</span> Second resolution</a></li>
+  </ul></li>
+  <li><a href="#ordinary-differential-equations-malthus-verhulsts-model" id="toc-ordinary-differential-equations-malthus-verhulsts-model" class="nav-link" data-scroll-target="#ordinary-differential-equations-malthus-verhulsts-model"> <span class="header-section-number">16.5</span> Ordinary differential equations (Malthus-Verhulst’s model)</a>
+  <ul class="collapse">
+  <li><a href="#first-resolution-1" id="toc-first-resolution-1" class="nav-link" data-scroll-target="#first-resolution-1"> <span class="header-section-number">16.5.1</span> First resolution</a></li>
+  <li><a href="#second-resolution-1" id="toc-second-resolution-1" class="nav-link" data-scroll-target="#second-resolution-1"> <span class="header-section-number">16.5.2</span> Second resolution</a></li>
+  </ul></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"> <span class="header-section-number">16.6</span> Examples</a>
+  <ul class="collapse">
+  <li><a href="#example-1" id="toc-example-1" class="nav-link" data-scroll-target="#example-1"> <span class="header-section-number">16.6.1</span> Example 1</a></li>
+  <li><a href="#example-2" id="toc-example-2" class="nav-link" data-scroll-target="#example-2"> <span class="header-section-number">16.6.2</span> Example 2</a></li>
+  <li><a href="#important-example" id="toc-important-example" class="nav-link" data-scroll-target="#important-example"> <span class="header-section-number">16.6.3</span> Important example</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -302,36 +318,446 @@ div.csl-indent {
 
 </header>
 
-<section id="ordinary-differential-equations-malthus-model" class="level2" data-number="16.1">
-<h2 data-number="16.1" class="anchored" data-anchor-id="ordinary-differential-equations-malthus-model"><span class="header-section-number">16.1</span> Ordinary differential equations (Malthus’ model)</h2>
+<section id="general-differential-equations" class="level2" data-number="16.1">
+<h2 data-number="16.1" class="anchored" data-anchor-id="general-differential-equations"><span class="header-section-number">16.1</span> General differential equations</h2>
 <blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+<p>Reference: <span class="citation" data-cites="stewart2016b">Stewart (<a href="references.html#ref-stewart2016b" role="doc-biblioref">2016</a>)</span></p>
 </blockquote>
+<p>In general, a <strong>differential equation</strong> is an equation that contains an unknown function and one or more of its derivatives. The <strong>order</strong> of a differential equation is the order of the highest derivative that occurs in the equation.</p>
 </section>
-<section id="ordinary-differential-equations-malthus-verhulsts-model" class="level2" data-number="16.2">
-<h2 data-number="16.2" class="anchored" data-anchor-id="ordinary-differential-equations-malthus-verhulsts-model"><span class="header-section-number">16.2</span> Ordinary differential equations (Malthus-Verhulst’s model)</h2>
+<section id="example-of-a-differential-equation-population-growth" class="level2" data-number="16.2">
+<h2 data-number="16.2" class="anchored" data-anchor-id="example-of-a-differential-equation-population-growth"><span class="header-section-number">16.2</span> Example of a differential equation: Population growth</h2>
 <blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+<p>Reference: <span class="citation" data-cites="stewart2016b">Stewart (<a href="references.html#ref-stewart2016b" role="doc-biblioref">2016</a>)</span></p>
 </blockquote>
+<p>The rate of growth of the population is the derivative <span class="math inline">\(\mathrm{d} P / \mathrm{d} t\)</span>, where <span class="math inline">\(t = \text{time}\)</span> (the independent variable) and <span class="math inline">\(P = \text{the number of individuals in the population}\)</span> (the dependent variable). So our assumption that the rate of growth of the population is proportional to the population size is written as the equation</p>
+<p><span class="math display">\[
+\cfrac{\mathrm{d} P}{\mathrm{d} t} = kP
+\]</span></p>
+<p>where <span class="math inline">\(k\)</span> is the proportionality constant. The equation above is a possible model for population growth; it is a differential equation because it contains an unknown function <span class="math inline">\(P\)</span> and its derivative <span class="math inline">\(\mathrm{d} P / \mathrm{d} t\)</span>.</p>
 </section>
-<section id="examples" class="level2" data-number="16.3">
-<h2 data-number="16.3" class="anchored" data-anchor-id="examples"><span class="header-section-number">16.3</span> Examples</h2>
+<section id="modeling-with-differential-equations" class="level2" data-number="16.3">
+<h2 data-number="16.3" class="anchored" data-anchor-id="modeling-with-differential-equations"><span class="header-section-number">16.3</span> Modeling with differential equations</h2>
 <blockquote class="blockquote">
-<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+<p>Reference: <span class="citation" data-cites="stewart2016b">Stewart (<a href="references.html#ref-stewart2016b" role="doc-biblioref">2016</a>)</span></p>
 </blockquote>
+<p>The mathematical model often takes the form of a differential equation. This is not surprising because in a real-world problem we often notice that changes occur and we want to predict future behavior on the basis of how current values change.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/stewart_2016b_figure-1-2-1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">The modeling process</figcaption><p></p>
+</figure>
+</div>
 </section>
-<section id="important-example" class="level2" data-number="16.4">
-<h2 data-number="16.4" class="anchored" data-anchor-id="important-example"><span class="header-section-number">16.4</span> Important example</h2>
+<section id="ordinary-differential-equations-malthus-model" class="level2" data-number="16.4">
+<h2 data-number="16.4" class="anchored" data-anchor-id="ordinary-differential-equations-malthus-model"><span class="header-section-number">16.4</span> Ordinary differential equations (Malthus’ model)</h2>
 <blockquote class="blockquote">
 <p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
 </blockquote>
+<p>Consider the Malthusian growth model,</p>
+<p><span class="math display">\[
+\cfrac{\mathrm{d}}{\mathrm{d} t} N(t) = \lambda N(t) \quad \lambda &gt; 0
+\tag{1}
+\]</span></p>
+<p>where <span class="math inline">\(N(t)\)</span> is the population at time <span class="math inline">\(t\)</span> and the initial condition (initial population) is <span class="math inline">\(N(t = 0) = N_{0}\)</span>. In what follows, two possible resolutions will be presented.</p>
+<section id="first-resolution" class="level3" data-number="16.4.1">
+<h3 data-number="16.4.1" class="anchored" data-anchor-id="first-resolution"><span class="header-section-number">16.4.1</span> First resolution</h3>
+<p>In order to solve <span class="math inline">\((1)\)</span>, consider, <strong>formally</strong>, that the equation can be cast as</p>
+<p><span class="math display">\[
+\cfrac{\mathrm{d} N}{\mathrm{d} t} = \lambda N
+\]</span></p>
+<p><span class="math display">\[
+\cfrac{\mathrm{d} N}{N} = \lambda \ \mathrm{d} t
+\]</span></p>
+<p><span class="math display">\[
+\cfrac{1}{N} \mathrm{d} N = \lambda \ \mathrm{d} t
+\]</span></p>
+<p><span class="math display">\[
+\int \cfrac{1}{N} \mathrm{d} N = \int \lambda \ \mathrm{d} t
+,\quad \text{from which} \quad
+\ln N = \lambda t + c',
+\quad
+c'\in \mathbb{R}
+\]</span></p>
+<p>In the equation above, two constants of integration are produced by the two integrals; the constant <span class="math inline">\(c'\)</span> above is the combination of both into a single one for simplicity. From it follows that</p>
+<p><span class="math display">\[
+\ln N = \lambda t + c'
+\]</span></p>
+<p><span class="math display">\[
+e^{\ln N} = e^{\lambda t + c'}
+\]</span></p>
+<p><span class="math display">\[
+N = e^{\lambda t + c'}, \quad (a^{\log_{a} x} = x)
+\]</span></p>
+<p><span class="math display">\[
+N = e^{\lambda t} \cdot e^{c'}, \quad (a^{m} a^{n} = a^{m + n})
+\]</span></p>
+<p><span class="math display">\[
+N(t) = c e^{\lambda t}, \quad (c = e^{c'})
+\]</span></p>
+<p>where <span class="math inline">\(c = e^{c'}\)</span>; this constant is determined by the initial condition <span class="math inline">\(N(0) = N_{0}\)</span>. For <span class="math inline">\(t = 0\)</span>, one has</p>
+<p><span class="math display">\[
+N_{0} = N(0) = c e^{\lambda \cdot 0}, \quad \text{from which} \quad c = N_{0}
+\]</span></p>
+<p>hence,</p>
+<p><span class="math display">\[
+N(t) = N_{0} e^{\lambda t}
+\tag{2}
+\]</span></p>
+<p>which is the solution of the problem.</p>
+</section>
+<section id="second-resolution" class="level3" data-number="16.4.2">
+<h3 data-number="16.4.2" class="anchored" data-anchor-id="second-resolution"><span class="header-section-number">16.4.2</span> Second resolution</h3>
+<p>In order to solve <span class="math inline">\((1)\)</span>, consider, <strong>formally</strong>, that the equation can be cast as</p>
+<p><span class="math display">\[
+\cfrac{1}{N} \ \mathrm{d} N = \lambda \ \mathrm{d} t
+\]</span></p>
+<p>In this second resolution, one invokes the definite integrals; the integration runs from an initial configuration (<span class="math inline">\(t = 0\)</span> and <span class="math inline">\(N(0) = N_{0}\)</span>) up to an arbitrary “final” situation (<span class="math inline">\(t\)</span> and <span class="math inline">\(N(t)\)</span>):</p>
+<table class="table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 8%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th><span class="math inline">\(t\)</span></th>
+<th><span class="math inline">\(N\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Initial value</td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(N_{0}\)</span></td>
+</tr>
+<tr class="even">
+<td>Final value</td>
+<td><span class="math inline">\(t\)</span></td>
+<td><span class="math inline">\(N(t)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Therefore, inserting the integration sign leads to</p>
+<p><span class="math display">\[
+\int^{N(t)}_{N_{0}} \cfrac{1}{N'} \ \mathrm{d} N' =
+\int^{t}_{0} \lambda \ \mathrm{d} t'
+\]</span></p>
+<p>Note the relabeling <span class="math inline">\(t'\)</span> and <span class="math inline">\(N'\)</span> of the (dummy) variables of integration to avoid confusion with the integration limits. By evaluating the integrals of <span class="math inline">\((3)\)</span>, one achieves the solution <span class="math inline">\((2)\)</span>.</p>
+<p><span class="math display">\[
+\int^{N(t)}_{N_{0}} \cfrac{1}{N'} \ \mathrm{d} N' = \int^{t}_{0} \lambda \ \mathrm{d} t'
+\]</span></p>
+<p><span class="math display">\[
+\biggr [ \ln N' \biggr ]^{N(t)}_{N_{0}} = \biggr [ \lambda t \biggr ]^{t}_{0}
+\]</span></p>
+<p><span class="math display">\[
+\ln N(t) - \ln N_{0} = \lambda t - \lambda \cdot 0
+\]</span></p>
+<p><span class="math display">\[
+\ln \left ( \cfrac{N(t)}{N_{0}} \right ) = \lambda t - \lambda \cdot 0, \quad \left( \log_{a} \left ( \cfrac{x}{y} \right ) = \log_{a} x - \log_{a} y \right )
+\]</span></p>
+<p><span class="math display">\[
+e^{\ln \left ( \cfrac{N(t)}{N_{0}} \right )} = e^{\lambda t}
+\]</span></p>
+<p><span class="math display">\[
+\cfrac{N(t)}{N_{0}} = e^{\lambda t}, \quad \left ( a^{\log_{a} x} = x \right )
+\]</span></p>
+<p><span class="math display">\[
+N(t) = N_{0} e^{\lambda t}
+\]</span></p>
+</section>
+</section>
+<section id="ordinary-differential-equations-malthus-verhulsts-model" class="level2" data-number="16.5">
+<h2 data-number="16.5" class="anchored" data-anchor-id="ordinary-differential-equations-malthus-verhulsts-model"><span class="header-section-number">16.5</span> Ordinary differential equations (Malthus-Verhulst’s model)</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+</blockquote>
+<p>Consider, now, the growth model of Malthus-Verhulst,</p>
+<p><span class="math display">\[
+\cfrac{\mathrm{d}}{\mathrm{d} t} N(t) = \lambda N(t) [C - N(t)]
+, \quad
+\lambda, C &gt; 0
+\tag{4}
+\]</span></p>
+<p>where <span class="math inline">\(C\)</span> (carrying capacity) is the maximum size of the population and the initial condition (population) is <span class="math inline">\(N(t = 0) = N_{0}\)</span>. In order to solve <span class="math inline">\((4)\)</span>, one may write the equation <strong>formally</strong>, as</p>
+<p><span class="math display">\[
+\cfrac{\mathrm{d} N}{\mathrm{d} t} = \lambda N [C - N]
+\]</span></p>
+<p><span class="math display">\[
+\lambda \ \mathrm{d} t = \cfrac{\mathrm{d} N}{N [C - N]}
+\]</span></p>
+<p>From</p>
+<p><span class="math display">\[
+\cfrac{1}{N [C - N]} =
+\cfrac{A}{N} + \cfrac{B}{[C - N]} =
+\cfrac{A [C - N] + BN}{N [C - N]} =
+\cfrac{AC - AN + BN}{N [C - N]} =
+\cfrac{N(B - A) + AC}{N [C - N]}
+\]</span></p>
+<p>One has,</p>
+<p><span class="math display">\[
+\begin{cases}
+0 = B - A \\
+1 = AC
+\end{cases}
+\quad , \quad \text{from which} \quad
+\begin{cases}
+A = \cfrac{1}{C} \\
+B = \cfrac{1}{C}
+\end{cases}
+\]</span></p>
+<p>Hence,</p>
+<p><span class="math display">\[
+\cfrac{1}{N [C - N]} =
+\cfrac{A}{N} + \cfrac{B}{[C - N]} =
+\cfrac{1}{C} \div N + \cfrac{1}{C} \div [C - N] =
+\cfrac{1}{C} \cdot \cfrac{1}{N} + \cfrac{1}{C} \cdot \cfrac{1}{[C - N]}
+\]</span></p>
+<p>Then,</p>
+<p><span class="math display">\[
+\cfrac{1}{N [C - N]} \ \mathrm{d} N =
+\left [ \cfrac{1}{C} \cdot \cfrac{1}{N} + \cfrac{1}{C} \cdot \cfrac{1}{[C - N]} \right ]\ \mathrm{d} N
+\]</span></p>
+<p><span class="math display">\[
+\cfrac{1}{N [C - N]} \ \mathrm{d} N =
+\cfrac{1}{C} \cdot \cfrac{\mathrm{d} N}{N} + \cfrac{1}{C} \cdot \cfrac{\mathrm{d} N}{[C - N]}
+\]</span></p>
+<p>Going back to the original equation, we then have,</p>
+<p><span class="math display">\[
+\lambda \ \mathrm{d} t = \cfrac{1}{C} \cdot \cfrac{\mathrm{d} N}{N} + \cfrac{1}{C} \cdot \cfrac{\mathrm{d} N}{C - N}
+\]</span></p>
+<p>In what follows, two possible resolutions will be presented.</p>
+<section id="first-resolution-1" class="level3" data-number="16.5.1">
+<h3 data-number="16.5.1" class="anchored" data-anchor-id="first-resolution-1"><span class="header-section-number">16.5.1</span> First resolution</h3>
+<p>In order to solve <span class="math inline">\((4)\)</span>, consider, <strong>formally</strong>, that the equation can be cast as</p>
+<p><span class="math display">\[
+\lambda \ \mathrm{d} t = \cfrac{1}{C} \cdot \cfrac{\mathrm{d} N}{N} + \cfrac{1}{C} \cdot \cfrac{\mathrm{d} N}{C - N}
+\]</span></p>
+<p><span class="math display">\[
+\int \lambda \ \mathrm{d} t = \int \left [ \cfrac{1}{C} \cdot \cfrac{1}{N} + \cfrac{1}{C} \cdot \cfrac{1}{C - N} \right ] \ \mathrm{d} N
+\]</span></p>
+<p><span class="math display">\[
+\int \lambda \ \mathrm{d} t = \int \left [ \cfrac{1}{C} \cdot \cfrac{1}{N} \right ] \ \mathrm{d} N + \int \left [ \cfrac{1}{C} \cdot \cfrac{1}{C - N} \right ] \ \mathrm{d} N
+\]</span></p>
+<p><span class="math display">\[
+\int \lambda \ \mathrm{d} t = \cfrac{1}{C} \int \cfrac{1}{N} \ \mathrm{d} N + \cfrac{1}{C} \int \cfrac{1}{C - N} \ \mathrm{d} N
+\]</span></p>
+<p>Where,</p>
+<p><span class="math display">\[
+u = C - N, \quad \cfrac{\mathrm{d} u}{\mathrm{d} N} = -1, \quad \mathrm{d} N = - \mathrm{d} u
+\]</span></p>
+<p><span class="math display">\[
+- \int \cfrac{1}{u} \ \mathrm{d} u = - \ln |u| + c = - \ln |C - N| + c
+\]</span></p>
+<p>From which</p>
+<p><span class="math display">\[
+\lambda t = \cfrac{1}{C} \ln |N| - \cfrac{1}{C} \ln |C - N| + c'
+\]</span></p>
+<p>The constant <span class="math inline">\(c′\)</span> above is the combination of all <span class="math inline">\(c\)</span> into a single one for simplicity.</p>
+<p><span class="math display">\[
+\lambda t = \cfrac{1}{C} [ \ln |N| - \ln |C - N| ] + c'
+\]</span></p>
+<p><span class="math display">\[
+\lambda t = \cfrac{1}{C} \ln \left ( \cfrac{|N|}{|C - N|} \right ) + c'
+, \quad \left ( \log_{a} \left ( \cfrac{x}{y} \right ) = \log_{a} x - \log_{a} y \right )
+\]</span></p>
+<p><span class="math display">\[
+\lambda t = \cfrac{1}{C} \ln \left | \cfrac{N}{C - N} \right | + c'
+\]</span></p>
+<p>since <span class="math inline">\(0 \leq N(t) \leq C\)</span></p>
+<p><span class="math display">\[
+\lambda t = \cfrac{1}{C} \ln \left ( \cfrac{N}{C - N} \right ) + c'
+, \quad (c' \in \mathbb{R})
+\]</span></p>
+<p>In similar way made with the Malthus’ model, the formula above can be cast as</p>
+<p><span class="math display">\[
+N(t) = \cfrac{C}{1 + k e^{- \lambda C t}}
+\]</span></p>
+<p>where <span class="math inline">\(k = e^{c'}\)</span>; this constant is determined by the initial condition <span class="math inline">\(N(0) = N_{0}\)</span>. For <span class="math inline">\(t = 0\)</span>, one has</p>
+<p><span class="math display">\[
+N_{0} = N(0) = \cfrac{C}{1 + k}
+\]</span></p>
+<p>From which</p>
+<p><span class="math display">\[
+k = \cfrac{C}{N_{0}} - 1
+\]</span></p>
+<p>Hence,</p>
+<p><span class="math display">\[
+N(t) = \cfrac{C N_{0}}{N_{0} + (C - N_{0}) e^{- \lambda C t}}\
+\tag{3}
+\]</span></p>
+<p>which is the solution of the problem.</p>
+</section>
+<section id="second-resolution-1" class="level3" data-number="16.5.2">
+<h3 data-number="16.5.2" class="anchored" data-anchor-id="second-resolution-1"><span class="header-section-number">16.5.2</span> Second resolution</h3>
+<p>In this second resolution, one invokes the definite integrals; the integration runs from an initial configuration (<span class="math inline">\(t = 0\)</span> and <span class="math inline">\(N(0) = N_{0}\)</span>) up to an arbitrary “final” situation (<span class="math inline">\(t\)</span> and <span class="math inline">\(N(t)\)</span>):</p>
+<table class="table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 8%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th><span class="math inline">\(t\)</span></th>
+<th><span class="math inline">\(N\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Initial value</td>
+<td><span class="math inline">\(0\)</span></td>
+<td><span class="math inline">\(N_{0}\)</span></td>
+</tr>
+<tr class="even">
+<td>Final value</td>
+<td><span class="math inline">\(t\)</span></td>
+<td><span class="math inline">\(N(t)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Therefore, inserting the integration sign leads to</p>
+<p><span class="math display">\[
+\lambda \ \mathrm{d} t = \cfrac{1}{C} \cdot \cfrac{\mathrm{d} N}{N} + \cfrac{1}{C} \cdot \cfrac{\mathrm{d} N}{C - N}
+\]</span></p>
+<p><span class="math display">\[
+\lambda \ \mathrm{d} t = \cfrac{1}{C} \left ( \cfrac{1}{N} + \cfrac{1}{C - N} \right ) \ \mathrm{d} N
+\]</span></p>
+<p><span class="math display">\[
+\int^{N(t)}_{N_{0}} \cfrac{1}{C} \left ( \cfrac{1}{N'} + \cfrac{1}{C - N'} \right ) \ \mathrm{d} N' = \int^{t}_{0} \lambda \ \mathrm{d} t'
+\]</span></p>
+<p><span class="math display">\[
+\cfrac{1}{C} \int^{N(t)}_{N_{0}} \left ( \cfrac{1}{N'} + \cfrac{1}{C - N'} \right ) \ \mathrm{d} N' = \int^{t}_{0} \lambda \ \mathrm{d} t'
+\]</span></p>
+<p>Note the relabeling <span class="math inline">\(t'\)</span> and <span class="math inline">\(N'\)</span> of the (dummy) variables of integration to avoid confusion with the integration limits. By evaluating the integrals above, one achieves the solution <span class="math inline">\((3)\)</span>.</p>
+</section>
+</section>
+<section id="examples" class="level2" data-number="16.6">
+<h2 data-number="16.6" class="anchored" data-anchor-id="examples"><span class="header-section-number">16.6</span> Examples</h2>
+<blockquote class="blockquote">
+<p>Reference: <span class="citation" data-cites="hase2022">Hase (<a href="references.html#ref-hase2022" role="doc-biblioref">2022</a>)</span></p>
+</blockquote>
+<section id="example-1" class="level3" data-number="16.6.1">
+<h3 data-number="16.6.1" class="anchored" data-anchor-id="example-1"><span class="header-section-number">16.6.1</span> Example 1</h3>
+<p><span class="math display">\[
+\cfrac{\mathrm{d}}{\mathrm{d} x} y = x, \quad y(x_{0}) = y_{0}
+\]</span></p>
+<p>From</p>
+<p><span class="math display">\[
+\mathrm{d} y = x \mathrm{d} x
+\]</span></p>
+<p><span class="math display">\[
+\int \mathrm{d} y = \int x \ \mathrm{d} x
+\]</span></p>
+<p><span class="math display">\[
+y = \cfrac{x^{2}}{2} + c, \quad (c \in \mathbb{R})
+\]</span></p>
+<p>From the condition <span class="math inline">\(y(x_{0}) = y_{0}\)</span>, one has</p>
+<p><span class="math display">\[
+y_{0} = \cfrac{x^{2}_{0}}{2} + c
+\]</span></p>
+<p>From which</p>
+<p><span class="math display">\[
+c = y_{0} - \cfrac{x^{2}_{0}}{2}
+\]</span></p>
+<p>Then,</p>
+<p><span class="math display">\[
+y = \cfrac{x^{2}}{2} + y_{0} - \cfrac{x^{2}_{0}}{2}
+\]</span></p>
+</section>
+<section id="example-2" class="level3" data-number="16.6.2">
+<h3 data-number="16.6.2" class="anchored" data-anchor-id="example-2"><span class="header-section-number">16.6.2</span> Example 2</h3>
+<p><span class="math display">\[
+\cfrac{\mathrm{d}}{\mathrm{d} x} y = \cfrac{x}{y}, \quad y(0) = 2
+\]</span></p>
+<p>From</p>
+<p><span class="math display">\[
+y \ \mathrm{d} y = x \ \mathrm{d} x
+\]</span></p>
+<p><span class="math display">\[
+\int^{y}_{2} y' \ \mathrm{d} y' = \int^{x}_{0} x' \ \mathrm{d} x'
+\]</span></p>
+<p>one has</p>
+<p><span class="math display">\[
+\biggr [ \cfrac{y'^{2}}{2} \biggr ]^{y}_{2} = \biggr [ \cfrac{x'^{2}}{2} \biggr ]^{x}_{0}
+\]</span></p>
+<p><span class="math display">\[
+\cfrac{y^{2}}{2} - \cfrac{2^{2}}{2} = \cfrac{x^{2}}{2} - \cfrac{0^{2}}{2}
+\]</span></p>
+<p><span class="math display">\[
+\cfrac{y^{2} - 4}{2} = \cfrac{x^{2}}{2}
+\]</span></p>
+<p><span class="math display">\[
+y^{2} - 4 = x^{2}
+\]</span></p>
+<p><span class="math display">\[
+y^{2} = x^{2} + 4
+\]</span></p>
+<p><span class="math display">\[
+y(x) = \pm \sqrt{x^{2} + 4}
+\]</span></p>
+</section>
+<section id="important-example" class="level3" data-number="16.6.3">
+<h3 data-number="16.6.3" class="anchored" data-anchor-id="important-example"><span class="header-section-number">16.6.3</span> Important example</h3>
+<p><span class="math display">\[
+\cfrac{\mathrm{d}}{\mathrm{d} t} y = a y + b, \quad a, b \in \mathbb{R}
+\]</span></p>
+<p>From</p>
+<p><span class="math display">\[
+\cfrac{\mathrm{d} y}{a y + b} = \mathrm{d} t
+\]</span></p>
+<p><span class="math display">\[
+\int \cfrac{1}{a y + b} \ \mathrm{d} y = \int \mathrm{d} t
+\]</span></p>
+<p>One has</p>
+<p><span class="math display">\[
+\cfrac{1}{a} \ln |ay + b| = t + c_{1}
+\quad \text{or} \quad
+\ln |ay + b| = at + c_{2}
+\quad c_{1} \in \mathbb{R}
+\quad c_{2} = a c_{1} \in \mathbb{R}
+\tag{4}
+\]</span></p>
+<p>Then,</p>
+<p><span class="math display">\[
+e^{\ln |ay + b|} = e^{at + c_{2}}
+\]</span></p>
+<p><span class="math display">\[
+|ay + b| = e^{at + c_{2}}, \quad (a^{\log_{a} x} = x)
+\]</span></p>
+<p><span class="math display">\[
+|ay + b| = e^{at} e^{c_{2}}, \quad (a^{m} a^{n} = a^{m + n})
+\]</span></p>
+<p><span class="math display">\[
+|ay + b| = c_{3} e^{at}
+\]</span></p>
+<p>where <span class="math inline">\(c_{3} = e^{c_{2}} = e^{a c_{1}}\)</span> is now a <strong>positive</strong> real number.</p>
+<p>From the modulus sign, one has</p>
+<p><span class="math display">\[
+ay + b = \pm c_{3} e^{at}
+\]</span></p>
+<p>Incorporating the sign into the constant term leads to</p>
+<p><span class="math display">\[
+ay + b = K e^{at}
+\]</span></p>
+<p>where now <span class="math inline">\(K \in \mathbb{R} ∖ \{0\}\)</span>. Therefore,</p>
+<p><span class="math display">\[
+y(t) = \cfrac{K e^{at} - b}{a}
+\]</span></p>
+<p>and <span class="math inline">\(K\)</span> is a nonzero constant. This condition is satisfied, since <span class="math inline">\(K = 0\)</span> requires the integration constant <span class="math inline">\(c_{1}\)</span> to diverge (<span class="math inline">\(c_{1} \to \infty\)</span> if <span class="math inline">\(a &lt; 0\)</span>, and <span class="math inline">\(c_{1} \to - \infty\)</span> if <span class="math inline">\(a &gt; 0\)</span>). It is curious to realize that the same solution above is obtained if one performs the calculation “ignoring” the modulus sign of the argument of logarithm in <span class="math inline">\((4)\)</span>.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
 <div id="ref-hase2022" class="csl-entry" role="doc-biblioentry">
 Hase, Masayuki Oka. 2022. <span>“Métodos Matemáticos e de Computação 1.”</span>
 </div>
+<div id="ref-stewart2016b" class="csl-entry" role="doc-biblioentry">
+Stewart, James. 2016. <em>Calculus: Early Transcendental</em>. 8th ed. Cengage Learning.
 </div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->

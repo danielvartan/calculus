@@ -4,7 +4,10 @@
 
 The derivative of function $f$ at a point $x$ is defined as
 
-$$\cfrac{\mathrm{d}}{\mathrm{d} x} f(x) := \lim \limits_{\Delta x \to 0} \cfrac{\Delta y}{\Delta x} = \lim \limits_{\Delta x \to 0} \cfrac{f(x + \Delta x) - f(x)}{\Delta x}$$
+$$
+\cfrac{\mathrm{d}}{\mathrm{d} x} f(x) := \lim \limits_{\Delta x \to 0} \cfrac{\Delta y}{\Delta x} = \lim \limits_{\Delta x \to 0} \cfrac{f(x + \Delta x) - f(x)}{\Delta x}
+\tag{1}
+$$
 
 ![](../images/hase_lecture_2_figure_2.png)
 
@@ -19,7 +22,6 @@ $$
 \\
     < 0 \ \ \ , \ \ \ \text{function } f \text{ decreasing with } x \text{ (at } x \text{)}
 \end{cases}
-.
 $$
 
 The case $\cfrac{\mathrm{d}}{\mathrm{d} x} f(x) = 0$ is especially important since it's a necessary (although not sufficient) condition to determine the extremal points (local maxima and minima) of differentiable functions.
@@ -54,6 +56,64 @@ $$
 $$
 = \lim \limits_{\Delta x \to 0} 2x + \Delta x = 2x
 $$
+
+## Other notations
+
+> Reference: @stewart2016b
+
+If we use the traditional notation $y = f(x)$ to indicate that the independent variable is $x$ and the dependent variable is $y$, then some common alternative notations for the derivative are as follows:
+
+$$
+f'(x) = y' = \cfrac{\mathrm{d} y}{\mathrm{d} x} = \cfrac{\mathrm{d} f}{\mathrm{d} x} = \cfrac{\mathrm{d}}{\mathrm{d} x} f(x) = D f(x) = D_{x} f(x)
+$$
+The symbols $D$ and $\mathrm{d} / \mathrm{d} x$ are called __differentiation operators__ because they indicate the operation of __differentiation__, which is the process of calculating a derivative.
+
+The symbol $\mathrm{d} y / \mathrm{d} x$, which was introduced by Leibniz, should not be regarded as a ratio (for the time being); it is simply a synonym for $f'(x)$. Nonetheless, it is a very useful and suggestive notation, especially when used in conjunction with increment notation.
+
+Considering $(1)$, we can rewrite the definition of derivative in Leibniz notation in the form
+
+$$
+\cfrac{\mathrm{d} y}{\mathrm{d} x} = \lim \limits_{\Delta x \to 0} \cfrac{\Delta y}{\Delta x}
+$$
+
+If we want to indicate the value of a derivative $\mathrm{d} y / \mathrm{d} x$ in Leibniz notation at a specific number $a$, we use the notation
+
+$$
+\cfrac{\mathrm{d} y}{\mathrm{d} x} \Bigg|_{x = a}
+\quad \text{or} \quad
+\cfrac{\mathrm{d} y}{\mathrm{d} x} \Biggr]_{x = a}
+$$
+
+which is a synonym for $f'(a)$. The vertical bar means “evaluate at.” 
+
+> See also:
+> 
+> * [When not to treat dy/dx as a fraction in single-variable calculus?](https://math.stackexchange.com/questions/1906241/when-not-to-treat-dy-dx-as-a-fraction-in-single-variable-calculus)
+> * [When can we not treat differentials as fractions? And when is it perfectly OK?](https://math.stackexchange.com/questions/1784671/when-can-we-not-treat-differentials-as-fractions-and-when-is-it-perfectly-ok)
+
+## Differentiation
+
+> Reference: @stewart2016b
+
+A function $f$ is __differentiable at__ $a$ if $f'(a)$ exists. It is __differentiable on an open interval__ $(a, b) \ [\text{or} \ (a, \infty) \ \text{or} \ (- \infty, a) \ \text{or} \ (- \infty, \infty)]$ if it is differentiable at every number in the interval.
+
+## Parametric equations
+
+> Reference: @hass2018
+
+If $x = f(t)$ and $y = g(t)$ are differentiable, then
+
+$$
+y' = \cfrac{\mathrm{d} y}{\mathrm{d} x} = \cfrac{\mathrm{d} y / \mathrm{d} t}{\mathrm{d} x / \mathrm{d} t}
+\ \ \ \text{and} \ \ \
+\cfrac{\mathrm{d}^{2}y}{\mathrm{d} x^{2}} = \cfrac{\mathrm{d} y' / \mathrm{d} t}{\mathrm{d} x / \mathrm{d} t}
+$$
+
+## 2nd, 3rd, ... order derivatives
+
+> Reference: @morettin2003
+
+$f'(x) \ f''(x) \ f'''(x) \ f^{(4)}(x)$
 
 ## General formulas
 
@@ -143,27 +203,3 @@ $[e^{(x^{2})}]' = f'^{(g)} \times g' = e^{(x^{2})} \times 2x$
 * $(\text{sech}^{-1} \ x)' = - \cfrac{1}{x \sqrt{1 - x^{2}}}$
 * $(\coth^{-1} x)' = \cfrac{1}{1 - x^{2}}$
 * $(\text{csch}^{-1} \ x)' = - \cfrac{1}{|x| \sqrt{1 + x^{2}}}$
-
-## Differential of a function
-
-> Reference: @morettin2003
-
-$df = f'(x_{0}) \times \Delta x$, $df \approx \Delta f$ para pequenos valores de $\Delta x$.
-
-## Parametric equations
-
-> Reference: @hass2018
-
-If $x = f(t)$ and $y = g(t)$ are differentiable, then
-
-$$
-y' = \cfrac{\mathrm{d} y}{\mathrm{d} x} = \cfrac{\mathrm{d} y / \mathrm{d} t}{\mathrm{d} x / \mathrm{d} t}
-\ \ \ \text{and} \ \ \
-\cfrac{\mathrm{d}^{2}y}{\mathrm{d} x^{2}} = \cfrac{\mathrm{d} y' / \mathrm{d} t}{\mathrm{d} x / \mathrm{d} t}
-$$
-
-## 2nd, 3rd, ... order derivatives
-
-> Reference: @morettin2003
-
-$f'(x) \ f''(x) \ f'''(x) \ f^{(4)}(x)$
